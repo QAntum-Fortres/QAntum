@@ -15,8 +15,23 @@
 import { OllamaManager } from '../ai/OllamaManager';
 import { ValueBombGenerator } from '../src/finance/ValueBombGenerator';
 import { AutonomousSalesForce } from '../src/reality/AutonomousSalesForce';
+import { QantumEmailSender, EmailPayload } from './email-sender';
 import * as fs from 'fs';
 import * as path from 'path';
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// CONFIG — Зареди .env ако съществува
+// ═══════════════════════════════════════════════════════════════════════════════
+const envPath = path.join(process.cwd(), '.env');
+if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf-8');
+    envContent.split('\n').forEach(line => {
+        const [key, ...vals] = line.split('=');
+        if (key && vals.length) {
+            process.env[key.trim()] = vals.join('=').trim();
+        }
+    });
+}
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // TARGET PROFILES
@@ -26,6 +41,7 @@ interface B2BTarget {
     name: string;
     company: string;
     domain: string;        // за ValueBombGenerator.generate(domain, company)
+    email?: string;        // имейл за автоматично изпращане
     role: string;
     painPoint: string;
     phone?: string;
@@ -64,6 +80,7 @@ async function igniteB2BAgency() {
             name: "Иван Иванов", 
             company: "TechSolutions BG", 
             domain: "techsolutions.bg",
+            email: "",  // ← сложи истински имейл тук
             role: "CEO", 
             painPoint: "Трудно намиране на B2B клиенти в LinkedIn"
         },
@@ -71,12 +88,39 @@ async function igniteB2BAgency() {
             name: "Мария Георгиева", 
             company: "Prime Real Estate", 
             domain: "primerealestate.bg",
+            email: "",  // ← сложи истински имейл тук
             role: "Основател", 
             painPoint: "Нужда от качествено видео съдържание за луксозни имоти"
         }
     ];
 
     console.log(`\n🎯 Намерени ${targets.length} таргета.\n`);
+
+    // 4. Инициализиране на Email Sender (ако има App Password)
+    const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD || '';
+    let emailSender: QantumEmailSender | null = null;
+    
+    if (GMAIL_APP_PASSWORD) {
+        emailSender = new QantumEmailSender({
+            senderEmail: 'papica777@gmail.com',
+            senderName: 'Dimitar Prodromov',
+            appPassword: GMAIL_APP_PASSWORD,
+        });
+        
+        const smtpOk = await emailSender.verify();
+        if (smtpOk) {
+            console.log('📧 Email Sender ARMED — имейлите ще се изпращат автоматично!');
+        } else {
+            console.log('⚠️  SMTP верификация неуспешна — имейли НЯМА да се изпращат.');
+            emailSender = null;
+        }
+    } else {
+        console.log('ℹ️  GMAIL_APP_PASSWORD не е зададен → имейлите ще се запишат само като файлове.');
+        console.log('   За да активираш автоматично изпращане:');
+        console.log('   1. Отиди на https://myaccount.google.com/apppasswords');
+        console.log('   2. Създай App Password');
+        console.log('   3. Добави GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx в .env файла');
+    }
 
     // Ensure output directory exists
     const outputDir = path.join(process.cwd(), 'dashboard', 'b2b-pitches');
@@ -139,7 +183,25 @@ async function igniteB2BAgency() {
             const bombFile = path.join(outputDir, `${safeCompanyName}_valuebomb_${timestamp}.md`);
             fs.writeFileSync(bombFile, valueBomb.markdownContent);
         }
-        
+
+        // D) Автоматично изпращане на имейл (ако има email sender + target email)
+        if (emailSender && target.email) {
+            console.log(`📧 Изпращане на имейл до ${target.email}...`);
+            
+            const subject = `[QAntum] Безплатен AI анализ на ${target.domain} — ${valueBomb.pricingTier || 'PREMIUM'} ниво`;
+            const htmlBody = QantumEmailSender.pitchToHtml(pitchMessage, 'Dimitar Prodromov');
+
+            await emailSender.send({
+                to: target.email,
+                toName: target.name,
+                subject,
+                textBody: pitchMessage,
+                htmlBody,
+            });
+        } else if (emailSender && !target.email) {
+            console.log(`ℹ️  Няма имейл за ${target.name} — пропускам автоматично изпращане.`);
+        }
+
         console.log(`✅ ${target.company} — ГОТОВО!`);
         console.log(`   📁 Pitch: ${pitchFile}`);
         console.log(`   💣 Bomb ID: ${valueBomb.id}`);
@@ -151,6 +213,7 @@ async function igniteB2BAgency() {
    ВСИЧКИ ТАРГЕТИ ОБРАБОТЕНИ!
    ─────────────────────────────────────────────────────────────────────────────
    📁 Провери: ${outputDir}
+   📧 Email Sender: ${emailSender ? 'ACTIVE — имейли бяха изпратени автоматично' : 'OFFLINE — добави GMAIL_APP_PASSWORD в .env'}
    
    Следващи стъпки:
    1. Прегледай pitch файловете
