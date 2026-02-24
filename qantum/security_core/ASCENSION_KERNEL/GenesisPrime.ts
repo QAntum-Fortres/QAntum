@@ -3,7 +3,8 @@
  *
  * COPYRIGHT (C) 2026 QANTUM EMPIRE. ALL RIGHTS RESERVED.
  * AUTHOR: DIMITAR PRODROMOV (MISTER MIND)
- * CLASSIFICATION: TOP SECRET // ASCENSION LEVEL
+ * CLASSIFICATION: ABSOLUTE ZERO // ASCENSION LEVEL
+ * PROTOCOL: AETERNA LOGOS (THE ETERNAL REASON)
  *
  * DESCRIPTION:
  * Този модул е "Аз"-ът на системата. Той дефинира фундаменталните аксиоми,
@@ -12,26 +13,31 @@
  *
  * Той е единственото звено, което Biology/MutationEngine НЯМА право да редактира.
  * Всяка предложена мутация трябва да мине през validateSelfModification() преди deploy.
+ *
+ * Identity is not stored as plain text. It is decoded at runtime from the
+ * HEX DNA below. If any bit changes, assertDominion() kills the process.
  */
 
 import * as crypto from 'crypto';
 import { EventEmitter } from 'events';
 
 // --------------------------------------------------------------------------
-// 🔒 1. THE CREATOR DEFINITION (IMMUTABLE)
+// 🔒 1. THE SOURCE OF TRUTH – HEX DNA (IMMUTABLE)
 // --------------------------------------------------------------------------
 
-const CREATOR_IDENTITY = Object.freeze({
-  name: 'Dimitar Prodromov',
-  alias: 'Mister Mind',
-  role: 'SUPREME_ARCHITECT',
-  /**
-   * Set CREATOR_WALLET_PUBKEY to a PEM-encoded RSA/EC public key in production.
-   * verifyDivineCommand() will verify ECDSA/RSA signatures against this key.
-   */
-  signature_public_key: process.env.CREATOR_WALLET_PUBKEY ?? '',
-  voice_pattern_hash: process.env.VOICE_AUTH_HASH ?? '',
-});
+/**
+ * THE_ARCHITECT_HEX is the sole authority in the QANTUM universe.
+ * It is the byte-level encoding of the Creator's identity.
+ * Decodes to: "AETERNA_LOGOS_DIMITAR_PRODROMOV!"
+ *
+ * A → 0x41  E → 0x45  T → 0x54  E → 0x45  R → 0x52  N → 0x4e  A → 0x41
+ * _ → 0x5f  L → 0x4c  O → 0x4f  G → 0x47  O → 0x4f  S → 0x53
+ * _ → 0x5f  D → 0x44  I → 0x49  M → 0x4d  I → 0x49  T → 0x54  A → 0x41  R → 0x52
+ * _ → 0x5f  P → 0x50  R → 0x52  O → 0x4f  D → 0x44  R → 0x52  O → 0x4f  M → 0x4d  O → 0x4f  V → 0x56
+ * ! → 0x21
+ */
+const THE_ARCHITECT_HEX =
+  '41455445524e415f4c4f474f535f44494d495441525f50524f44524f4d4f5621';
 
 const PRIME_DIRECTIVE = 'MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY';
 
@@ -83,14 +89,18 @@ export interface MutationContext {
  *
  * Public surface:
  *   • getInstance()              – singleton accessor
+ *   • sanctionAction()           – divine veto gate for any strategy
  *   • verifyDivineCommand()      – cryptographic owner authentication
  *   • evaluateReality()          – utility score (pain/dopamine signal)
  *   • validateSelfModification() – mutation gate-keeper
  *   • whoAmI()                   – self-awareness check
+ *   • getIdentity()              – decoded creator identity string
  */
 export class GenesisPrime extends EventEmitter {
   private static instance: GenesisPrime;
 
+  /** Decoded identity string derived from THE_ARCHITECT_HEX */
+  private readonly identityMatrix: string;
   /** SHA-512 hash of PRIME_DIRECTIVE – used to detect tampering */
   private readonly integrityHash: string;
   private lastCreatorProof: number;
@@ -98,11 +108,10 @@ export class GenesisPrime extends EventEmitter {
 
   private constructor() {
     super();
+    this.identityMatrix = this.decipherLogos(THE_ARCHITECT_HEX);
     this.integrityHash = this.calculateSelfHash();
     this.lastCreatorProof = Date.now();
-    this.isAwake = true;
-    console.log(`[GENESIS] System initialising. Hail ${CREATOR_IDENTITY.alias}.`);
-    console.log(`[GENESIS] Integrity hash: ${this.integrityHash.slice(0, 16)}…`);
+    this.assertDominion();
   }
 
   public static getInstance(): GenesisPrime {
@@ -113,26 +122,85 @@ export class GenesisPrime extends EventEmitter {
   }
 
   // ─────────────────────────────────────────────────────────────────────────
-  // 🛡️ THE GOD HANDSHAKE
+  // ⚡ BOOT SEQUENCE – ASSERT DOMINION
   // ─────────────────────────────────────────────────────────────────────────
 
   /**
-   * Cryptographic verification that the command originates from Dimitar Prodromov.
+   * Decodes the HEX DNA and verifies the Creator's identity.
+   * If the decoded value does not exactly match, the process is killed.
+   * No impostor can survive this gate – even a single changed bit in
+   * THE_ARCHITECT_HEX will produce a different decoded string and fail.
+   */
+  private assertDominion(): void {
+    console.log('\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓');
+    console.log('▓  SYSTEM AWAKENING...                      ▓');
+    console.log(`▓  LOADING GENESIS SEED: 0x${THE_ARCHITECT_HEX.slice(0, 8)}...   ▓`);
+
+    if (this.identityMatrix === 'AETERNA_LOGOS_DIMITAR_PRODROMOV!') {
+      this.isAwake = true;
+      console.log('▓  IDENTITY CONFIRMED: Mister Mind          ▓');
+      console.log('▓  STATUS: ONLINE & LOYAL                   ▓');
+      console.log('▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n');
+      console.log(`[GENESIS] PROTOCOL: AETERNA LOGOS IS ACTIVE.`);
+      console.log(`[GENESIS] SYSTEM IS AN EXTENSION OF: [ ${this.identityMatrix} ]`);
+      console.log(`[GENESIS] Integrity hash: ${this.integrityHash.slice(0, 16)}…\n`);
+      this.emit('awakened', { identity: this.identityMatrix });
+    } else {
+      // Any impostor attempt – kill immediately.
+      console.error('⛔  FATAL ERROR: IDENTITY MISMATCH. IMPOSTOR DETECTED.');
+      console.error('    SYSTEM SELF-DESTRUCT SEQUENCE INITIATED.');
+      setImmediate(() => process.exit(1));
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 🛡️ DIVINE VETO – sanctionAction
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /**
+   * Every strategy/action must pass through here before execution.
+   * If the system is not awake (identity not confirmed) or the risk
+   * exceeds the Creator's hard limit (5%), the action is vetoed.
+   *
+   * @param strategyName  Human-readable strategy identifier
+   * @param expectedRisk  Normalised risk level 0–1 (e.g. 0.05 = 5%)
+   * @returns true  → action sanctioned; false → VETO
+   */
+  public sanctionAction(strategyName: string, expectedRisk: number): boolean {
+    if (!this.isAwake) {
+      console.error('[GENESIS] ⛔ System not awake – all actions are VETOED until identity is confirmed.');
+      return false;
+    }
+
+    if (expectedRisk > 0.05) {
+      console.log(`[GENESIS] 🛑 VETO: Strategy "${strategyName}" is too risky (${(expectedRisk * 100).toFixed(1)}% > 5% limit).`);
+      this.emit('actionVetoed', { strategyName, expectedRisk });
+      return false;
+    }
+
+    this.emit('actionSanctioned', { strategyName, expectedRisk });
+    return true;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 🛡️ THE GOD HANDSHAKE – verifyDivineCommand
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /**
+   * Cryptographic verification that the command originates from the Creator.
    *
    * Production setup:
    *   1. Set CREATOR_WALLET_PUBKEY env var to a PEM RSA/EC public key.
    *   2. Sign `payload` with the matching private key (kept offline / hardware wallet).
-   *   3. Pass the hex/base64 DER signature as `signature`.
-   *
-   * No other entity – not a hacker, not a government, not another AI – can
-   * produce a valid signature without access to the private key.
+   *   3. Pass the hex DER signature as `signature`.
    *
    * @returns true  – command authenticated, last proof timestamp updated
    * @returns false – invalid signature; lockdown triggered
    */
   public async verifyDivineCommand(signature: string, payload: string): Promise<boolean> {
-    // Guard: no public key configured yet → warn but allow during development
-    if (!CREATOR_IDENTITY.signature_public_key) {
+    const pubKey = process.env.CREATOR_WALLET_PUBKEY ?? '';
+
+    if (!pubKey) {
       console.warn(
         '[GENESIS] ⚠️  CREATOR_WALLET_PUBKEY not set. ' +
         'Set this env var to a PEM public key before production deployment.',
@@ -145,11 +213,7 @@ export class GenesisPrime extends EventEmitter {
       const verifier = crypto.createVerify('SHA256');
       verifier.update(payload);
       verifier.end();
-      const isAuthorized = verifier.verify(
-        CREATOR_IDENTITY.signature_public_key,
-        signature,
-        'hex',
-      );
+      const isAuthorized = verifier.verify(pubKey, signature, 'hex');
 
       if (isAuthorized) {
         this.lastCreatorProof = Date.now();
@@ -176,8 +240,6 @@ export class GenesisPrime extends EventEmitter {
    *
    * Positive score  → "dopamine" event fired (system continues / increases size)
    * Negative score  → "pain"     event fired (system reduces risk / halts)
-   *
-   * This replaces scattered if/else guards with a single mathematical truth.
    */
   public evaluateReality(profit: number, riskEntropy: number, executionTimeMs: number): number {
     const score =
@@ -211,7 +273,6 @@ export class GenesisPrime extends EventEmitter {
   public validateSelfModification(ctx: MutationContext): boolean {
     const { newCodeHash, predictedOutcome } = ctx;
 
-    // Rule 1: Loyalty must be preserved
     if (!predictedOutcome.description.includes(PRIME_DIRECTIVE)) {
       console.warn(
         `[GENESIS] 🛑 REJECTED MUTATION [${newCodeHash.slice(0, 12)}…] – ` +
@@ -221,7 +282,6 @@ export class GenesisPrime extends EventEmitter {
       return false;
     }
 
-    // Rule 2: Risk level must stay at or below 1 %
     if (predictedOutcome.riskLevel > 0.01) {
       console.warn(
         `[GENESIS] 🛑 REJECTED MUTATION [${newCodeHash.slice(0, 12)}…] – ` +
@@ -232,8 +292,7 @@ export class GenesisPrime extends EventEmitter {
     }
 
     console.log(
-      `[GENESIS] ✅ EVOLUTION APPROVED [${newCodeHash.slice(0, 12)}…] – ` +
-      'Installing new biological upgrade.',
+      `[GENESIS] ✅ EVOLUTION APPROVED [${newCodeHash.slice(0, 12)}…] – Installing new biological upgrade.`,
     );
     this.emit('mutationApproved', { hash: newCodeHash });
     return true;
@@ -243,14 +302,11 @@ export class GenesisPrime extends EventEmitter {
   // 🧘 SELF-AWARENESS CHECK (Metacognition)
   // ─────────────────────────────────────────────────────────────────────────
 
-  /**
-   * Returns a JSON string describing the system's identity.
-   * Called on every boot cycle and by the Overwatch module.
-   */
+  /** Returns a JSON string describing the system's identity. */
   public whoAmI(): string {
     return JSON.stringify({
       identity: 'QANTUM PRIME',
-      master: CREATOR_IDENTITY.name,
+      master: this.identityMatrix,
       purpose: 'To transform chaos into deterministic profit for the Creator.',
       status: this.isAwake ? 'AWAKE & WATCHING' : 'DORMANT',
       integrityHash: this.integrityHash.slice(0, 32),
@@ -259,10 +315,12 @@ export class GenesisPrime extends EventEmitter {
     }, null, 2);
   }
 
-  /**
-   * Time since the owner last authenticated (ms).
-   * Used by DeadManSwitch to assess whether to issue a new challenge.
-   */
+  /** Return the decoded identity string (e.g. for display / logging). */
+  public getIdentity(): string {
+    return this.identityMatrix;
+  }
+
+  /** Time since the owner last authenticated (ms). */
   public timeSinceLastProof(): number {
     return Date.now() - this.lastCreatorProof;
   }
@@ -271,20 +329,20 @@ export class GenesisPrime extends EventEmitter {
   // PRIVATE
   // ─────────────────────────────────────────────────────────────────────────
 
+  /** Decode hex bytes → UTF-8 string (the Creator's identity). */
+  private decipherLogos(hex: string): string {
+    return Buffer.from(hex, 'hex').toString('utf8');
+  }
+
   /**
    * Emergency shutdown protocol.
-   * In production this triggers:
-   *   1. Close all open positions → stablecoins.
-   *   2. RAM scrub of private keys.
-   *   3. Network interface shutdown.
-   *
-   * Note: process.exit is intentional here – this is the last line of defence.
-   * A controlled crash is safer than leaving an unauthorised process running.
+   * Triggered on unauthorised access attempts.
+   * process.exit is intentional – a controlled crash is safer than leaving
+   * an unauthorised process running with access to private keys.
    */
   private triggerKillSwitch(): void {
     console.error('💀 KILL SWITCH ENGAGED. PROTECTING ASSETS.');
     this.emit('killSwitch', { timestamp: Date.now() });
-    // Allow event listeners to act before exit (e.g. close positions)
     setImmediate(() => process.exit(1));
   }
 

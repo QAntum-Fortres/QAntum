@@ -101,7 +101,7 @@ export class MutationEngine extends EventEmitter {
     const approved = TheArchitect.validateSelfModification({
       newCodeHash: codeHash,
       predictedOutcome: {
-        description: `${proposal.description} | directive: MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY`,
+        description: proposal.description,
         riskLevel: proposal.simulatedRiskLevel,
         roiDelta: proposal.simulatedRoiDelta,
       },

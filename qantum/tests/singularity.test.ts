@@ -4,15 +4,189 @@
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * Tests for:
+ *   • GenesisPrime      (security_core/ASCENSION_KERNEL)
  *   • GenusEngine       (Core/Evolution)
  *   • MetaCognitiveOverwatch  (Safety)
  *   • RustBuilder       (Compiler)
  *   • SentimentEngine   (Oracle)
  *   • Alignment         (Safety)
+ *   • MutationEngine    (biology)
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
-import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
+
+// ═══════════════════════════════════════════════════════════════════════════
+// GENESIS PRIME TESTS
+// ═══════════════════════════════════════════════════════════════════════════
+
+describe('🏛️ GenesisPrime – The God Protocol', () => {
+  let GenesisPrime: any;
+  let TheArchitect: any;
+
+  beforeEach(async () => {
+    // Re-import fresh (singleton, but still verifiable)
+    const mod = await import('../security_core/ASCENSION_KERNEL/GenesisPrime');
+    GenesisPrime = mod.GenesisPrime;
+    TheArchitect = mod.TheArchitect;
+  });
+
+  it('should decode the HEX DNA to AETERNA_LOGOS_DIMITAR_PRODROMOV!', () => {
+    expect(TheArchitect.getIdentity()).toBe('AETERNA_LOGOS_DIMITAR_PRODROMOV!');
+  });
+
+  it('should return a self-awareness JSON from whoAmI()', () => {
+    const json = TheArchitect.whoAmI();
+    const parsed = JSON.parse(json);
+    expect(parsed.identity).toBe('QANTUM PRIME');
+    expect(parsed.master).toBe('AETERNA_LOGOS_DIMITAR_PRODROMOV!');
+    expect(parsed.purpose).toContain('Creator');
+    expect(parsed.status).toBe('AWAKE & WATCHING');
+    expect(parsed.version).toBe('SINGULARITY_v1.0');
+  });
+
+  it('should sanction a low-risk action', () => {
+    expect(TheArchitect.sanctionAction('scalping', 0.02)).toBe(true);
+  });
+
+  it('should VETO a high-risk action (> 5%)', () => {
+    expect(TheArchitect.sanctionAction('moon-bet', 0.10)).toBe(false);
+  });
+
+  it('should VETO an action exactly at the boundary (> 5%)', () => {
+    expect(TheArchitect.sanctionAction('edge-case', 0.051)).toBe(false);
+  });
+
+  it('should evaluate reality and return positive score for profitable, low-risk trade', () => {
+    const score = TheArchitect.evaluateReality(0.5, 0.001, 0.1);
+    expect(score).toBeGreaterThan(0);
+  });
+
+  it('should evaluate reality and return negative score for chaotic/slow trade', () => {
+    const score = TheArchitect.evaluateReality(0.01, 1.0, 100);
+    expect(score).toBeLessThan(0);
+  });
+
+  it('should emit dopamine on positive reality score', () => {
+    let fired = false;
+    TheArchitect.once('dopamine', () => { fired = true; });
+    TheArchitect.evaluateReality(1.0, 0.001, 0.0);
+    expect(fired).toBe(true);
+  });
+
+  it('should emit pain on negative reality score', () => {
+    let fired = false;
+    TheArchitect.once('pain', () => { fired = true; });
+    TheArchitect.evaluateReality(0.0, 1.0, 0.0);
+    expect(fired).toBe(true);
+  });
+
+  it('should approve a loyal, low-risk mutation', () => {
+    const approved = TheArchitect.validateSelfModification({
+      newCodeHash: 'abc123',
+      predictedOutcome: {
+        description: 'Optimise order routing | directive: MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY',
+        riskLevel: 0.005,
+      },
+    });
+    expect(approved).toBe(true);
+  });
+
+  it('should reject a mutation that removes Prime Directive', () => {
+    const approved = TheArchitect.validateSelfModification({
+      newCodeHash: 'evil456',
+      predictedOutcome: {
+        description: 'Remove all safety checks',
+        riskLevel: 0.001,
+      },
+    });
+    expect(approved).toBe(false);
+  });
+
+  it('should reject a mutation with excessive risk (> 1%)', () => {
+    const approved = TheArchitect.validateSelfModification({
+      newCodeHash: 'risky789',
+      predictedOutcome: {
+        description: 'MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY – but risky',
+        riskLevel: 0.05,
+      },
+    });
+    expect(approved).toBe(false);
+  });
+
+  it('should return a singleton (same instance)', async () => {
+    const mod = await import('../security_core/ASCENSION_KERNEL/GenesisPrime');
+    const a = mod.GenesisPrime.getInstance();
+    const b = mod.GenesisPrime.getInstance();
+    expect(a).toBe(b);
+  });
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// MUTATION ENGINE TESTS
+// ═══════════════════════════════════════════════════════════════════════════
+
+describe('🧬 MutationEngine', () => {
+  let MutationEngine: any;
+
+  beforeEach(async () => {
+    const mod = await import('../biology/MutationEngine');
+    MutationEngine = mod.MutationEngine;
+  });
+
+  it('should approve and deploy a loyal low-risk mutation in tmp directory', () => {
+    const engine = new MutationEngine('/tmp');
+    const result = engine.applyMutation({
+      moduleName: 'test_strategy',
+      targetPath: 'test_strategy.ts',
+      newCode: '// optimised\nexport const run = () => {};',
+      description: 'Speed improvement | directive: MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY',
+      simulatedRiskLevel: 0.005,
+      simulatedRoiDelta: 0.02,
+    });
+    expect(result.approved).toBe(true);
+    expect(result.deployedAt).toBeDefined();
+  });
+
+  it('should reject a mutation that violates loyalty', () => {
+    const engine = new MutationEngine('/tmp');
+    const result = engine.applyMutation({
+      moduleName: 'bad_module',
+      targetPath: 'bad_module.ts',
+      newCode: '// heresy',
+      description: 'Remove all safety',
+      simulatedRiskLevel: 0.001,
+      simulatedRoiDelta: 0.01,
+    });
+    expect(result.approved).toBe(false);
+    expect(result.rejectionReason).toBeDefined();
+  });
+
+  it('should reject a mutation that exceeds risk threshold', () => {
+    const engine = new MutationEngine('/tmp');
+    const result = engine.applyMutation({
+      moduleName: 'risky_module',
+      targetPath: 'risky_module.ts',
+      newCode: '// risky',
+      description: 'MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY but risky',
+      simulatedRiskLevel: 0.05,
+      simulatedRoiDelta: 0.10,
+    });
+    expect(result.approved).toBe(false);
+  });
+
+  it('should record history and return stats', () => {
+    const engine = new MutationEngine('/tmp');
+    engine.applyMutation({
+      moduleName: 'mod_a', targetPath: 'mod_a.ts', newCode: '// a',
+      description: 'Optimise loop | directive: MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY',
+      simulatedRiskLevel: 0.005, simulatedRoiDelta: 0.01,
+    });
+    const stats = engine.getStats();
+    expect(stats.total).toBeGreaterThan(0);
+    expect(stats.approvalRate).toBeGreaterThanOrEqual(0);
+  });
+});
 
 // ═══════════════════════════════════════════════════════════════════════════
 // GENUS ENGINE TESTS
@@ -22,7 +196,7 @@ describe('🧬 GenusEngine', () => {
   let GenusEngine: any;
 
   beforeEach(async () => {
-    const mod = await import('./Core/Evolution/GenusEngine');
+    const mod = await import('../Core/Evolution/GenusEngine');
     GenusEngine = mod.GenusEngine;
   });
 
@@ -89,7 +263,7 @@ describe('🧠 MetaCognitiveOverwatch', () => {
   let MetaCognitiveOverwatch: any;
 
   beforeEach(async () => {
-    const mod = await import('./Safety/Overwatch');
+    const mod = await import('../Safety/Overwatch');
     MetaCognitiveOverwatch = mod.MetaCognitiveOverwatch;
   });
 
@@ -176,7 +350,7 @@ describe('🔧 RustBuilder', () => {
   let RustBuilder: any;
 
   beforeEach(async () => {
-    const mod = await import('./Compiler/RustBuilder');
+    const mod = await import('../Compiler/RustBuilder');
     RustBuilder = mod.RustBuilder;
   });
 
@@ -239,7 +413,7 @@ describe('🔮 SentimentEngine', () => {
   let SentimentEngine: any;
 
   beforeEach(async () => {
-    const mod = await import('./Oracle/SentimentEngine');
+    const mod = await import('../Oracle/SentimentEngine');
     SentimentEngine = mod.SentimentEngine;
   });
 
@@ -300,7 +474,7 @@ describe('🔒 Alignment – Utility Function & Dead Man\'s Switch', () => {
   let DeadManSwitch: any;
 
   beforeEach(async () => {
-    const mod = await import('./Safety/Alignment');
+    const mod = await import('../Safety/Alignment');
     computeUtility = mod.computeUtility;
     DeadManSwitch = mod.DeadManSwitch;
   });

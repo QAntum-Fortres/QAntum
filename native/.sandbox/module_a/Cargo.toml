@@ -1,0 +1,8 @@
+[package]
+name = "module_a"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+name = "module_a"
+crate-type = ["cdylib"]
