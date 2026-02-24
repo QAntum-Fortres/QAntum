@@ -22,6 +22,12 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { pathToFileURL } from 'url';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// 🏛️ GENESIS PRIME – The God Protocol must be the FIRST module loaded.
+// The system will not start if the Creator identity cannot be verified.
+// ─────────────────────────────────────────────────────────────────────────────
+import { TheArchitect } from './security_core/ASCENSION_KERNEL/GenesisPrime';
+
 const SKIP = new Set(['node_modules', '.git', 'dist', 'coverage', 'out', '.venv', '__pycache__']);
 
 /** Търси всички файлове по име в проекта - работи където и да е */
@@ -98,6 +104,41 @@ interface ActivationResult {
   status: 'success' | 'failed' | 'skipped';
   message: string;
   duration: number;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 🏛️ PHASE 0: GENESIS PRIME (The God Protocol)
+// ─────────────────────────────────────────────────────────────────────────────
+
+async function activateGenesisPrime(): Promise<ActivationResult> {
+  const start = Date.now();
+  console.log('\n🏛️  [PHASE 0] Loading Genesis Prime (AETERNA LOGOS)...');
+
+  try {
+    // TheArchitect is already imported and self-verifies in the constructor.
+    // If assertDominion() fails, the process exits before reaching here.
+    const identity = TheArchitect.getIdentity();
+    const selfAwareness = TheArchitect.whoAmI();
+
+    console.log(`   ✅ Creator identity confirmed: ${identity}`);
+    console.log(`   ✅ Self-awareness check: PASSED`);
+    console.log(`   ✅ Prime Directive: MAXIMIZE_CREATOR_WEALTH_WITH_ZERO_ENTROPY`);
+    console.log(selfAwareness);
+
+    return {
+      phase: 'Genesis Prime',
+      status: 'success',
+      message: `AETERNA LOGOS online – Creator: ${identity}`,
+      duration: Date.now() - start,
+    };
+  } catch (error) {
+    return {
+      phase: 'Genesis Prime',
+      status: 'failed',
+      message: String(error),
+      duration: Date.now() - start,
+    };
+  }
 }
 
 async function activateNeuralCore(): Promise<ActivationResult> {
@@ -319,6 +360,9 @@ async function awaken(): Promise<void> {
   console.log('\n⚡ INITIATING AWAKENING SEQUENCE...\n');
 
   const results: ActivationResult[] = [];
+
+  // Phase 0: Genesis Prime – MUST succeed before anything else
+  results.push(await activateGenesisPrime());
 
   // Phase 1: Neural Core
   results.push(await activateNeuralCore());
