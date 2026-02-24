@@ -110,6 +110,7 @@ async function igniteB2BAgency() {
         // Pitch съобщение
         const pitchFile = path.join(outputDir, `${safeCompanyName}_pitch_${timestamp}.txt`);
         fs.writeFileSync(pitchFile, [
+            `From: Dimitar Prodromov <papica777@gmail.com>`,
             `To: ${target.name} (${target.role} @ ${target.company})`,
             `Domain: ${target.domain}`,
             `Pain Point: ${target.painPoint}`,
