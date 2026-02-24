@@ -74,24 +74,72 @@ async function igniteB2BAgency() {
     const salesForce = new AutonomousSalesForce(llm, valueBombGen);
     console.log("🎯 AutonomousSalesForce Armed.");
 
-    // 3. Таргети (ръчно засега, утре — скрапер)
+    // 3. Реални таргети от Lead Hunter
     const targets: B2BTarget[] = [
         { 
-            name: "Иван Иванов", 
-            company: "TechSolutions BG", 
-            domain: "techsolutions.bg",
-            email: "",  // ← сложи истински имейл тук
-            role: "CEO", 
-            painPoint: "Трудно намиране на B2B клиенти в LinkedIn"
+            name: "CEO", 
+            company: "DevriX", 
+            domain: "devrix.com",
+            email: "contact@devrix.com",
+            role: "Decision Maker", 
+            painPoint: "WordPress and web app testing needs automation"
         },
         { 
-            name: "Мария Георгиева", 
-            company: "Prime Real Estate", 
-            domain: "primerealestate.bg",
-            email: "",  // ← сложи истински имейл тук
-            role: "Основател", 
-            painPoint: "Нужда от качествено видео съдържание за луксозни имоти"
-        }
+            name: "CEO", 
+            company: "Xplora", 
+            domain: "xplora.bg",
+            email: "human@xplora.bg",
+            role: "Decision Maker", 
+            painPoint: "Lead generation for clients is manual and slow"
+        },
+        { 
+            name: "CEO", 
+            company: "Netinfo", 
+            domain: "netinfo.bg",
+            email: "reklama@netinfo.bg",
+            role: "Decision Maker", 
+            painPoint: "No automated website security scanning for client reports"
+        },
+        { 
+            name: "CEO", 
+            company: "SpeedFlow", 
+            domain: "speedflow.bg",
+            email: "info@speedflow.bg",
+            role: "Decision Maker", 
+            painPoint: "Need automated lead generation tools for B2B clients"
+        },
+        { 
+            name: "CEO", 
+            company: "Stenik", 
+            domain: "stenik.bg",
+            email: "office@stenik.bg",
+            role: "Decision Maker", 
+            painPoint: "E-commerce clients need automated security and performance checks"
+        },
+        { 
+            name: "CEO", 
+            company: "Payhawk", 
+            domain: "payhawk.com",
+            email: "support@payhawk.com",
+            role: "Decision Maker", 
+            painPoint: "Need advanced risk management and fraud detection"
+        },
+        { 
+            name: "CEO", 
+            company: "Nexo", 
+            domain: "nexo.com",
+            email: "support@nexo.com",
+            role: "Decision Maker", 
+            painPoint: "Crypto lending needs real-time arbitrage and risk analysis"
+        },
+        { 
+            name: "CEO", 
+            company: "ICan", 
+            domain: "icanpreneur.com",
+            email: "info@icanpreneur.com",
+            role: "Decision Maker", 
+            painPoint: "Startup analytics platform needs AI insights"
+        },
     ];
 
     console.log(`\n🎯 Намерени ${targets.length} таргета.\n`);
