@@ -1,0 +1,8 @@
+.env
+dashboard/trades/*.jsonl
+dashboard/trades/session-*.json
+
+node_modules/
+.env*
+*.mp4
+*.pdf

@@ -1,0 +1,308 @@
+﻿   🦀 Rust NAPI loaded from: C:\Users\papic\Desktop\ALL-POSITIONS\Blockchain\native\qantum-engine\qantum-engine.node
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ⚡ QANTUM PRIME v36.1 — UNIFIED RUNNER                                      ║
+║  Rust NAPI + Python Backend + WebSocket Feed                                 ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Duration:  60s | Buffer: 20000 | Batch:  64 | Mode: TURBO 🔥     ║
+║  Engine: RUST NAPI ⚡          | Python: YES                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🔧 Components:
+   📦 Ring Buffer: O(1), size 20000
+   ⚡ Engine: RUST NAPI ⚡
+   📡 WebSocket Feed: TURBO, exchanges: 5
+   🐍 Starting Python backend: C:\Users\papic\Desktop\ALL-POSITIONS\Blockchain\backend\qantum_backend.py
+   🐍 [01:43:38.018] >>> QANTUM PYTHON BACKEND v36.1 STARTING <<<
+node :    🐍 
+C:\Users\papic\Desktop\ALL-POSITIONS\Blockchain\backend\qantum_backend.py:404: 
+DeprecationWarning: 
+At line:1 char:66
++ ... lyContinue; node scripts/unified-runner.js --with-python --turbo --du ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (   🐍 C:\Users\...cationWarning:  
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan 
+Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+   🐍 [01:43:38.097] Starting QAntum Python Backend on port 8891
+   🐍 INFO:     Started server process [160048]
+   🐍 INFO:     Waiting for application startup.
+   🐍 [01:43:38.116] FastAPI startup — launching market feed
+[01:43:38.116] Market feed loop started (10 Hz)
+   🐍 INFO:     Application startup complete.
+   🐍 INFO:     Uvicorn running on http://0.0.0.0:8891 (Press CTRL+C to quit)
+   🐍 INFO:     127.0.0.1:56408 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+🚀 Connecting to LIVE exchanges...
+
+   📡 Binance: connecting (5 trade streams)...
+   📡 Kraken: connecting (5 pairs)...
+   🐍 WARNING:  Unsupported upgrade request.
+   🐍 WARNING:  No supported WebSocket library detected. Please use "pip 
+install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
+   🐍 INFO:     127.0.0.1:56409 - "GET /ws/control HTTP/1.1" 404 Not Found
+   ⚠️  Python WS error: Unexpected server response: 404
+   ✅ Kraken LIVE — subscribing to 5 tickers
+   🐍 INFO:     127.0.0.1:56416 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+   📊 Kraken ETH/USD: $1,975.52
+   📊 Kraken SOL/USD: $85.28
+   📊 Kraken XRP/USD: $1.434
+   📊 Kraken AVAX/USD: $9.13
+
+   🟢 1 exchange(s) connected — LIVE MODE ACTIVE
+
+   🐍 INFO:     127.0.0.1:61986 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+   ✅ Binance LIVE — 5 trade streams active
+   🎯 [AUTO-CAL] BTC/USD: BUY < $67979.14 | SELL > $68183.38 (first calibration from live price $68081.26)
+   🎯 [AUTO-CAL] ETH/USD: BUY < $1972.56 | SELL > $1978.48 (first calibration from live price $1975.52)
+   🎯 [AUTO-CAL] SOL/USD: BUY < $85.16 | SELL > $85.42 (first calibration from live price $85.29)
+   🎯 [AUTO-CAL] XRP/USD: BUY < $1.43 | SELL > $1.44 (first calibration from live price $1.43)
+   🎯 [AUTO-CAL] AVAX/USD: BUY < $9.12 | SELL > $9.14 (first calibration from live price $9.13)
+   🐍 INFO:     127.0.0.1:61988 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  5s | 📊 17 | ⚡ 17/s | 📈 0.17ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:61990 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  6s | 📊 67 | ⚡ 50/s | 📈 0.15ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  7s | 📊 70 | ⚡ 3/s | 📈 0.17ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:61991 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  8s | 📊 73 | ⚡ 3/s | 📈 0.19ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:61994 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  9s | 📊 89 | ⚡ 16/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52729 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  10s | 📊 92 | ⚡ 3/s | 📈 0.46ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52732 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  11s | 📊 108 | ⚡ 16/s | 📈 0.59ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52733 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+   🔮 Python Oracle: BTC → $50000.99 (neutral, conf: 50.8%)
+
+⏱️  12s | 📊 109 | ⚡ 1/s | 📈 0.59ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52733 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  13s | 📊 113 | ⚡ 4/s | 📈 0.59ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52735 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  14s | 📊 119 | ⚡ 6/s | 📈 0.58ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52736 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  15s | 📊 122 | ⚡ 3/s | 📈 0.58ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  16s | 📊 151 | ⚡ 29/s | 📈 0.51ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52737 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  17s | 📊 156 | ⚡ 5/s | 📈 0.50ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52738 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  18s | 📊 159 | ⚡ 3/s | 📈 0.50ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52741 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  19s | 📊 164 | ⚡ 5/s | 📈 0.50ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  20s | 📊 169 | ⚡ 5/s | 📈 0.50ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52742 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  21s | 📊 171 | ⚡ 2/s | 📈 0.49ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52743 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+   🔮 Python Oracle: BTC → $50000.99 (neutral, conf: 50.8%)
+   🐍 INFO:     127.0.0.1:52743 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  22s | 📊 174 | ⚡ 3/s | 📈 0.50ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52744 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  23s | 📊 175 | ⚡ 1/s | 📈 0.50ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  24s | 📊 182 | ⚡ 7/s | 📈 0.49ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52745 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  25s | 📊 186 | ⚡ 4/s | 📈 0.48ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52746 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  26s | 📊 206 | ⚡ 20/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52747 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  27s | 📊 210 | ⚡ 4/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52748 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  28s | 📊 216 | ⚡ 6/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  29s | 📊 223 | ⚡ 7/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52749 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  30s | 📊 227 | ⚡ 4/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52751 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  31s | 📊 233 | ⚡ 6/s | 📈 0.45ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52752 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+   🔮 Python Oracle: BTC → $50000.99 (neutral, conf: 50.8%)
+   🐍 INFO:     127.0.0.1:52752 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  32s | 📊 236 | ⚡ 3/s | 📈 0.44ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  33s | 📊 240 | ⚡ 4/s | 📈 0.44ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52753 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  34s | 📊 242 | ⚡ 2/s | 📈 0.44ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52754 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  35s | 📊 244 | ⚡ 2/s | 📈 0.44ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52755 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  36s | 📊 277 | ⚡ 33/s | 📈 0.41ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  37s | 📊 289 | ⚡ 12/s | 📈 0.40ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52756 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  38s | 📊 293 | ⚡ 4/s | 📈 0.40ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52757 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  39s | 📊 329 | ⚡ 36/s | 📈 0.37ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52758 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  40s | 📊 332 | ⚡ 3/s | 📈 0.37ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  41s | 📊 370 | ⚡ 38/s | 📈 0.35ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52759 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+   🔮 Python Oracle: BTC → $50000.99 (neutral, conf: 50.8%)
+   🐍 INFO:     127.0.0.1:52759 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  42s | 📊 380 | ⚡ 10/s | 📈 0.35ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52760 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  43s | 📊 393 | ⚡ 13/s | 📈 0.35ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52761 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  44s | 📊 416 | ⚡ 23/s | 📈 0.34ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52762 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  45s | 📊 434 | ⚡ 18/s | 📈 0.34ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  46s | 📊 443 | ⚡ 9/s | 📈 0.34ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52764 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  47s | 📊 473 | ⚡ 30/s | 📈 0.33ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52765 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  48s | 📊 476 | ⚡ 3/s | 📈 0.33ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52767 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  49s | 📊 489 | ⚡ 13/s | 📈 0.33ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  50s | 📊 508 | ⚡ 19/s | 📈 0.33ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52768 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  51s | 📊 539 | ⚡ 31/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52769 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+   🔮 Python Oracle: BTC → $50000.99 (neutral, conf: 50.8%)
+   🐍 INFO:     127.0.0.1:52769 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  52s | 📊 543 | ⚡ 4/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52770 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  53s | 📊 551 | ⚡ 8/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  54s | 📊 558 | ⚡ 7/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52771 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  55s | 📊 567 | ⚡ 9/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52772 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  56s | 📊 579 | ⚡ 12/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52773 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  57s | 📊 583 | ⚡ 4/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)    
+⏱️  58s | 📊 586 | ⚡ 3/s | 📈 0.33ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52774 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  59s | 📊 601 | ⚡ 15/s | 📈 0.32ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52775 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  60s | 📊 633 | ⚡ 32/s | 📈 0.31ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52776 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  61s | 📊 658 | ⚡ 25/s | 📈 0.31ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52777 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+   🔮 Python Oracle: BTC → $50000.99 (neutral, conf: 50.8%)
+
+⏱️  62s | 📊 663 | ⚡ 5/s | 📈 0.31ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52777 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+
+⏱️  63s | 📊 667 | ⚡ 4/s | 📈 0.31ns avg | 🔄 0.0% | 📡 LIVE (2 ws)       🐍 INFO:     127.0.0.1:52778 - "GET /health HTTP/1.1" 200 OK
+   🐍 Python backend ready on port 8891
+   🐍 INFO:     127.0.0.1:52779 - "GET /api/predict/BTC?simulations=500&horizon=30 HTTP/1.1" 200 OK
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                     📊 FINAL UNIFIED REPORT v36.1                            ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ENGINE: 🦀 RUST NAPI (native + 128-bit arb)                          ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  THROUGHPUT                                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Total Duration:                 63.56 seconds                         ║
+║  Messages Produced:                670                              ║
+║  Messages Consumed:                669                              ║
+║  Batches Processed:                360                              ║
+║  Throughput:                        11 msgs/sec                         ║
+║  Total PnL:               $      0.00                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  LATENCY (Rust Engine — excludes network)                               ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Minimum:                          100 ns                             ║
+║  Average:                       311.66 ns  (0.3117 μs)              ║
+║  Maximum:                        23000 ns                             ║
+║  Target:                         <100 ns  (sub-100ns)                        ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  TRADING DECISIONS                                                           ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  BUY signals:                        0                              ║
+║  SELL signals:                       0                              ║
+║  HOLD signals:                     669                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ARBITRAGE (128-bit rust_decimal)                                            ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Cross-Exchange Viable:              0                              ║
+║  Best Profit:              $      0.00 (N/A     )              ║
+║  Triangular Profitable:             0                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  BUFFER STATISTICS                                                           ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Buffer Size:                    20000                              ║
+║  Total Pushed:                     670                              ║
+║  Overflows:                          0 (0.0000%)                      ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  MARKET FEED                                                                 ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Mode: 📡 LIVE WebSocket (real market data)                      ║
+║  Live WS Connections:                0                              ║
+║  Exchanges:                      binance:live, kraken:live  ║
+║  Live Ticks Received:              669                              ║
+║  Final Prices (REAL):                                                        ║
+║    BTC/USD: $  68081.25   ETH/USD: $ 1975.89               ║
+║    SOL/USD: $     85.30   XRP/USD: $  1.4331               ║
+║    AVAX/USD:$      9.12                                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  PYTHON BACKEND + DYNAMIC THRESHOLDS                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Status: ✅ ACTIVE                                                      ║
+║  Threshold Updates:                130                              ║
+║  Calibrated Symbols:                 5 / 5                            ║
+║  BTC Prediction: $  50000.99  (neutral)                       ║
+║  Confidence:          50.8%                                         ║
+║  Sharpe Ratio:       0.0311                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🏆 VERDICT: EXCEPTIONAL! Sub-microsecond average latency!
+
+🔗 Architecture: WebSocket Feed → Ring Buffer → Rust NAPI (128-bit arb) Engine + Python Backend
+═══════════════════════════════════════════════════════════════════════════════
+
+   🐍 Python backend exited (code null)

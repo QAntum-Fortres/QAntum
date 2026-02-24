@@ -1,0 +1,10 @@
+C:\Users\papic\Desktop\ALL-POSITIONS\Blockchain\native\qantum-engine\target\release\deps\napi_derive-363a5f153e3ed19d.d: C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\lib.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\compat_macro.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\mod.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\attrs.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand\napi.rs
+
+C:\Users\papic\Desktop\ALL-POSITIONS\Blockchain\native\qantum-engine\target\release\deps\napi_derive-363a5f153e3ed19d.dll: C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\lib.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\compat_macro.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\mod.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\attrs.rs C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand\napi.rs
+
+C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\lib.rs:
+C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\compat_macro.rs:
+C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand.rs:
+C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\mod.rs:
+C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\attrs.rs:
+C:\Users\papic\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand\napi.rs:

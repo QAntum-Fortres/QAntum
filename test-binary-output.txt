@@ -1,0 +1,9 @@
+LOADED: C:\Users\papic\Desktop\ALL-POSITIONS\Blockchain\native\qantum-engine\qantum-engine.node
+  updateThresholds: function
+  executeBatch: function
+  exports: batchArb, computeRisk, executeBatch, engineHealth, triangularArb, updateThresholds, priceOraclePredict, ringBufferBenchmark, computeGlobalEntropy
+
+Testing updateThresholds...
+  updateThresholds("BTC/USD", 68000, 68100) - OK
+  Decision for BTC @ $68050 (between 68000-68100): HOLD
+  Expected: HOLD

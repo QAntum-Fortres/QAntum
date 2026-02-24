@@ -1,0 +1,1 @@
+{"rustc":6817557220965521185,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[13725771896966532416,"build_script_build",false,2423195656903040565]],"local":[{"RerunIfChanged":{"output":"release\\build\\rust_decimal-66576f0eda5489cf\\output","paths":["README.md"]}}],"rustflags":["-C","target-cpu=native"],"config":0,"compile_kind":0}

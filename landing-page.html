@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Arbitrage - Platon Edition</title>
+    <style>
+        :root {
+            --primary: #00ff88;
+            --secondary: #1a1a2e;
+            --accent: #16213e;
+            --text: #e0e0e0;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--secondary);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--accent) 0%, var(--secondary) 100%);
+            border-bottom: 2px solid var(--primary);
+        }
+        h1 { color: var(--primary); font-size: 3rem; margin: 0; }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(0,255,136,0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 4rem 2rem;
+            background: var(--accent);
+        }
+        .price-tag {
+            font-size: 2.5rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .competitor-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 1rem;
+        }
+        .btn {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .model-platon {
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 20px rgba(0,255,136,0.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Quantum Arbitrage</h1>
+    <p>Professional HFT & Arbitrage Engine | Platon Edition</p>
+</header>
+
+<section class="hero">
+    <h2>Institutional Grade Trading for Everyone</h2>
+    <p>Unprecedented Logic. Zero-Latency Execution. </p>
+    <a href="https://github.com/papic/Blockchain/releases" class="btn">Download Latest Release</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>⚡ Real Cross-Exchange</h3>
+        <p>Live orderbook verification ensuring execution probability > 99%.</p>
+    </div>
+    <div class="card">
+        <h3>🧠 Self-Tuning V3</h3>
+        <p>AI-driven parameter adjustment based on real-time volatility.</p>
+    </div>
+    <div class="card">
+        <h3>🛡️ Entropy Gating</h3>
+        <p>Advanced risk management with Z-Score statistical analysis.</p>
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="card">
+        <h3>Starter</h3>
+        <div class="competitor-price">Competitors: $20/mo</div>
+        <div class="price-tag">$15<small>/mo</small></div>
+        <ul>
+            <li>Basic Arbitrage</li>
+            <li>1 Exchange Pair</li>
+            <li>Standard Support</li>
+        </ul>
+        <a href="#" class="btn" style="background: #ccc">Subscribe</a>
+    </div>
+
+    <div class="card model-platon">
+        <h3 style="color:var(--primary)">💎 Platon (VIP)</h3>
+        <div class="competitor-price">Competitors: $125/mo</div>
+        <div class="price-tag">$99<small>/mo</small></div>
+        <ul>
+            <li><strong>Everything in Pro</strong></li>
+            <li>Triangular Arbitrage</li>
+            <li>Rust Native Engine</li>
+            <li>Zero-Latency Websockets</li>
+            <li>24/7 Priority Support</li>
+        </ul>
+        <a href="#" class="btn">Get Platon Access</a>
+    </div>
+
+    <div class="card">
+        <h3>Pro</h3>
+        <div class="competitor-price">Competitors: $50/mo</div>
+        <div class="price-tag">$39<small>/mo</small></div>
+        <ul>
+            <li>Advanced Filters</li>
+            <li>5 Exchange Pairs</li>
+            <li>Dashboard Access</li>
+        </ul>
+        <a href="#" class="btn" style="background: #ccc">Subscribe</a>
+    </div>
+</section>
+
+<footer>
+    <p style="text-align: center; padding: 2rem; color: #666;">
+        © 2026 Quantum Arbitrage. All rights reserved.<br>
+        *Pricing compared to major market competitors (3Commas, Cryptohopper, HaasOnline) as of Feb 2026.
+    </p>
+</footer>
+
+</body>
+</html>
