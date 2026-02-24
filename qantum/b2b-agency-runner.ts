@@ -120,7 +120,7 @@ async function igniteB2BAgency() {
             name: "CEO", 
             company: "Payhawk", 
             domain: "payhawk.com",
-            email: "support@payhawk.com",
+            email: "sales@payhawk.com",
             role: "Decision Maker", 
             painPoint: "Need advanced risk management and fraud detection"
         },
@@ -139,6 +139,38 @@ async function igniteB2BAgency() {
             email: "info@icanpreneur.com",
             role: "Decision Maker", 
             painPoint: "Startup analytics platform needs AI insights"
+        },
+        { 
+            name: "CEO", 
+            company: "SoftUni", 
+            domain: "softuni.bg",
+            email: "university@softuni.bg",
+            role: "Decision Maker", 
+            painPoint: "Need AI-powered tools for teaching automation"
+        },
+        { 
+            name: "CEO", 
+            company: "SumUp", 
+            domain: "sumup.com",
+            email: "support@sumup.com",
+            role: "Decision Maker", 
+            painPoint: "Payment processing needs low-latency optimization"
+        },
+        { 
+            name: "CEO", 
+            company: "myPOS", 
+            domain: "mypos.com",
+            email: "sales@mypos.com",
+            role: "Decision Maker", 
+            painPoint: "POS infrastructure needs performance monitoring and load testing"
+        },
+        { 
+            name: "CEO", 
+            company: "Hop Online", 
+            domain: "hop.bg",
+            email: "support@hop.bg",
+            role: "Decision Maker", 
+            painPoint: "SEO audits and technical analysis are time-consuming"
         },
     ];
 
