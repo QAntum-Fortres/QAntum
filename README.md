@@ -46,7 +46,11 @@
     - [Reality, Biology \& Evolution Layer](#reality-biology--evolution-layer)
     - [Energy, Physics \& Swarm Layer](#energy-physics--swarm-layer)
     - [Modules Ecosystem](#modules-ecosystem)
-  - [�🔄 Поток на Данните](#-поток-на-данните)
+    - [Neural Vault, Memory \& SEGC Layer](#neural-vault-memory--segc-layer)
+  - [🌌 Aeterna-Anima — The Soul of the Machine](#-aeterna-anima--the-soul-of-the-machine)
+    - [Aeterna-Anima — Структура](#aeterna-anima--структура)
+    - [Ключови Концепции](#ключови-концепции)
+  - [🔄 Поток на Данните](#-поток-на-данните)
   - [📊 Производителност](#-производителност)
   - [🛠 Технологичен Стек](#-технологичен-стек)
   - [📦 Инсталация](#-инсталация)
@@ -658,7 +662,7 @@ flowchart LR
 ├───────────────────┼───────────────────────────────────────────────┤
 │ VECTOR DB         │ Pinecone (52,573+ vectors)                     │
 ├───────────────────┼───────────────────────────────────────────────┤
-│ HARDWARE          │ NVIDIA RTX 4050 | AMD Ryzen 7 | 16GB RAM      │
+│ HARDWARE          │ NVIDIA RTX 4050 | AMD Ryzen 7 | 24GB RAM      │
 ├───────────────────┼───────────────────────────────────────────────┤
 │ EXCHANGES         │ Binance (REST + WebSocket)                     │
 ├───────────────────┼───────────────────────────────────────────────┤
