@@ -779,7 +779,7 @@ Autonomous trading agent with 3-domain self-healing: UI (selector repair), Netwo
 
 #### Pinecone Vector Store (`agents/PineconeVectorStore.ts` — 290 LOC)
 
-GPU-accelerated vector DB: Ollama embeddings (384-dim) + Pinecone (1M+ vectors). Semantic search, batch upsert, namespace isolation.
+GPU-accelerated vector DB: Ollama embeddings (384-dim) + Pinecone (52,573 vectors indexed, 1M+ capacity). Semantic search, batch upsert, namespace isolation.
 
 ---
 
