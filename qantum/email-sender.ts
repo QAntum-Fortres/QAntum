@@ -60,10 +60,10 @@ export class QantumEmailSender {
     private sendLog: SendResult[] = [];
     private logFile: string;
     
-    // Лимити за да не те баннат от Gmail
-    private readonly DELAY_BETWEEN_EMAILS_MS = 15000;  // 15 сек между имейлите
-    private readonly MAX_PER_HOUR = 20;                // макс 20/час
-    private readonly MAX_PER_DAY = 100;                // макс 100/ден (Gmail лимит е 500)
+    // Лимити — Google Workspace = 2000/ден, delay само за естественост
+    private readonly DELAY_BETWEEN_EMAILS_MS = 3000;   // 3 сек между имейлите (имитира ръчно изпращане)
+    private readonly MAX_PER_HOUR = 500;               // макс 500/час
+    private readonly MAX_PER_DAY = 2000;               // макс 2000/ден (Google Workspace лимит)
 
     constructor(config: EmailConfig) {
         this.config = config;
@@ -244,10 +244,14 @@ export class QantumEmailSender {
     <div class="header">
         <h2>🚀 QAntum Prime · AI-Powered Business Intelligence</h2>
     </div>
-    <div class="content">${escaped}</div>
+    <div class="content">${escaped}
+        <div style="text-align:center;margin:24px 0 8px;">
+            <a href="https://aeterna.website" class="cta-button">🔍 See Plans & Start Free Trial →</a>
+        </div>
+    </div>
     <div class="footer">
-        <p>${senderName} · QAntum Prime · AETERNA_LOGOS</p>
-        <p>Powered by QANTUM AI Infrastructure</p>
+        <p>${senderName} · QAntum Prime · <a href="https://aeterna.website" style="color:#667eea;text-decoration:none;">aeterna.website</a></p>
+        <p style="margin-top:4px;">AI-Powered Security, Performance & SEO Scanning</p>
     </div>
 </body>
 </html>`;

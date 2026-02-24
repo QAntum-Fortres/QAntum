@@ -1,0 +1,74 @@
+[
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:47:28.671Z",
+    "to": "contact@devrix.com",
+    "messageId": "<07277fac-d369-3674-be2c-955d46e59318@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:47:36.867Z",
+    "to": "human@xplora.bg",
+    "messageId": "<7a8ed875-30c1-ad56-caf8-c58922ec37f8@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:47:43.807Z",
+    "to": "reklama@netinfo.bg",
+    "messageId": "<d21b2186-fa08-f0cd-616f-760462492fdf@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:47:50.794Z",
+    "to": "info@speedflow.bg",
+    "messageId": "<1a78f045-aca3-29f0-ff6f-a32cfe3a584f@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:47:58.618Z",
+    "to": "office@stenik.bg",
+    "messageId": "<aa6afde4-961f-e420-85d7-c7422fa4ee87@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:08.727Z",
+    "to": "sales@payhawk.com",
+    "messageId": "<f560d99a-be21-9fc9-42eb-b9e5636595e0@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:16.119Z",
+    "to": "support@nexo.com",
+    "messageId": "<3a25359c-d99d-0943-2b12-132aaf136b0c@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:23.593Z",
+    "to": "info@icanpreneur.com",
+    "messageId": "<8a3ec352-4cf2-15cc-fc24-95f993edce58@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:30.585Z",
+    "to": "university@softuni.bg",
+    "messageId": "<87ee2476-a34f-b8f9-629f-b52fabb869a6@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:36.762Z",
+    "to": "support@sumup.com",
+    "messageId": "<a28ed9cb-d92d-6454-9ba6-558e5c1bd72e@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:44.837Z",
+    "to": "sales@mypos.com",
+    "messageId": "<3324b432-2a4a-a47e-7e3a-77c6c17b7cee@gmail.com>"
+  },
+  {
+    "success": true,
+    "timestamp": "2026-02-24T15:48:51.267Z",
+    "to": "support@hop.bg",
+    "messageId": "<5eb0131e-8337-b3d9-90fa-94576b71106a@gmail.com>"
+  }
+]
