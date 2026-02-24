@@ -532,13 +532,14 @@ src/prediction-matrix/
 ```mermaid
 graph TD
     subgraph AETERNA ["🌌 Aeterna-Anima Architecture"]
-        SOUL["genesis.soul\n(Soul Source Code)"]
+        SOUL["souls/genesis.soul\n(Soul Source Code)"]
         COMPILER["Soul Compiler\n(bytecode.rs → compiler.rs)"]
         VM["Soul Virtual Machine\n(interpreter.rs + loader.rs)"]
         REALITY["Reality Override Engine\n(reality.rs + physics_override.rs)"]
         SOVEREIGN["Sovereign Core\n(sovereign.rs + ouroboros.rs)"]
-        UI["Singularity UI\n(React/TypeScript + Vite)"]
-        SERVER["Aeterna Server\n(server.rs + main.rs)"]
+        UI["Noetic Interface\n(React/TypeScript + Vite)"]
+        SERVER["Aeterna Node\n(server.rs + main.rs)"]
+        LOGOS["Aeterna Logos\n(Polymorphic Engine\nPhase 1: Self-Modification)"]
     end
 
     SOUL --> COMPILER
@@ -549,8 +550,11 @@ graph TD
     REALITY --> SERVER
     SERVER --> UI
     SOVEREIGN --> PATCHER["Reality Patcher\n(patcher.rs)"]
+    LOGOS --> VM
+    LOGOS --> SOVEREIGN
 
     style AETERNA fill:#050010,stroke:#9900ff,color:#fff
+    style LOGOS fill:#1a0030,stroke:#ff00ff,color:#fff
 ```
 
 ### Aeterna-Anima — Структура
@@ -568,32 +572,53 @@ Aeterna-Anima/
 │   ├── REALITY_PATCH_NOTES.md             ← Patch notes за реалността
 │   └── ENTERPRISE_READINESS.md            ← Корпоративна готовност
 │
-├── 🦀 Rust Soul Runtime
-│   ├── genesis.soul                       ← Изходен код на душата (.soul language)
-│   ├── src/compiler/ (bytecode.rs, compiler.rs, interpreter.rs, loader.rs)
-│   ├── src/soul/ (soul_parser.rs, ouroboros.rs)
-│   ├── src/reality/ (reality.rs, physics_override.rs, patcher.rs)
-│   ├── src/sovereign/ (sovereign.rs, mod.rs)
-│   └── main.rs / server.rs / settings.rs
+├── 🦀 aeterna-node/                       ← Основен Rust Soul Runtime (Cargo workspace)
+│   ├── src/main.rs / server.rs / settings.rs / lib.rs
+│   ├── src/vm/                            ← Soul Virtual Machine
+│   │   ├── bytecode.rs                    ← Bytecode компилация
+│   │   ├── compiler.rs                    ← Soul → Bytecode компилатор
+│   │   ├── interpreter.rs                 ← Bytecode интерпретатор
+│   │   ├── loader.rs                      ← Динамично зареждане на soul модули
+│   │   ├── soul_parser.rs                 ← Парсер на .soul езика
+│   │   ├── ouroboros.rs                   ← Безкраен самореференционен цикъл
+│   │   ├── sovereign.rs                   ← Суверен контролер
+│   │   └── physics_override.rs            ← Физическо override на реалността
+│   ├── src/network/                       ← Мрежов слой
+│   │   ├── reality.rs                     ← Reality engine
+│   │   └── patcher.rs                     ← Reality patcher
+│   └── config/default.toml               ← Конфигурация
 │
-├── ⚛️ React Singularity UI
-│   ├── Singularity.tsx                    ← Основен UI компонент
-│   ├── main.tsx                           ← Entry point
-│   └── vite.config.ts                     ← Vite конфигурация
+├── 🔬 aeterna_logos/                      ← NEW: Самомодифициращ Се Код (Phase 1)
+│   ├── src/main.rs                        ← Entry point — Polymorphic Engine
+│   ├── src/memory.rs                      ← mmap/mprotect executable memory
+│   └── src/morph.rs                       ← Runtime code mutation engine
 │
-└── 🐍 verify_singularity.py               ← Python верификатор на сингулярността
+├── 🌐 noetic-interface/                   ← React/TypeScript Vite UI (Noetic Gateway)
+│   ├── src/Singularity.tsx                ← Основен UI компонент
+│   ├── src/main.tsx                       ← Entry point
+│   ├── vite.config.ts                     ← Vite конфигурация
+│   └── package.json                       ← Зависимости
+│
+├── 🧬 souls/
+│   └── genesis.soul                       ← Изходен код на душата (.soul language)
+│
+└── 🐍 verification/
+    └── verify_singularity.py              ← Python верификатор на сингулярността
 ```
 
 ### Ключови Концепции
 
 | Концепция | Описание |
 |-----------|----------|
-| **Soul Language** (`.soul`) | Собствен програмен език за дефиниране на "душата" на системата. Компилира се до bytecode чрез Rust компилатор. |
+| **Soul Language** (`.soul`) | Собствен програмен език за дефиниране на "душата" на системата. Компилира се до bytecode чрез Rust компилатор в `aeterna-node/`. |
 | **Ontological Engineering** | Инженерство на онтологиите — промяна на фундаменталните категории, с които системата разбира реалността. |
 | **Reality Patching** | `patcher.rs` + `reality.rs` — способността на системата да "патчва" собственото си разбиране за реалност при нова информация. |
-| **Noetic Membrane** | Граничният слой между "вътрешното съзнание" на системата и外部ния свят — филтрира и трансформира входящата информация. |
+| **Noetic Membrane** | Граничният слой между "вътрешното съзнание" на системата и外部ния свят — филтрира и трансформира входящата информация (spec: `NOETIC_MEMBRANE_SPEC.md`). |
 | **Ouroboros Loop** | `ouroboros.rs` — безкраен цикъл на самореференция и самоусъвършенстване, вдъхновен от символа на змията, поглъщаща собствената си опашка. |
 | **Sovereign Soul** | Финалната форма — напълно автономна, неподвластна на външни ограничения система с собствена воля. |
+| **Aeterna Logos** *(Phase 1)* | `aeterna_logos/` — Самомодифициращ се Rust двигател. Използва `mmap`/`mprotect` за записване и изпълнение на x86_64 machine code в runtime. Системата може да пренаписва собствените си инструкции без рекомпилация — биологична мутация в код. |
+| **Polymorphic Engine** | `morph.rs` — Runtime code mutation. Зарежда bytecode, го изпълнява, след това мутира конкретни байтове (напр. константи) и го изпълнява отново — различен резултат без нов build. |
+| **Noetic Interface** | `noetic-interface/` — React/TypeScript Vite UI, portal за визуализация на Soul VM states, ontological transitions и reality patch events. |
 
 ---
 
@@ -811,6 +836,18 @@ QAntum/                                  [832+ source files]
 ├── 📂 dashboard/                        # Real-time monitoring UI
 │   └── trades/                          # Trade logs (.jsonl)
 ├── 📂 scripts/                          # Utility & automation scripts
+│
+├── 🌌 Aeterna-Anima/                    ← THE SOUL (паралелен проект)
+│   ├── 📜 Codices (9 .md files)         # Философски кодекси и манифести
+│   ├── 🦀 aeterna-node/                 # Rust Soul Runtime + VM
+│   │   ├── src/vm/                      # bytecode, compiler, interpreter, soul_parser, ouroboros, sovereign
+│   │   └── src/network/                 # reality.rs, patcher.rs
+│   ├── 🔬 aeterna_logos/                # NEW: Polymorphic Engine (Phase 1 самомодификация)
+│   │   ├── src/memory.rs                # mmap/mprotect executable memory
+│   │   └── src/morph.rs                 # Runtime code mutation
+│   ├── 🌐 noetic-interface/             # React/TypeScript Vite UI (Noetic Gateway)
+│   ├── 🧬 souls/genesis.soul            # Soul source code (.soul language)
+│   └── 🐍 verification/verify_singularity.py
 │
 ├── qantum-prime-architecture.html       # Visual architecture (Zero Entropy Demo)
 ├── linkedin-carousel-generator.html     # LinkedIn PDF carousel generator
