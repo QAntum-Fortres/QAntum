@@ -1,8 +1,0 @@
-[package]
-name = "test_module"
-version = "1.0.0"
-edition = "2021"
-
-[lib]
-name = "test_module"
-crate-type = ["cdylib"]
