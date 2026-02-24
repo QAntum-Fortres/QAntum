@@ -1,13 +1,13 @@
-# QAntum Prime v36.1 — Complete Ecosystem Documentation
+# QAntum Prime v37.0 — Complete Ecosystem Documentation
 
-> *"60+ modules. 35,000+ lines. One autonomous empire."*
+> *"260+ modules. 75,000+ lines. Full SaaS platform live."*
 > — Dimitar Prodromov, Creator
 
 ---
 
 ## System Overview
 
-**QAntum Prime** is a full-stack autonomous framework spanning **HFT trading**, **AI-powered B2B sales**, **self-healing test automation**, and **cognitive arbitrage** — built on a **Rust NAPI** core with **AtomicU64 dynamic thresholds**, local LLM intelligence via Ollama, and autonomous Gmail outreach.
+**QAntum Prime** is a full-stack autonomous framework spanning **HFT trading**, **AI-powered B2B sales**, **self-healing test automation**, **cognitive arbitrage**, and a **production SaaS platform** — built on a **Rust NAPI** core with **AtomicU64 dynamic thresholds**, local LLM intelligence via Ollama, autonomous Gmail outreach, and a live **Stripe-powered subscription platform** at [aeterna.website](https://aeterna.website) with a **Next.js dashboard** at [qantum-dashboard.vercel.app](https://qantum-dashboard.vercel.app).
 
 ### Master Architecture
 
@@ -603,7 +603,61 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 
 ## Deployment
 
-### GitHub Pages (qantum.site)
+### Production Infrastructure
+
+#### 1. Landing Page — aeterna.website (Vercel)
+
+| Component | Detail |
+|-----------|--------|
+| Project | `AETERNA-WEB-CORE` (Vercel) |
+| Domain | `aeterna.website` |
+| Repository | `QAntum-Fortres/SaaS-Framework` |
+| Stack | Static HTML + Vercel Serverless Functions |
+| Stripe Plans | NODE ACCESS €29/mo · SOVEREIGN EMPIRE €99/mo · GALACTIC CORE €499/mo |
+| HTTPS | Auto-provisioned by Vercel |
+
+**Serverless API Endpoints:**
+
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/api/checkout` | POST | Creates Stripe Checkout Session for plan subscription |
+| `/api/webhook` | POST | Stripe webhook — generates API key, stores in metadata, sends welcome email |
+| `/api/portal` | POST | API key validation — returns plan info, usage stats, features |
+| `/api/scan` | POST | **THE PRODUCT** — security/performance/SEO scan with API key auth |
+| `/api/ping` | GET | Health check |
+
+**Public Pages:**
+
+| Page | URL | Purpose |
+|------|-----|---------|
+| Landing | `aeterna.website` | Sales page with pricing + Stripe checkout |
+| Success | `aeterna.website/success.html` | Post-payment confirmation with dashboard link |
+| Portal | `aeterna.website/portal.html` | API key auth → scanner dashboard |
+
+#### 2. SaaS Dashboard — qantum-dashboard.vercel.app (Vercel)
+
+| Component | Detail |
+|-----------|--------|
+| Project | `qantum-dashboard` (Vercel) |
+| Domain | `qantum-dashboard.vercel.app` (pending: `app.aeterna.website`) |
+| Stack | Next.js 14 + Radix UI + TanStack Query + Zustand + Tailwind CSS |
+| Pages | Dashboard, Tests, Runs, Projects, Nexus, Settings (9 routes) |
+| API Routes | `/api/v1/dashboard/stats`, `/api/v1/runs` (self-contained) |
+
+**Dashboard Components:**
+
+| Component | Description |
+|-----------|-------------|
+| `StatsCards` | Live stats via `useQuery` — total runs, pass rate, failed tests, healed selectors |
+| `RecentRuns` | Live test runs feed via `useQuery` — status, duration, ghost mode, healed count |
+| `UsageChart` | Recharts usage visualization |
+| `HealingInsights` | AI self-healing metrics |
+| `AutonomousControls` | Start/stop autonomous test execution |
+| `WatchdogPanel` | System health monitoring |
+| `Nexus AI Core` | Autonomous thought visualizer, meditation dashboard, daemon console |
+| `CommandPalette` | Cmd+K command palette |
+
+#### 3. GitHub Pages — qantum.site
 
 | Setting | Value |
 |---------|-------|
@@ -614,6 +668,65 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 | DNS A Record | `185.199.108.153` (GitHub Pages) |
 | HTTPS | Auto-provisioned by GitHub |
 | CNAME | `qantum.site` |
+
+---
+
+### Full Customer Journey (End-to-End)
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────┐
+│                        CUSTOMER JOURNEY — AETERNA SaaS                              │
+├──────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                      │
+│  1. DISCOVERY                                                                        │
+│     B2B email (email-sender.ts) → CTA button → aeterna.website                      │
+│                                                                                      │
+│  2. PURCHASE                                                                         │
+│     aeterna.website/index.html → Select plan → Stripe Checkout                       │
+│     Plans: NODE (€29) │ EMPIRE (€99) │ CORE (€499)                                  │
+│                                                                                      │
+│  3. PRODUCT DELIVERY (webhook.js)                                                    │
+│     Stripe checkout.session.completed →                                              │
+│       ├─ Generate API key: qntm_live_{tier}_{32hex}                                  │
+│       ├─ Store in Stripe customer.metadata                                           │
+│       ├─ Send welcome email with: API key + portal link + dashboard link             │
+│       └─ Redirect to success.html                                                   │
+│                                                                                      │
+│  4. CLIENT ACCESS                                                                    │
+│     ├─ API Portal: aeterna.website/portal.html                                       │
+│     │   └─ Enter API key → Scanner UI → Run security/performance/SEO scans          │
+│     ├─ Dashboard: qantum-dashboard.vercel.app                                        │
+│     │   └─ Live stats, test runs, AI insights, autonomous controls                  │
+│     └─ Billing: billing.stripe.com/p/login/6oU7sR39I5eMbDOcMM                      │
+│         └─ Manage subscription, update payment, cancel                               │
+│                                                                                      │
+│  5. ONGOING VALUE                                                                    │
+│     ├─ Scan API with usage tracking (scans_used increments in Stripe metadata)       │
+│     ├─ Plan-based limits: NODE 100/mo, EMPIRE 1000/mo, CORE unlimited               │
+│     ├─ Ghost Mode (EMPIRE+): stealth security scanning                               │
+│     ├─ Self-Healing (EMPIRE+): auto-fix broken selectors                             │
+│     └─ Subscription lifecycle: upgrades, downgrades, cancellation via webhook        │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Stripe Configuration
+
+| Plan | Price ID | Price | Scans/mo | Ghost Mode | Self-Healing |
+|------|----------|-------|----------|------------|--------------|
+| NODE ACCESS | `price_1T4RpbEL9CYqtF0JO8toT1Cm` | €29/mo | 100 | ❌ | ❌ |
+| SOVEREIGN EMPIRE | `price_1T4RpgEL9CYqtF0JArwY1YCU` | €99/mo | 1,000 | ✅ | ✅ |
+| GALACTIC CORE | `price_1T4RqKEL9CYqtF0Jj3vKVbz9` | €499/mo | Unlimited | ✅ | ✅ |
+
+**API Key Format:** `qntm_live_{tier}_{32-char-hex}` (e.g., `qntm_live_empire_a1b2c3d4...`)
+
+**Webhook Events Handled:**
+- `checkout.session.completed` → API key generation + welcome email
+- `customer.subscription.updated` → plan change in metadata
+- `customer.subscription.deleted` → mark cancelled
+- `invoice.payment_failed` → warning email to client
+
+**Customer Portal:** https://billing.stripe.com/p/login/6oU7sR39I5eMbDOcMM
 
 ### Google Workspace (Email)
 
@@ -626,6 +739,47 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 | Auth | App Password (2-Step Verification required) |
 | Sender | `papica777@gmail.com` |
 | Daily limit | 2,000 emails (Google Workspace) |
+
+---
+
+### New Modules (v37.0 — February 2026)
+
+#### Philosophical Engines (`src/engines/`)
+
+| Module | LOC | Description |
+|--------|-----|-------------|
+| `CosmicTaxonomy` | 1,214 | 7 Cosmic Senses hierarchy — Perception → Transcendence |
+| `GenesisEvolutionLogist` | 620 | Fractal evolution spiral from ENS (Undifferentiated Singularity) |
+| `OntoGenerator` | 1,001 | Axiom & reality generation — modal logic S4/S5/GL + quantum |
+| `PhenomenonWeaver` | 823 | Emergent reality manifestation from ENS potential pool |
+
+#### Enterprise Discovery (`src/sovereign-market/EnterpriseDiscovery.ts` — 961 LOC)
+
+Oracle-Gateway integration: client provides URL → auto deep crawl with Ghost Protocol v2 → discovers forms, buttons, APIs, modals → generates marketable test packages with pricing ($499–$3,499). Billing telemetry: $0.10/page, $5.00/issue found.
+
+#### Battlefield (`src/battlefield/` — 15 files)
+
+| Module | Description |
+|--------|-------------|
+| `swarm-stress-test-v2-GOLD-STANDARD` | 500 workers, SharedArrayBuffer, >50k msg/sec |
+| `chaos-monkey` | Random module killing for anti-fragility validation |
+| `mass-test-execution` | Squad manifest diagnostics + HybridHealer |
+
+#### Third-Party Integrations (`src/integrations/ThirdPartyIntegrations.ts` — 1,004 LOC)
+
+Enterprise integration hub: Jira, Slack, TestRail, GitHub, Azure DevOps. Auto-creates bugs from test failures.
+
+#### SharedMemoryV2 (`scripts/SharedMemoryV2.ts` — 375 LOC)
+
+O(1) cross-component memory sync with stale lock watchdog (<25ms recovery), optimistic concurrency, deadlock detection.
+
+#### SovereignSalesHealer (`src/sales/SovereignSalesHealer.ts` — 411 LOC)
+
+Autonomous trading agent with 3-domain self-healing: UI (selector repair), Network (proxy resurrection), Logic (strategy mutation). LivenessToken for vitality proof.
+
+#### Pinecone Vector Store (`agents/PineconeVectorStore.ts` — 290 LOC)
+
+GPU-accelerated vector DB: Ollama embeddings (384-dim) + Pinecone (1M+ vectors). Semantic search, batch upsert, namespace isolation.
 
 ---
 
@@ -642,11 +796,17 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 | B2B Sales | 4 | ~1,600 |
 | Dashboards | 3 | ~2,400 |
 | Backend (Python) | 1 | ~568 |
-| Scripts | 40+ | ~5,000+ |
-| src/ sub-modules | 60+ | ~10,000+ |
-| **TOTAL** | **160+** | **~50,000+** |
+| Scripts | 50+ | ~7,000+ |
+| src/ sub-modules | 80+ | ~15,000+ |
+| Philosophical Engines | 4 | ~3,658 |
+| Enterprise Discovery | 1 | ~961 |
+| Battlefield | 15 | ~3,000+ |
+| Integrations | 5 | ~1,200+ |
+| SaaS Dashboard (Next.js) | 30+ | ~5,000+ |
+| SaaS API (Fastify) | 15+ | ~3,000+ |
+| **TOTAL** | **260+** | **~75,000+** |
 
 ---
 
-*QAntum Prime v36.1 — 160+ modules, 50,000+ lines, one autonomous empire.*
-*Built by Dimitar Prodromov. Powered by Rust NAPI, AtomicU64, local LLM, and zero fear.*
+*QAntum Prime v37.0 — 260+ modules, 75,000+ lines, full SaaS platform live.*
+*Built by Dimitar Prodromov. Powered by Rust NAPI, AtomicU64, local LLM, Vercel, Stripe, and zero fear.*
