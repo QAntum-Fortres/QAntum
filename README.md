@@ -862,7 +862,7 @@ QAntum/                                  [832+ source files]
 
 <div align="center">
 
-**Dimitar Prodromov** *(Mister Mind)*
+**Dimitar Prodromov** *(QAntum)*
 
 *Founder & Chief Architect — QAntum Empire*
 
