@@ -1,27 +1,38 @@
-# QAntum Prime v36.1 — Engine Documentation
+# QAntum Prime v36.1 — Complete Ecosystem Documentation
+
+> *"60+ modules. 35,000+ lines. One autonomous empire."*
+> — Dimitar Prodromov, Creator
+
+---
 
 ## System Overview
 
-**QAntum Prime** is a high-frequency trading (HFT) engine built on a **Rust NAPI** core with **AtomicU64 dynamic thresholds**. It processes live market data from Binance and Kraken exchanges at sub-100ns latency, generating BUY/SELL/HOLD signals in real-time.
+**QAntum Prime** is a full-stack autonomous framework spanning **HFT trading**, **AI-powered B2B sales**, **self-healing test automation**, and **cognitive arbitrage** — built on a **Rust NAPI** core with **AtomicU64 dynamic thresholds**, local LLM intelligence via Ollama, and autonomous Gmail outreach.
 
-### Architecture
+### Master Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                      QAntum Prime v36.1                             │
-├─────────────┬──────────────────┬──────────────────┬─────────────────┤
-│  WebSocket  │  Ring Buffer     │  Rust NAPI       │  Dashboard      │
-│  Feed       │  O(1) Lock-Free  │  Engine          │  Server         │
-│             │                  │                  │                 │
-│  Binance    │  128-slot SPSC   │  AtomicU64       │  HTTP + WS      │
-│  Kraken     │  queue           │  128-bit arith   │  REST API       │
-│             │                  │  Monte Carlo     │  Canvas Charts  │
-└─────┬───────┴────────┬─────────┴──────┬───────────┴────────┬────────┘
-      │                │                │                    │
-      ▼                ▼                ▼                    ▼
-  Live Prices     Batch 32 ticks   Decision Engine      Command Center
-  BTC ETH SOL     per iteration    BUY/SELL/HOLD        Professional UI
-  XRP AVAX                         sub-100ns            3-page dashboard
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                         QAntum Prime v36.1 — THE EMPIRE                         │
+├─────────────┬──────────────────┬──────────────────┬──────────────────┬──────────┤
+│  TRADING    │  AI BRAIN        │  B2B AGENCY      │  SECURITY        │  INFRA   │
+│             │                  │                  │                  │          │
+│  Rust NAPI  │  OllamaManager   │  ValueBombGen    │  CryptoVault     │  BullMQ  │
+│  AtomicU64  │  NeuralNetwork   │  SalesForce      │  KnoxVault       │  Redis   │
+│  Monte Carlo│  PatternRecog    │  EmailSender     │  Anti-Tamper     │  Prisma  │
+│  Ring Buffer│  SelfHealing     │  LeadHunter      │  FatalityEngine  │  S3      │
+│  128-bit    │  Inference       │  EthicalPredator │  BiometricEngine │  Stripe  │
+├─────────────┼──────────────────┼──────────────────┼──────────────────┼──────────┤
+│  Binance    │  HiveMind        │  Gmail SMTP      │  Fortress Proto  │  FastAPI │
+│  Kraken     │  CognitiveBridge │  SendGrid        │  SovereignLedger │  WS      │
+│  CCXT       │  GenesisEngine   │  Auto-Scraping   │  Hardware DNA    │  Docker  │
+└─────┬───────┴────────┬─────────┴──────┬───────────┴──────────┬───────┴──────────┘
+      │                │                │                      │
+      ▼                ▼                ▼                      ▼
+  Live Markets    Autonomous AI    Revenue Pipeline      Sovereign Shield
+  5 symbols       7 LLM models    12+ real targets       AES-256-GCM
+  2 exchanges     Neural nets     2000 emails/day        Anti-VM/Debug
+  sub-100ns       Self-learning   Glassmorphism HTML     Hash chains
 ```
 
 ---
@@ -233,22 +244,409 @@ From live testing with real Binance + Kraken feeds:
 
 ```
 Blockchain/
+├── ai/                      # AI Intelligence Layer (6 modules)
+│   ├── index.ts             # QAntumAI unified facade (Singleton)
+│   ├── OllamaManager.ts     # Local LLM manager (Singleton)
+│   ├── neural.ts            # Neural network from scratch (578 lines)
+│   ├── pattern-recognizer.ts # Pattern recognition + K-Means (630 lines)
+│   ├── self-healing.ts      # Auto-repair broken selectors (646 lines)
+│   └── Orchestrator.ts      # Simple LLM prompt facade
+├── Arbitrage/               # Trading strategies (11 modules)
+│   ├── ArbitrageOrchestrator.ts  # Master controller (573 lines)
+│   ├── ArbitrageLogic.ts    # Spread analysis engine (772 lines)
+│   ├── MarketWatcher.ts     # Multi-market price interceptor (429 lines)
+│   ├── AtomicTrader.ts      # SharedArrayBuffer execution (587 lines)
+│   ├── ArmedReaper.ts       # LIVE real-money trading (590 lines)
+│   ├── ReaperEngine.ts      # RSI-based HFT (254 lines)
+│   ├── EthicalPredator.ts   # B2B website scanner (823 lines)
+│   ├── ProfitOptimizer.ts   # Cloud cost arbitrage (1151 lines)
+│   ├── OMNI_WEALTH_EXCAVATOR.ts  # Code-as-product sales
+│   ├── helios_arbitrage_engine.py  # Energy market arb (Python)
+│   └── ReaperAdapter.ts     # Nexus integration + Gemini AI (626 lines)
+├── backend/
+│   └── qantum_backend.py    # FastAPI + WebSocket server (568 lines)
+├── Core/                    # Security & Cryptography (7 modules)
+│   ├── CryptoVault.ts       # AES-256-GCM encryption (135 lines)
+│   ├── EncryptionService.ts # Mobile AES-256-CBC (132 lines)
+│   ├── SovereignLedger.ts   # Immutable hash-chain ledger (172 lines)
+│   ├── crypto.ts            # Shared crypto utilities (197 lines)
+│   ├── ledger.rs            # Rust ledger with AtomicBool
+│   ├── mempool.rs           # Solana/ETH whale detector
+│   └── exchange.rs          # Rust Binance connector
 ├── dashboard/
 │   ├── index.html           # Command Center UI (professional SPA)
-│   └── server.js            # HTTP + WebSocket server (port 9094)
+│   ├── server.js            # HTTP + WebSocket server (port 9094)
+│   ├── qantum-control-panel.html  # Sovereign Control Panel (1998 lines)
+│   ├── arb-bot.js           # Cross-exchange arb bot (439 lines)
+│   └── b2b-pitches/         # Generated pitches, Value Bombs, email logs
+├── data/                    # Data & Automation Layer (3 modules)
+│   ├── MindEngine.ts        # Anti-detection automation (959 lines)
+│   ├── CaptchaSolver.ts     # Universal captcha solving (886 lines)
+│   └── DatabaseHandler.ts   # Enterprise DB handler (1430 lines)
+├── Exchanges/               # Exchange connectivity (12 modules)
+│   ├── ExchangeConnectors.ts    # Binance + Kraken (785 lines)
+│   ├── LiveWalletManager.ts     # AES-256 encrypted wallets (621 lines)
+│   ├── KnoxVaultSigner.ts      # Samsung Knox hardware signing (432 lines)
+│   ├── RustArbBridge.ts        # Node↔Rust IPC bridge (347 lines)
+│   ├── OrderBookDepthEngine.ts  # L2 order book analysis (488 lines)
+│   ├── OmegaPathNexus.ts       # Sovereign integration layer (114 lines)
+│   ├── BinanceAdapterPro.ts    # Resilient Binance adapter
+│   ├── WealthAdapter.ts       # Wealth reporting bridge
+│   ├── subscription.ts        # SaaS subscription engine (600 lines)
+│   ├── arb_hotpath/src/main.rs # Sub-μs Rust arb engine (423 lines)
+│   ├── Binance_bridge.rs      # Rust Binance client (158 lines)
+│   └── ExchangeRates.js       # Stripe exchange rates
 ├── native/
 │   └── qantum-engine/
 │       ├── src/lib.rs        # Core Rust NAPI engine
 │       ├── Cargo.toml        # Rust dependencies
 │       └── qantum-engine.node # Compiled native module
-├── scripts/
-│   └── unified-runner.js    # Standalone benchmark runner
-├── Arbitrage/               # Arbitrage strategies
-├── Exchanges/               # Exchange adapters
-├── Core/                    # Core trading logic
-└── utils/                   # Utility functions
+├── qantum/                  # Framework modules (17+ modules)
+│   ├── b2b-agency-runner.ts     # B2B email campaign runner
+│   ├── email-sender.ts         # Gmail SMTP sender
+│   ├── EmailEngine.ts          # SendGrid email system
+│   ├── lead-hunter.js          # Automated lead discovery
+│   ├── biometric-engine.ts     # Human-like bot behavior (728 lines)
+│   ├── anti-tamper.ts          # Anti-debug/VM protection (915 lines)
+│   ├── fatality-engine.ts      # Predatory defense system (1320 lines)
+│   ├── DeepSearchEngine.ts     # Shadow DOM penetration (744 lines)
+│   ├── SelfHealingEngine.ts    # Playwright auto-repair (865 lines)
+│   ├── GenesisEngine.ts        # Self-modifying code (954 lines)
+│   ├── HiveMind.ts             # Federated learning swarm (1481 lines)
+│   ├── AIIntegration.ts        # ML test prediction (971 lines)
+│   ├── FormAutomation.ts       # Smart form filling (1084 lines)
+│   ├── CognitiveBridge.ts      # Cognitive orchestrator (525 lines)
+│   ├── autonomous-explorer.ts  # Website self-discovery (942 lines)
+│   ├── inference-engine.ts     # Logical reasoning engine (607 lines)
+│   ├── stream-processor.ts     # High-perf stream processing (691 lines)
+│   ├── semantic-core.ts        # DOM semantic extraction (1107 lines)
+│   ├── processor.ts            # BullMQ job processor (425 lines)
+│   └── production-launcher.ts  # Production config (148 lines)
+├── scripts/                 # 40+ operational scripts
+│   ├── eagle-orchestrator.ts
+│   ├── hunter-mode.ts
+│   ├── qantum-benchmark.ts
+│   ├── qantum-ci-cd.ts
+│   ├── singularity-launcher.ts
+│   └── ...
+├── src/                     # Framework core (60+ sub-modules)
+│   ├── index.ts             # Barrel export (173 lines)
+│   ├── bastion-controller.ts # Security hub (542 lines)
+│   ├── PineconeVectorStore.ts # GPU vector DB (404 lines)
+│   ├── nexus.ts              # Master orchestrator (64 lines)
+│   └── [60+ sub-directories]
+├── utils/
+│   └── ResilientHttpClient.ts # Axios with retries
+├── Aeterna-Anima/           # Ontological Engineering layer
+├── DOCUMENTATION.md         # This file
+├── RELEASE_NOTES_v1.md      # v1.0 release notes
+├── SPONSORS.md              # Sponsorship tiers
+├── VIRAL_POSTS.md           # Ready-to-post marketing content
+├── index.html               # GitHub Pages → qantum.site
+├── landing-page.html        # Marketing landing page
+└── package.json
 ```
 
 ---
 
-*QAntum Prime v36.1 — Built with Rust NAPI, AtomicU64 Dynamic Thresholds, 128-bit Precision*
+## B2B Agency System (NEW — Feb 2026)
+
+The autonomous B2B pipeline that scans real companies, generates AI-powered audits, crafts personalized pitches, and sends emails — all without human intervention.
+
+### B2B Agency Runner (`qantum/b2b-agency-runner.ts`)
+
+Entry point: `npx ts-node qantum/b2b-agency-runner.ts`
+
+**Pipeline flow:**
+```
+Target List → PublicScanner → ValueBombGenerator → AutonomousSalesForce → QantumEmailSender
+     │              │                │                     │                      │
+  12 companies   Scan domain     Score site,          Craft personalized      Auto-send via
+  with emails    headers/SSL     find vulns,          AI pitch using          Gmail SMTP
+  and pain       + performance   estimate $value      OllamaManager           2000/day limit
+  points                         + pricing tier       (DeepSeek/Gemma)
+```
+
+**Current targets (12 real Bulgarian companies):**
+
+| Company | Domain | Email | Pain Point |
+|---------|--------|-------|------------|
+| DevriX | devrix.com | contact@devrix.com | WordPress testing automation |
+| Xplora | xplora.bg | human@xplora.bg | Manual lead generation |
+| Netinfo | netinfo.bg | reklama@netinfo.bg | No automated security scanning |
+| SpeedFlow | speedflow.bg | info@speedflow.bg | B2B lead gen tools needed |
+| Stenik | stenik.bg | office@stenik.bg | E-commerce security/perf checks |
+| Payhawk | payhawk.com | sales@payhawk.com | Risk management & fraud detection |
+| Nexo | nexo.com | support@nexo.com | Real-time arbitrage & risk analysis |
+| ICan | icanpreneur.com | info@icanpreneur.com | Startup analytics AI insights |
+| SoftUni | softuni.bg | university@softuni.bg | AI-powered teaching automation |
+| SumUp | sumup.com | support@sumup.com | Low-latency payment optimization |
+| myPOS | mypos.com | sales@mypos.com | POS performance monitoring |
+| Hop Online | hop.bg | support@hop.bg | SEO audit automation |
+
+### QantumEmailSender (`qantum/email-sender.ts`)
+
+Gmail SMTP integration via `nodemailer`. Authenticates with App Password (Google Workspace).
+
+| Config | Value |
+|--------|-------|
+| Transport | `smtp.gmail.com:587` (STARTTLS) |
+| Auth | App Password (16-char, no spaces) |
+| Rate Limit | 500/hour, 2000/day |
+| Delay | 3 seconds between emails (human-like) |
+| HTML Template | Glassmorphism design, professional |
+| Logging | `email-send-log.json` in pitches folder |
+
+**Key methods:**
+- `verify()` — Test SMTP connection
+- `send(payload)` — Send one email (text + HTML)
+- `sendBatch(payloads)` — Send multiple with rate limiting
+- `pitchToHtml(text, sender)` — Convert pitch text to styled HTML
+
+### Lead Hunter (`qantum/lead-hunter.js`)
+
+Automated B2B target discovery with seed database of 24 known companies across 3 niches:
+
+| Niche | Companies | Services Offered |
+|-------|-----------|-----------------|
+| QA/Testing | Komak, Musala Soft, Scalefocus, SAP Labs, VMware... | Self-healing tests, AI regression |
+| Marketing | Xplora, Netinfo, SpeedFlow, Stenik, Hop Online... | Lead gen, SEO automation, audits |
+| Fintech/Crypto | Payhawk, Nexo, myPOS, Phyre, SumUp, iCard... | HFT engine, risk analysis, arb |
+
+**Output:** `leads_YYYY-MM-DD.json` + `targets_ready.ts` (ready to import into runner)
+
+---
+
+## AI Intelligence Layer (`ai/`)
+
+### OllamaManager (Singleton)
+
+Local LLM orchestrator. Auto-discovers models, adapts to best available.
+
+```typescript
+const llm = OllamaManager.getInstance();
+await llm.adaptModel();  // Picks qantum-ai-supreme > gemma3 > llama3 > ...
+const answer = await llm.ask("Analyze this company...");
+```
+
+**Model preference order:** `qantum-ai-supreme` → `qwen2.5-coder` → `gemma3` → `llama3` → `mistral` → `phi3`
+
+### NeuralNetwork (`ai/neural.ts`, 578 lines)
+
+Full neural network implementation from scratch — **no TensorFlow, no PyTorch**.
+
+- Activations: ReLU, Sigmoid, Tanh, Softmax
+- Training: Backpropagation with configurable learning rate
+- `TestIntelligence`: Predicts test failure probability, flakiness risk, optimal execution order
+
+### PatternRecognizer (`ai/pattern-recognizer.ts`, 630 lines)
+
+Learns from test execution patterns using feature extraction + similarity metrics.
+
+- Pattern types: failure, flaky, slow, resource-heavy, timing, data, environment
+- Algorithms: Cosine similarity, Euclidean distance, K-Means clustering
+- Anomaly detection with configurable thresholds
+
+### SelfHealingEngine (`ai/self-healing.ts`, 646 lines)
+
+Auto-repairs broken test selectors when DOM changes.
+
+- 7 selector strategies: id, class, xpath, css, text, aria, data-testid
+- Confidence scoring per alternative
+- Healing history for learning across runs
+
+### QAntumAI Unified Hub (`ai/index.ts`, 447 lines)
+
+Singleton facade combining all AI modules:
+```typescript
+const ai = QAntumAI.getInstance();
+await ai.predictFailure(testCase);
+await ai.analyzePattern(executionData);
+await ai.healSelector(failedSelector, domContext);
+```
+
+---
+
+## Arbitrage Engine (11 modules, 7,500+ lines)
+
+### ArbitrageOrchestrator — The Master Controller
+
+Links: MarketWatcher → ArbitrageLogic → PriceOracle → AtomicTrader
+
+| Module | Lines | Purpose |
+|--------|-------|---------|
+| `ArbitrageOrchestrator.ts` | 573 | Capital tracking, daily stats, execution control |
+| `ArbitrageLogic.ts` | 772 | Spread analysis, fee modeling, confidence scoring |
+| `MarketWatcher.ts` | 429 | Multi-market scanning at 10/sec, Ghost Protocol stealth |
+| `AtomicTrader.ts` | 587 | SharedArrayBuffer worker threads, 0.08ms failover |
+| `ArmedReaper.ts` | 590 | LIVE mode: daily loss limit, kill switch, biometric jitter |
+| `ReaperEngine.ts` | 254 | RSI-based HFT (RSI 14, overbought 70, oversold 30) |
+| `EthicalPredator.ts` | 823 | B2B website scanning for lead gen (CFAA/GDPR compliant) |
+| `ProfitOptimizer.ts` | 1,151 | Cloud cost arbitrage across AWS/GCP/Azure/DO/Vultr/Hetzner |
+| `OMNI_WEALTH_EXCAVATOR.ts` | - | Extract logic clusters → generate sales proposals |
+| `helios_arbitrage_engine.py` | 168 | Energy market arb (solar zones, HVDC, PJM/EPEX-SPOT) |
+| `ReaperAdapter.ts` | 626 | Nexus integration + Gemini Cloud + L3 order book |
+
+### Modes
+
+| Mode | Safety | Description |
+|------|--------|-------------|
+| `simulation` | ●●●●● | No real orders. Full speed. |
+| `paper` | ●●●●○ | Real prices, fake orders. Logging only. |
+| `live` | ●●○○○ | Real money. Kill switch active. Daily loss limit. |
+
+---
+
+## Exchange Connectivity (12 modules, 5,000+ lines)
+
+### Exchange Connectors (`Exchanges/ExchangeConnectors.ts`, 785 lines)
+
+Real Binance + Kraken API integration with HMAC-SHA256 signing.
+
+### LiveWalletManager — Fortress Protocol
+
+AES-256-GCM encrypted API key vault. PBKDF2 key derivation (100k iterations). Auto-lock after N failures. Withdrawal whitelisting.
+
+### KnoxVaultSigner — Samsung S24 Ultra Secure Element
+
+Hardware-backed transaction signing via Samsung Knox TEE. Private keys never leave the hardware. Supports HMAC-SHA256, SHA512, ED25519.
+
+### OrderBookDepthEngine — L2 Real-Time Analysis
+
+WebSocket order book streaming. Real execution price calculation (replaces simulated slippage). Bid/ask wall detection, volume imbalance, depth heatmaps.
+
+### Rust Hot-Path Engine (`arb_hotpath/src/main.rs`, 423 lines)
+
+Sub-microsecond Rust arbitrage calculations. `rust_decimal` 128-bit precision. Optimized for Snapdragon 8 Gen 3 NEON SIMD. **10-100x faster than TypeScript**.
+
+---
+
+## Security & Cryptography (`Core/`, 7 modules)
+
+| Module | What it does |
+|--------|-------------|
+| `CryptoVault.ts` | AES-256-GCM encryption for API keys, wallet seeds, strategies |
+| `EncryptionService.ts` | Mobile-targeted AES-256-CBC (React Native/Expo) |
+| `SovereignLedger.ts` | Immutable hash-chain ledger, SHA-512, corruption detection |
+| `crypto.ts` | Shared crypto utilities — ID gen, HMAC, SHA-256 |
+| `ledger.rs` | Rust ledger with `AtomicBool` permanent lock |
+| `mempool.rs` | Solana/ETH whale movement detector |
+| `exchange.rs` | Rust-native Binance price fetcher |
+
+---
+
+## Cognitive & Defense Modules (`qantum/`, 17+ modules, 14,000+ lines)
+
+| Module | Lines | Category |
+|--------|-------|----------|
+| `biometric-engine.ts` | 728 | Bézier mouse paths, Gaussian timing, typo simulation |
+| `anti-tamper.ts` | 915 | Anti-debug, anti-VM (VirtualBox/VMware/Hyper-V), anti-RE |
+| `fatality-engine.ts` | 1,320 | HoneyPot activation, attacker siphoning, logic bombs |
+| `DeepSearchEngine.ts` | 744 | Shadow DOM penetration, iFrame traversal |
+| `SelfHealingEngine.ts` | 865 | 15+ Playwright healing strategies |
+| `GenesisEngine.ts` | 954 | Self-modifying code, 5-layer adaptive consciousness |
+| `HiveMind.ts` | 1,481 | Federated learning, differential privacy, swarm sync |
+| `AIIntegration.ts` | 971 | Smart selector AI, anomaly detection, predictive healing |
+| `FormAutomation.ts` | 1,084 | Smart form filling, multi-step, data generation |
+| `CognitiveBridge.ts` | 525 | Registry-based cognitive dispatch (10 modules) |
+| `autonomous-explorer.ts` | 942 | Self-discovery crawler, API endpoint mapping |
+| `inference-engine.ts` | 607 | Modus ponens/tollens, syllogism, abduction reasoning |
+| `stream-processor.ts` | 691 | Backpressure, gzip, NDJSON parsing |
+| `semantic-core.ts` | 1,107 | Aria labels, roles, coordinates, interactive elements |
+| `processor.ts` | 425 | BullMQ + Redis multi-tenant job execution |
+| `production-launcher.ts` | 148 | Stale lock watchdog, adaptive batching, worker pool |
+
+---
+
+## Data & Automation Layer (`data/`, 3 modules, 3,275 lines)
+
+| Module | Lines | What it does |
+|--------|-------|-------------|
+| `MindEngine.ts` | 959 | Anti-detection: WebGL/Canvas/Audio spoofing, fingerprint rotation |
+| `CaptchaSolver.ts` | 886 | 2Captcha, AntiCaptcha, CapMonster. reCAPTCHA v2/v3, hCaptcha, Turnstile |
+| `DatabaseHandler.ts` | 1,430 | Knex-based: PostgreSQL, MySQL, SQLite, MSSQL. Account/proxy management |
+
+---
+
+## Dashboard & Control Panels
+
+### 1. Command Center (`dashboard/index.html`)
+
+Professional 3-tab SPA: Overview, Analytics, System. Canvas charts, WebSocket real-time updates.
+
+### 2. Sovereign Control Panel (`dashboard/qantum-control-panel.html`, 1,998 lines)
+
+AETERNA_LOGOS branded. Cinematic boot sequence, 120-particle field, glassmorphism design, 7-page navigation, interactive terminal. Deployed to `qantum.site`.
+
+### 3. Arbitrage Bot (`dashboard/arb-bot.js`, 439 lines)
+
+Cross-exchange spread bot with Z-score stat-arb (2σ mean-reversion). Real prices, triangular arb via Rust, paper/live modes, $20 daily loss limit, 30 trades/hour cap.
+
+---
+
+## Python Backend (`backend/qantum_backend.py`, 568 lines)
+
+FastAPI + WebSocket server mirroring the Node.js dashboard.
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/ws/market-feed` | WS | Real-time market data |
+| `/api/predict/{symbol}` | GET | Monte Carlo prediction |
+| `/api/risk` | GET | Risk metrics |
+| `/api/arbitrage` | GET | Arbitrage scan |
+| `/api/status` | GET | System status |
+| `/health` | GET | Health check |
+
+Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulations.
+
+---
+
+## Deployment
+
+### GitHub Pages (qantum.site)
+
+| Setting | Value |
+|---------|-------|
+| Repository | `QAntum-Fortres/QAntum` |
+| Branch | `main` |
+| Root file | `index.html` (copy of Sovereign Control Panel) |
+| Custom domain | `qantum.site` |
+| DNS A Record | `185.199.108.153` (GitHub Pages) |
+| HTTPS | Auto-provisioned by GitHub |
+| CNAME | `qantum.site` |
+
+### Google Workspace (Email)
+
+| Setting | Value |
+|---------|-------|
+| Domain | `qantum.site` |
+| Gmail | Active |
+| MX Record | `ASPMX.L.GOOGLE.COM` (priority 1) |
+| SMTP | `smtp.gmail.com:587` (STARTTLS) |
+| Auth | App Password (2-Step Verification required) |
+| Sender | `papica777@gmail.com` |
+| Daily limit | 2,000 emails (Google Workspace) |
+
+---
+
+## Ecosystem Statistics
+
+| Category | Modules | Lines of Code |
+|----------|---------|---------------|
+| AI Intelligence | 6 | ~2,900 |
+| Arbitrage Strategies | 11 | ~7,500 |
+| Exchange Connectivity | 12 | ~5,000 |
+| Core Security | 7 | ~800+ |
+| Cognitive/Defense | 17 | ~14,000 |
+| Data/Automation | 3 | ~3,200 |
+| B2B Sales | 4 | ~1,600 |
+| Dashboards | 3 | ~2,400 |
+| Backend (Python) | 1 | ~568 |
+| Scripts | 40+ | ~5,000+ |
+| src/ sub-modules | 60+ | ~10,000+ |
+| **TOTAL** | **160+** | **~50,000+** |
+
+---
+
+*QAntum Prime v36.1 — 160+ modules, 50,000+ lines, one autonomous empire.*
+*Built by Dimitar Prodromov. Powered by Rust NAPI, AtomicU64, local LLM, and zero fear.*
