@@ -1,24 +1,4 @@
-/**
- * ═══════════════════════════════════════════════════════════════════════════════
- * QANTUM AWAKENING - Full System Activation Script
- * ═══════════════════════════════════════════════════════════════════════════════
- * 
- * "1 януари 2026, 05:15 сутринта. Империята се пробужда."
- * 
- * This script activates:
- * - Neural Inference Engine (RTX 4050)
- * - Brain Router (Model Selection)
- * - Immune System (Self-Healing)
- * - Proposal Engine (Revenue Generation)
- * - Kill-Switch (IP Protection)
- * - Chronos-Omega (Self-Evolution)
- * 
- * @author Димитър Продромов / Mister Mind
- * @copyright 2026 QAntum Empire. All Rights Reserved.
- * @version 28.5.0 - THE AWAKENING
- */
-
-import * as fs from 'fs';
+import { SoulTranspiler } from './soul_compiler/Transpiler';
 import * as path from 'path';
 import { pathToFileURL } from 'url';
 
@@ -414,20 +394,14 @@ async function awaken(): Promise<void> {
 
 🏆 QAntum Empire is AWAKE. Ready to dominate 2026.
 
-"В QAntum не лъжем. Ние побеждаваме бъдещето."
-— DIMITAR PRODROMOV & QAntum Empire
-  `);
+// Resolve paths relative to this script
+const soulFile = path.resolve(__dirname, 'soul/ArbitrageSpirit.soul');
+const outputModule = path.resolve(__dirname, 'modules/ArbitrageSpirit');
 
-  // Optional: Run Harvester
-  if (runHarvester) {
-    console.log('\n🌾 Starting The Harvester...\n');
-    const { startHarvester } = await import('./launch-harvester.js');
-    await startHarvester();
-  }
-}
+console.log('🌌 [INIT] Awakening QANTUM PRIME...');
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// EXECUTION
-// ═══════════════════════════════════════════════════════════════════════════════
+// 1. Компилиране на Душата
+const rustSource = SoulTranspiler.transpile(soulFile);
+SoulTranspiler.compileToBinary(rustSource, outputModule);
 
-awaken().catch(console.error);
+console.log('✨ [SYSTEM] Soul breathing initiated. Waiting for binary manifestation...');
