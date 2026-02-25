@@ -48,7 +48,7 @@ I built QAntum — an autonomous security testing framework in TypeScript + Rust
 
 • Ghost Protocol: invisible scanning that doesn't trigger WAF
 • Self-Healing Tests: auto-fixes broken selectors when your UI changes
-• 260+ modules, 75,000+ lines — battle-tested
+• 260+ modules, 1.8M+ lines across 3,641 files — battle-tested
 
 It found 2 critical vulnerabilities in a major fintech app in < 10 minutes. Same scope traditionally costs $15K-$50K.
 

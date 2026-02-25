@@ -29,7 +29,7 @@ The interesting part is HOW it works:
 Traditional pentest for this scope: $15,000-$50,000 and 2-3 weeks.
 QAntum: €99/month and 10 minutes.
 
-Architecture: 260+ modules, 75,000+ lines, Rust NAPI core with AtomicU64 dynamic thresholds.
+Architecture: 260+ modules, 1.8M+ lines of code across 3,641 files.
 
 Live platform: https://aeterna.website
 Dashboard: https://qantum-dashboard.vercel.app
@@ -52,7 +52,7 @@ Solo dev here. I built QAntum — an autonomous security + QA testing platform.
 
 The stack:
 - TypeScript + Rust (NAPI bindings for performance-critical paths)
-- 260+ modules, 75,000+ lines of code
+- 260+ modules, 1.8M+ lines of code across 3,641 files
 - Next.js dashboard deployed on Vercel
 - Stripe-powered subscription (3 tiers: €29, €99, €499/mo)
 
@@ -96,7 +96,7 @@ QAntum is an autonomous security testing framework. The interesting technical bi
 
 4. Cognitive Arbitrage: Monte Carlo price oracle + HMAC-SHA256 signed Binance API calls. Uses fatigue-adjusted confidence scoring.
 
-Architecture: 260+ modules, 75,000+ LOC. TypeScript + Rust.
+Architecture: 260+ modules, 1.8M+ lines of code across 3,641 files. TypeScript + Rust.
 
 What it found: In one 10-minute session on a major fintech app, it discovered authentication bypass (CVSS ~9.0) and PII exposure in SSO DOM (GDPR violation). Traditional pentest cost for same scope: $15,000-$50,000.
 
@@ -128,7 +128,7 @@ How it works:
 → Pattern recognition: Trained on OWASP Top 10
 
 The architecture:
-• 260+ modules, 75,000+ lines of code
+• 260+ modules, 1.8M+ lines of code across 3,641 files
 • TypeScript + Rust NAPI core
 • Next.js dashboard with live data
 • Stripe-powered subscription platform
@@ -183,7 +183,7 @@ Here's the story:
 
 3/8 I built QAntum — an autonomous security testing framework.
 
-260+ modules. 75,000+ lines. TypeScript + Rust.
+260+ modules, 1.8M+ lines of code across 3,641 files. TypeScript + Rust.
 
 One command: it crawls, scans, classifies, and reports.
 
@@ -253,7 +253,7 @@ RT if you think AI is changing security testing.
 ```
 14 months ago I asked: "What if a security scanner could think like a hacker, move like a ghost, and heal itself when things break?"
 
-The answer is QAntum — 260+ modules, 75,000+ lines of TypeScript and Rust. And it works.
+The answer is QAntum — 260+ modules, 1.8M+ lines of code across 3,641 files. And it works.
 
 Let me walk you through the architecture that found critical vulnerabilities in a major fintech app in under 10 minutes.
 ```

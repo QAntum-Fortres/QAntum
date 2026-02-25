@@ -1,0 +1,13 @@
+{
+  "totalLOC": 1848570,
+  "totalFiles": 3641,
+  "activeModules": 60,
+  "ollamaModels": 15,
+  "gitCommits": 30,
+  "systemHealth": 94,
+  "uptime": "99.7%",
+  "valueBombs": 2,
+  "b2bTargets": 2,
+  "scannedAt": "2026-02-25T00:19:16.343Z",
+  "source": "nerve-center"
+}

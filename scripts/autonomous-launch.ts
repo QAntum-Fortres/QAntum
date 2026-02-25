@@ -17,6 +17,7 @@
  *   npx ts-node scripts/autonomous-launch.ts --status     # Show status only
  *   npx ts-node scripts/autonomous-launch.ts --outreach   # B2B outreach only
  *   npx ts-node scripts/autonomous-launch.ts --content    # Content gen only
+ *   npx ts-node scripts/autonomous-launch.ts --sync       # Ecosystem sync only
  *
  * @author Dimitar Prodromov
  * @date 2026-02-25
@@ -26,6 +27,7 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 import nodemailer from 'nodemailer';
+import { EcosystemScanner, DocumentPatcher } from './ecosystem-sync';
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // CONSTANTS
@@ -327,7 +329,7 @@ function generateCarouselSlides(): any[] {
     {
       slide: 6,
       title: 'The Architecture',
-      body: '260+ modules\n75,000+ lines of code\nTypeScript + Rust NAPI\nNext.js Dashboard',
+      body: '260+ modules\\n1.8M+ lines of code\\n3,641 files\\nTypeScript + Rust NAPI',
       accent: '#00f2ff',
     },
     {
@@ -475,7 +477,7 @@ I built QAntum — an autonomous security testing framework in TypeScript + Rust
 
 • Ghost Protocol: invisible scanning that doesn't trigger WAF
 • Self-Healing Tests: auto-fixes broken selectors when your UI changes
-• 260+ modules, 75,000+ lines — battle-tested
+• 260+ modules, 1.8M+ lines across 3,641 files — battle-tested
 
 It found 2 critical vulnerabilities in a major fintech app in < 10 minutes. Same scope traditionally costs $15K-$50K.
 
@@ -805,6 +807,49 @@ function syncMarketingRoadmap(): void {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// PHASE 0 — ECOSYSTEM SELF-SYNC (The organism knows itself)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+async function phase0_ecosystemSync(state: any) {
+  console.log(`\n${C.cyan}  ═══ PHASE 0: ECOSYSTEM SELF-SYNC ═══${C.reset}\n`);
+  log('🧬', 'Organism awakening — scanning filesystem for truth...', 'magenta');
+
+  try {
+    const startTime = Date.now();
+    const scanner = new EcosystemScanner();
+    const metrics = await scanner.scan();
+
+    log('📊', `Scanned: ${metrics.totalLOC.toLocaleString()} LOC | ${metrics.totalFiles.toLocaleString()} files | ${metrics.activeModules} modules`, 'cyan');
+    log('🔗', `Source: ${metrics.source}`, 'dim');
+
+    const patcher = new DocumentPatcher();
+    const results = patcher.patch(metrics, false);
+
+    const totalPatches = results.reduce((sum, r) => sum + r.patches, 0);
+    const duration = Date.now() - startTime;
+
+    log('🩹', `Patched ${results.length} files (${totalPatches} changes) in ${duration}ms`, 'green');
+
+    // Update state
+    state.phase0_sync = {
+      lastRun: new Date().toISOString(),
+      loc: metrics.totalLOC,
+      files: metrics.totalFiles,
+      modules: metrics.activeModules,
+      source: metrics.source,
+      patchedFiles: results.map(r => r.file),
+      duration,
+    };
+    saveState(state);
+
+    log('✅', 'Phase 0 complete — all documents synced with live truth', 'green');
+  } catch (err: any) {
+    log('⚠️', `Ecosystem sync warning (non-fatal): ${err.message}`, 'yellow');
+    log('↪️', 'Continuing with existing metrics...', 'dim');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // MAIN ORCHESTRATOR
 // ═══════════════════════════════════════════════════════════════════════════════
 
@@ -843,6 +888,11 @@ ${C.cyan}╔══════════════════════�
     return;
   }
 
+  if (args.includes('--sync')) {
+    await phase0_ecosystemSync(state);
+    return;
+  }
+
   const phaseArg = args.indexOf('--phase');
   if (phaseArg !== -1) {
     const phaseNum = parseInt(args[phaseArg + 1]);
@@ -851,7 +901,8 @@ ${C.cyan}╔══════════════════════�
       case 2: await phase2_content(state); break;
       case 3: await phase3_outreach(state); break;
       case 4: await phase4_monitor(state); break;
-      default: console.log('Phase must be 1-4');
+      case 0: await phase0_ecosystemSync(state); break;
+      default: console.log('Phase must be 0-4');
     }
     return;
   }
@@ -861,6 +912,9 @@ ${C.cyan}╔══════════════════════�
   // ═══════════════════════════════════════════════════════════════════════════
 
   const startTime = Date.now();
+
+  // Phase 0: Self-sync — the organism knows itself
+  await phase0_ecosystemSync(state);
 
   // Phase 1: Verify infrastructure
   await phase1_infrastructure(state);

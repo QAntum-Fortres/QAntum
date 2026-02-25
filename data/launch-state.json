@@ -1,6 +1,6 @@
 {
   "startedAt": "2026-02-24T23:33:51.843Z",
-  "lastRun": "2026-02-24T23:33:55.964Z",
+  "lastRun": "2026-02-25T00:18:43.738Z",
   "phase1_infra": {
     "status": "completed",
     "checks": {
@@ -42,5 +42,14 @@
     "passRate": 94.5,
     "outreachSent": 0,
     "feedbackReceived": 0
+  },
+  "phase0_sync": {
+    "lastRun": "2026-02-25T00:18:43.738Z",
+    "loc": 1848570,
+    "files": 3641,
+    "modules": 60,
+    "source": "nerve-center",
+    "patchedFiles": [],
+    "duration": 907
   }
 }
