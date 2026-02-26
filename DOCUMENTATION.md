@@ -851,7 +851,7 @@ Full-stack E2E test verifying the complete customer pipeline across all live end
 | SaaS API (Fastify) | 15+ | ~3,000+ |
 | **TOTAL** | **260+** | **~1,848,570** |
 
-> *Nerve Center live count: 1,848,570 LOC across 3,641 files, 60 active modules, 15 Ollama models.*
+> *Nerve Center live count: 1,848,570 LOC across 3,641 files, 60 active modules, 16 Ollama models.*
 
 ---
 

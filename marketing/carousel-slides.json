@@ -33,7 +33,7 @@
   {
     "slide": 6,
     "title": "The Architecture",
-    "body": "260+ modules\n1.8M+ lines of code\n3,641 files\nTypeScript + Rust NAPI",
+    "body": "260+ modules\\n1.8M+ lines of code\\n3,641 files\\nTypeScript + Rust NAPI",
     "accent": "#00f2ff"
   },
   {
