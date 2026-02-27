@@ -1,0 +1,96 @@
+{
+    "$schema": "./refactor-schema.json",
+    "name": "Aeterna Rebrand Rules",
+    "description": "Mass refactoring rules for complete project rebrand",
+    "version": "1.0.0-AETERNA",
+    "author": "dp | Aeterna Labs",
+    
+    "rules": [
+        {
+            "description": "Rename Aeterna class to Aeterna",
+            "type": "class",
+            "pattern": "Aeterna",
+            "replacement": "Aeterna"
+        },
+        {
+            "description": "Rename createMM factory to createQA",
+            "type": "function",
+            "pattern": "createMM",
+            "replacement": "createQA"
+        },
+        {
+            "description": "Update version to 1.0.0",
+            "pattern": "v27\\.[0-9]+\\.[0-9]+",
+            "replacement": "v1.0.0",
+            "isRegex": true
+        },
+        {
+            "description": "Update version in strings",
+            "pattern": "\"version\": \"27\\.",
+            "replacement": "\"version\": \"1.",
+            "isRegex": true
+        },
+        {
+            "description": "Replace old brand name",
+            "pattern": "AETERNA",
+            "replacement": "Aeterna"
+        },
+        {
+            "description": "Replace abbreviated brand",
+            "pattern": "Aeterna",
+            "replacement": "Aeterna"
+        }
+    ],
+    
+    "presets": {
+        "logo-update": {
+            "description": "Update all logo references",
+            "rules": [
+                {
+                    "pattern": "SystemLogo:\\s*['\"].*?['\"]",
+                    "replacement": "SystemLogo: 'assets/brand/aeterna-logo.svg'",
+                    "isRegex": true
+                },
+                {
+                    "pattern": "logo-old\\.svg",
+                    "replacement": "aeterna-logo.svg"
+                },
+                {
+                    "pattern": "class=\"old-logo\"",
+                    "replacement": "class=\"aeterna-logo\""
+                }
+            ]
+        },
+        
+        "interface-rename": {
+            "description": "Rename interfaces",
+            "rules": [
+                {
+                    "type": "class",
+                    "pattern": "IConfig",
+                    "replacement": "IAeternaConfig"
+                },
+                {
+                    "type": "class", 
+                    "pattern": "IOptions",
+                    "replacement": "IAeternaOptions"
+                }
+            ]
+        },
+        
+        "error-fix": {
+            "description": "Fix common errors",
+            "rules": [
+                {
+                    "pattern": "console.log\\(error\\)",
+                    "replacement": "logger.error(error)",
+                    "isRegex": true
+                },
+                {
+                    "pattern": "any\\[\\]",
+                    "replacement": "unknown[]"
+                }
+            ]
+        }
+    }
+}

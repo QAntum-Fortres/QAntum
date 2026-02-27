@@ -1,0 +1,49 @@
+{
+  "name": "aeterna-debugger",
+  "version": "1.0.0-AETERNA",
+  "description": "Self-Healing TypeScript/JavaScript Debugger with Auto-Fix & Learning",
+  "main": "dist/aeterna-debugger.js",
+  "types": "dist/aeterna-debugger.d.ts",
+  "bin": {
+    "aeterna-debug": "./dist/cli.js",
+    "qd": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "ts-node src/cli.ts",
+    "scan": "ts-node src/cli.ts scan",
+    "watch": "ts-node src/cli.ts watch",
+    "license": "ts-node src/license.ts",
+    "test": "vitest"
+  },
+  "keywords": ["debugger", "self-healing", "auto-fix", "typescript", "javascript", "eslint", "code-quality", "developer-tools", "automation", "aeterna"],
+  "author": {
+    "name": "Dimitar Prodromov",
+    "email": "dimitar@aeterna.dev",
+    "url": "https://aeterna.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeterna-dev/aeterna-debugger"
+  },
+  "homepage": "https://aeterna.dev/debugger",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://aeterna.dev/sponsor"
+  }
+}

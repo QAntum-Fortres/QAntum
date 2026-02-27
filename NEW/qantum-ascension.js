@@ -119,7 +119,7 @@ ${c.magenta}╔═════════════════════�
 ╚═══════════════════════════════════════════════════════════════════════════════╝${c.reset}
 
           ${c.bright}${c.cyan}⚛️ GLOBAL TRANSFORMATION PROTOCOL v1.0.0 ⚛️${c.reset}
-         ${c.dim}"From QANTUM to QAntum Prime"${c.reset}
+         ${c.dim}"Transformation to ${CONFIG.newVersion}"${c.reset}
                     ${c.dim}[ dp ] qantum labs${c.reset}
 `);
 }
@@ -381,7 +381,7 @@ class QAntumAscension {
     // ═══════════════════════════════════════════════════════════════════════
 
     async phase2_version() {
-        log.phase(2, 6, 'VERSION UPDATE - v27.2.0 → v1.0.0-QANTUM-PRIME');
+        log.phase(2, 6, `VERSION UPDATE - ${CONFIG.oldVersion} → ${CONFIG.newVersion}`);
 
         const versionPatterns = [
             // package.json version
