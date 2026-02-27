@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > MOUTH > STRENGTH
+ * 🔥 AETERNA CORE > MOUTH > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

@@ -1,7 +1,7 @@
 {
-  "name": "@qantum/unified-frontend",
-  "version": "1.0.0",
-  "description": "QANTUM Unified Frontend - Complete Ecosystem Interface",
+  "name": "@aeterna/unified-frontend",
+  "version": "1.0.0-AETERNA",
+  "description": "AETERNA Unified Frontend - Complete Ecosystem Interface",
   "private": true,
   "type": "module",
   "scripts": {

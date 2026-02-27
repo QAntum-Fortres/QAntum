@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > AUTH
+ * 🔥 AETERNA SECURITY > AUTH
  *
  * Structure:
  * ├── 💎 Core/      - Cryptography, Ledger

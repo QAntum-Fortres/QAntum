@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum v26.0 - SELF-HEALING ENGINE V2.0 SUPREME
+ * Aeterna v26.0 - SELF-HEALING ENGINE V2.0 SUPREME
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * NOTE: This is the consolidated, primary version of the Self-Healing Engine.

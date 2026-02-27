@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM KEY-VALUE STORE                                                      ║
+ * ║   AETERNA KEY-VALUE STORE                                                      ║
  * ║   "Fast and flexible key-value storage"                                       ║
  * ║                                                                               ║
  * ║   TODO B #30 - Storage: Key-Value Store                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

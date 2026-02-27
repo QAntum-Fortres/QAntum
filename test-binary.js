@@ -1,8 +1,8 @@
 const path = require('path');
 const RUST_ADDON_PATHS = [
-    path.join(__dirname, 'native', 'qantum-engine', 'qantum-engine.node'),
-    path.join(__dirname, 'native', 'qantum-engine', 'target', 'release', 'qantum_engine.node'),
-    path.join(__dirname, 'qantum-engine.node'),
+    path.join(__dirname, 'native', 'aeterna-engine', 'aeterna-engine.node'),
+    path.join(__dirname, 'native', 'aeterna-engine', 'target', 'release', 'aeterna_engine.node'),
+    path.join(__dirname, 'aeterna-engine.node'),
 ];
 let engine = null;
 for (const p of RUST_ADDON_PATHS) {

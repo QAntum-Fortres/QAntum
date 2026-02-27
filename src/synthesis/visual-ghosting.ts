@@ -12,7 +12,7 @@
  * ║                  "Fake-but-Perfect Rendering for Canvas Fingerprinting"                       ║
  * ║                                                                                               ║
  * ║   THE FINAL SYNTHESIS - Task 2: Visual Ghosting                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

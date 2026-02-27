@@ -1,7 +1,7 @@
 /**
  * CaseStudyGenerator.ts - "The Success Chronicler"
  *
- * QAntum Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
+ * Aeterna Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
  *
  * Self-Updating Documentation v2 - The Oracle automatically generates
  * Case Studies in docs/success/ for every successfully mapped and
@@ -15,7 +15,7 @@
  * - Portfolio building
  *
  * @module docs/CaseStudyGenerator
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @enterprise true
  */
 
@@ -432,7 +432,7 @@ export class CaseStudyGenerator extends EventEmitter {
    * Identify technologies used
    */
   private identifyTechnologies(data: SuccessCrawlData): string[] {
-    const technologies: string[] = ['QAntum Framework'];
+    const technologies: string[] = ['Aeterna Framework'];
 
     if (data.workersUsed > 1) {
       technologies.push('Distributed Swarm');
@@ -618,7 +618,7 @@ export class CaseStudyGenerator extends EventEmitter {
 
     return `This case study documents the successful data extraction from ${anonymizedDomain}, ` +
       `a ${industry} platform with ${data.targetPages.toLocaleString()} pages of content. ` +
-      `Using the QAntum Framework's distributed architecture, we achieved comprehensive ` +
+      `Using the Aeterna Framework's distributed architecture, we achieved comprehensive ` +
       `data collection while maintaining ${(data.dataQualityScore * 100).toFixed(0)}% data quality.`;
   }
 
@@ -654,7 +654,7 @@ export class CaseStudyGenerator extends EventEmitter {
    * Generate solution section
    */
   private generateSolutionSection(data: SuccessCrawlData, challenges: ChallengeCategory[]): string {
-    let content = 'QAntum Framework addressed these challenges with:\n\n';
+    let content = 'Aeterna Framework addressed these challenges with:\n\n';
 
     content += `**Distributed Architecture**\n`;
     content += `Deployed ${data.workersUsed} workers across ${data.regionsUsed.length} regions `;
@@ -730,7 +730,7 @@ export class CaseStudyGenerator extends EventEmitter {
    * Generate conclusion section
    */
   private generateConclusionSection(metrics: CaseStudyMetrics): string {
-    return `This project demonstrates the QAntum Framework's ability to handle enterprise-scale ` +
+    return `This project demonstrates the Aeterna Framework's ability to handle enterprise-scale ` +
       `data extraction challenges. With ${metrics.successRate} success rate and ${metrics.roi} ROI, ` +
       `the solution delivered significant value while maintaining high data quality standards. ` +
       `The self-healing capabilities resolved ${metrics.errorsResolved} issues automatically, ` +
@@ -760,7 +760,7 @@ export class CaseStudyGenerator extends EventEmitter {
     // Metadata
     md += `---\n`;
     md += `**Date:** ${new Date().toISOString().split('T')[0]}\n`;
-    md += `**Framework Version:** QAntum v1.7.0\n`;
+    md += `**Framework Version:** Aeterna v1.7.0\n`;
     md += `**Duration:** ${this.formatDuration(data.totalDurationMs)}\n`;
     md += `---\n\n`;
 
@@ -782,7 +782,7 @@ export class CaseStudyGenerator extends EventEmitter {
 
     // Footer
     md += `---\n\n`;
-    md += `*Generated automatically by QAntum Framework v1.7.0 - The Global Nexus*\n`;
+    md += `*Generated automatically by Aeterna Framework v1.7.0 - The Global Nexus*\n`;
     md += `*Case Study ID: ${data.crawlId}*\n`;
 
     return md;

@@ -12,7 +12,7 @@
  * ║                   "Neural Fingerprint-Based Unique Data for Each Worker"                      ║
  * ║                                                                                               ║
  * ║   THE FINAL SYNTHESIS - Task 3: Data Factory Injection                                        ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */
@@ -635,7 +635,7 @@ export class SwarmDataInjector {
 
   private generateApiKey(random: SeededRandom): string {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let key = 'QANTUM-';
+    let key = 'AETERNA-';
     for (let i = 0; i < 24; i++) {
       if (i > 0 && i % 4 === 0) key += '-';
       key += chars[Math.floor(random.next() * chars.length)];

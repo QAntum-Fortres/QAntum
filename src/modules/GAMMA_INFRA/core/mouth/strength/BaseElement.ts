@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * 🧠 QANTUM HYBRID v1.0.0 - BaseElement
+ * 🧠 AETERNA HYBRID v1.0.0 - BaseElement
  * Enterprise-grade element with self-healing capabilities
  * Ported from: training-framework/architecture/pom-base.js
  * ═══════════════════════════════════════════════════════════════════════════════

@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EARS > ENERGY
+ * 🔥 AETERNA CORE > EARS > ENERGY
  *
  *
  *

@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CHRONOS MODULE                                                       ║
+ * ║   AETERNA CHRONOS MODULE                                                       ║
  * ║   "Master of Time - Scheduling, Travel & Deadlines"                           ║
  * ║                                                                               ║
  * ║   TODO B #31-33 - Complete Chronos System                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

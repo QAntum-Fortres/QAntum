@@ -1,10 +1,10 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM PERFORMANCE MODULE                                                   ║
+ * ║   AETERNA PERFORMANCE MODULE                                                   ║
  * ║   "Unified performance optimization exports"                                  ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -65,7 +65,7 @@ export {
   lazyFn,
   lazyAsync,
   LazyProperty,
-  QAntumModules,
+  AeternaModules,
   type ModuleLoader,
   type ModuleFactory,
   type LazyModule,

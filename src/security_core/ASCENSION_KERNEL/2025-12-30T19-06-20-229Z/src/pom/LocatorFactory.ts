@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * 🧠 QANTUM HYBRID v1.0.0 - LocatorFactory
+ * 🧠 AETERNA HYBRID v1.0.0 - LocatorFactory
  * Fluent locator builder (By.css, By.xpath, By.testId, etc.)
  * Ported from: training-framework/architecture/pom-base.js
  * ═══════════════════════════════════════════════════════════════════════════════

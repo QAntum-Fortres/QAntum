@@ -1,7 +1,7 @@
 /**
  * @fileoverview Gemini Brain - AI integration for intelligent decision making
  * @module core/GeminiBrain
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 const { GoogleGenerativeAI } = require('@google/generative-ai');

@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > GUARDIANS
+ * 🔥 AETERNA SECURITY > GUARDIANS
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

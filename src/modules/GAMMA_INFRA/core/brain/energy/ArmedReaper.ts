@@ -1,7 +1,7 @@
 // @ts-nocheck
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - ARMED REAPER                                        ║
+ * ║  Aeterna Prime v28.0 - ARMED REAPER                                        ║
  * ║  "Ultimate Realization" - LIVE EXECUTION MODE                             ║
  * ║                                                                           ║
  * ║  ⚠️  WARNING: THIS IS REAL MONEY TRADING                                  ║
@@ -138,7 +138,7 @@ export class ArmedReaper extends EventEmitter {
     console.log(`
 ╔═══════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                       ║
-║   ⚛️  QAntum ARMED REAPER v28.0 - ULTIMATE REALIZATION                                ║
+║   ⚛️  Aeterna ARMED REAPER v28.0 - ULTIMATE REALIZATION                                ║
 ║                                                                                       ║
 ║   ${modeColor[this.config.mode].padEnd(60)}                   ║
 ║                                                                                       ║

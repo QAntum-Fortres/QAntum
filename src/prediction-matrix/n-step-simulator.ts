@@ -4,7 +4,7 @@
  * ║   🔮 N-STEP LOOK-AHEAD SIMULATOR                                                                 ║
  * ║   "Simulating 5 Future Worlds to Find the Immortal Selector"                                     ║
  * ║                                                                                                   ║
- * ║   Part of THE PREDICTION MATRIX - QANTUM v15.1                                              ║
+ * ║   Part of THE PREDICTION MATRIX - AETERNA v15.1                                              ║
  * ║                                                                                                   ║
  * ║   Algorithm: Monte Carlo Tree Search + Model Predictive Control                                  ║
  * ║   Optimized for: AMD Ryzen 7000 Series (Zen 4 architecture)                                      ║

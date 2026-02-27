@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - REAPER DASHBOARD                                    ║
+ * ║  Aeterna Prime v28.0 - REAPER DASHBOARD                                    ║
  * ║  "Economic Sovereign" - Revenue Monitoring Panel                          ║
  * ║                                                                           ║
  * ║  Arbitrage Profit секция за мониторинг на стария лаптоп                   ║
@@ -128,7 +128,7 @@ export class ReaperDashboard extends EventEmitter {
 
     return `
 ╔═══════════════════════════════════════════════════════════════════════════════════════╗
-║  ⚛️  QAntum-Market-Reaper v28.0 - REVENUE DASHBOARD                                   ║
+║  ⚛️  Aeterna-Market-Reaper v28.0 - REVENUE DASHBOARD                                   ║
 ║  📡 Telemetry: ${this.telemetryUrl.padEnd(25)} | Time: ${now.padEnd(10)} | Status: ${this.isConnected ? '🟢 LIVE' : '🔴 OFFLINE'}      ║
 ╠═══════════════════════════════════════════════════════════════════════════════════════╣
 ║                                                                                       ║
@@ -203,7 +203,7 @@ ${this.renderTradeLog()}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>⚛️ QAntum Market Reaper - Dashboard</title>
+  <title>⚛️ Aeterna Market Reaper - Dashboard</title>
   <style>
     :root {
       --bg-dark: #0a0a1a;
@@ -333,7 +333,7 @@ ${this.renderTradeLog()}
 </head>
 <body>
   <div class="header">
-    <h1>⚛️ QAntum-Market-Reaper v28.0</h1>
+    <h1>⚛️ Aeterna-Market-Reaper v28.0</h1>
     <div class="status-bar">
       <span>📡 Telemetry: ${this.telemetryUrl}</span>
       <span class="${this.isConnected ? 'status-live' : 'status-offline'}">

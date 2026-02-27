@@ -1,0 +1,110 @@
+[
+  {
+    "timestamp": "2026-02-27T00:43:54.853Z",
+    "level": "INFO",
+    "source": "auto-outreach",
+    "message": "Outreach complete. DRY RUN complete. Would send to 8 targets."
+  },
+  {
+    "timestamp": "2026-02-27T00:47:10.674Z",
+    "level": "INFO",
+    "source": "auto-outreach",
+    "message": "Outreach complete. DRY RUN complete. Would send to 9 targets."
+  },
+  {
+    "ts": "2026-02-27T00:59:44.548Z",
+    "level": "INFO",
+    "source": "autonomous-cycle",
+    "message": "🌌 QAntum Autonomous Pipeline STARTED"
+  },
+  {
+    "ts": "2026-02-27T00:59:44.604Z",
+    "level": "INFO",
+    "source": "autonomous-cycle",
+    "message": "🌌 Cycle #1 started — ТЪРСЕНЕ фаза"
+  },
+  {
+    "ts": "2026-02-27T01:05:35.995Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "🎬 Hybrid Visual Agent started"
+  },
+  {
+    "ts": "2026-02-27T01:05:48.332Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "🎬 Visual Agent complete — DRY-RUN"
+  },
+  {
+    "ts": "2026-02-27T01:07:02.096Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "🎬 Hybrid Visual Agent started"
+  },
+  {
+    "ts": "2026-02-27T01:07:15.833Z",
+    "level": "WARNING",
+    "src": "hybrid-visual-agent",
+    "msg": "❌ Send failed: ozone.bg — Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-4399c765c38sm2807104f8f.31 - gsmtp"
+  },
+  {
+    "ts": "2026-02-27T01:09:09.479Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "🎬 Hybrid Visual Agent started"
+  },
+  {
+    "ts": "2026-02-27T01:09:24.957Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Ozone (F) with video"
+  },
+  {
+    "ts": "2026-02-27T01:10:12.693Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Payhawk (B) with video"
+  },
+  {
+    "ts": "2026-02-27T01:10:59.888Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Telerik (F) with video"
+  },
+  {
+    "ts": "2026-02-27T01:11:48.026Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Kanbanize (F) with video"
+  },
+  {
+    "ts": "2026-02-27T01:12:38.316Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Chaos (F) with video"
+  },
+  {
+    "ts": "2026-02-27T01:13:24.787Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Superhosting (F) with video"
+  },
+  {
+    "ts": "2026-02-27T01:14:15.548Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → SiteGround (C) with video"
+  },
+  {
+    "ts": "2026-02-27T01:15:02.946Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "✅ Visual email sent → Jobs.bg (C) with video"
+  },
+  {
+    "ts": "2026-02-27T01:15:02.948Z",
+    "level": "INFO",
+    "src": "hybrid-visual-agent",
+    "msg": "🎬 Visual Agent complete — 8 sent, 0 failed"
+  }
+]

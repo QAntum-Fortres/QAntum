@@ -10,7 +10,7 @@
  * - Generates standalone API tests (no browser needed)
  * - 10x-100x faster execution
  *
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @phase 61-65
  */
 
@@ -398,7 +398,7 @@ ${tests}
  * Performance: ~100x faster than UI equivalent
  *
  * @generated ${new Date().toISOString()}
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  */
 
 import axios, { AxiosInstance, AxiosResponse } from 'axios';`;

@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > GUARDIANS > STRENGTH
+ * 🔥 AETERNA SECURITY > GUARDIANS > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

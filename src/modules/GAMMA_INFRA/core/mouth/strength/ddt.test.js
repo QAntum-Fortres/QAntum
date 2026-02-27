@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- *  🔄 DATA-DRIVEN TESTING (DDT) - QANTUM QA Framework
+ *  🔄 DATA-DRIVEN TESTING (DDT) - AETERNA QA Framework
  * ═══════════════════════════════════════════════════════════════════════════
  *
  *  This module demonstrates Data-Driven Testing pattern where test logic

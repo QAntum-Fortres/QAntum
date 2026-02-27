@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- * QANTUM - Browser Strategies Module
+ * AETERNA - Browser Strategies Module
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * @copyright 2025 Dimitar Prodromov (papica777-eng). All Rights Reserved.

@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
- * ║   QANTUM PRIME: UNIVERSAL MODULE INTERFACE                                    ║
+ * ║   AETERNA PRIME: UNIVERSAL MODULE INTERFACE                                    ║
  * ║   The "USB Port" of the Galaxy.                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

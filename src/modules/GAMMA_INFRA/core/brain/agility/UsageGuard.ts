@@ -26,9 +26,9 @@
  *
  * ═══════════════════════════════════════════════════════════════════════════════════════════
  * @module reality/gateway
- * @version 1.5.0
+ * @version 1.0.0-AETERNA
  * @license Commercial - All Rights Reserved
- * @author QANTUM AI Architect
+ * @author AETERNA AI Architect
  * @commercial true
  * @marketValue $95,000
  */

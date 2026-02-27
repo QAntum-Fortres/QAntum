@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY
+ * 🔥 AETERNA SECURITY
  *
  *
  * 🛡️ ЗАЩИТА - Auth, Encryption, Firewall, Guardians

@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM TIME TRAVELER                                                        ║
+ * ║   AETERNA TIME TRAVELER                                                        ║
  * ║   "Mock time, freeze moments, travel through test timelines"                  ║
  * ║                                                                               ║
  * ║   TODO B #32 - Chronos: Time Manipulation                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

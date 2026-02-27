@@ -1,7 +1,7 @@
 /**
  * Oracle's Market Intelligence - Unified Export
  *
- * QAntum Framework v1.6.0 - "The Oracle's Market Intelligence"
+ * Aeterna Framework v1.6.0 - "The Oracle's Market Intelligence"
  *
  * TOTAL v1.6.0 MARKET VALUE: +$650,000
  *
@@ -12,7 +12,7 @@
  * - SelfHealingSales: +$95,000 (Issue → Sales opportunity conversion)
  *
  * @module oracle/market-intelligence
- * @version 1.6.0
+ * @version 1.0.0-AETERNA
  * @enterprise true
  */
 

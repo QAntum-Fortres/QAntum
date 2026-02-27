@@ -1,6 +1,6 @@
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║     🌍 QANTUM ENV VALIDATOR                                                  ║
+ * ║     🌍 AETERNA ENV VALIDATOR                                                  ║
  * ║     "Скриптът не греши никога защото е математика."                          ║
  * ╠══════════════════════════════════════════════════════════════════════════════╣
  * ║     Validate • Generate • Sync • Encrypt/Decrypt                             ║
@@ -142,7 +142,7 @@ class EnvValidator {
 
     console.log();
     log('╔══════════════════════════════════════════════════════════════════════════════╗', 'cyan');
-    log('║     🌍 QANTUM ENV VALIDATOR                                                  ║', 'cyan');
+    log('║     🌍 AETERNA ENV VALIDATOR                                                  ║', 'cyan');
     log('╚══════════════════════════════════════════════════════════════════════════════╝', 'cyan');
     log(`\n📁 Validating: ${envFile}`, 'white');
 
@@ -228,7 +228,7 @@ class EnvValidator {
   generateTemplate(envFile: string = '.env.example'): void {
     const envPath = path.join(this.rootPath, envFile);
     let content = `# ╔══════════════════════════════════════════════════════════════════════════════╗
-# ║     🌍 QANTUM ENVIRONMENT CONFIGURATION                                       ║
+# ║     🌍 AETERNA ENVIRONMENT CONFIGURATION                                       ║
 # ║     "Скриптът не греши никога защото е математика."                          ║
 # ╚══════════════════════════════════════════════════════════════════════════════╝
 #
@@ -328,7 +328,7 @@ class EnvValidator {
     const content = fs.readFileSync(envPath, 'utf-8');
     
     // Generate key from password
-    const key = crypto.scryptSync(password, 'qantum-salt', 32);
+    const key = crypto.scryptSync(password, 'aeterna-salt', 32);
     const iv = crypto.randomBytes(16);
     
     // Encrypt
@@ -362,7 +362,7 @@ class EnvValidator {
       const encryptedContent = JSON.parse(fs.readFileSync(encryptedPath, 'utf-8'));
       
       // Generate key from password
-      const key = crypto.scryptSync(password, 'qantum-salt', 32);
+      const key = crypto.scryptSync(password, 'aeterna-salt', 32);
       const iv = Buffer.from(encryptedContent.iv, 'hex');
       const authTag = Buffer.from(encryptedContent.authTag, 'hex');
       
@@ -504,7 +504,7 @@ switch (command) {
   
   default:
     log(`
-Usage: npx tsx qantum-env-validator.ts <command> [options]
+Usage: npx tsx aeterna-env-validator.ts <command> [options]
 
 Commands:
   validate [file]              Validate environment file (default: .env)
@@ -516,11 +516,11 @@ Commands:
   diff <env1> <env2>           Show differences between env files
 
 Examples:
-  npx tsx qantum-env-validator.ts validate
-  npx tsx qantum-env-validator.ts validate .env.production
-  npx tsx qantum-env-validator.ts template
-  npx tsx qantum-env-validator.ts sync .env.example .env
-  npx tsx qantum-env-validator.ts encrypt .env MySecretPassword123
-  npx tsx qantum-env-validator.ts diff .env.development .env.production
+  npx tsx aeterna-env-validator.ts validate
+  npx tsx aeterna-env-validator.ts validate .env.production
+  npx tsx aeterna-env-validator.ts template
+  npx tsx aeterna-env-validator.ts sync .env.example .env
+  npx tsx aeterna-env-validator.ts encrypt .env MySecretPassword123
+  npx tsx aeterna-env-validator.ts diff .env.development .env.production
 `, 'white');
 }

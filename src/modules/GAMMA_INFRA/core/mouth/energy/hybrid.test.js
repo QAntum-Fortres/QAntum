@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- *  🧠 QANTUM - HYBRID TEST SUITE (CI/CD Ready + Bulletproof)
+ *  🧠 AETERNA - HYBRID TEST SUITE (CI/CD Ready + Bulletproof)
  * ═══════════════════════════════════════════════════════════════════════════
  *
  *  📋 This test demonstrates:
@@ -266,7 +266,7 @@ describe('🌐 API Tests (JSONPlaceholder)', function () {
   describe('POST /posts', function () {
     it('✅ Should create a new post', async function () {
       const newPost = {
-        title: 'QANTUM Test Post',
+        title: 'AETERNA Test Post',
         body: 'Created by AI QA Agent',
         userId: 1,
       };
@@ -343,9 +343,9 @@ describe('🖥️ UI Tests (Bulletproof)', function () {
     it('✅ Should be able to enter text in search box', async function () {
       const searchBox = await googlePage.getSearchBox();
       await searchBox.clear();
-      await searchBox.sendKeys('QANTUM QA');
+      await searchBox.sendKeys('AETERNA QA');
       const value = await searchBox.getAttribute('value');
-      expect(value).to.include('QANTUM');
+      expect(value).to.include('AETERNA');
     });
 
     it.skip('✅ Should search and get results', async function () {

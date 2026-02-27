@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LEARNING > STRENGTH
+ * 🔥 AETERNA BRAIN > LEARNING > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

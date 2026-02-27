@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DATA FIXTURES                                                        ║
+ * ║   AETERNA DATA FIXTURES                                                        ║
  * ║   "Static and dynamic test fixtures"                                          ║
  * ║                                                                               ║
  * ║   TODO B #40 - Data: Fixture management                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

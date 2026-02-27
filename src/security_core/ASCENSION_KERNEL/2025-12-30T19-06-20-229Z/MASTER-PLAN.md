@@ -1,4 +1,4 @@
-# 🧠 QANTUM HYBRID v26.0 - MASTER IMPLEMENTATION PLAN
+# 🧠 AETERNA HYBRID v26.0 - MASTER IMPLEMENTATION PLAN
 ## 110 Steps to Enterprise-Grade Automation Framework
 
 > **Цел:** Изграждане на production-ready automation framework, комбиниращ:
@@ -14,7 +14,7 @@
 |-----------|------|--------|
 | BasePage POM | `training-framework/architecture/pom-base.js` | ✅ Готов |
 | BaseElement | `training-framework/architecture/pom-base.js` | ✅ Готов |
-| Self-Healing | `qantum-v8.js` lines 1365+ | ✅ Частично |
+| Self-Healing | `aeterna-v8.js` lines 1365+ | ✅ Частично |
 | Shadow DOM | `shadow-visual-engines.js` | ✅ Готов |
 | Deep Search | `shadow-visual-engines.js` ShadowDOMPenetrator | ✅ Готов |
 | Network Intercept | `playwright-professor.js` | ✅ Частично |
@@ -29,7 +29,7 @@
 # ═══════════════════════════════════════════════════════════════
 
 ## Стъпка 1: Инициализация на проекта
-- [x] Създай `qantum-hybrid/` директория
+- [x] Създай `aeterna-hybrid/` директория
 - [x] Инициализирай `package.json` с всички dependencies
 - [x] Създай `tsconfig.json` за strict TypeScript
 
@@ -366,7 +366,7 @@ interface TouchActions {
 
 ## Стъпка 31: HealingEngine клас
 ```typescript
-// Миграция от qantum-v8.js lines 1365+
+// Миграция от aeterna-v8.js lines 1365+
 class SelfHealingEngine {
   strategies: HealingStrategy[];
   history: Map<string, HealingRecord>;
@@ -1556,8 +1556,8 @@ mm open                    # Open interactive mode
 ## Стъпка 110: NPM Package
 ```json
 {
-  "name": "qantum-hybrid",
-  "version": "26.0.0",
+  "name": "aeterna-hybrid",
+  "version": "1.0.0-AETERNA",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {

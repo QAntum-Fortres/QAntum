@@ -1,30 +1,30 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  * 
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  * 
- * For licensing inquiries: dimitar.papazov@QAntum.dev
+ * For licensing inquiries: dimitar.papazov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
 /**
- * 🧪 FULL TEST SUITE FOR QANTUM
+ * 🧪 FULL TEST SUITE FOR AETERNA
  * Tests all functionality before release
  */
 
-const { QAntum } = require('./dist/index.js');
+const { Aeterna } = require('./dist/index.js');
 
 async function runTests() {
   console.log(');
   console.log('╔═══════════════════════════════════════════════════════════════╗');
-  console.log('║           🧪 QANTUM - FULL TEST SUITE                    ║');
+  console.log('║           🧪 AETERNA - FULL TEST SUITE                    ║');
   console.log('╚═══════════════════════════════════════════════════════════════╝');
   console.log(');
 
@@ -36,7 +36,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 1: Constructor (No License)');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     console.log('   ✅ PASSED - Created instance without license');
     passed++;
   } catch (e) {
@@ -49,7 +49,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 2: Constructor (With Config)');
   try {
-    const mm = new QAntum({ timeout: 5000, verbose: true });
+    const mm = new Aeterna({ timeout: 5000, verbose: true });
     console.log('   ✅ PASSED - Created instance with config');
     passed++;
   } catch (e) {
@@ -62,7 +62,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 3: FREE - audit()');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     const result = await mm.audit('https://example.com');
     
     if (result.url && result.performance >= 0 && result.accessibility >= 0) {
@@ -85,7 +85,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 4: FREE - checkLinks()');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     const result = await mm.checkLinks('https://example.com');
     
     if (Array.isArray(result)) {
@@ -106,7 +106,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 5: FREE - testAPI()');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     const result = await mm.testAPI('https://api.example.com/health', 'GET');
     
     if (result.status && result.responseTime >= 0 && typeof result.success === 'boolean') {
@@ -128,7 +128,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 6: PRO - predict() WITHOUT license (should block)');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     await mm.predict({ codeChanges: './src' });
     console.log('   ❌ FAILED - Should have thrown error!');
     failed++;
@@ -148,7 +148,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 7: PRO - chronos() WITHOUT license (should block)');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     await mm.chronos({});
     console.log('   ❌ FAILED - Should have thrown error!');
     failed++;
@@ -167,7 +167,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 8: PRO - apiSensei() WITHOUT license (should block)');
   try {
-    const mm = new QAntum();
+    const mm = new Aeterna();
     await mm.apiSensei({});
     console.log('   ❌ FAILED - Should have thrown error!');
     failed++;
@@ -186,7 +186,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 9: PRO - predict() WITH valid license');
   try {
-    const mm = new QAntum({ licenseKey: 'MM-TEST-1234-5678' });
+    const mm = new Aeterna({ licenseKey: 'MM-TEST-1234-5678' });
     const result = await mm.predict({ codeChanges: './src' });
     
     if (result.riskScore >= 0 && result.predictedFailures && result.recommendation) {
@@ -208,7 +208,7 @@ async function runTests() {
   // ═══════════════════════════════════════════════════════════════
   console.log('📋 TEST 10: Invalid license format (should stay free)');
   try {
-    const mm = new QAntum({ licenseKey: 'invalid-key' });
+    const mm = new Aeterna({ licenseKey: 'invalid-key' });
     await mm.predict({});
     console.log('   ❌ FAILED - Should have blocked');
     failed++;

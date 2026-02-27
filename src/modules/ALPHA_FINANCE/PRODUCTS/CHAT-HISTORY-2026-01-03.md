@@ -1,4 +1,4 @@
-# QAntum Empire - Chat History
+# Aeterna Empire - Chat History
 ## January 3, 2026
 
 ### Сесия: GhostShield Launch & Spin-offs
@@ -30,7 +30,7 @@
 - Спряхме Chrome, Edge background processes
 
 ### 5. Night Shift Batch ✅
-- Създаден `QANTUM-NIGHT-SHIFT.bat`
+- Създаден `AETERNA-NIGHT-SHIFT.bat`
 - Автоматично scaffold на ChronoSync SDK
 
 ---
@@ -71,7 +71,7 @@ Stop-Process -Name "chrome" -Force
 ---
 
 ## Stats:
-- **QAntum Empire**: v34.1.0, 181,802 files, 5.02 GB, 935,638 LOC
+- **Aeterna Empire**: v34.1.0, 181,802 files, 5.02 GB, 935,638 LOC
 - **Session Duration**: ~4 hours
 - **Products Created**: 2 (GhostShield SDK + Landing)
 - **Extensions Removed**: 104

@@ -1,4 +1,4 @@
-# 🚀 QAntum Framework v1.0 — The Autonomous Empire
+# 🚀 Aeterna Framework v1.0 — The Autonomous Empire
 
 > *"Your tests fix themselves. Your sales run themselves. Your revenue grows itself."*
 
@@ -6,7 +6,7 @@
 
 ## 📣 TL;DR for the Lazy
 
-QAntum is a **free, open-source framework** that:
+Aeterna is a **free, open-source framework** that:
 - 🤖 Writes AND self-heals your tests when your UI changes
 - 🔍 Scans competitor/client sites for bugs and generates PDF reports with ROI estimates
 - 📧 Sends personalized sales emails **fully autonomously** (no Zapier, no CRM needed)
@@ -17,11 +17,11 @@ QAntum is a **free, open-source framework** that:
 
 ## 🔥 What's New in v1.0
 
-### 🧠 QAntum Singularity (The Brain)
+### 🧠 Aeterna Singularity (The Brain)
 The orchestrator that fuses all modules into one autonomous loop:
 
 ```typescript
-const singularity = new QAntumSingularity({
+const singularity = new AeternaSingularity({
   mode: 'aggressive',
   targetIndustries: ['saas', 'ecommerce', 'fintech'],
   maxDailyOutreach: 50,
@@ -67,9 +67,9 @@ The entire core framework runs on vanilla Node.js. No Axios, no Lodash, no bloat
 ## 📦 Installation
 
 ```bash
-npm install qantum-framework
+npm install aeterna-framework
 # or
-npx create-qantum-app my-project
+npx create-aeterna-app my-project
 ```
 
 ---
@@ -78,13 +78,13 @@ npx create-qantum-app my-project
 
 ```bash
 # Interactive upgrade CLI
-npx qantum upgrade
+npx aeterna upgrade
 
 # Run the full autonomous loop (dry-run)
-npx qantum singularity --mode stealth --dry-run
+npx aeterna singularity --mode stealth --dry-run
 
 # Start the live trading dashboard
-npx qantum reaper --mode paper --port 3333
+npx aeterna reaper --mode paper --port 3333
 ```
 
 ---
@@ -92,7 +92,7 @@ npx qantum reaper --mode paper --port 3333
 ## 🏗️ Architecture Overview
 
 ```
-qantum-framework/
+aeterna-framework/
 ├── cognition/          # Thought chains, self-critique, multi-perspective AI
 ├── reality/
 │   ├── economy/        # ArmedReaper, ArbitrageOrchestrator, MarketWatcher
@@ -100,7 +100,7 @@ qantum-framework/
 ├── sales/              # SelfHealingSales, report generation
 ├── saas/               # Subscription engine + Feature flags + Telemetry
 ├── PRIVATE-CORE/       # 🔒 Enterprise layer (Singularity, Market Bridge, live trading)
-└── Qantum-cli.js       # The global `qantum` CLI
+└── Aeterna-cli.js       # The global `aeterna` CLI
 ```
 
 ---
@@ -116,17 +116,17 @@ qantum-framework/
 
 ```bash
 # See all plans interactively:
-npx qantum upgrade
+npx aeterna upgrade
 ```
 
 ---
 
 ## 🙏 Support the Project
 
-If QAntum saves you time or makes you money, consider sponsoring:
+If Aeterna saves you time or makes you money, consider sponsoring:
 
 - **GitHub Sponsors:** [github.com/sponsors/YOUR_USERNAME](https://github.com/sponsors)
-- **One-time:** [qantum.empire/sponsor](https://qantum.empire/sponsor)
+- **One-time:** [aeterna.empire/sponsor](https://aeterna.empire/sponsor)
 
 See [SPONSORS.md](./SPONSORS.md) for all sponsorship tiers and perks.
 
@@ -147,4 +147,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). PRs welcome. Issues welcome. Stars *ve
 
 *Built with 🩸, ☕, and the certainty that manual testing is dead.*
 
-**— Dimitar Prodromov, QAntum**
+**— Dimitar Prodromov, Aeterna**

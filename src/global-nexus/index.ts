@@ -1,5 +1,5 @@
 /**
- * QAntum Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
+ * Aeterna Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
  *
  * Unified export for all v1.7.0 modules
  *
@@ -12,7 +12,7 @@
  * TOTAL v1.7.0 VALUE: +$880,000
  *
  * @module global-nexus
- * @version 1.7.0
+ * @version 1.0.0-AETERNA
  */
 
 // ═══════════════════════════════════════════════════════════════════════════

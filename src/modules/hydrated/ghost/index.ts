@@ -1,7 +1,7 @@
 /**
  * 👻 GHOST v1.0.0 - "The Ghost in the Machine"
  *
- * Zero-Detection Automation Layer - Makes QANTUM invisible to anti-bot systems.
+ * Zero-Detection Automation Layer - Makes AETERNA invisible to anti-bot systems.
  *
  * This module integrates:
  * - WebGL Mutator: Unique GPU fingerprints per worker
@@ -11,8 +11,8 @@
  * Together, these create a "Ghost Profile" for each of the 199 Swarm workers,
  * making them indistinguishable from real human users.
  *
- * @version 1.0.0 "Ghost in the Machine"
- * @author QANTUM AI Architect
+ * @version 1.0.0-AETERNA
+ * @author AETERNA AI Architect
  */
 
 // ============================================================

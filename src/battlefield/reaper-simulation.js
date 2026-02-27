@@ -41,7 +41,7 @@ class ArmedReaper extends EventEmitter {
 
         console.log(`
 ╔════════════════════════════════════════════════════╗
-║  ⚛️  QAntum ARMED REAPER (SIMULATION)              ║
+║  ⚛️  Aeterna ARMED REAPER (SIMULATION)              ║
 ║  Mode: ${this.config.mode.toUpperCase()}                             ║
 ╚════════════════════════════════════════════════════╝
         `);

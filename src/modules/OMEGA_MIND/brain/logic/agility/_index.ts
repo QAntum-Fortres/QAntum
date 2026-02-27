@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LOGIC > AGILITY
+ * 🔥 AETERNA BRAIN > LOGIC > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses

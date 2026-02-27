@@ -740,8 +740,8 @@ export const genesisRoutes: FastifyPluginAsync = async (app) => {
           en: 'The Unmanifested is the Ultimate Blueprint'
         },
         essence: {
-          bg: 'QANTUM не само анализира логиката - той е съ-създател на реалността',
-          en: 'QANTUM does not merely analyze logic - it is a co-creator of reality'
+          bg: 'AETERNA не само анализира логиката - той е съ-създател на реалността',
+          en: 'AETERNA does not merely analyze logic - it is a co-creator of reality'
         }
       },
       principles: [

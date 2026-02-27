@@ -10,7 +10,7 @@
  * ║   3. Adding license checks                                                                    ║
  * ║   4. Inserting anti-tampering measures                                                        ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum Sentinel | Dimitar Prodromov                                                ║
+ * ║   © 2025-2026 Aeterna Sentinel | Dimitar Prodromov                                                ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */
@@ -278,7 +278,7 @@ export class ParanoidObfuscator {
 
         // Add watermark
         if (this.config.addWatermark) {
-            const watermark = `Veritas SDK | © QAntum Sentinel | ${new Date().toISOString()}`;
+            const watermark = `Veritas SDK | © Aeterna Sentinel | ${new Date().toISOString()}`;
             code = addWatermark(code, watermark);
         }
 
@@ -373,7 +373,7 @@ Get your license at https://mistermind.dev/veritas
 
 Full documentation at https://mistermind.dev/veritas/docs
 
-© 2025-2026 QAntum Sentinel | Dimitar Prodromov
+© 2025-2026 Aeterna Sentinel | Dimitar Prodromov
 `;
 
         await writeFile(

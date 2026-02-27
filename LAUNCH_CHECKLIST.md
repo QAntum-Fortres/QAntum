@@ -1,4 +1,4 @@
-# QAntum Prime Launch Checklist ✅
+# Aeterna Prime Launch Checklist ✅
 
 **Goal:** Launch the platform and acquire first 5 users within 7 days.
 
@@ -7,13 +7,13 @@
 ## 🟢 Phase 1: Infrastructure (Day 1)
 - [x] **Deploy Presentation Site** ✅ Live at aeterna.website
   - Use Render "Static Site" or GitHub Pages.
-  - Source: `qantum-prime-architecture.html`
-  - URL: `https://qantum-prime-architecture.onrender.com` (Example)
-- [x] **Deploy Webapp (SaaS)** ✅ Live at qantum-dashboard.vercel.app
+  - Source: `aeterna-prime-architecture.html`
+  - URL: `https://aeterna-prime-architecture.onrender.com` (Example)
+- [x] **Deploy Webapp (SaaS)** ✅ Live at aeterna-dashboard.vercel.app
   - Use Render "Web Service".
   - Source: `src/security_core/MrMindQATool_ACTIVE/webapp`
   - Start Command: `node server.js`
-  - URL: `https://qantum-prime.onrender.com`
+  - URL: `https://aeterna-prime.onrender.com`
 
 ## 🟡 Phase 2: Content Creation (Day 2)
 - [x] **Create "Hero" Case Study** ✅ marketing/case-study-hero.md
@@ -29,7 +29,7 @@
 - [ ] **LinkedIn Post**
   - Topic: "How AI found critical vulnerabilities in < 10 mins."
   - Attach: The PDF carousel.
-  - Tag: #CyberSecurity #AI #BugBounty #QAntum
+  - Tag: #CyberSecurity #AI #BugBounty #Aeterna
 - [ ] **Direct Outreach**
   - Identify 5 CTOs/CISOs on LinkedIn.
   - Message: "I built an AI agent that automates security audits. It found [X] vulnerabilities in a major fintech app. Want to see the architecture? [Link]"

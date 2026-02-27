@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.0-AETERNA",
   "generatedAt": "2026-01-06T17:20:38.677Z",
   "structure": {
     "SKILLS": {
@@ -438,7 +438,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\dist-server\\api.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\dist-server\\api.js",
           "name": "api.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -451,7 +451,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\modules\\api.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\modules\\api.js",
           "name": "api.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -464,7 +464,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\modules\\api.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\modules\\api.ts",
           "name": "api.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -633,7 +633,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\services\\api.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\services\\api.ts",
           "name": "api.ts",
           "originalCategory": "core/ears",
           "classification": {
@@ -1428,7 +1428,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\LogicEvolutionDB.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\LogicEvolutionDB.ts",
           "name": "LogicEvolutionDB.ts",
           "originalCategory": "brain/logic",
           "classification": {
@@ -1441,7 +1441,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\MetaLogicEngine.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\MetaLogicEngine.ts",
           "name": "MetaLogicEngine.ts",
           "originalCategory": "brain/logic",
           "classification": {
@@ -1454,7 +1454,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\OntoGenerator.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\OntoGenerator.ts",
           "name": "OntoGenerator.ts",
           "originalCategory": "brain/logic",
           "classification": {
@@ -1467,7 +1467,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\TranscendenceCore.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\TranscendenceCore.ts",
           "name": "TranscendenceCore.ts",
           "originalCategory": "brain/logic",
           "classification": {
@@ -3322,8 +3322,8 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\src\\core\\qantum.ts",
-          "name": "qantum.ts",
+          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\src\\core\\aeterna.ts",
+          "name": "aeterna.ts",
           "originalCategory": "core/mouth",
           "classification": {
             "category": "STRENGTH",
@@ -4303,7 +4303,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\PhenomenonWeaver.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\PhenomenonWeaver.ts",
           "name": "PhenomenonWeaver.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -4728,8 +4728,8 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\.ascension-backup\\2025-12-30T19-06-20-229Z\\tools\\qantum-ascension.js",
-          "name": "qantum-ascension.js",
+          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\.ascension-backup\\2025-12-30T19-06-20-229Z\\tools\\aeterna-ascension.js",
+          "name": "aeterna-ascension.js",
           "originalCategory": "security/auth",
           "classification": {
             "category": "STRENGTH",
@@ -5246,8 +5246,8 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\tools\\qantum-ascension.js",
-          "name": "qantum-ascension.js",
+          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\tools\\aeterna-ascension.js",
+          "name": "aeterna-ascension.js",
           "originalCategory": "security/auth",
           "classification": {
             "category": "STRENGTH",
@@ -8364,7 +8364,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\tailwind.config.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\tailwind.config.js",
           "name": "tailwind.config.js",
           "originalCategory": "unclassified",
           "classification": {
@@ -10556,7 +10556,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\QAntum-Demo\\demo.ts",
+          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\Aeterna-Demo\\demo.ts",
           "name": "demo.ts",
           "originalCategory": "brain/logic",
           "classification": {
@@ -10566,7 +10566,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\QAntum-Demo\\dist\\demo.js",
+          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\Aeterna-Demo\\dist\\demo.js",
           "name": "demo.js",
           "originalCategory": "brain/logic",
           "classification": {
@@ -11016,7 +11016,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\dist-server\\index.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\dist-server\\index.js",
           "name": "index.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11026,7 +11026,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\index.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\index.js",
           "name": "index.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11036,7 +11036,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\modules\\index.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\modules\\index.js",
           "name": "index.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11046,7 +11046,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\services\\OllamaAgent.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\services\\OllamaAgent.js",
           "name": "OllamaAgent.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11056,7 +11056,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\tests\\modules.test.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\tests\\modules.test.js",
           "name": "modules.test.js",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11066,7 +11066,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\modules\\index.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\modules\\index.ts",
           "name": "index.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11076,7 +11076,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\modules\\magnet.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\modules\\magnet.ts",
           "name": "magnet.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11086,7 +11086,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\services\\AdaptiveOllamaAgent.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\services\\AdaptiveOllamaAgent.ts",
           "name": "AdaptiveOllamaAgent.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11096,7 +11096,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\tests\\modules.test.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\tests\\modules.test.ts",
           "name": "modules.test.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11106,7 +11106,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\reportWebVitals.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\reportWebVitals.ts",
           "name": "reportWebVitals.ts",
           "originalCategory": "core/mouth",
           "classification": {
@@ -11586,7 +11586,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\dist-server\\magnet.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\dist-server\\magnet.js",
           "name": "magnet.js",
           "originalCategory": "security/auth",
           "classification": {
@@ -11696,7 +11696,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\setupTests.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\setupTests.ts",
           "name": "setupTests.ts",
           "originalCategory": "brain/learning",
           "classification": {
@@ -11836,7 +11836,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\index.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\index.ts",
           "name": "index.ts",
           "originalCategory": "core/eyes",
           "classification": {
@@ -11846,7 +11846,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\services\\OllamaAgent.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\services\\OllamaAgent.ts",
           "name": "OllamaAgent.ts",
           "originalCategory": "core/eyes",
           "classification": {
@@ -11856,7 +11856,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\services\\ollama.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\services\\ollama.ts",
           "name": "ollama.ts",
           "originalCategory": "core/eyes",
           "classification": {
@@ -11986,8 +11986,8 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\tools\\qantum-cli.js",
-          "name": "qantum-cli.js",
+          "path": "C:\\MisteMind\\tools\\aeterna-cli.js",
+          "name": "aeterna-cli.js",
           "originalCategory": "core/eyes",
           "classification": {
             "category": "UNCLASSIFIED",
@@ -12156,7 +12156,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\components\\widgets\\index.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\components\\widgets\\index.ts",
           "name": "index.ts",
           "originalCategory": "unclassified",
           "classification": {
@@ -12466,7 +12466,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\services\\AdaptiveOllamaAgent.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\services\\AdaptiveOllamaAgent.js",
           "name": "AdaptiveOllamaAgent.js",
           "originalCategory": "security/guardians",
           "classification": {
@@ -12486,7 +12486,7 @@
           }
         },
         {
-          "path": "C:\\MisteMind\\qantum-nerve-center\\postcss.config.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\postcss.config.js",
           "name": "postcss.config.js",
           "originalCategory": "skills/automation",
           "classification": {

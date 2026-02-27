@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > MEMORY > ENERGY
+ * 🔥 AETERNA BRAIN > MEMORY > ENERGY
  *
  *
  *

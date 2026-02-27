@@ -1,8 +1,8 @@
 /**
  * @file MemoryWatchdog.ts
  * @description Memory Leak Watchdog - Автоматично спиране на workers при > 200MB
- * @version 1.0.0
- * @author QANTUM AI
+ * @version 1.0.0-AETERNA
+ * @author AETERNA AI
  * @phase Phase 4: Validation & Stress (The Baptism of Fire)
  *
  * @example
@@ -468,7 +468,7 @@ export class MemoryWatchdog extends EventEmitter {
       const message = {
         embeds: [
           {
-            title: '🚨 Memory Alert - QAntum Prime',
+            title: '🚨 Memory Alert - Aeterna Prime',
             color: 0xff0000,
             fields: [
               { name: 'Heap Used', value: `${stats.heapUsedMB.toFixed(2)} MB`, inline: true },

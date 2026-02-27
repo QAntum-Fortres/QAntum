@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM INPUT VALIDATOR                                                      ║
+ * ║   AETERNA INPUT VALIDATOR                                                      ║
  * ║   "Runtime validation for all inputs"                                         ║
  * ║                                                                               ║
  * ║   TODO B #43 - Security: Input Validation                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

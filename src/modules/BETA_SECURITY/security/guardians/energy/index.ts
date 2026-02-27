@@ -1,5 +1,5 @@
 /**
- * ⚛️🏰 QANTUM SECURITY FORTRESS - UNIFIED PROTECTION SYSTEM
+ * ⚛️🏰 AETERNA SECURITY FORTRESS - UNIFIED PROTECTION SYSTEM
  * ═══════════════════════════════════════════════════════════════════════════════════════
  *
  *   ███████╗ ██████╗ ██████╗ ████████╗██████╗ ███████╗███████╗███████╗
@@ -134,7 +134,7 @@ export class SecurityFortress extends EventEmitter {
 ║   ███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║       ██║     ╚██████╔╝██║  ██║║
 ║   ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝       ╚═╝      ╚═════╝ ╚═╝  ╚═╝║
 ║                                                                                               ║
-║                         ⚛️ QANTUM INTELLECTUAL PROPERTY FORTRESS ⚛️                          ║
+║                         ⚛️ AETERNA INTELLECTUAL PROPERTY FORTRESS ⚛️                          ║
 ║                                                                                               ║
 ║   ┌─────────────────────────────────────────────────────────────────────────────────────┐   ║
 ║   │  Layer 1: 🔮 Obsidian Shield    │  Code obfuscation & transformation               │   ║

@@ -9,7 +9,7 @@
  * - Contributing guidelines
  *
  * @author DIMITAR PRODROMOV
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -54,9 +54,9 @@ export class MarkdownBuilder {
 > **Version ${version}** | Created by ${this.config.author}
 
 ${this.config.language === 'bilingual' ? `
-🇧🇬 *В QAntum не лъжем. Само истински стойности.*
+🇧🇬 *В Aeterna не лъжем. Само истински стойности.*
 
-🇬🇧 *In QAntum we don't lie. Only real values.*
+🇬🇧 *In Aeterna we don't lie. Only real values.*
 ` : '}
 `.trim();
   }
@@ -384,17 +384,17 @@ See the [\`/examples\`](./examples) directory for more detailed examples.
 
 \`\`\`bash
 # Required
-QANTUM_API_KEY=your-api-key
+AETERNA_API_KEY=your-api-key
 
 # Optional
-QANTUM_DEBUG=true
-QANTUM_LOG_LEVEL=info
-QANTUM_TIMEOUT=30000
+AETERNA_DEBUG=true
+AETERNA_LOG_LEVEL=info
+AETERNA_TIMEOUT=30000
 \`\`\`
 
 ### Configuration File
 
-Create a \`qantum.config.js\` or \`qantum.config.ts\` file:
+Create a \`aeterna.config.js\` or \`aeterna.config.ts\` file:
 
 \`\`\`javascript
 module.exports = {
@@ -469,7 +469,7 @@ MIT License © ${year} ${author}
 **Built with ❤️ by ${author}**
 
 ${this.config.language === 'bilingual' ? `
-🇧🇬 *В QAntum не лъжем. Само истински стойности.*
+🇧🇬 *В Aeterna не лъжем. Само истински стойности.*
 ` : '}
 
 </div>

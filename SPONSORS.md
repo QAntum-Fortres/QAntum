@@ -1,8 +1,8 @@
-# 💎 Sponsors & Supporters — QAntum Framework
+# 💎 Sponsors & Supporters — Aeterna Framework
 
 > *"You build on top of the framework. We build the framework for you."*
 
-QAntum is an open-source AI-powered testing, self-healing, and autonomous sales framework maintained by a single developer. If this project saves you time, helps you ship faster, or helps you close deals — consider sponsoring.
+Aeterna is an open-source AI-powered testing, self-healing, and autonomous sales framework maintained by a single developer. If this project saves you time, helps you ship faster, or helps you close deals — consider sponsoring.
 
 ---
 
@@ -25,7 +25,7 @@ Every dollar of sponsorship goes directly into:
 | 🚀 Supporter      | $25/month  | Name + link in README + priority GitHub issue responses              |
 | ⚡ Pro Backer     | $100/month | Name + badge + access to the Pro framework tier (free)               |
 | 👑 Enterprise     | $500/month | Company logo in README + white-label license + dedicated Slack       |
-| 🌌 Singularity    | Custom     | Full QAntumSingularity deployment + custom integration + NDA deal    |
+| 🌌 Singularity    | Custom     | Full AeternaSingularity deployment + custom integration + NDA deal    |
 
 ---
 
@@ -33,22 +33,22 @@ Every dollar of sponsorship goes directly into:
 
 ### Option 1 — GitHub Sponsors (Recommended)
 Click the **Sponsor** button on the repository page, or go to:
-[https://github.com/sponsors/qantum-empire](https://github.com/sponsors/qantum-empire)
+[https://github.com/sponsors/aeterna-empire](https://github.com/sponsors/aeterna-empire)
 
 ### Option 2 — Stripe (One-time or Monthly)
-[https://qantum.empire/sponsor](https://qantum.empire/sponsor)
+[https://aeterna.empire/sponsor](https://aeterna.empire/sponsor)
 
 ### Option 3 — Crypto
-- **BTC:** contact `founder@qantum.empire` for address
-- **ETH / USDC:** contact `founder@qantum.empire` for address
-- **BNB / BSC:** contact `founder@qantum.empire` for address
+- **BTC:** contact `founder@aeterna.empire` for address
+- **ETH / USDC:** contact `founder@aeterna.empire` for address
+- **BNB / BSC:** contact `founder@aeterna.empire` for address
 
 ---
 
 ## 🌟 Current Sponsors
 
 ### 👑 Enterprise
-*Be the first enterprise sponsor — contact founder@qantum.empire*
+*Be the first enterprise sponsor — contact founder@aeterna.empire*
 
 ### ⚡ Pro Backers
 *— your name here —*
@@ -71,7 +71,7 @@ Reaching funding milestones unlocks features for everyone:
 | $500/mo     | Video tutorials + full API documentation           |
 | $1,000/mo   | Dedicated CI/CD infrastructure + faster releases   |
 | $2,500/mo   | Full-time development — 2x release cadence         |
-| $5,000/mo   | QAntum Cloud (managed SaaS) — public beta          |
+| $5,000/mo   | Aeterna Cloud (managed SaaS) — public beta          |
 | $10,000/mo  | Team of 3 — enterprise support SLA for all         |
 
 ---
@@ -80,11 +80,11 @@ Reaching funding milestones unlocks features for everyone:
 
 For enterprise sponsorships, white-label licensing, or custom integrations:
 
-**Email:** founder@qantum.empire  
-**LinkedIn:** [linkedin.com/company/qantum-empire](https://linkedin.com/company/qantum-empire)  
-**Twitter/X:** [@qantumempire](https://twitter.com/qantumempire)  
-**GitHub:** [github.com/qantum-empire](https://github.com/qantum-empire)
+**Email:** founder@aeterna.empire  
+**LinkedIn:** [linkedin.com/company/aeterna-empire](https://linkedin.com/company/aeterna-empire)  
+**Twitter/X:** [@aeternaempire](https://twitter.com/aeternaempire)  
+**GitHub:** [github.com/aeterna-empire](https://github.com/aeterna-empire)
 
 ---
 
-*QAntum Framework is MIT Licensed. Sponsorship is voluntary and does not create any contractual obligation.*
+*Aeterna Framework is MIT Licensed. Sponsorship is voluntary and does not create any contractual obligation.*

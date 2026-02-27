@@ -1,0 +1,83 @@
+[
+  {
+    "ts": "2026-02-27T01:07:15.834Z",
+    "domain": "ozone.bg",
+    "to": "privacy@ozone.bg",
+    "score": 16,
+    "grade": "F",
+    "sent": false,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:09:24.958Z",
+    "domain": "ozone.bg",
+    "to": "privacy@ozone.bg",
+    "score": 16,
+    "grade": "F",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:10:12.694Z",
+    "domain": "payhawk.com",
+    "to": "hello@payhawk.com",
+    "score": 73,
+    "grade": "B",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:10:59.889Z",
+    "domain": "telerik.com",
+    "to": "info@telerik.com",
+    "score": 23,
+    "grade": "F",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:11:48.028Z",
+    "domain": "kanbanize.com",
+    "to": "hello@kanbanize.com",
+    "score": 16,
+    "grade": "F",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:12:38.317Z",
+    "domain": "chaos.com",
+    "to": "security@chaos.com",
+    "score": 16,
+    "grade": "F",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:13:24.788Z",
+    "domain": "superhosting.bg",
+    "to": "support@superhosting.bg",
+    "score": 23,
+    "grade": "F",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:14:15.549Z",
+    "domain": "siteground.com",
+    "to": "security@siteground.com",
+    "score": 62,
+    "grade": "C",
+    "sent": true,
+    "hasVideo": true
+  },
+  {
+    "ts": "2026-02-27T01:15:02.947Z",
+    "domain": "jobs.bg",
+    "to": "office@jobs.bg",
+    "score": 64,
+    "grade": "C",
+    "sent": true,
+    "hasVideo": true
+  }
+]

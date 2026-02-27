@@ -1,7 +1,7 @@
 /**
  * @fileoverview Semantic Engine - Accessibility Tree Mapping for intelligent element finding
  * @module engines/SemanticEngine
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 /**

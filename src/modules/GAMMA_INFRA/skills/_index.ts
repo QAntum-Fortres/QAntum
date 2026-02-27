@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SKILLS
+ * 🔥 AETERNA SKILLS
  *
  *
  *

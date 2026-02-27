@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════════════╗
- * ║                     QANTUM NERVE CENTER - MODULE API TESTS                            ║
+ * ║                     AETERNA NERVE CENTER - MODULE API TESTS                            ║
  * ║                         Unit Tests for Module Registry API                            ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════╝
  */

@@ -5,7 +5,7 @@ import { Telemetry } from './telemetry/Telemetry';
 
 /**
  * 🌌 SYSTEM ORCHESTRATOR
- * The master controller for the entire QANTUM Singularity Ecosystem.
+ * The master controller for the entire AETERNA Singularity Ecosystem.
  * Orchestrates multi-department workflows and autonomous decision making.
  */
 export class SystemOrchestrator extends EventEmitter {

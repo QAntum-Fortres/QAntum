@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DISTRIBUTED RUNNER                                                   ║
+ * ║   AETERNA DISTRIBUTED RUNNER                                                   ║
  * ║   "Run tests across multiple nodes"                                           ║
  * ║                                                                               ║
  * ║   TODO B #14 - Performance: Distributed Execution                             ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

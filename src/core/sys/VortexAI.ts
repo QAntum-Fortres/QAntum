@@ -64,7 +64,7 @@ export class VortexAI extends EventEmitter {
         this.omega = new OmegaDepartment();
 
         // 4. Initialize Core Subsystems
-        this.brain = new NeuralContext("qantum-vortex-ultra");
+        this.brain = new NeuralContext("aeterna-vortex-ultra");
         this.testRunner = new TestRunner();
         this.agent = new ToolExecutor(this.testRunner);
         this.bioReflex = new BiometricJitter(0.3);

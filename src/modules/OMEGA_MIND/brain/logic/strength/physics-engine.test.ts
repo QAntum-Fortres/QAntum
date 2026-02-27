@@ -15,7 +15,7 @@
  * - calculateSwarmForces
  *
  * @module tests/smoke/physics-engine.test
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  */
 
 import { describe, it, expect, beforeAll } from '@jest/globals';

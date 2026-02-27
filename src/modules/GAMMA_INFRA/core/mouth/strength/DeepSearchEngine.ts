@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * 🧠 QANTUM HYBRID v1.0.0 - DeepSearch Engine
+ * 🧠 AETERNA HYBRID v1.0.0 - DeepSearch Engine
  * Shadow DOM penetration + iFrame traversal + Overlay dismissal
  * Ported from: shadow-visual-engines.js
  * ═══════════════════════════════════════════════════════════════════════════════

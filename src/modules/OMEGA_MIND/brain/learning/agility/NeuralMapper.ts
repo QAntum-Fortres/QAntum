@@ -6,7 +6,7 @@
  * ║                                                                                               ║
  * ║   PRO FEATURE: Visualize dependencies, detect patterns, predict hallucinations               ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum Sentinel | Dimitar Prodromov                                                ║
+ * ║   © 2025-2026 Aeterna Sentinel | Dimitar Prodromov                                                ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

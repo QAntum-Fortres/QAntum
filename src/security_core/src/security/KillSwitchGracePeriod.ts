@@ -1,8 +1,8 @@
 /**
  * @file KillSwitchGracePeriod.ts
  * @description Kill Switch с 24-часов Grace Period - Soft-lock → Hard-lock stages
- * @version 1.0.0
- * @author QANTUM AI
+ * @version 1.0.0-AETERNA
+ * @author AETERNA AI
  * @phase Phase 5: Security & SaaS (Business & Protection)
  *
  * @example
@@ -463,8 +463,8 @@ export class KillSwitch extends EventEmitter {
     // Example SendGrid integration:
     // await sendgrid.send({
     //   to: this.config.notificationEmail,
-    //   from: 'alerts@qantum.dev',
-    //   subject: `[${payload.type.toUpperCase()}] QAntum Prime - ${payload.reason}`,
+    //   from: 'alerts@aeterna.dev',
+    //   subject: `[${payload.type.toUpperCase()}] Aeterna Prime - ${payload.reason}`,
     //   text: payload.action,
     // });
   }
@@ -477,7 +477,7 @@ export class KillSwitch extends EventEmitter {
     // await twilio.messages.create({
     //   to: this.config.notificationSMS,
     //   from: '+1234567890',
-    //   body: `QAntum: ${payload.action.slice(0, 140)}`,
+    //   body: `Aeterna: ${payload.action.slice(0, 140)}`,
     // });
   }
 
@@ -498,7 +498,7 @@ export class KillSwitch extends EventEmitter {
         body: JSON.stringify({
           embeds: [
             {
-              title: `🚨 QAntum Kill Switch - ${payload.type.toUpperCase()}`,
+              title: `🚨 Aeterna Kill Switch - ${payload.type.toUpperCase()}`,
               description: payload.action,
               color: colors[payload.type] || 0xff0000,
               fields: [
@@ -537,7 +537,7 @@ export class KillSwitch extends EventEmitter {
               type: 'header',
               text: {
                 type: 'plain_text',
-                text: `${emojis[payload.type]} QAntum Kill Switch - ${payload.type.toUpperCase()}`,
+                text: `${emojis[payload.type]} Aeterna Kill Switch - ${payload.type.toUpperCase()}`,
               },
             },
             {
@@ -568,7 +568,7 @@ export class KillSwitch extends EventEmitter {
     // In real implementation, verify against secure hash
     // This is a placeholder
     const validKeys = [
-      process.env.QANTUM_MASTER_KEY,
+      process.env.AETERNA_MASTER_KEY,
       'EMERGENCY_OVERRIDE_2025', // Remove in production!
     ];
 

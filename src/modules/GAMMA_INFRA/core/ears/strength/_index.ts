@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EARS > STRENGTH
+ * 🔥 AETERNA CORE > EARS > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

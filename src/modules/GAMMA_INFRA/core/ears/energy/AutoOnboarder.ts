@@ -1,7 +1,7 @@
 /**
  * AutoOnboarder.ts - "The Autonomous Gateway"
  *
- * QAntum Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
+ * Aeterna Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
  *
  * Automatic client onboarding: Stripe payment → Docker container
  * in nearest cloud region. Zero human intervention.
@@ -13,7 +13,7 @@
  * - Auto-scaling based on tier
  *
  * @module reality/gateway/AutoOnboarder
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @enterprise true
  */
 
@@ -349,7 +349,7 @@ const DEFAULT_CONFIG: AutoOnboarderConfig = {
     }
   },
 
-  baseImage: 'qantum/worker:latest',
+  baseImage: 'aeterna/worker:latest',
   imageVersion: '1.7.0',
 
   provisioningTimeoutMs: 300000, // 5 minutes
@@ -594,7 +594,7 @@ export class AutoOnboarder extends EventEmitter {
     const profile: ClientProfile = {
       clientId,
       stripeCustomerId: subscription.customer,
-      email: subscription.metadata.email || `customer-${subscription.customer}@qantum.io`,
+      email: subscription.metadata.email || `customer-${subscription.customer}@aeterna.io`,
       name: subscription.metadata.name,
       organization: subscription.metadata.organization,
       tier,
@@ -751,7 +751,7 @@ export class AutoOnboarder extends EventEmitter {
       version: this.config.imageVersion,
       status: 'pending',
       resources,
-      hostname: `${containerId}.qantum.io`,
+      hostname: `${containerId}.aeterna.io`,
       ports: [
         { containerPort: 443, hostPort: 443, protocol: 'tcp', service: 'api' },
         { containerPort: 8080, hostPort: 8080, protocol: 'tcp', service: 'websocket' },
@@ -992,14 +992,14 @@ export class AutoOnboarder extends EventEmitter {
     const notification = {
       type: 'welcome',
       to: client.email,
-      subject: '🚀 Your QAntum Environment is Ready!',
+      subject: '🚀 Your Aeterna Environment is Ready!',
       data: {
         name: client.name || 'Valued Customer',
         tier: client.tier,
         hostname: container.hostname,
         apiKey: container.apiKey,
-        dashboardUrl: `https://app.qantum.io/dashboard/${client.clientId}`,
-        docsUrl: 'https://docs.qantum.io/getting-started'
+        dashboardUrl: `https://app.aeterna.io/dashboard/${client.clientId}`,
+        docsUrl: 'https://docs.aeterna.io/getting-started'
       }
     };
 

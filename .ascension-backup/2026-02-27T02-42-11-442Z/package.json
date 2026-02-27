@@ -1,0 +1,61 @@
+{
+  "name": "qantum-framework",
+  "version": "1.0.0",
+  "description": "AI-powered self-healing tests, autonomous B2B sales, and cognitive crypto arbitrage in one TypeScript framework",
+  "main": "src/index.ts",
+  "bin": {
+    "qantum": "./Qantum-cli.js"
+  },
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "dev": "npx ts-node --watch src/index.ts",
+    "build": "tsc --outDir dist",
+    "dashboard": "node dashboard/server.js",
+    "reaper": "npx ts-node PRIVATE-CORE/reaper-live-server.ts",
+    "singularity": "npx ts-node scripts/singularity-launcher.ts",
+    "test": "npx vitest run",
+    "lint": "npx eslint src --ext .ts",
+    "upgrade": "node Qantum-cli.js upgrade"
+  },
+  "keywords": [
+    "ai",
+    "testing",
+    "self-healing",
+    "autonomous",
+    "sales-automation",
+    "crypto-arbitrage",
+    "typescript",
+    "framework",
+    "saas"
+  ],
+  "author": "Dimitar Prodromov <founder@qantum.empire>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qantum-empire/qantum-framework"
+  },
+  "homepage": "https://qantum.empire",
+  "bugs": {
+    "url": "https://github.com/qantum-empire/qantum-framework/issues",
+    "email": "founder@qantum.empire"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.3.1",
+    "nodemailer": "^8.0.1",
+    "puppeteer": "^24.37.5",
+    "puppeteer-screen-recorder": "^3.0.6",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.33",
+    "@types/ws": "^8.5.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}

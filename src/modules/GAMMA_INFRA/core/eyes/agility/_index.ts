@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EYES > AGILITY
+ * 🔥 AETERNA CORE > EYES > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses
@@ -16,5 +16,5 @@
 // export * from './eternal-guardian';
 // export * from './guardians-template';
 // export * from './MemoryWatchdog';
-// export * from './qantum-cli';
+// export * from './aeterna-cli';
 // export * from './unified-guardian';

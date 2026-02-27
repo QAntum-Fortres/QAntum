@@ -13,7 +13,7 @@
  * - Business Logic
  *
  * @author Dimitar Prodromov
- * @version 18.0.0
+ * @version 1.0.0-AETERNA
  */
 
 // ═══════════════════════════════════════════════════════════════════════════

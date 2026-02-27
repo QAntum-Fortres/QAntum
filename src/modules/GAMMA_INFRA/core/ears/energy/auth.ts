@@ -15,7 +15,7 @@ interface LoginOptions {
 export async function login(options: LoginOptions) {
   const config = getConfig();
 
-  let token = options.token || process.env.QANTUM_API_TOKEN;
+  let token = options.token || process.env.AETERNA_API_TOKEN;
 
   if (!token) {
     // Interactive login
@@ -23,7 +23,7 @@ export async function login(options: LoginOptions) {
       {
         type: 'password',
         name: 'token',
-        message: 'Enter your QAntum API token:',
+        message: 'Enter your Aeterna API token:',
         mask: '*',
         validate: (input: string) => input.length > 0 || 'Token is required',
       },
@@ -67,7 +67,7 @@ export async function whoami() {
   const email = config.get('userEmail');
 
   if (!email) {
-    console.log(chalk.yellow('Not logged in. Run `qantum login` to authenticate.'));
+    console.log(chalk.yellow('Not logged in. Run `aeterna login` to authenticate.'));
     return;
   }
 
@@ -101,7 +101,7 @@ export async function whoami() {
     console.log(`  Usage:   ${user.tenant.testsUsed}/${user.tenant.testsLimit} tests`);
     console.log();
   } catch (error: any) {
-    spinner.fail('Session expired. Please run `qantum login` again.');
+    spinner.fail('Session expired. Please run `aeterna login` again.');
     config.delete('apiToken');
   }
 }

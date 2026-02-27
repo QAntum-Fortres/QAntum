@@ -1,8 +1,8 @@
 /**
  * @file EternalWatchdog.ts (formerly MemoryWatchdog.ts)
  * @description Memory Leak Watchdog - Автоматично спиране на workers при > 200MB
- * @version 1.0.0
- * @author QANTUM AI
+ * @version 1.0.0-AETERNA
+ * @author AETERNA AI
  * @phase Phase 4: Validation & Stress (The Baptism of Fire)
  */
 

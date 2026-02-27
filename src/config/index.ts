@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CONFIGURATION MODULE                                                 ║
+ * ║   AETERNA CONFIGURATION MODULE                                                 ║
  * ║   "Unified configuration management"                                          ║
  * ║                                                                               ║
  * ║   TODO B #43 - Configuration Management                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -53,24 +53,24 @@ import { ConfigLoader, ConfigValue, deepMerge } from './loader';
 import { SchemaValidator, Schema, SchemaBuilder, s } from './schema';
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// QANTUM CONFIGURATION
+// AETERNA CONFIGURATION
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * QAntum default configuration schema
+ * Aeterna default configuration schema
  */
-export const QANTUM_CONFIG_SCHEMA: Schema = {
+export const AETERNA_CONFIG_SCHEMA: Schema = {
   // Test runner settings
   'runner.timeout': s.number().default(30000).description('Test timeout in ms').build(),
   'runner.retries': s.number().default(0).min(0).description('Number of retries').build(),
   'runner.parallel': s.boolean().default(true).description('Run tests in parallel').build(),
-  'runner.maxWorkers': s.number().default(4).min(1).env('QANTUM_MAX_WORKERS').build(),
+  'runner.maxWorkers': s.number().default(4).min(1).env('AETERNA_MAX_WORKERS').build(),
   'runner.bail': s.boolean().default(false).description('Stop on first failure').build(),
 
   // Reporter settings
   'reporter.format': s.string().enum('console', 'json', 'html', 'junit').default('console').build(),
   'reporter.outputDir': s.string().default('./reports').format('path').build(),
-  'reporter.verbose': s.boolean().default(false).env('QANTUM_VERBOSE').build(),
+  'reporter.verbose': s.boolean().default(false).env('AETERNA_VERBOSE').build(),
 
   // Coverage settings
   'coverage.enabled': s.boolean().default(false).build(),
@@ -86,7 +86,7 @@ export const QANTUM_CONFIG_SCHEMA: Schema = {
   'coverage.exclude': s.array(s.string().build()).default(['**/*.test.ts', '**/*.spec.ts']).build(),
 
   // Browser settings
-  'browser.headless': s.boolean().default(true).env('QANTUM_HEADLESS').build(),
+  'browser.headless': s.boolean().default(true).env('AETERNA_HEADLESS').build(),
   'browser.viewport': s
     .object({
       width: s.number().default(1920).build(),
@@ -97,7 +97,7 @@ export const QANTUM_CONFIG_SCHEMA: Schema = {
   'browser.screenshots': s.boolean().default(true).build(),
 
   // API settings
-  'api.baseUrl': s.string().format('url').env('QANTUM_API_URL').build(),
+  'api.baseUrl': s.string().format('url').env('AETERNA_API_URL').build(),
   'api.timeout': s.number().default(30000).build(),
   'api.retries': s.number().default(3).build(),
 
@@ -126,9 +126,9 @@ export const QANTUM_CONFIG_SCHEMA: Schema = {
 };
 
 /**
- * QAntum Configuration
+ * Aeterna Configuration
  */
-export interface QAntumConfig {
+export interface AeternaConfig {
   runner: {
     timeout: number;
     retries: number;
@@ -183,14 +183,14 @@ export interface QAntumConfig {
 }
 
 /**
- * Unified QAntum Configuration Manager
+ * Unified Aeterna Configuration Manager
  */
-export class QAntumConfiguration {
-  private static instance: QAntumConfiguration;
+export class AeternaConfiguration {
+  private static instance: AeternaConfiguration;
 
   private loader: ConfigLoader;
   private validator: SchemaValidator;
-  private config: QAntumConfig | null = null;
+  private config: AeternaConfig | null = null;
 
   private constructor() {
     this.loader = new ConfigLoader({
@@ -198,29 +198,29 @@ export class QAntumConfiguration {
       mergeStrategy: 'deep',
     });
 
-    this.validator = new SchemaValidator(QANTUM_CONFIG_SCHEMA);
+    this.validator = new SchemaValidator(AETERNA_CONFIG_SCHEMA);
   }
 
-  static getInstance(): QAntumConfiguration {
-    if (!QAntumConfiguration.instance) {
-      QAntumConfiguration.instance = new QAntumConfiguration();
+  static getInstance(): AeternaConfiguration {
+    if (!AeternaConfiguration.instance) {
+      AeternaConfiguration.instance = new AeternaConfiguration();
     }
-    return QAntumConfiguration.instance;
+    return AeternaConfiguration.instance;
   }
 
   /**
    * Initialize with automatic detection
    */
-  async init(basePath: string = process.cwd()): Promise<QAntumConfig> {
+  async init(basePath: string = process.cwd()): Promise<AeternaConfig> {
     // Add common config file locations
     const configFiles = [
-      'qantum.config.json',
-      'qantum.config.yaml',
-      'qantum.config.yml',
-      'qantum.config.toml',
-      '.qantumrc',
-      '.qantumrc.json',
-      '.qantumrc.yaml',
+      'aeterna.config.json',
+      'aeterna.config.yaml',
+      'aeterna.config.yml',
+      'aeterna.config.toml',
+      '.aeternarc',
+      '.aeternarc.json',
+      '.aeternarc.yaml',
     ];
 
     for (const file of configFiles) {
@@ -228,7 +228,7 @@ export class QAntumConfiguration {
     }
 
     // Add environment variables
-    this.loader.addEnv('QANTUM_', 100);
+    this.loader.addEnv('AETERNA_', 100);
 
     // Load and validate
     await this.loader.load();
@@ -239,42 +239,42 @@ export class QAntumConfiguration {
       console.warn('Configuration warnings:', result.errors);
     }
 
-    this.config = this.flatToNested(result.config) as QAntumConfig;
+    this.config = this.flatToNested(result.config) as AeternaConfig;
     return this.config;
   }
 
   /**
    * Initialize from specific file
    */
-  async initFromFile(filePath: string): Promise<QAntumConfig> {
+  async initFromFile(filePath: string): Promise<AeternaConfig> {
     this.loader.addFile(filePath, 50);
-    this.loader.addEnv('QANTUM_', 100);
+    this.loader.addEnv('AETERNA_', 100);
 
     await this.loader.load();
     const raw = this.loader.getAll();
     const result = this.validator.validateOrThrow(raw);
 
-    this.config = this.flatToNested(result) as QAntumConfig;
+    this.config = this.flatToNested(result) as AeternaConfig;
     return this.config;
   }
 
   /**
    * Initialize with object
    */
-  initWithConfig(config: Partial<QAntumConfig>): QAntumConfig {
+  initWithConfig(config: Partial<AeternaConfig>): AeternaConfig {
     const merged = deepMerge(this.getDefaultConfig(), config);
-    this.config = merged as QAntumConfig;
+    this.config = merged as AeternaConfig;
     return this.config;
   }
 
   /**
    * Get configuration
    */
-  get<K extends keyof QAntumConfig>(key: K): QAntumConfig[K];
+  get<K extends keyof AeternaConfig>(key: K): AeternaConfig[K];
   get<T = any>(key: string): T;
   get(key: string): any {
     if (!this.config) {
-      this.config = this.getDefaultConfig() as QAntumConfig;
+      this.config = this.getDefaultConfig() as AeternaConfig;
     }
 
     const parts = key.split('.');
@@ -291,11 +291,11 @@ export class QAntumConfiguration {
   /**
    * Set configuration
    */
-  set<K extends keyof QAntumConfig>(key: K, value: QAntumConfig[K]): void;
+  set<K extends keyof AeternaConfig>(key: K, value: AeternaConfig[K]): void;
   set(key: string, value: any): void;
   set(key: string, value: any): void {
     if (!this.config) {
-      this.config = this.getDefaultConfig() as QAntumConfig;
+      this.config = this.getDefaultConfig() as AeternaConfig;
     }
 
     const parts = key.split('.');
@@ -312,18 +312,18 @@ export class QAntumConfiguration {
   /**
    * Get all config
    */
-  getAll(): QAntumConfig {
+  getAll(): AeternaConfig {
     if (!this.config) {
-      this.config = this.getDefaultConfig() as QAntumConfig;
+      this.config = this.getDefaultConfig() as AeternaConfig;
     }
-    return { ...this.config } as QAntumConfig;
+    return { ...this.config } as AeternaConfig;
   }
 
   /**
    * Reset to defaults
    */
   reset(): void {
-    this.config = this.getDefaultConfig() as QAntumConfig;
+    this.config = this.getDefaultConfig() as AeternaConfig;
   }
 
   /**
@@ -409,8 +409,8 @@ export class QAntumConfiguration {
 // SINGLETON & HELPERS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getQAntumConfig = (): QAntumConfiguration => QAntumConfiguration.getInstance();
+export const getAeternaConfig = (): AeternaConfiguration => AeternaConfiguration.getInstance();
 
-export const config = QAntumConfiguration.getInstance();
+export const config = AeternaConfiguration.getInstance();
 
-export default QAntumConfiguration;
+export default AeternaConfiguration;

@@ -1,6 +1,6 @@
 ﻿/**
  * 
- *   QANTUM NEXUS - CORE INTEGRATION LAYER v1.0                                  
+ *   AETERNA NEXUS - CORE INTEGRATION LAYER v1.0                                  
  *   "Безкраен цикъл на самопоправка и адаптация"                                
  *                                                                               
  *   Connects Dashboard to:                                                      
@@ -10,7 +10,7 @@
  *    PineconeContextBridge.ts (52K+ Vectors)                                 
  *    EternalWatchdog (Self-Healing)                                          
  *                                                                               
- *    2026 QAntum Empire | Dimitar Prodromov                                    
+ *    2026 Aeterna Empire | Dimitar Prodromov                                    
  * 
  */
 

@@ -1,8 +1,8 @@
 /**
  * @fileoverview Global Application Store using Zustand
- * @description Централизирано state management за QAntum Dashboard
- * @author QAntum Empire
- * @version 1.0.0
+ * @description Централизирано state management за Aeterna Dashboard
+ * @author Aeterna Empire
+ * @version 1.0.0-AETERNA
  */
 
 import { create } from 'zustand';
@@ -162,14 +162,14 @@ export const useAppStore = create<AppState>()(
         }),
       }),
       {
-        name: 'qantum-app-store',
+        name: 'aeterna-app-store',
         partialize: (state) => ({
           theme: state.theme,
           sidebarCollapsed: state.sidebarCollapsed,
         }),
       }
     ),
-    { name: 'QAntum App Store' }
+    { name: 'Aeterna App Store' }
   )
 );
 

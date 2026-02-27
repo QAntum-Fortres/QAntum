@@ -1,5 +1,5 @@
 /**
- * 🛡️ QANTUM DEBUGGER API Routes
+ * 🛡️ AETERNA DEBUGGER API Routes
  * 
  * API endpoints for the debugger dashboard integration
  */

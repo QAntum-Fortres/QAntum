@@ -1,17 +1,17 @@
-# QANTUM DEBUGGER
+# AETERNA DEBUGGER
 
 **Self-Healing TypeScript/JavaScript Debugger with Auto-Fix & Machine Learning**
 
 > "Identifies, Neutralizes, Prevents."
 
-[![npm version](https://badge.fury.io/js/qantum-debugger.svg)](https://www.npmjs.com/package/qantum-debugger)
+[![npm version](https://badge.fury.io/js/aeterna-debugger.svg)](https://www.npmjs.com/package/aeterna-debugger)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## Why QANTUM DEBUGGER?
+## Why AETERNA DEBUGGER?
 
-| Traditional Linters | QANTUM DEBUGGER |
+| Traditional Linters | AETERNA DEBUGGER |
 |---------------------|-----------------|
 | Find errors | Find AND fix errors |
 | Static rules | Learning system |
@@ -23,9 +23,9 @@
 ## Installation
 
 ```bash
-npm install -g qantum-debugger
+npm install -g aeterna-debugger
 # or
-npx qantum-debugger scan
+npx aeterna-debugger scan
 ```
 
 ---
@@ -99,7 +99,7 @@ qd license status
 
 ```
 
-  QANTUM DEBUGGER v1.0                                         
+  AETERNA DEBUGGER v1.0                                         
   "Identifies, Neutralizes, Prevents."                         
 
 
@@ -120,9 +120,9 @@ SCAN RESULTS:
 ## API Reference
 
 ```typescript
-import { QantumDebugger } from "qantum-debugger";
+import { AeternaDebugger } from "aeterna-debugger";
 
-const debugger = new QantumDebugger({
+const debugger = new AeternaDebugger({
   projectRoot: process.cwd(),
   autoFix: true,
   learningEnabled: true
@@ -139,24 +139,24 @@ debugger.startWatching();
 
 ## Links
 
-- Website: https://qantum.dev/debugger
-- Pricing: https://qantum.dev/debugger/pricing
-- Documentation: https://qantum.dev/debugger/docs
-- GitHub: https://github.com/qantum-dev/qantum-debugger
+- Website: https://aeterna.dev/debugger
+- Pricing: https://aeterna.dev/debugger/pricing
+- Documentation: https://aeterna.dev/debugger/docs
+- GitHub: https://github.com/aeterna-dev/aeterna-debugger
 
 ---
 
 ## Support
 
-- Email: dimitar@qantum.dev
-- Discord: https://discord.gg/qantum
-- Issues: https://github.com/qantum-dev/qantum-debugger/issues
+- Email: dimitar@aeterna.dev
+- Discord: https://discord.gg/aeterna
+- Issues: https://github.com/aeterna-dev/aeterna-debugger/issues
 
 ---
 
 ## Author
 
-**Dimitar Prodromov** - QAntum Empire
+**Dimitar Prodromov** - Aeterna Empire
 
 ---
 

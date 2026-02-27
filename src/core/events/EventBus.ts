@@ -2,7 +2,7 @@ import { EventEmitter } from 'events';
 import { Logger } from '../telemetry/Logger';
 import { Telemetry } from '../telemetry/Telemetry';
 
-export interface QAntumEvent {
+export interface AeternaEvent {
   id: string;
   topic: string;
   source: string;
@@ -13,13 +13,13 @@ export interface QAntumEvent {
 
 /**
  * 🛰️ Global Event Bus
- * The backbone of asynchronous communication across the QANTUM ecosystem.
+ * The backbone of asynchronous communication across the AETERNA ecosystem.
  */
 export class EventBus extends EventEmitter {
   private static instance: EventBus;
   private logger: Logger;
   private telemetry: Telemetry;
-  private history: QAntumEvent[] = [];
+  private history: AeternaEvent[] = [];
   private maxHistory: number = 1000;
 
   private constructor() {
@@ -43,9 +43,9 @@ export class EventBus extends EventEmitter {
     topic: string,
     source: string,
     payload: any,
-    priority: QAntumEvent['priority'] = 'MEDIUM'
+    priority: AeternaEvent['priority'] = 'MEDIUM'
   ) {
-    const event: QAntumEvent = {
+    const event: AeternaEvent = {
       id: `EVT_${Date.now()}_${Math.random().toString(36).substring(7)}`,
       topic,
       source,
@@ -76,7 +76,7 @@ export class EventBus extends EventEmitter {
   /**
    * Subscribes to a specific topic
    */
-  public subscribe(topic: string, handler: (event: QAntumEvent) => void) {
+  public subscribe(topic: string, handler: (event: AeternaEvent) => void) {
     this.on(topic, handler);
     this.logger.info('EVENT', `New subscription established for topic: ${topic}`);
   }
@@ -84,21 +84,21 @@ export class EventBus extends EventEmitter {
   /**
    * Subscribes to all events (wildcard)
    */
-  public subscribeAll(handler: (event: QAntumEvent) => void) {
+  public subscribeAll(handler: (event: AeternaEvent) => void) {
     this.on('*', handler);
   }
 
   /**
    * Unsubscribes a handler from a topic
    */
-  public unsubscribe(topic: string, handler: (event: QAntumEvent) => void) {
+  public unsubscribe(topic: string, handler: (event: AeternaEvent) => void) {
     this.off(topic, handler);
   }
 
   /**
    * Retrieves event history filtered by topic
    */
-  public getHistory(topic?: string): QAntumEvent[] {
+  public getHistory(topic?: string): AeternaEvent[] {
     if (topic) {
       return this.history.filter((e) => e.topic === topic);
     }
@@ -116,14 +116,14 @@ export class EventBus extends EventEmitter {
   /**
    * Waits for a specific event to occur (Promise-based)
    */
-  public waitFor(topic: string, timeoutMs: number = 30000): Promise<QAntumEvent> {
+  public waitFor(topic: string, timeoutMs: number = 30000): Promise<AeternaEvent> {
     return new Promise((resolve, reject) => {
       const timer = setTimeout(() => {
         this.off(topic, handler);
         reject(new Error(`Timeout waiting for event: ${topic}`));
       }, timeoutMs);
 
-      const handler = (event: QAntumEvent) => {
+      const handler = (event: AeternaEvent) => {
         clearTimeout(timer);
         this.off(topic, handler);
         resolve(event);

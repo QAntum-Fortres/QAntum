@@ -4,7 +4,7 @@
  * ║                           VERITAS SDK - PUBLIC INTERFACE                                      ║
  * ║              "The contract between your code and the truth"                                   ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum Sentinel | Dimitar Prodromov                                                ║
+ * ║   © 2025-2026 Aeterna Sentinel | Dimitar Prodromov                                                ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

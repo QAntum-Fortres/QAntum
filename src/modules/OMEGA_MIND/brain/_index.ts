@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN
+ * 🔥 AETERNA BRAIN
  *
  *
  *

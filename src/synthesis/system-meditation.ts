@@ -19,7 +19,7 @@
  * ║                    "Universal Synthesis Layer Integrity Verification"                         ║
  * ║                                                                                               ║
  * ║   THE FINAL SYNTHESIS - Task 4: System Meditation                                             ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

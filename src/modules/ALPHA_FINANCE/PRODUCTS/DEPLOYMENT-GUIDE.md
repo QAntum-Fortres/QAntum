@@ -1,4 +1,4 @@
-# 🌙 QAntum Night Shift - Automated Production Pipeline
+# 🌙 Aeterna Night Shift - Automated Production Pipeline
 
 ## За да пуснеш Landing Page на продажба:
 
@@ -27,7 +27,7 @@ git push -u origin master
 ## 🌙 Докато спиш - стартирай:
 
 ```batch
-C:\MisteMind\PRODUCTS\QANTUM-NIGHT-SHIFT.bat
+C:\MisteMind\PRODUCTS\AETERNA-NIGHT-SHIFT.bat
 ```
 
 Това ще създаде:
@@ -74,4 +74,4 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 - Night Report с анализ
 - Втори landing page готов за development
 
-**Лека нощ, шефе! 🌙 QAntum работи!**
+**Лека нощ, шефе! 🌙 Aeterna работи!**

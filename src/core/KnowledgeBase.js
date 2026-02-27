@@ -1,7 +1,7 @@
 /**
  * @fileoverview Knowledge Base - Learning and storing selector success patterns
  * @module core/KnowledgeBase
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 const fs = require('fs');

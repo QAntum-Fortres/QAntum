@@ -1,15 +1,15 @@
 /**
  * Genesis CLI Commands - КОМАНДНА ЛИНИЯ ЗА ОНТОЛОГИЧНАТА КОВАЧНИЦА
  *
- * qantum genesis create   - Create a new reality
- * qantum genesis manifest - Manifest reality as Docker environment
- * qantum genesis observe  - Execute tests within a reality
- * qantum genesis list     - List active realities
- * qantum genesis collapse - Destroy a reality
- * qantum genesis status   - Get reality status
+ * aeterna genesis create   - Create a new reality
+ * aeterna genesis manifest - Manifest reality as Docker environment
+ * aeterna genesis observe  - Execute tests within a reality
+ * aeterna genesis list     - List active realities
+ * aeterna genesis collapse - Destroy a reality
+ * aeterna genesis status   - Get reality status
  *
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import chalk from 'chalk';
@@ -107,7 +107,7 @@ export async function genesisCreate(options: CreateOptions) {
       console.log(`  ${chalk.dim('Dimensions:')} ${result.dimensions}D`);
       console.log(`  ${chalk.dim('Status:')}    ${chalk.yellow(result.status)}`);
       console.log();
-      console.log(chalk.dim('  To manifest: qantum genesis manifest --reality ' + result.id));
+      console.log(chalk.dim('  To manifest: aeterna genesis manifest --reality ' + result.id));
     }
   } catch (error: any) {
     spinner.fail(chalk.red('Failed to create reality'));
@@ -185,7 +185,7 @@ export async function genesisManifest(options: ManifestOptions) {
         console.log(`    ${chalk.dim('•')} ${container.name}: ${statusColor(container.status)}`);
       }
       console.log();
-      console.log(chalk.dim('  To observe: qantum genesis observe --reality ' + result.manifestationId));
+      console.log(chalk.dim('  To observe: aeterna genesis observe --reality ' + result.manifestationId));
     }
   } catch (error: any) {
     spinner.fail(chalk.red('Failed to manifest reality'));
@@ -328,7 +328,7 @@ export async function genesisList(options: ListOptions) {
         }
       }
 
-      console.log(chalk.dim('  Create new: qantum genesis create --name "My Reality"'));
+      console.log(chalk.dim('  Create new: aeterna genesis create --name "My Reality"'));
     }
   } catch (error: any) {
     spinner.fail(chalk.red('Failed to list realities'));

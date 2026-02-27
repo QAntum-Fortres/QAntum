@@ -4,7 +4,7 @@
  * ║   SELF-CRITIQUE TEST: KNOWLEDGE DISTILLER                                     ║
  * ║   "Системата анализира собствения си код"                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

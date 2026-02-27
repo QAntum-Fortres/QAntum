@@ -8,7 +8,7 @@
  * ║   Maps the entire file system into a graph that the Brain can traverse.       ║
  * ║   Connects "The Head" (src/intelligence) with "The Body" (src/modules).       ║
  * ║                                                                               ║
- * ║   © 2026 QAntum Architecture                                                  ║
+ * ║   © 2026 Aeterna Architecture                                                  ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

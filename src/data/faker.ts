@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DATA FAKER                                                           ║
+ * ║   AETERNA DATA FAKER                                                           ║
  * ║   "Realistic test data generation"                                            ║
  * ║                                                                               ║
  * ║   TODO B #39 - Data: Faker integration                                        ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM ENCRYPTION LAYER                                                     ║
+ * ║   AETERNA ENCRYPTION LAYER                                                     ║
  * ║   "AES-256-GCM encryption for sensitive data"                                 ║
  * ║                                                                               ║
  * ║   TODO B #41 - Security: Encryption                                           ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

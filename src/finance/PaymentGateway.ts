@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.1 - PAYMENT GATEWAY                                     ║
+ * ║  Aeterna Prime v28.1 - PAYMENT GATEWAY                                     ║
  * ║  "Парите влизат" - Stripe + PayPal Integration                            ║
  * ║                                                                           ║
  * ║  💰 Real money acceptance pipeline                                        ║
@@ -333,8 +333,8 @@ class PayPalAdapter {
         email_address: subscriberEmail,
       },
       application_context: {
-        return_url: 'https://qantum.pro/success',
-        cancel_url: 'https://qantum.pro/cancel',
+        return_url: 'https://aeterna.pro/success',
+        cancel_url: 'https://aeterna.pro/cancel',
       },
     });
 

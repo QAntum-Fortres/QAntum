@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- *                         COSMIC TAXONOMY OF QANTUM
+ *                         COSMIC TAXONOMY OF AETERNA
  *                    КОСМИЧЕСКА ТАКСОНОМИЯ НА ВСЕЛЕНАТА
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
@@ -18,7 +18,7 @@
  * Потенциал → Проявление → Действие → Разбиране → Майсторство → Безсмъртие → ∞
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -423,7 +423,7 @@ export const COSMIC_REGISTRY: CosmicModule[] = [
   {
     id: 'adaptive-ollama-agent',
     name: 'Adaptive Ollama Agent',
-    path: 'qantum-nerve-center/server/services/AdaptiveOllamaAgent.ts',
+    path: 'aeterna-nerve-center/server/services/AdaptiveOllamaAgent.ts',
     lines: 999,
     sense: CosmicSense.PROCESSING,
     evolution: EvolutionStage.TRANSCENDENCE,
@@ -435,7 +435,7 @@ export const COSMIC_REGISTRY: CosmicModule[] = [
   {
     id: 'ollama-agent',
     name: 'Ollama Agent',
-    path: 'qantum-nerve-center/server/services/OllamaAgent.ts',
+    path: 'aeterna-nerve-center/server/services/OllamaAgent.ts',
     lines: 666,
     sense: CosmicSense.PROCESSING,
     evolution: EvolutionStage.MASTERY,
@@ -867,7 +867,7 @@ export const COSMIC_REGISTRY: CosmicModule[] = [
   {
     id: 'onto-generator',
     name: 'OntoGenerator',
-    path: 'qantum-nerve-center/server/engines/OntoGenerator.ts',
+    path: 'aeterna-nerve-center/server/engines/OntoGenerator.ts',
     lines: 1413,
     sense: CosmicSense.TRANSCENDENCE,
     evolution: EvolutionStage.INFINITY,
@@ -891,7 +891,7 @@ export const COSMIC_REGISTRY: CosmicModule[] = [
   {
     id: 'phenomenon-weaver',
     name: 'Phenomenon Weaver',
-    path: 'qantum-nerve-center/server/engines/PhenomenonWeaver.ts',
+    path: 'aeterna-nerve-center/server/engines/PhenomenonWeaver.ts',
     lines: 932,
     sense: CosmicSense.TRANSCENDENCE,
     evolution: EvolutionStage.INFINITY,
@@ -915,7 +915,7 @@ export const COSMIC_REGISTRY: CosmicModule[] = [
   {
     id: 'transcendence-core',
     name: 'Transcendence Core',
-    path: 'qantum-nerve-center/server/engines/TranscendenceCore.ts',
+    path: 'aeterna-nerve-center/server/engines/TranscendenceCore.ts',
     lines: 1046,
     sense: CosmicSense.TRANSCENDENCE,
     evolution: EvolutionStage.INFINITY,
@@ -1140,7 +1140,7 @@ export function getStatsBySense(): Record<CosmicSense, { count: number; lines: n
 
 export const COSMIC_TAXONOMY_ASCII = `
 ╔═══════════════════════════════════════════════════════════════════════════════╗
-║                    КОСМИЧЕСКА ТАКСОНОМИЯ НА QANTUM                            ║
+║                    КОСМИЧЕСКА ТАКСОНОМИЯ НА AETERNA                            ║
 ║                         7 СЕТИВА НА СИСТЕМАТА                                 ║
 ╠═══════════════════════════════════════════════════════════════════════════════╣
 ║                                                                               ║

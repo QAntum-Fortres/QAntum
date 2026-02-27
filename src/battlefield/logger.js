@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- * QANTUM - Logger Module
+ * AETERNA - Logger Module
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * @copyright 2025 Dimitar Prodromov (papica777-eng). All Rights Reserved.
@@ -92,7 +92,7 @@ class Logger {
      * @param {boolean} options.json - Output JSON format
      */
     constructor(options = {}) {
-        this.name = options.name || 'QAntum';
+        this.name = options.name || 'Aeterna';
         this.level = LOG_LEVELS[options.level?.toUpperCase()] ?? LOG_LEVELS.INFO;
         this.colors = options.colors !== false;
         this.timestamps = options.timestamps !== false;
@@ -316,7 +316,7 @@ class Logger {
 
 // Default logger instance
 const defaultLogger = new Logger({
-    name: 'QAntum',
+    name: 'Aeterna',
     level: process.env.LOG_LEVEL || 'INFO',
     colors: process.env.NO_COLOR !== '1',
     timestamps: true

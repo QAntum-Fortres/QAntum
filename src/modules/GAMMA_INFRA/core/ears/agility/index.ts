@@ -36,7 +36,7 @@
  * Chemistry exports TO Biology, Reality
  *
  * @module layers/chemistry
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @license MIT
  */
 

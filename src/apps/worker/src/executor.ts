@@ -4,7 +4,7 @@
  * Core execution engine with anti-detection and resource management
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import { Builder, WebDriver, Capabilities, logging } from 'selenium-webdriver';

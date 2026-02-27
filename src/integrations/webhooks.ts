@@ -1,5 +1,5 @@
 /**
- * 🔔 QANTUM - Slack & Discord Webhooks Integration
+ * 🔔 AETERNA - Slack & Discord Webhooks Integration
  * 
  * Features:
  * - Live test failure alerts with video links
@@ -7,7 +7,7 @@
  * - Daily summary reports
  * - Self-healing notifications
  * 
- * @version 1.0.0-QANTUM-PRIME
+ * @version 1.0.0-AETERNA
  */
 
 import * as https from 'https';
@@ -120,7 +120,7 @@ export class WebhookNotifier {
                     elements: [
                         {
                             type: 'mrkdwn',
-                            text: `🧠 Powered by *QANTUM* v1.0.0.0 | ${new Date().toLocaleString()}`
+                            text: `🧠 Powered by *AETERNA* v1.0.0.0 | ${new Date().toLocaleString()}`
                         }
                     ]
                 }
@@ -150,7 +150,7 @@ export class WebhookNotifier {
                     type: 'section',
                     text: {
                         type: 'mrkdwn',
-                        text: `Test *${test.name}* was automatically healed by QANTUM AI`
+                        text: `Test *${test.name}* was automatically healed by AETERNA AI`
                     }
                 },
                 {
@@ -179,7 +179,7 @@ export class WebhookNotifier {
                     elements: [
                         {
                             type: 'mrkdwn',
-                            text: `✨ No manual intervention required | 🧠 QANTUM v1.0.0.0`
+                            text: `✨ No manual intervention required | 🧠 AETERNA v1.0.0.0`
                         }
                     ]
                 }
@@ -248,7 +248,7 @@ export class WebhookNotifier {
                     elements: [
                         {
                             type: 'mrkdwn',
-                            text: `🧠 Powered by *QANTUM* AI Engine v1.0.0.0`
+                            text: `🧠 Powered by *AETERNA* AI Engine v1.0.0.0`
                         }
                     ]
                 }
@@ -310,7 +310,7 @@ export class WebhookNotifier {
                     elements: [
                         {
                             type: 'mrkdwn',
-                            text: `🧠 QANTUM v1.0.0.0 | ${new Date().toLocaleDateString()}`
+                            text: `🧠 AETERNA v1.0.0.0 | ${new Date().toLocaleDateString()}`
                         }
                     ]
                 }
@@ -340,7 +340,7 @@ export class WebhookNotifier {
                     { name: 'Error', value: `\`\`\`${test.error || 'Unknown error'}\`\`\`` }
                 ],
                 footer: {
-                    text: '🧠 QANTUM v1.0.0.0'
+                    text: '🧠 AETERNA v1.0.0.0'
                 },
                 timestamp: new Date().toISOString()
             }]
@@ -367,7 +367,7 @@ export class WebhookNotifier {
                     { name: '⏱️ Duration', value: `${summary.duration}s`, inline: true }
                 ],
                 footer: {
-                    text: '🧠 QANTUM AI Engine v1.0.0.0'
+                    text: '🧠 AETERNA AI Engine v1.0.0.0'
                 },
                 timestamp: new Date().toISOString()
             }]
@@ -397,7 +397,7 @@ export class WebhookNotifier {
                     { name: '⏱️ Duration', value: `${(summary.duration / 60).toFixed(1)} min`, inline: true }
                 ],
                 footer: {
-                    text: '🧠 QANTUM v1.0.0.0'
+                    text: '🧠 AETERNA v1.0.0.0'
                 },
                 timestamp: new Date().toISOString()
             }]

@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM TELEMETRY                                                            ║
+ * ║   AETERNA TELEMETRY                                                            ║
  * ║   "Usage analytics and performance metrics"                                   ║
  * ║                                                                               ║
  * ║   TODO B #48 - SaaS: Telemetry                                                ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

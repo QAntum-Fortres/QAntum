@@ -1,10 +1,10 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM COGNITION MODULE                                                     ║
+ * ║   AETERNA COGNITION MODULE                                                     ║
  * ║   "Разсъждение, самокритика, логика"                                         ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -48,7 +48,7 @@ export {
   NeuralBackpack,
   createDistiller,
   createBackpack,
-  QANTUM_LAYERS,
+  AETERNA_LAYERS,
   type ArchitecturalPrinciple,
   type PrincipleCategory,
   type Evidence,

@@ -1,4 +1,4 @@
-# ⚛️ QAntum v1.0.0
+# ⚛️ Aeterna v1.0.0
 
 > **The Autonomous QA Agent - Beyond Classical Testing**  
 > AI-Powered • Self-Healing • Ghost Mode • Swarm Execution
@@ -16,11 +16,11 @@
 ╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
-## 🎯 What is QAntum?
+## 🎯 What is Aeterna?
 
-QAntum is the **next evolution** in test automation. While traditional frameworks react to failures, QAntum **anticipates and prevents them**.
+Aeterna is the **next evolution** in test automation. While traditional frameworks react to failures, Aeterna **anticipates and prevents them**.
 
-| Feature | Playwright | Cypress | Selenium | **QAntum** |
+| Feature | Playwright | Cypress | Selenium | **Aeterna** |
 |---------|------------|---------|----------|------------|
 | Self-Healing | ❌ | ❌ | ❌ | ✅ AI-Powered |
 | Ghost Mode | ❌ | ❌ | ❌ | ✅ Undetectable |
@@ -46,11 +46,11 @@ QAntum is the **next evolution** in test automation. While traditional framework
 
 ```bash
 # Install
-npm install qantum
+npm install aeterna
 npx playwright install chromium
 
 # Run your first test
-npx qantum run tests/
+npx aeterna run tests/
 
 # Or use the short alias
 npx qa run tests/
@@ -62,17 +62,17 @@ npx qa run tests/
 
 ### 🧬 Self-Healing Engine
 ```typescript
-import { QAntum } from 'qantum';
+import { Aeterna } from 'aeterna';
 
 // Selectors auto-heal when they break
-const qa = await QAntum.launch();
-await qa.click('#submit-button'); // If this breaks, QAntum finds it
+const qa = await Aeterna.launch();
+await qa.click('#submit-button'); // If this breaks, Aeterna finds it
 ```
 
 ### 👻 Ghost Mode
 ```typescript
 // Bypass ALL bot detection (Cloudflare, DataDome, PerimeterX)
-const qa = await QAntum.launch({ ghost: true });
+const qa = await Aeterna.launch({ ghost: true });
 await qa.visit('https://protected-site.com');
 // You're invisible
 ```
@@ -85,7 +85,7 @@ npm run swarm:run --tests=16000 --nodes=auto
 
 ### 🔮 Predictive AI
 ```typescript
-// QAntum predicts failures BEFORE they happen
+// Aeterna predicts failures BEFORE they happen
 const predictions = await qa.precog.analyze();
 // { risk: 0.02, willFail: ['login-test'], reason: 'API latency spike' }
 ```
@@ -97,9 +97,9 @@ const predictions = await qa.precog.analyze();
 ### Core
 | Command | Description |
 |---------|-------------|
-| `npx qantum run` | Run tests |
-| `npx qantum run --parallel` | Run with 16 workers |
-| `npx qantum run --ghost` | Run in ghost mode |
+| `npx aeterna run` | Run tests |
+| `npx aeterna run --parallel` | Run with 16 workers |
+| `npx aeterna run --ghost` | Run in ghost mode |
 
 ### Swarm Orchestration
 | Command | Description |
@@ -120,7 +120,7 @@ const predictions = await qa.precog.analyze();
 ## 🏗️ Architecture
 
 ```
-QAntum/
+Aeterna/
 ├── core/           # Quantum Core Engine
 ├── healing/        # Self-Healing AI
 ├── ghost/          # Zero-Detection Stealth
@@ -161,27 +161,27 @@ QAntum/
 ## 📦 Installation
 
 ```bash
-npm install qantum
+npm install aeterna
 # or
-yarn add qantum
+yarn add aeterna
 # or
-pnpm add qantum
+pnpm add aeterna
 ```
 
 ---
 
 ## 📄 License
 
-Commercial License - QAntum Labs
+Commercial License - Aeterna Labs
 
 ---
 
 <div align="center">
 
-**⚛️ QAntum - Beyond Classical Testing ⚛️**
+**⚛️ Aeterna - Beyond Classical Testing ⚛️**
 
 *"The tests that test themselves"*
 
-[Documentation](https://qantum.dev/docs) • [Discord](https://discord.gg/qantum) • [Twitter](https://twitter.com/qantum_qa)
+[Documentation](https://aeterna.dev/docs) • [Discord](https://discord.gg/aeterna) • [Twitter](https://twitter.com/aeterna_qa)
 
 </div>

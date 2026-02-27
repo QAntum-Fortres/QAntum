@@ -1,6 +1,6 @@
-# QAntum QA SaaS - CI/CD Setup
+# Aeterna QA SaaS - CI/CD Setup
 
-This document outlines the CI/CD setup for the QAntum QA SaaS platform, including GitHub Actions workflows and self-hosted runner requirements.
+This document outlines the CI/CD setup for the Aeterna QA SaaS platform, including GitHub Actions workflows and self-hosted runner requirements.
 
 ## GitHub Actions Workflow
 

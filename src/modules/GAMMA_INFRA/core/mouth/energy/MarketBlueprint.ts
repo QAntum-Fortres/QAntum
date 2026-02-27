@@ -1,7 +1,7 @@
 /**
  * MarketBlueprint.ts - "The Evolution Engine"
  *
- * QAntum Framework v1.6.0 - "The Oracle's Market Intelligence"
+ * Aeterna Framework v1.6.0 - "The Oracle's Market Intelligence"
  *
  * Converts discovered site logic into marketable test packages.
  * One-click purchase functionality for enterprise clients.
@@ -13,7 +13,7 @@
  * - White-label ready for reseller networks
  *
  * @module biology/evolution/MarketBlueprint
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @enterprise true
  */
 
@@ -1300,8 +1300,8 @@ export class MarketBlueprint extends EventEmitter {
       order.status = 'completed';
       order.completedAt = new Date();
       order.deliveredAt = new Date();
-      order.downloadUrl = `https://qantum.io/api/v1/downloads/${orderId}`;
-      order.apiEndpoint = `https://qantum.io/api/v1/tests/${orderId}`;
+      order.downloadUrl = `https://aeterna.io/api/v1/downloads/${orderId}`;
+      order.apiEndpoint = `https://aeterna.io/api/v1/tests/${orderId}`;
 
       // Store order
       const clientOrders = this.orderHistory.get(clientKeyId) || [];

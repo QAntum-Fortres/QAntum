@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum - LICENSE MANAGER
+ * Aeterna - LICENSE MANAGER
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
@@ -73,7 +73,7 @@ export interface HardwareInfo {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export class LicenseManager {
-    private static readonly LICENSE_FILE = '.QAntum.license';
+    private static readonly LICENSE_FILE = '.Aeterna.license';
     private static readonly PUBLIC_KEY = `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5vG2r4K9HdMzXx3JxY7q
 kMrLh8sYbKqP2gWb0Z1xVvN3Q8JdHmFnRvKjX2L5sT6D7wN8fP1Yg3H4iK9jL0S
@@ -223,7 +223,7 @@ yQIDAQAB
                 owner: null,
                 features: [],
                 daysRemaining: 0,
-                error: 'Не е намерен лиценз. Моля активирайте QAntum.'
+                error: 'Не е намерен лиценз. Моля активирайте Aeterna.'
             };
         }
 
@@ -412,7 +412,7 @@ yQIDAQAB
 
         let output = `
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                     🛡️ QAntum License Manager                           ║
+║                     🛡️ Aeterna License Manager                           ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║ Hardware ID: ${hwId}                ║
 ║ CPU: ${this.hardwareInfo.cpuModel.substring(0, 50).padEnd(50)}       ║

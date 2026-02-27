@@ -1,5 +1,5 @@
 // ╔══════════════════════════════════════════════════════════════════════════════╗
-// ║  QANTUM v23.3.0 - Cognitive Capabilities Type Definitions               ║
+// ║  AETERNA v23.3.0 - Cognitive Capabilities Type Definitions               ║
 // ║  "Type-Safe Sovereign" - Interactive Documentation                           ║
 // ╚══════════════════════════════════════════════════════════════════════════════╝
 

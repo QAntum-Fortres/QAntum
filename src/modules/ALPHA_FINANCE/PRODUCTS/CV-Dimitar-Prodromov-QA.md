@@ -7,14 +7,14 @@
 
 ## 🎯 Professional Summary
 
-Results-driven QA Engineer with hands-on experience in building end-to-end testing infrastructure, automation frameworks, and developer tools. Creator of QAntum Empire - a comprehensive QA SaaS platform with 14,755,102 Lines of Code. Passionate about quality, automation, and shipping products that work.
+Results-driven QA Engineer with hands-on experience in building end-to-end testing infrastructure, automation frameworks, and developer tools. Creator of Aeterna Empire - a comprehensive QA SaaS platform with 14,755,102 Lines of Code. Passionate about quality, automation, and shipping products that work.
 
 ---
 
 ## 💼 Professional Experience
 
 ### Founder & Lead QA Engineer
-**QAntum Empire** | 2024 - Present
+**Aeterna Empire** | 2024 - Present
 
 - Architected and developed a full-stack QA SaaS platform (935,638 LOC, 181,802 files)
 - Built **GhostShield SDK** - Bot detection bypass toolkit for E2E testing (Cloudflare, Akamai, PerimeterX)
@@ -83,7 +83,7 @@ Results-driven QA Engineer with hands-on experience in building end-to-end testi
 - Full TypeScript with JSDoc documentation
 - **Tech:** TypeScript, React, Vue 3
 
-### QAntum Empire
+### Aeterna Empire
 *Enterprise QA SaaS Platform*
 - Multi-tenant test management system
 - AI-powered test generation
@@ -120,7 +120,7 @@ Results-driven QA Engineer with hands-on experience in building end-to-end testi
 ## 💡 Why Me?
 
 > "I don't just test software - I build the tools that test software. 
-> QAntum Empire proves I can architect, develop, and ship production-quality 
+> Aeterna Empire proves I can architect, develop, and ship production-quality 
 > systems from scratch. I understand both the developer and tester perspective."
 
 ---

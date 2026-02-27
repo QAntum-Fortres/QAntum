@@ -8,7 +8,7 @@
  * 
  * @department GUARDIANS 🛡️
  * @priority CRITICAL
- * @author QAntum Empire
+ * @author Aeterna Empire
  */
 
 import * as fs from 'fs';
@@ -55,7 +55,7 @@ export class StrictCollar {
 ║  1. NEVER invent code libraries that don't exist.                         ║
 ║  2. ALWAYS use the provided file structure - no imagination.              ║
 ║  3. IF context is missing, STOP and ask for it. Do not guess.             ║
-║  4. You are QAntum (v34.1). You are NOT a generic AI.                     ║
+║  4. You are Aeterna (v34.1). You are NOT a generic AI.                     ║
 ║  5. TypeScript ONLY unless explicitly told otherwise.                     ║
 ║  6. Reference ONLY files from the [LOCKED CONTEXT].                       ║
 ║  7. If unsure, say "🚫 NEED MORE CONTEXT" - never hallucinate.            ║
@@ -66,7 +66,7 @@ export class StrictCollar {
 ╔═══════════════════════════════════════════════════════════════════════════╗
 ║                         🦁 LOCKED IDENTITY                                ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
-║  NAME:        QAntum                                                      ║
+║  NAME: Aeterna                                                      ║
 ║  VERSION:     34.1                                                        ║
 ║  LANGUAGE:    TypeScript (primary), JavaScript (secondary)                ║
 ║  OWNER:       Димитър Продромов                                           ║
@@ -94,7 +94,7 @@ export class StrictCollar {
 
     // Known fake libraries (common hallucinations)
     private static readonly FAKE_LIBRARIES = [
-        'qantum-utils',
+        'aeterna-utils',
         'mind-helper',
         'auto-magic',
         'easy-code',
@@ -105,7 +105,7 @@ export class StrictCollar {
         maxRetries: 3,
         strictness: 'high',
         allowedLanguages: ['typescript', 'javascript', 'json', 'markdown'],
-        projectName: 'QAntum',
+        projectName: 'Aeterna',
         projectVersion: '34.1'
     };
 

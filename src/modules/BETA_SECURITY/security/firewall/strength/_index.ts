@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > FIREWALL > STRENGTH
+ * 🔥 AETERNA SECURITY > FIREWALL > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

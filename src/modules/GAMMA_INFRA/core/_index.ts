@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE
+ * 🔥 AETERNA CORE
  *
  * 👁️👂👄🧠 СЕТИВА - Eyes, Ears, Mouth, Brain
  *

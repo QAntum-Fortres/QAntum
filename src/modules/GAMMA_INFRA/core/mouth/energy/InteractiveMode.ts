@@ -6,8 +6,8 @@
  * Interactive REPL for Mind Engine
  * Real-time test execution and debugging
  *
- * @author dp | QAntum Labs
- * @version 1.0.0-QANTUM-PRIME
+ * @author dp | Aeterna Labs
+ * @version 1.0.0-AETERNA
  * @license Commercial
  * ═══════════════════════════════════════════════════════════════════════════════
  */

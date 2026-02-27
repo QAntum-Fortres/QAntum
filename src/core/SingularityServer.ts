@@ -7,7 +7,7 @@ import { Logger } from './telemetry/Logger';
 import { pathJoin } from '../utils/paths';
 
 /**
- * 🌌 QANTUM SINGULARITY SERVER
+ * 🌌 AETERNA SINGULARITY SERVER
  * The ultimate backend server that unifies all departments and services.
  */
 export class SingularityServer {
@@ -102,7 +102,7 @@ export class SingularityServer {
     this.app.use(express.static(dashboardDir));
 
     this.app.get('(.*)', (req: any, res: any) => {
-      res.sendFile(pathJoin(dashboardDir, 'qantum-singular-interface.html'));
+      res.sendFile(pathJoin(dashboardDir, 'aeterna-singular-interface.html'));
     });
   }
 

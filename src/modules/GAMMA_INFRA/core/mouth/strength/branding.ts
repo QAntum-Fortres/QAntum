@@ -1,27 +1,27 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * ⚛️ QANTUM BRANDING - Single Source of Truth for Identity
+ * ⚛️ AETERNA BRANDING - Single Source of Truth for Identity
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * This file is the CENTRAL authority for all branding elements.
  * Any change here propagates to the entire system.
  *
  * @author dp
- * @organization QAntum Labs
- * @version 1.0.0-QANTUM-PRIME
+ * @organization Aeterna Labs
+ * @version 1.0.0-AETERNA
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
 import { logger } from '../api/unified/utils/logger';
 
-export const QANTUM_IDENTITY = {
-  name: 'QAntum',
+export const AETERNA_IDENTITY = {
+  name: 'Aeterna',
   version: '1.0.0',
   tagline: 'The Autonomous QA Agent - Beyond Classical Testing',
 
   author: {
     name: 'dp',
-    organization: 'QAntum Labs',
+    organization: 'Aeterna Labs',
     year: 2025,
   },
 } as const;
@@ -33,7 +33,7 @@ export const QANTUM_IDENTITY = {
  * │            │    dp    │              │
  * │            ╰──────────╯              │
  * │                                      │
- * │         qantum labs © 2025           │
+ * │         aeterna labs © 2025           │
  * └──────────────────────────────────────┘
  */
 export const AUTHOR_LOGO = `
@@ -43,18 +43,18 @@ export const AUTHOR_LOGO = `
 │            │    dp    │              │
 │            ╰──────────╯              │
 │                                      │
-│         qantum labs © 2025           │
+│         aeterna labs © 2025           │
 └──────────────────────────────────────┘
 `;
 
 export const AUTHOR_LOGO_MINIMAL = `  dp  `;
 
-export const AUTHOR_LOGO_INLINE = `[ dp ] qantum labs`;
+export const AUTHOR_LOGO_INLINE = `[ dp ] aeterna labs`;
 
 /**
- * Primary QAntum ASCII Art Logo
+ * Primary Aeterna ASCII Art Logo
  */
-export const QANTUM_LOGO = `
+export const AETERNA_LOGO = `
     ██████╗  █████╗ ███╗   ██╗████████╗██╗   ██╗███╗   ███╗
    ██╔═══██╗██╔══██╗████╗  ██║╚══██╔══╝██║   ██║████╗ ████║
    ██║   ██║███████║██╔██╗ ██║   ██║   ██║   ██║██╔████╔██║
@@ -64,11 +64,11 @@ export const QANTUM_LOGO = `
 `;
 
 /**
- * Compact QAntum Logo
+ * Compact Aeterna Logo
  */
-export const QANTUM_LOGO_COMPACT = `
+export const AETERNA_LOGO_COMPACT = `
  ╔═══════════════════════════════════════════════╗
- ║  ⚛️  QAntum v${QANTUM_IDENTITY.version.padEnd(6)}                        ║
+ ║  ⚛️  Aeterna v${AETERNA_IDENTITY.version.padEnd(6)}                        ║
  ║  The Autonomous QA Agent                      ║
  ╚═══════════════════════════════════════════════╝
 `;
@@ -76,7 +76,7 @@ export const QANTUM_LOGO_COMPACT = `
 /**
  * Full banner with author branding
  */
-export const QANTUM_BANNER = `
+export const AETERNA_BANNER = `
 ═══════════════════════════════════════════════════════════════════════════════
 
     ██████╗  █████╗ ███╗   ██╗████████╗██╗   ██╗███╗   ███╗
@@ -86,23 +86,23 @@ export const QANTUM_BANNER = `
    ╚██████╔╝██║  ██║██║ ╚████║   ██║   ╚██████╔╝██║ ╚═╝ ██║
     ╚══▀▀═╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝
 
-                     ⚛️ VERSION ${QANTUM_IDENTITY.version} ⚛️
-           "${QANTUM_IDENTITY.tagline}"
+                     ⚛️ VERSION ${AETERNA_IDENTITY.version} ⚛️
+           "${AETERNA_IDENTITY.tagline}"
 
 ═══════════════════════════════════════════════════════════════════════════════
                             ╭──────────╮
                             │    dp    │
                             ╰──────────╯
-                       qantum labs © ${QANTUM_IDENTITY.author.year}
+                       aeterna labs © ${AETERNA_IDENTITY.author.year}
 ═══════════════════════════════════════════════════════════════════════════════
 `;
 
 /**
  * Footer with minimal branding
  */
-export const QANTUM_FOOTER = `
+export const AETERNA_FOOTER = `
 ───────────────────────────────────────────────────────────────────────────────
-  ⚛️ QAntum v${QANTUM_IDENTITY.version}  │  ${QANTUM_IDENTITY.tagline}  │  [ dp ] qantum labs
+  ⚛️ Aeterna v${AETERNA_IDENTITY.version}  │  ${AETERNA_IDENTITY.tagline}  │  [ dp ] aeterna labs
 ───────────────────────────────────────────────────────────────────────────────
 `;
 
@@ -110,35 +110,35 @@ export const QANTUM_FOOTER = `
  * Print the full banner to console
  */
 export function printBanner(): void {
-  logger.debug(QANTUM_BANNER);
+  logger.debug(AETERNA_BANNER);
 }
 
 /**
  * Print compact header
  */
 export function printHeader(): void {
-  logger.debug(QANTUM_LOGO_COMPACT);
+  logger.debug(AETERNA_LOGO_COMPACT);
 }
 
 /**
  * Print footer
  */
 export function printFooter(): void {
-  logger.debug(QANTUM_FOOTER);
+  logger.debug(AETERNA_FOOTER);
 }
 
 /**
  * Get version string with branding
  */
 export function getVersionString(): string {
-  return `⚛️ QAntum v${QANTUM_IDENTITY.version} by dp`;
+  return `⚛️ Aeterna v${AETERNA_IDENTITY.version} by dp`;
 }
 
 /**
  * Get copyright string
  */
 export function getCopyright(): string {
-  return `© ${QANTUM_IDENTITY.author.year} ${QANTUM_IDENTITY.author.organization}`;
+  return `© ${AETERNA_IDENTITY.author.year} ${AETERNA_IDENTITY.author.organization}`;
 }
 
 /**
@@ -175,10 +175,10 @@ export const styled = {
 };
 
 export default {
-  QANTUM_IDENTITY,
-  QANTUM_LOGO,
-  QANTUM_BANNER,
-  QANTUM_FOOTER,
+  AETERNA_IDENTITY,
+  AETERNA_LOGO,
+  AETERNA_BANNER,
+  AETERNA_FOOTER,
   AUTHOR_LOGO,
   AUTHOR_LOGO_MINIMAL,
   AUTHOR_LOGO_INLINE,

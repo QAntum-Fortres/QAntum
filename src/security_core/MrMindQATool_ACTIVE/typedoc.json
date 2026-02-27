@@ -2,7 +2,7 @@
   "$schema": "https://typedoc.org/schema.json",
   "entryPoints": ["src/index.ts"],
   "out": "docs/api",
-  "name": "QAntum Framework API",
+  "name": "Aeterna Framework API",
   "readme": "README.md",
   "theme": "default",
   "excludePrivate": true,

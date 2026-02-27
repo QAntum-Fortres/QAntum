@@ -3,7 +3,7 @@
  * Consolidated healing and health monitoring
  *
  * @module healing
- * @version 35.0.0
+ * @version 1.0.0-AETERNA
  */
 
 export * from './SelfHealing';

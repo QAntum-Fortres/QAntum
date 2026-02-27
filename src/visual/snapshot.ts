@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM VISUAL SNAPSHOT TESTING                                              ║
+ * ║   AETERNA VISUAL SNAPSHOT TESTING                                              ║
  * ║   "DOM and JSON snapshot comparisons"                                         ║
  * ║                                                                               ║
  * ║   TODO B #34 - Visual Testing: Snapshot support                               ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

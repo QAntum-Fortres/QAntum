@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SKILLS > SCRAPING > STRENGTH
+ * 🔥 AETERNA SKILLS > SCRAPING > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

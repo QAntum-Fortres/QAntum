@@ -18,8 +18,8 @@
  *
  * Uses Atomics for lock-free synchronization to avoid blocking the Event Loop.
  *
- * @version 1.0.0-QANTUM-PRIME
- * @author QANTUM AI Architect
+ * @version 1.0.0-AETERNA
+ * @author AETERNA AI Architect
  */
 
 // @ts-nocheck

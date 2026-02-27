@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM SHARDING ENGINE                                                      ║
+ * ║   AETERNA SHARDING ENGINE                                                      ║
  * ║   "Split tests intelligently across shards"                                   ║
  * ║                                                                               ║
  * ║   TODO B #16 - Performance: Test Sharding                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

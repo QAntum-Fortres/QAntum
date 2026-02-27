@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DEPENDENCY INJECTION CONTAINER                                       ║
+ * ║   AETERNA DEPENDENCY INJECTION CONTAINER                                       ║
  * ║   "Inversion of Control за loose coupling"                                    ║
  * ║                                                                               ║
  * ║   TODO B #4 - Dependency Injection                                            ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

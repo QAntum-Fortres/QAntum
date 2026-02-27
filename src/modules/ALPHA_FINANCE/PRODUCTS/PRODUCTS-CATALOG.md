@@ -1,10 +1,10 @@
-# 📦 QANTUM PRODUCTS CATALOG
+# 📦 AETERNA PRODUCTS CATALOG
 
 ## Официален Каталог на Готови за Продажба Продукти
 
 > **Status:** Production Ready
 > **Last Updated:** 2026-01-03
-> **Owner:** Dimitar Prodromov / QAntum Empire
+> **Owner:** Dimitar Prodromov / Aeterna Empire
 
 ---
 
@@ -14,8 +14,8 @@
 |---|---------|-----------|--------|---------|
 | 1 | GhostShield SDK | Security/Automation | ✅ Ready | $99-499/mo |
 | 2 | ChronoSync SDK | State Management | ✅ Ready | $19-79/mo |
-| 3 | QANTUM Debugger | Developer Tools | ✅ Ready | $29-299/mo |
-| 4 | QANTUM SaaS | QA Platform | 🚧 Coming | $49-499/mo |
+| 3 | AETERNA Debugger | Developer Tools | ✅ Ready | $29-299/mo |
+| 4 | AETERNA SaaS | QA Platform | 🚧 Coming | $49-499/mo |
 
 ---
 
@@ -184,7 +184,7 @@ C:\MisteMind\PRODUCTS\chronosync-sdk\
 ### Примерен Код
 
 ```typescript
-import { createStore } from '@qantum/chronosync';
+import { createStore } from '@aeterna/chronosync';
 
 const store = createStore({
   count: 0,
@@ -214,7 +214,7 @@ const { state, set, undo, redo } = useChronoSync(store);
 
 ---
 
-## 3. 🔍 QANTUM DEBUGGER
+## 3. 🔍 AETERNA DEBUGGER
 
 ### Описание
 Self-Healing TypeScript/JavaScript Debugger - автоматично открива, поправя и предотвратява грешки.
@@ -241,7 +241,7 @@ Self-Healing TypeScript/JavaScript Debugger - автоматично откри�
 | Dependencies | chokidar only |
 | Node.js | >=18.0.0 |
 | Документация | Пълна |
-| CLI | qd / qantum-debug |
+| CLI | qd / aeterna-debug |
 
 ### Pricing Tiers
 
@@ -260,9 +260,9 @@ Self-Healing TypeScript/JavaScript Debugger - автоматично откри�
 ### Файлова Структура
 
 ```
-C:\MisteMind\PRODUCTS\qantum-debugger\
+C:\MisteMind\PRODUCTS\aeterna-debugger\
 ├── src/
-│   ├── qantum-debugger.ts # Main engine
+│   ├── aeterna-debugger.ts # Main engine
 │   ├── cli.ts             # CLI interface
 │   └── license.ts         # License management
 ├── data/
@@ -276,9 +276,9 @@ C:\MisteMind\PRODUCTS\qantum-debugger\
 ### Примерен Код
 
 ```typescript
-import { QantumDebugger } from 'qantum-debugger';
+import { AeternaDebugger } from 'aeterna-debugger';
 
-const debugger = new QantumDebugger({
+const debugger = new AeternaDebugger({
   projectRoot: process.cwd(),
   autoFix: true,
   learningEnabled: true
@@ -378,7 +378,7 @@ qd license status
 
 ## � COMING SOON
 
-### 4. 🧪 QANTUM SaaS Platform
+### 4. 🧪 AETERNA SaaS Platform
 
 **AI-Powered QA Testing Platform**
 
@@ -449,15 +449,15 @@ qd license status
 
 ## �📞 КОНТАКТИ
 
-- **Website:** https://qantum.dev
-- **Email:** dimitar@qantum.dev
-- **GitHub:** github.com/qantum-dev
-- **Discord:** discord.gg/qantum
-- **Twitter:** @qantum_dev
+- **Website:** https://aeterna.dev
+- **Email:** dimitar@aeterna.dev
+- **GitHub:** github.com/aeterna-dev
+- **Discord:** discord.gg/aeterna
+- **Twitter:** @aeterna_dev
 
 ---
 
 *Document Version: 1.0*
 *Classification: Internal / Public*
 *Created: 2026-01-03*
-*Author: QAntum Empire*
+*Author: Aeterna Empire*

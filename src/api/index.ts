@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM API MODULE                                                           ║
+ * ║   AETERNA API MODULE                                                           ║
  * ║   "Rate Limiting & Versioning"                                                ║
  * ║                                                                               ║
  * ║   TODO B #44-45 - API Complete                                                ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

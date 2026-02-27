@@ -12,7 +12,7 @@
  *              "The Autonomous QA Agent - Quantum Grade"
  * ═══════════════════════════════════════════════════════════════════════════════
  *
- * QAntum - Beyond Classical Testing
+ * Aeterna - Beyond Classical Testing
  * AI-Powered • Self-Healing • Ghost Mode • Swarm Execution
  *
  * Core Capabilities:
@@ -25,17 +25,17 @@
  * 🛡️ FORTRESS MODE     - Production-grade isolation
  * 📊 NEURAL MAPPING    - Learns your application's DNA
  *
- * @author QAntum Labs
- * @version 1.0.0
+ * @author Aeterna Labs
+ * @version 1.0.0-AETERNA
  * @license Commercial
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// QANTUM CORE EXPORTS
+// AETERNA CORE EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export { QAntum, createQA } from './core/qantum.js';
+export { Aeterna, createQA } from './core/aeterna.js';
 export { SelfHealingEngine, selfHealer } from './core/self-healing.js';
 export { DeepSearchEngine, deepSearch } from './core/deep-search.js';
 export { NetworkInterceptor, networkInterceptor } from './core/network-interceptor.js';
@@ -115,18 +115,18 @@ export * from './forms/index.js';
 // GLOBAL INSTANCE
 // ═══════════════════════════════════════════════════════════════════════════════
 
-import { createMM } from './core/qantum.js';
+import { createMM } from './core/aeterna.js';
 export const mm = createMM();
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // VERSION INFO
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const VERSION = '27.2.0';
+export const VERSION = '1.0.0-AETERNA';
 export const CODENAME = 'GHOST_IN_THE_MACHINE';
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// GHOST v27.2.0 - ZERO-DETECTION AUTOMATION
+// GHOST v1.0.0-AETERNA - ZERO-DETECTION AUTOMATION
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export * from './ghost/index.js';

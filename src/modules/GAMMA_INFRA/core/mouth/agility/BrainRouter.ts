@@ -15,7 +15,7 @@
  * ║     • Selector Repair → Llama 3.1 8B (Fast, CSS/XPath expert)                                 ║
  * ║     • Logic Refactor  → DeepSeek-V3 (Deep reasoning, architecture)                            ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

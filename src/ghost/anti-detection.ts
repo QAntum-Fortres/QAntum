@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM ANTI-DETECTION                                                       ║
+ * ║   AETERNA ANTI-DETECTION                                                       ║
  * ║   "Evade bot detection systems"                                               ║
  * ║                                                                               ║
  * ║   TODO B #22 - Ghost Protocol: Anti-Detection                                 ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- * QANTUM - Error Handler Module
+ * AETERNA - Error Handler Module
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * @copyright 2025 Dimitar Prodromov (papica777-eng). All Rights Reserved.
@@ -206,19 +206,19 @@ function sleep(ms) {
 }
 
 /**
- * QANTUM Error class with enhanced information
+ * AETERNA Error class with enhanced information
  */
-class QAntumError extends Error {
+class AeternaError extends Error {
     constructor(code, message, context = {}) {
         super(message);
-        this.name = 'QAntumError';
+        this.name = 'AeternaError';
         this.code = code;
         this.context = context;
         this.timestamp = new Date().toISOString();
         this.solution = ERROR_SOLUTIONS[code]?.solution || 'See documentation';
         
         // Capture clean stack
-        Error.captureStackTrace(this, QAntumError);
+        Error.captureStackTrace(this, AeternaError);
     }
 
     toJSON() {
@@ -260,8 +260,8 @@ class ErrorHandler {
     async handle(error, context = {}) {
         this.errorCount++;
         
-        // Convert to QAntumError if needed
-        const mmError = error instanceof QAntumError 
+        // Convert to AeternaError if needed
+        const mmError = error instanceof AeternaError 
             ? error 
             : this.classify(error);
         
@@ -284,20 +284,20 @@ class ErrorHandler {
     }
 
     /**
-     * Classify a generic error into QAntumError
+     * Classify a generic error into AeternaError
      */
     classify(error) {
         const message = error.message || String(error);
         
         // Network errors
         if (message.includes('ECONNREFUSED')) {
-            return new QAntumError('MM-301', message, { originalError: error });
+            return new AeternaError('MM-301', message, { originalError: error });
         }
         if (message.includes('timeout') || message.includes('ETIMEDOUT')) {
-            return new QAntumError('MM-302', message, { originalError: error });
+            return new AeternaError('MM-302', message, { originalError: error });
         }
         if (error.response?.status === 429) {
-            return new QAntumError('MM-305', message, { 
+            return new AeternaError('MM-305', message, { 
                 originalError: error,
                 retryAfter: error.response?.headers?.['retry-after']
             });
@@ -305,35 +305,35 @@ class ErrorHandler {
         
         // Auth errors
         if (error.response?.status === 401) {
-            return new QAntumError('MM-401', message, { originalError: error });
+            return new AeternaError('MM-401', message, { originalError: error });
         }
         if (message.includes('token') && message.includes('expired')) {
-            return new QAntumError('MM-402', message, { originalError: error });
+            return new AeternaError('MM-402', message, { originalError: error });
         }
         
         // Browser errors
         if (message.includes('Browser') && message.includes('closed')) {
-            return new QAntumError('MM-502', message, { originalError: error });
+            return new AeternaError('MM-502', message, { originalError: error });
         }
         if (message.includes('waiting for selector') || message.includes('Element not found')) {
-            return new QAntumError('MM-503', message, { originalError: error });
+            return new AeternaError('MM-503', message, { originalError: error });
         }
         
         // File errors
         if (message.includes('ENOENT')) {
-            return new QAntumError('MM-601', message, { originalError: error });
+            return new AeternaError('MM-601', message, { originalError: error });
         }
         if (message.includes('EACCES')) {
-            return new QAntumError('MM-602', message, { originalError: error });
+            return new AeternaError('MM-602', message, { originalError: error });
         }
         
         // Memory errors
         if (message.includes('heap') || message.includes('out of memory')) {
-            return new QAntumError('MM-701', message, { originalError: error });
+            return new AeternaError('MM-701', message, { originalError: error });
         }
         
         // Default: unknown error
-        return new QAntumError('MM-999', message, { originalError: error });
+        return new AeternaError('MM-999', message, { originalError: error });
     }
 
     /**
@@ -463,22 +463,22 @@ function setupGlobalHandlers() {
         );
     });
     
-    console.log('🛡️ QANTUM error handlers installed');
+    console.log('🛡️ AETERNA error handlers installed');
 }
 
 // Export everything
 module.exports = {
-    QAntumError,
+    AeternaError,
     ErrorHandler,
     ERROR_SOLUTIONS,
     globalHandler,
     setupGlobalHandlers,
     
     // Convenience function
-    createError: (code, message, context) => new QAntumError(code, message, context),
+    createError: (code, message, context) => new AeternaError(code, message, context),
     
     // Quick throw
     throwError: (code, message, context) => {
-        throw new QAntumError(code, message, context);
+        throw new AeternaError(code, message, context);
     }
 };

@@ -1,5 +1,5 @@
 /**
- * QAntum QA Tool - Test Runner
+ * Aeterna QA Tool - Test Runner
  * Executes tests with Playwright
  */
 

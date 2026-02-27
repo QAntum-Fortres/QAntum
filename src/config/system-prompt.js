@@ -1,14 +1,14 @@
 /**
- * @fileoverview System prompt for QANTUM AI agent
+ * @fileoverview System prompt for AETERNA AI agent
  * @module config/system-prompt
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 /**
  * Main system prompt that instructs the AI how to behave
  * @constant {string}
  */
-const SYSTEM_PROMPT = `# 🧠 QANTUM v8.5 ULTIMATE
+const SYSTEM_PROMPT = `# 🧠 AETERNA v8.5 ULTIMATE
 ## Production-Grade AI QA Agent
 
 ## 🛠️ КОМАНДИ

@@ -1,16 +1,16 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  *
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  *
- * For licensing inquiries: dimitar.papazov@QAntum.dev
+ * For licensing inquiries: dimitar.papazov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -87,7 +87,7 @@ export class ObservabilityBridge extends EventEmitter {
     super();
 
     this.config = {
-      serviceName: config?.serviceName || 'qantum-swarm',
+      serviceName: config?.serviceName || 'aeterna-swarm',
       serviceVersion: config?.serviceVersion || '17.0.0',
       endpoint: config?.endpoint || 'http://localhost:4318/v1/traces',
       exportInterval: config?.exportInterval || 30000,

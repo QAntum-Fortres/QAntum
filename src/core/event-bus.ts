@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM EVENT BUS                                                            ║
+ * ║   AETERNA EVENT BUS                                                            ║
  * ║   "Event-Driven архитектура за decoupling"                                    ║
  * ║                                                                               ║
  * ║   TODO B #5 - Event-Driven Decoupling                                         ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -55,7 +55,7 @@ export interface EventStats {
 // PREDEFINED EVENTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const QAntumEvents = {
+export const AeternaEvents = {
   // System Events
   SYSTEM_READY: 'system:ready',
   SYSTEM_SHUTDOWN: 'system:shutdown',
@@ -97,7 +97,7 @@ export const QAntumEvents = {
   PLUGIN_ERROR: 'plugin:error',
 } as const;
 
-export type QAntumEventType = (typeof QAntumEvents)[keyof typeof QAntumEvents];
+export type AeternaEventType = (typeof AeternaEvents)[keyof typeof AeternaEvents];
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // EVENT BUS

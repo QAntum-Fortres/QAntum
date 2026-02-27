@@ -8,12 +8,12 @@
  * ║  ╚██████╔╝██║  ██║██║ ╚████║   ██║   ╚██████╔╝██║ ╚═╝ ██║    ██║     ██║  ██║██║██║ ╚═╝ ██║  ║
  * ║   ╚══▀▀═╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ║
  * ║                                                                                               ║
- * ║                         🚀 QANTUM PRIME TESTING FRAMEWORK v28.4 🚀                            ║
+ * ║                         🚀 AETERNA PRIME TESTING FRAMEWORK v28.4 🚀                            ║
  * ║                                                                                               ║
  * ║   "The Nexus of Complete Testing Solutions - From Unit to Enterprise"                         ║
  * ║                                                                                               ║
  * ║   Authored by: Dimitar Prodromov                                                                ║
- * ║   © 2025-2026 QAntum | All Rights Reserved                                                    ║
+ * ║   © 2025-2026 Aeterna | All Rights Reserved                                                    ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */
@@ -106,14 +106,14 @@ export const VERSION = '28.4.0';
 export const CODENAME = 'SUPREMACY';
 export const BUILD_DATE = new Date().toISOString();
 
-export const QANTUM_METADATA = {
-  name: 'QAntum Prime',
+export const AETERNA_METADATA = {
+  name: 'Aeterna Prime',
   version: VERSION,
   codename: CODENAME,
   author: 'Dimitar Prodromov',
   license: 'MIT',
   repository: 'https://github.com/papica777-eng/QA-Framework',
-  homepage: 'https://qantum.dev',
+  homepage: 'https://aeterna.dev',
   features: [
     'Unit Testing',
     'Integration Testing',
@@ -153,20 +153,20 @@ export const QANTUM_METADATA = {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * Quick start function for QAntum
+ * Quick start function for Aeterna
  */
-export function qantum() {
+export function aeterna() {
   console.log(`
 ╔═══════════════════════════════════════════════════════════════╗
 ║                                                               ║
-║   🚀 QANTUM PRIME v${VERSION} - ${CODENAME}              ║
+║   🚀 AETERNA PRIME v${VERSION} - ${CODENAME}              ║
 ║                                                               ║
 ║   The Complete Testing Framework                              ║
 ║   Ready for action!                                           ║
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
     `);
-  return QANTUM_METADATA;
+  return AETERNA_METADATA;
 }
 
-export default qantum;
+export default aeterna;

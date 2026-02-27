@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > BRAIN > ENERGY
+ * 🔥 AETERNA CORE > BRAIN > ENERGY
  *
  *
  *

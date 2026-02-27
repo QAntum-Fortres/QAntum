@@ -1,5 +1,5 @@
 /**
- * @fileoverview Unit tests for QANTUM v8.5 core modules
+ * @fileoverview Unit tests for AETERNA v8.5 core modules
  * @module test/modules.test
  */
 

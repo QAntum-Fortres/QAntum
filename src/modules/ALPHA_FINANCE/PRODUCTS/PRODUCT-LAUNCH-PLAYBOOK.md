@@ -74,7 +74,7 @@
 МЕТРИКА (1 число)
 ```
 
-**Пример - QANTUM Debugger:**
+**Пример - AETERNA Debugger:**
 ```
 ПРОБЛЕМ: Developers губят 50% от времето си в debugging
 РЕШЕНИЕ: Автоматично откриване и поправка на грешки
@@ -453,6 +453,6 @@ AFTER FIRST SALE:
 
 *Document Version: 1.0*
 *Created: 2026-01-03*
-*Author: QAntum Empire*
+*Author: Aeterna Empire*
 
 > "Ideas are cheap. Execution is everything." — Chris Sacca

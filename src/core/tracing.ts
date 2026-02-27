@@ -6,7 +6,7 @@ import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions'
 
 const sdk = new NodeSDK({
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'qantum-core',
+    [SemanticResourceAttributes.SERVICE_NAME]: 'aeterna-core',
     [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: 'development',
   }),
   traceExporter: new JaegerExporter({

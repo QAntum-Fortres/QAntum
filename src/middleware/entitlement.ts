@@ -4,7 +4,7 @@
  * Guards API routes based on tenant plan and usage limits
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import { FastifyRequest, FastifyReply, FastifyInstance } from 'fastify';
@@ -270,7 +270,7 @@ export async function checkApiAccess(
 ): Promise<void> {
   // Check if request is from API key (not dashboard)
   const authHeader = request.headers.authorization;
-  const isApiKeyAuth = authHeader?.startsWith('Bearer qantum_');
+  const isApiKeyAuth = authHeader?.startsWith('Bearer aeterna_');
   
   if (!isApiKeyAuth) return; // Dashboard access is always allowed
   

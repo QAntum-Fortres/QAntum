@@ -7,7 +7,7 @@
  * - AutoTestFactory: Self-writing test generation
  * - SelfHealingV2: Real-time test repair
  *
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @phase 81-90
  */
 
@@ -48,7 +48,7 @@ interface CognitiveConfig {
 }
 
 /**
- * 🧠 Cognitive Orchestrator - The Brain of QANTUM
+ * 🧠 Cognitive Orchestrator - The Brain of AETERNA
  *
  * Coordinates all cognitive modules for autonomous test generation
  */
@@ -102,7 +102,7 @@ export class CognitiveOrchestrator extends EventEmitter {
 ╔═══════════════════════════════════════════════════════════════╗
 ║  🧠 COGNITIVE ORCHESTRATOR                                    ║
 ║                                                               ║
-║  "QANTUM writes its own tests!"                         ║
+║  "AETERNA writes its own tests!"                         ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║  Pipeline:                                                    ║
 ║  1. 🗺️  Explore → Discover site structure                     ║

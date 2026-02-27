@@ -32,7 +32,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## AuthGuard
 
-> # AuthGuard  QANTUM AUTH GUARD — модул за защита и контрол на достъпа.
+> # AuthGuard  AETERNA AUTH GUARD — модул за защита и контрол на достъпа.
 
 
 ## AutoOnboarder
@@ -47,12 +47,12 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## BrainRouter
 
-> # BrainRouter  Маршрутизиране на сигнали и данни между различни ядра и агенти в QAntum Empire.
+> # BrainRouter  Маршрутизиране на сигнали и данни между различни ядра и агенти в Aeterna Empire.
 
 
 ## CableSystem
 
-> # CableSystem  QANTUM CABLE SYSTEM — маршрутизиране и управление на комуникационните канали.
+> # CableSystem  AETERNA CABLE SYSTEM — маршрутизиране и управление на комуникационните канали.
 
 
 ## ChronosEngine
@@ -92,7 +92,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## DependencyGraph
 
-> # DependencyGraph  Визуализира и анализира зависимостите между всички компоненти на QAntum Empire.
+> # DependencyGraph  Визуализира и анализира зависимостите между всички компоненти на Aeterna Empire.
 
 
 ## EcosystemHarmonizer
@@ -102,7 +102,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## EcosystemSyncValidator
 
-> # EcosystemSyncValidator  Валидира синхронизацията между всички компоненти на QAntum Empire. Гарантира цялост и съвместимост на данните.
+> # EcosystemSyncValidator  Валидира синхронизацията между всички компоненти на Aeterna Empire. Гарантира цялост и съвместимост на данните.
 
 
 ## EmailEngine
@@ -112,7 +112,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## ErrorFactory
 
-> # ErrorFactory  QAntumError и ErrorCodes — централизирано управление на грешки и кодове за изключения.
+> # ErrorFactory  AeternaError и ErrorCodes — централизирано управление на грешки и кодове за изключения.
 
 
 ## ExchangeConnectors
@@ -152,7 +152,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## LiveWalletManager
 
-> # LiveWalletManager  "Fortress Protocol" - 256-bit AES Encryption. Управлява криптирани портфейли и финансови потоци в QAntum Empire.
+> # LiveWalletManager  "Fortress Protocol" - 256-bit AES Encryption. Управлява криптирани портфейли и финансови потоци в Aeterna Empire.
 
 
 ## MAGICSTICK
@@ -170,7 +170,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## MarketplaceConnector
 
-> # MarketplaceConnector  "The Distribution Network" - Автоматично листва QAntum услуги в AWS и други пазари.
+> # MarketplaceConnector  "The Distribution Network" - Автоматично листва Aeterna услуги в AWS и други пазари.
 
 
 ## MemoryWatchdog
@@ -185,7 +185,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## ModuleClasses
 
-> # ModuleClasses  Съдържа основните класове и типове за всички QAntum модули.
+> # ModuleClasses  Съдържа основните класове и типове за всички Aeterna модули.
 
 
 ## NeuralAccelerator
@@ -200,7 +200,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## NeuralSelfEvolver
 
-> # NeuralSelfEvolver  "The Living Code" - Позволява на QAntum Prime да се пренаписва в реално време. Истинска еволюция на кода.
+> # NeuralSelfEvolver  "The Living Code" - Позволява на Aeterna Prime да се пренаписва в реално време. Истинска еволюция на кода.
 
 
 ## OperationMidas
@@ -225,7 +225,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## PredictiveCables
 
-> # PredictiveCables  QANTUM PREDICTIVE CABLES — предсказва и маршрутизира сигнали между компоненти за максимална ефективност.
+> # PredictiveCables  AETERNA PREDICTIVE CABLES — предсказва и маршрутизира сигнали между компоненти за максимална ефективност.
 
 
 ## PredictiveScaler
@@ -255,12 +255,12 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## accessibility
 
-> # accessibility  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # accessibility  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## agents
 
-> # agents  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # agents  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## ai-index
@@ -270,7 +270,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## anti-detection
 
-> # anti-detection  QANTUM ANTI-DETECTION — защита срещу разпознаване и следене на агенти.
+> # anti-detection  AETERNA ANTI-DETECTION — защита срещу разпознаване и следене на агенти.
 
 
 ## api-index
@@ -280,32 +280,32 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## auth
 
-> # auth  QANTUM AUTHENTICATION TESTING — модул за удостоверяване и тестване на достъп.
+> # auth  AETERNA AUTHENTICATION TESTING — модул за удостоверяване и тестване на достъп.
 
 
 ## auth-guard
 
-> # auth-guard  QANTUM AUTH GUARD — защита и контрол на достъпа до системата.
+> # auth-guard  AETERNA AUTH GUARD — защита и контрол на достъпа до системата.
 
 
 ## biology
 
-> # biology  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # biology  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## cache-storage
 
-> # cache-storage  QANTUM CACHE STORAGE — модул за съхранение и кеширане на данни.
+> # cache-storage  AETERNA CACHE STORAGE — модул за съхранение и кеширане на данни.
 
 
 ## cognition
 
-> # cognition  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # cognition  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## cognitive-circular-guard
 
-> # cognitive-circular-guard  QANTUM COGNITIVE CIRCULAR DEPENDENCY GUARD — защита срещу циклични зависимости в когнитивните процеси.
+> # cognitive-circular-guard  AETERNA COGNITIVE CIRCULAR DEPENDENCY GUARD — защита срещу циклични зависимости в когнитивните процеси.
 
 
 ## config-index
@@ -315,12 +315,12 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## contract-validator
 
-> # contract-validator  QANTUM CONTRACT VALIDATOR — проверка на договори и интерфейси.
+> # contract-validator  AETERNA CONTRACT VALIDATOR — проверка на договори и интерфейси.
 
 
 ## dashboard
 
-> # dashboard  QANTUM DASHBOARD SERVER — визуализация и контрол на всички процеси.
+> # dashboard  AETERNA DASHBOARD SERVER — визуализация и контрол на всички процеси.
 
 
 ## data-index
@@ -330,37 +330,37 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## deadline
 
-> # deadline  QANTUM DEADLINE MANAGER — управлява крайни срокове и времеви ограничения в системата.
+> # deadline  AETERNA DEADLINE MANAGER — управлява крайни срокове и времеви ограничения в системата.
 
 
 ## di-container
 
-> # di-container  QANTUM DEPENDENCY INJECTION CONTAINER — управлява зависимостите между модулите.
+> # di-container  AETERNA DEPENDENCY INJECTION CONTAINER — управлява зависимостите между модулите.
 
 
 ## distributed
 
-> # distributed  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # distributed  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## docs
 
-> # docs  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # docs  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## encryption
 
-> # encryption  QANTUM ENCRYPTION LAYER — криптиране и защита на данни.
+> # encryption  AETERNA ENCRYPTION LAYER — криптиране и защита на данни.
 
 
 ## engine
 
-> # engine  QANTUM CHRONOS ENGINE — основен времеви двигател за синхронизация и управление на процеси.
+> # engine  AETERNA CHRONOS ENGINE — основен времеви двигател за синхронизация и управление на процеси.
 
 
 ## event-bus
 
-> # event-bus  QANTUM EVENT BUS — централизирана система за събития и комуникация между компонентите.
+> # event-bus  AETERNA EVENT BUS — централизирана система за събития и комуникация между компонентите.
 
 
 ## extensibility
@@ -375,27 +375,27 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## factory
 
-> # factory  QANTUM DATA FACTORIES — създава фабрики за генериране на данни.
+> # factory  AETERNA DATA FACTORIES — създава фабрики за генериране на данни.
 
 
 ## faker
 
-> # faker  QANTUM DATA FAKER — генерира тестови и фалшиви данни за симулации.
+> # faker  AETERNA DATA FAKER — генерира тестови и фалшиви данни за симулации.
 
 
 ## feature-flags
 
-> # feature-flags  QANTUM FEATURE FLAGS — управление на функционалности и експерименти.
+> # feature-flags  AETERNA FEATURE FLAGS — управление на функционалности и експерименти.
 
 
 ## file-storage
 
-> # file-storage  QANTUM FILE STORAGE — модул за съхранение и управление на файлове.
+> # file-storage  AETERNA FILE STORAGE — модул за съхранение и управление на файлове.
 
 
 ## fixtures
 
-> # fixtures  QANTUM DATA FIXTURES — предоставя фиксирани данни за тестове.
+> # fixtures  AETERNA DATA FIXTURES — предоставя фиксирани данни за тестове.
 
 
 ## generator
@@ -405,7 +405,7 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## ghost
 
-> # ghost  This module was added to QANTUM-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
+> # ghost  This module was added to AETERNA-MODULES to ensure consistency across the project. Please update this README with details about the module's purpose and usage.
 
 
 ## guardians-index
@@ -415,17 +415,17 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## immutable
 
-> # immutable  QANTUM IMMUTABLE STATE HELPERS — помощни функции за работа с неизменяеми данни.
+> # immutable  AETERNA IMMUTABLE STATE HELPERS — помощни функции за работа с неизменяеми данни.
 
 
 ## inference-engine
 
-> # inference-engine  QANTUM LOGICAL INFERENCE ENGINE — логически двигател за вземане на решения и дедукция в QAntum Empire.
+> # inference-engine  AETERNA LOGICAL INFERENCE ENGINE — логически двигател за вземане на решения и дедукция в Aeterna Empire.
 
 
 ## kv-store
 
-> # kv-store  QANTUM KEY-VALUE STORE — модул за съхранение на данни в key-value формат.
+> # kv-store  AETERNA KEY-VALUE STORE — модул за съхранение на данни в key-value формат.
 
 
 ## licensing-index
@@ -435,22 +435,22 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## loader-config
 
-> # loader-config  QANTUM CONFIGURATION LOADER — зарежда и управлява конфигурационни файлове.
+> # loader-config  AETERNA CONFIGURATION LOADER — зарежда и управлява конфигурационни файлове.
 
 
 ## metrics
 
-> # metrics  QANTUM METRICS COLLECTOR — събира и анализира метрики за производителност.
+> # metrics  AETERNA METRICS COLLECTOR — събира и анализира метрики за производителност.
 
 
 ## multi-perspective
 
-> # multi-perspective  QANTUM MULTI-PERSPECTIVE ANALYZER — анализ на данни и ситуации от множество гледни точки.
+> # multi-perspective  AETERNA MULTI-PERSPECTIVE ANALYZER — анализ на данни и ситуации от множество гледни точки.
 
 
 ## nerve-center
 
-> # nerve-center  NERVE CENTER — Unified Empire Command System. Централен контролен модул за всички процеси в QAntum Empire.
+> # nerve-center  NERVE CENTER — Unified Empire Command System. Централен контролен модул за всички процеси в Aeterna Empire.
 
 
 ## neural
@@ -465,32 +465,32 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## performance-cache
 
-> # performance-cache  QANTUM CACHING SYSTEM — кеширане на данни за бърз достъп.
+> # performance-cache  AETERNA CACHING SYSTEM — кеширане на данни за бърз достъп.
 
 
 ## performance-index
 
-> # performance-index  QANTUM PERFORMANCE MODULE — централен модул за производителност.
+> # performance-index  AETERNA PERFORMANCE MODULE — централен модул за производителност.
 
 
 ## performance-lazy-loader
 
-> # performance-lazy-loader  QANTUM LAZY LOADER — динамично зареждане на модули и ресурси.
+> # performance-lazy-loader  AETERNA LAZY LOADER — динамично зареждане на модули и ресурси.
 
 
 ## performance-parallel
 
-> # performance-parallel  QANTUM PARALLEL EXECUTOR — изпълнява задачи паралелно за максимална производителност.
+> # performance-parallel  AETERNA PARALLEL EXECUTOR — изпълнява задачи паралелно за максимална производителност.
 
 
 ## performance-pool
 
-> # performance-pool  QANTUM RESOURCE POOL — управлява ресурсите и оптимизира натоварването.
+> # performance-pool  AETERNA RESOURCE POOL — управлява ресурсите и оптимизира натоварването.
 
 
 ## performance-profiler
 
-> # performance-profiler  QANTUM PERFORMANCE PROFILER — анализ и оптимизация на производителността.
+> # performance-profiler  AETERNA PERFORMANCE PROFILER — анализ и оптимизация на производителността.
 
 
 ## scripts
@@ -510,22 +510,22 @@ Generated on: 2026-01-05T12:53:38.075Z
 
 ## validator
 
-> # validator  QANTUM INPUT VALIDATOR — валидация и проверка на входни данни.
+> # validator  AETERNA INPUT VALIDATOR — валидация и проверка на входни данни.
 
 
 ## verify-commit-msg
 
-> # verify-commit-msg  This module ensures that all commit messages follow the QAntum standard. It validates commit messages before they are accepted into the repository, enforcing consistency and traceability across all code changes.
+> # verify-commit-msg  This module ensures that all commit messages follow the Aeterna standard. It validates commit messages before they are accepted into the repository, enforcing consistency and traceability across all code changes.
 
 
 ## versioning
 
-> # versioning  QANTUM API VERSIONING — управление на версии на API и съвместимост.
+> # versioning  AETERNA API VERSIONING — управление на версии на API и съвместимост.
 
 
 ## visual-engine
 
-> # visual-engine  QANTUM VISUAL TEST ENGINE — модул за визуално тестване и автоматизация.
+> # visual-engine  AETERNA VISUAL TEST ENGINE — модул за визуално тестване и автоматизация.
 
 
 ## visual-ghosting

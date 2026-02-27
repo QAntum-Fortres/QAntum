@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > MOUTH > AGILITY
+ * 🔥 AETERNA CORE > MOUTH > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses

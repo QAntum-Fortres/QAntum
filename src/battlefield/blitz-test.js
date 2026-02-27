@@ -57,7 +57,7 @@ function runTask(task) {
 async function blitz() {
     console.log(`
 ╔════════════════════════════════════════════════════╗
-║  ⚡ QANTUM BLITZ TEST (60s MAX)                   ║
+║  ⚡ AETERNA BLITZ TEST (60s MAX)                   ║
 ║  Validating Core Arithmetic...                     ║
 ╚════════════════════════════════════════════════════╝
     `);

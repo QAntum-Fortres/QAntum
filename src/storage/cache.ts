@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CACHE STORAGE                                                        ║
+ * ║   AETERNA CACHE STORAGE                                                        ║
  * ║   "High-performance caching with multiple backends"                           ║
  * ║                                                                               ║
  * ║   TODO B #32 - Storage: Cache Operations                                      ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

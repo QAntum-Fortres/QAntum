@@ -6,17 +6,21 @@ export class OllamaManager {
   private readonly baseUrl = 'http://localhost:11434';
   private modelName = 'qantum-ai-supreme';
   private preferredModels = [
+    'deepseek-v3.1',
+    'qwen3',
+    'qwen3-coder',
     'qantum-ai-supreme',
     'qwen2.5-coder',
     'gemma3',
     'llama3',
     'mistral',
+    'phi3.5',
     'phi3',
     'gemma',
   ];
   private initialized = false;
 
-  private constructor() {}
+  private constructor() { }
 
   public static getInstance(): OllamaManager {
     if (!OllamaManager.instance) {

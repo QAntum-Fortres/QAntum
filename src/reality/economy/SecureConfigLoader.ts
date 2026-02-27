@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.1 - SECURE CONFIG LOADER                                ║
+ * ║  Aeterna Prime v28.1 - SECURE CONFIG LOADER                                ║
  * ║  "Ключалката" - Environment Variables with Fortress Encryption            ║
  * ║                                                                           ║
  * ║  🔐 Loads and encrypts sensitive configuration                            ║
@@ -16,7 +16,7 @@ import * as crypto from 'crypto';
 // TYPES
 // ═══════════════════════════════════════════════════════════════════════════
 
-export interface QAntumConfig {
+export interface AeternaConfig {
   // Payment Gateways
   stripe: {
     secretKey: string;
@@ -75,7 +75,7 @@ export interface QAntumConfig {
 // ═══════════════════════════════════════════════════════════════════════════
 
 export class SecureConfigLoader extends EventEmitter {
-  private config: QAntumConfig | null = null;
+  private config: AeternaConfig | null = null;
   private encryptedConfig: string | null = null;
   private isLocked: boolean = true;
   private masterKey: Buffer | null = null;
@@ -151,7 +151,7 @@ export class SecureConfigLoader extends EventEmitter {
   /**
    * Map environment variables to config object
    */
-  private mapEnvToConfig(env: Record<string, string>): QAntumConfig {
+  private mapEnvToConfig(env: Record<string, string>): AeternaConfig {
     return {
       stripe: {
         secretKey: env.STRIPE_SECRET_KEY || ',
@@ -263,7 +263,7 @@ export class SecureConfigLoader extends EventEmitter {
   /**
    * Decrypt config with master password
    */
-  decrypt(masterPassword: string): QAntumConfig {
+  decrypt(masterPassword: string): AeternaConfig {
     if (!this.encryptedConfig) {
       throw new Error('No encrypted configuration');
     }
@@ -335,7 +335,7 @@ export class SecureConfigLoader extends EventEmitter {
   /**
    * Get config (must be unlocked)
    */
-  getConfig(): QAntumConfig {
+  getConfig(): AeternaConfig {
     if (this.isLocked || !this.config) {
       throw new Error('Configuration is locked. Call decrypt() first.');
     }
@@ -406,7 +406,7 @@ export class SecureConfigLoader extends EventEmitter {
 
     console.log(`
 ╔═══════════════════════════════════════════════════════════════════════════════════════╗
-║  QAntum Prime Configuration Summary                                                   ║
+║  Aeterna Prime Configuration Summary                                                   ║
 ╠═══════════════════════════════════════════════════════════════════════════════════════╣
 ║                                                                                       ║
 ║  MODE: ${config.tradingMode.toUpperCase().padEnd(15)}                                                          ║

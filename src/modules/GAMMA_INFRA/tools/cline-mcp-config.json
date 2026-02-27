@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/cline/cline/main/schemas/cline_mcp_settings.json",
   "mcpServers": {
-    "qantum-lite": {
+    "aeterna-lite": {
       "command": "node",
       "args": ["C:/MisteMind/tools/mcp-lite.js"],
       "disabled": false,

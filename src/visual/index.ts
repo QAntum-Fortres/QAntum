@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM VISUAL MODULE                                                        ║
+ * ║   AETERNA VISUAL MODULE                                                        ║
  * ║   "Unified visual testing facade"                                             ║
  * ║                                                                               ║
  * ║   TODO B #33-34 - Visual Testing Module                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -44,35 +44,35 @@ export {
 import { VisualTestEngine, VisualTestConfig, ComparisonResult, ViewportPresets } from './engine';
 import { SnapshotManager, SnapshotConfig, SnapshotResult } from './snapshot';
 
-export interface QAntumVisualConfig {
+export interface AeternaVisualConfig {
   visual?: Partial<VisualTestConfig>;
   snapshot?: Partial<SnapshotConfig>;
 }
 
 /**
- * Unified QAntum Visual Testing
+ * Unified Aeterna Visual Testing
  */
-export class QAntumVisual {
-  private static instance: QAntumVisual;
+export class AeternaVisual {
+  private static instance: AeternaVisual;
 
   private _engine: VisualTestEngine;
   private _snapshots: SnapshotManager;
 
-  private constructor(config: QAntumVisualConfig = {}) {
+  private constructor(config: AeternaVisualConfig = {}) {
     this._engine = VisualTestEngine.getInstance(config.visual);
     this._snapshots = SnapshotManager.getInstance(config.snapshot);
   }
 
-  static getInstance(config?: QAntumVisualConfig): QAntumVisual {
-    if (!QAntumVisual.instance) {
-      QAntumVisual.instance = new QAntumVisual(config);
+  static getInstance(config?: AeternaVisualConfig): AeternaVisual {
+    if (!AeternaVisual.instance) {
+      AeternaVisual.instance = new AeternaVisual(config);
     }
-    return QAntumVisual.instance;
+    return AeternaVisual.instance;
   }
 
-  static configure(config: QAntumVisualConfig): QAntumVisual {
-    QAntumVisual.instance = new QAntumVisual(config);
-    return QAntumVisual.instance;
+  static configure(config: AeternaVisualConfig): AeternaVisual {
+    AeternaVisual.instance = new AeternaVisual(config);
+    return AeternaVisual.instance;
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -274,8 +274,8 @@ export class QAntumVisual {
 // EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getQAntumVisual = (): QAntumVisual => QAntumVisual.getInstance();
-export const configureQAntumVisual = (config: QAntumVisualConfig): QAntumVisual =>
-  QAntumVisual.configure(config);
+export const getAeternaVisual = (): AeternaVisual => AeternaVisual.getInstance();
+export const configureAeternaVisual = (config: AeternaVisualConfig): AeternaVisual =>
+  AeternaVisual.configure(config);
 
-export default QAntumVisual;
+export default AeternaVisual;

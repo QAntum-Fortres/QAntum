@@ -1,4 +1,4 @@
-# 💰 QANTUM PRODUCTS - REVENUE CATALOG
+# 💰 AETERNA PRODUCTS - REVENUE CATALOG
 
 > **Микро-продукти за генериране на капитал**
 
@@ -46,7 +46,7 @@
 
 ---
 
-### 3. 🔍 QANTUM Debugger
+### 3. 🔍 AETERNA Debugger
 **Self-Healing Code Debugger**
 
 | Metric | Value |
@@ -69,7 +69,7 @@
 
 ## � COMING SOON
 
-### 4. 🧪 QANTUM SaaS Platform
+### 4. 🧪 AETERNA SaaS Platform
 **AI-Powered QA Testing Platform**
 
 | Metric | Value |
@@ -104,7 +104,7 @@
 |---------|-----------|-----------|-----|
 | GhostShield | 100 | $200 | $240,000 |
 | ChronoSync | 500 | $30 | $180,000 |
-| QANTUM Debugger | 300 | $50 | $180,000 |
+| AETERNA Debugger | 300 | $50 | $180,000 |
 | **Subtotal (Ready)** | **900** | - | **$600,000/year** |
 | 🚧 QA-SaaS (Coming) | 200 | $150 | $360,000 |
 | **TOTAL POTENTIAL** | **1,100** | - | **$960,000/year** |
@@ -113,7 +113,7 @@
 
 ## 🚀 LAUNCH PRIORITY
 
-1. **WEEK 1: QANTUM Debugger**
+1. **WEEK 1: AETERNA Debugger**
    - npm publish
    - Landing page
    - Product Hunt launch
@@ -157,7 +157,7 @@
 
 **$5,000 MRR within 90 days**
 
-- QANTUM Debugger: 50 Pro ($29) = $1,450
+- AETERNA Debugger: 50 Pro ($29) = $1,450
 - GhostShield: 10 Basic ($99) = $990
 - ChronoSync: 100 Pro ($19) = $1,900
 - Mix of higher tiers = $660
@@ -165,4 +165,4 @@
 ---
 
 *Generated: 2026-01-03*
-*QAntum Empire - Building wealth through code*
+*Aeterna Empire - Building wealth through code*

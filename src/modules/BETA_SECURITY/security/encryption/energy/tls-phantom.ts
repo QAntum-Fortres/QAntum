@@ -1,5 +1,5 @@
 /**
- * ⚛️ QANTUM GHOST PROTOCOL v2 - TLS PHANTOM ENGINE
+ * ⚛️ AETERNA GHOST PROTOCOL v2 - TLS PHANTOM ENGINE
  * ═══════════════════════════════════════════════════════════════════════════════
  * JA3/JA3S Fingerprint Rotation & TLS Stealth
  *

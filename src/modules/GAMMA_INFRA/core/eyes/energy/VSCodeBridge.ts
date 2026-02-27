@@ -2,9 +2,9 @@
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                     VS CODE BRIDGE - SOVEREIGN TRANSITION                     ║
  * ║                                                                               ║
- * ║  "The bridge between the old world and the new. QAntum Prime takes control." ║
+ * ║  "The bridge between the old world and the new. Aeterna Prime takes control." ║
  * ║                                                                               ║
- * ║  Created: 2026-01-01 | QAntum Prime v28.1.0 SUPREME                          ║
+ * ║  Created: 2026-01-01 | Aeterna Prime v28.1.0 SUPREME                          ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
 
@@ -661,7 +661,7 @@ if (require.main === module) {
 ╔═══════════════════════════════════════════════════════════════════════════════╗
 ║                        🌉 VS CODE BRIDGE - STANDALONE                         ║
 ║                                                                               ║
-║                    QAntum Prime v28.1.0 - Sovereign Mode                      ║
+║                    Aeterna Prime v28.1.0 - Sovereign Mode                      ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 `);
 

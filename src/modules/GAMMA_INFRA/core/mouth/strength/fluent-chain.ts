@@ -1,5 +1,5 @@
 /**
- * 🧠 QANTUM HYBRID - Fluent Chain
+ * 🧠 AETERNA HYBRID - Fluent Chain
  * Cypress-style method chaining: mm.click().type().should()
  */
 

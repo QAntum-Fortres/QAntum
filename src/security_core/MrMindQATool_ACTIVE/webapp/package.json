@@ -1,7 +1,7 @@
 {
-  "name": "qantum-webapp",
-  "version": "1.0.0",
-  "description": "QAntum Fullstack Web Application - Test. Secure. Dominate.",
+  "name": "aeterna-webapp",
+  "version": "1.0.0-AETERNA",
+  "description": "Aeterna Fullstack Web Application - Test. Secure. Dominate.",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
     "start": "node server.js",
     "build": "echo 'No build needed for vanilla JS'"
   },
-  "keywords": ["qantum", "testing", "automation", "dashboard", "fullstack"],
-  "author": "Dimitar Prodromov <dimitar.prodromov@qantum.dev>",
+  "keywords": ["aeterna", "testing", "automation", "dashboard", "fullstack"],
+  "author": "Dimitar Prodromov <dimitar.prodromov@aeterna.dev>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",

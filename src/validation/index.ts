@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM VALIDATION MODULE                                                    ║
+ * ║   AETERNA VALIDATION MODULE                                                    ║
  * ║   "Comprehensive validation for data, responses, and contracts"               ║
  * ║                                                                               ║
  * ║   TODO B #25-27 - Validation: Schema, Response, Contract                      ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -33,8 +33,8 @@ import { ContractValidator, Contract, ContractValidationResult } from './contrac
 // UNIFIED VALIDATION FACADE
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export class QAntumValidation {
-  private static instance: QAntumValidation;
+export class AeternaValidation {
+  private static instance: AeternaValidation;
 
   private schemaValidator: SchemaValidator;
   private contractValidator: ContractValidator;
@@ -44,11 +44,11 @@ export class QAntumValidation {
     this.contractValidator = ContractValidator.getInstance();
   }
 
-  static getInstance(): QAntumValidation {
-    if (!QAntumValidation.instance) {
-      QAntumValidation.instance = new QAntumValidation();
+  static getInstance(): AeternaValidation {
+    if (!AeternaValidation.instance) {
+      AeternaValidation.instance = new AeternaValidation();
     }
-    return QAntumValidation.instance;
+    return AeternaValidation.instance;
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -198,29 +198,29 @@ export class QAntumValidation {
 // CONVENIENCE EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getValidation = (): QAntumValidation => QAntumValidation.getInstance();
+export const getValidation = (): AeternaValidation => AeternaValidation.getInstance();
 
 // Quick validation helpers
 export const validate = {
   // Schema validation
   data: (value: any, schema: SchemaDefinition | string) =>
-    QAntumValidation.getInstance().validate(value, schema),
+    AeternaValidation.getInstance().validate(value, schema),
 
   assert: (value: any, schema: SchemaDefinition | string, msg?: string) =>
-    QAntumValidation.getInstance().assert(value, schema, msg),
+    AeternaValidation.getInstance().assert(value, schema, msg),
 
   // Response validation
-  response: (response: Response) => QAntumValidation.getInstance().assertResponse(response),
+  response: (response: Response) => AeternaValidation.getInstance().assertResponse(response),
 
   // Contract validation
   request: (contract: string, method: string, path: string, req: any) =>
-    QAntumValidation.getInstance().validateRequest(contract, method, path, req),
+    AeternaValidation.getInstance().validateRequest(contract, method, path, req),
 
   contractResponse: (contract: string, method: string, path: string, res: any) =>
-    QAntumValidation.getInstance().validateContractResponse(contract, method, path, res),
+    AeternaValidation.getInstance().validateContractResponse(contract, method, path, res),
 };
 
 // Re-export schema builders
 export { schemaBuilders as schema };
 
-export default QAntumValidation;
+export default AeternaValidation;

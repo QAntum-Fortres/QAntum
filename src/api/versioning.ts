@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM API VERSIONING                                                       ║
+ * ║   AETERNA API VERSIONING                                                       ║
  * ║   "Semantic versioning for API routes"                                        ║
  * ║                                                                               ║
  * ║   TODO B #45 - API: Versioning                                                ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

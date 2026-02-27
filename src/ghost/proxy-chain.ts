@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM PROXY CHAIN                                                          ║
+ * ║   AETERNA PROXY CHAIN                                                          ║
  * ║   "Route through proxies, stay invisible"                                     ║
  * ║                                                                               ║
  * ║   TODO B #24 - Ghost: Proxy Chains                                            ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

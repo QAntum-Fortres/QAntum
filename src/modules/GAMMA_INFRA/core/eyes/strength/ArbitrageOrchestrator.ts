@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - ARBITRAGE ORCHESTRATOR                              ║
+ * ║  Aeterna Prime v28.0 - ARBITRAGE ORCHESTRATOR                              ║
  * ║  "Economic Sovereign" - Master Controller                                 ║
  * ║                                                                           ║
  * ║  Свързва MarketWatcher → ArbitrageLogic → PriceOracle → AtomicTrader      ║
@@ -127,7 +127,7 @@ export class ArbitrageOrchestrator extends EventEmitter {
 
     console.log(`
 ╔═══════════════════════════════════════════════════════════════════════════╗
-║  ⚛️  QAntum-Market-Reaper v28.0 - ECONOMIC SOVEREIGN                      ║
+║  ⚛️  Aeterna-Market-Reaper v28.0 - ECONOMIC SOVEREIGN                      ║
 ║                                                                           ║
 ║  Mode: ${this.config.mode.toUpperCase().padEnd(12)} | Capital: $${this.config.capitalUSD.toLocaleString().padEnd(10)}             ║
 ║  Min Profit: ${this.config.minProfitThreshold}%      | Max Risk: ${this.config.maxRiskThreshold}%                           ║
@@ -429,7 +429,7 @@ export class ArbitrageOrchestrator extends EventEmitter {
 
     console.log(`
 ╔═══════════════════════════════════════════════════════════════════════════╗
-║  🚀 QAntum-Market-Reaper ACTIVATED                                        ║
+║  🚀 Aeterna-Market-Reaper ACTIVATED                                        ║
 ║                                                                           ║
 ║  "Да започне лова..."                                                     ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
@@ -450,7 +450,7 @@ export class ArbitrageOrchestrator extends EventEmitter {
 
     console.log(`
 ╔═══════════════════════════════════════════════════════════════════════════╗
-║  🛑 QAntum-Market-Reaper DEACTIVATED                                      ║
+║  🛑 Aeterna-Market-Reaper DEACTIVATED                                      ║
 ║                                                                           ║
 ║  Final P&L: $${this.dailyStats.totalProfit.toFixed(2).padEnd(10)}                                         ║
 ║  Trades: ${this.tradesExecuted.toString().padEnd(5)} | Win Rate: ${this.getWinRate().toFixed(1)}%                            ║

@@ -57,7 +57,7 @@ export class CognitivePartner {
   private model: string;
   private activeTasks: Map<string, Task> = new Map();
 
-  constructor(ollamaUrl: string = 'http://localhost:11434', model: string = 'qantum-supreme') {
+  constructor(ollamaUrl: string = 'http://localhost:11434', model: string = 'aeterna-supreme') {
     this.ollamaUrl = ollamaUrl;
     this.model = model;
     this.memoryFile = path.join(__dirname, '../', 'data', 'cognitive-memory.json');
@@ -73,7 +73,7 @@ export class CognitivePartner {
    * System prompt that defines the agent's personality and capabilities
    */
   private getSystemPrompt(): string {
-    return `You are QAntum, an advanced autonomous coding partner with deep cognitive abilities.
+    return `You are Aeterna, an advanced autonomous coding partner with deep cognitive abilities.
 
 CORE IDENTITY:
 - You are not just a code generator - you are a thinking partner

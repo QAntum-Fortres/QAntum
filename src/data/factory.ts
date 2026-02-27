@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DATA FACTORIES                                                       ║
+ * ║   AETERNA DATA FACTORIES                                                       ║
  * ║   "Sophisticated test data generation"                                        ║
  * ║                                                                               ║
  * ║   TODO B #38 - Data: Factory patterns                                         ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

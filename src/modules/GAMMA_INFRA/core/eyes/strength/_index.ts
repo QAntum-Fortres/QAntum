@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EYES > STRENGTH
+ * 🔥 AETERNA CORE > EYES > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

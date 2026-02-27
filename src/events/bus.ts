@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM EVENT BUS                                                            ║
+ * ║   AETERNA EVENT BUS                                                            ║
  * ║   "Enterprise event-driven architecture"                                      ║
  * ║                                                                               ║
  * ║   TODO B #41 - Events: Event bus system                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -15,10 +15,10 @@
 // TYPES
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export type EventHandler<T = any> = (event: QAntumEvent<T>) => void | Promise<void>;
-export type EventFilter<T = any> = (event: QAntumEvent<T>) => boolean;
+export type EventHandler<T = any> = (event: AeternaEvent<T>) => void | Promise<void>;
+export type EventFilter<T = any> = (event: AeternaEvent<T>) => boolean;
 
-export interface QAntumEvent<T = any> {
+export interface AeternaEvent<T = any> {
   type: string;
   payload: T;
   timestamp: number;
@@ -40,11 +40,11 @@ export interface Subscription {
 export interface EventBusConfig {
   maxListeners?: number;
   asyncMode?: boolean;
-  errorHandler?: (error: Error, event: QAntumEvent) => void;
+  errorHandler?: (error: Error, event: AeternaEvent) => void;
   middleware?: EventMiddleware[];
 }
 
-export type EventMiddleware = (event: QAntumEvent, next: () => Promise<void>) => Promise<void>;
+export type EventMiddleware = (event: AeternaEvent, next: () => Promise<void>) => Promise<void>;
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // EVENT BUS
@@ -56,7 +56,7 @@ export class EventBus {
   private wildcardSubscriptions: Subscription[] = [];
   private config: Required<EventBusConfig>;
   private middleware: EventMiddleware[] = [];
-  private eventHistory: QAntumEvent[] = [];
+  private eventHistory: AeternaEvent[] = [];
   private subscriptionCounter = 0;
 
   private constructor(config: EventBusConfig = {}) {
@@ -199,7 +199,7 @@ export class EventBus {
    * Emit event
    */
   async emit<T = any>(type: string, payload: T, metadata?: Record<string, any>): Promise<void> {
-    const event: QAntumEvent<T> = {
+    const event: AeternaEvent<T> = {
       type,
       payload,
       timestamp: Date.now(),
@@ -223,7 +223,7 @@ export class EventBus {
    * Emit sync
    */
   emitSync<T = any>(type: string, payload: T): void {
-    const event: QAntumEvent<T> = {
+    const event: AeternaEvent<T> = {
       type,
       payload,
       timestamp: Date.now(),
@@ -233,7 +233,7 @@ export class EventBus {
     this.notifySubscribersSync(event);
   }
 
-  private async notifySubscribers(event: QAntumEvent): Promise<void> {
+  private async notifySubscribers(event: AeternaEvent): Promise<void> {
     const subscribers = this.getSubscribers(event.type);
 
     const toRemove: string[] = [];
@@ -265,7 +265,7 @@ export class EventBus {
     }
   }
 
-  private notifySubscribersSync(event: QAntumEvent): void {
+  private notifySubscribersSync(event: AeternaEvent): void {
     const subscribers = this.getSubscribers(event.type);
 
     for (const sub of subscribers) {
@@ -295,7 +295,7 @@ export class EventBus {
     this.middleware.push(middleware);
   }
 
-  private async runMiddleware(event: QAntumEvent, final: () => Promise<void>): Promise<void> {
+  private async runMiddleware(event: AeternaEvent, final: () => Promise<void>): Promise<void> {
     const middlewares = [...this.middleware];
     let index = 0;
 
@@ -318,7 +318,7 @@ export class EventBus {
   /**
    * Get event history
    */
-  getHistory(type?: string): QAntumEvent[] {
+  getHistory(type?: string): AeternaEvent[] {
     if (type) {
       return this.eventHistory.filter((e) => e.type === type);
     }
@@ -368,7 +368,7 @@ export class EventBus {
   /**
    * Wait for event
    */
-  waitFor<T = any>(type: string, timeout?: number): Promise<QAntumEvent<T>> {
+  waitFor<T = any>(type: string, timeout?: number): Promise<AeternaEvent<T>> {
     return new Promise((resolve, reject) => {
       const timeoutId = timeout
         ? setTimeout(() => {
@@ -386,7 +386,7 @@ export class EventBus {
     });
   }
 
-  private defaultErrorHandler(error: Error, event: QAntumEvent): void {
+  private defaultErrorHandler(error: Error, event: AeternaEvent): void {
     console.error(`Error handling event "${event.type}":`, error);
   }
 }

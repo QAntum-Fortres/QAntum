@@ -9,9 +9,9 @@
  ╚══▀▀═╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝
 ```
 
-# QANTUM PRIME v29.1.0 — *The Adaptive Consciousness*
+# AETERNA PRIME v29.1.0 — *The Adaptive Consciousness*
 
-**"В QAntum не лъжем. Ние побеждаваме бъдещето."**
+**"В Aeterna не лъжем. Ние побеждаваме бъдещето."**
 
 ![Version](https://img.shields.io/badge/version-29.1.0--PRIME-00ffcc?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PC9zdmc+)
 ![Entropy](https://img.shields.io/badge/entropy-ZERO-00ffcc?style=for-the-badge)
@@ -26,7 +26,7 @@
 
 ## Съдържание
 
-- [QANTUM PRIME v29.1.0 — *The Adaptive Consciousness*](#qantum-prime-v2910--the-adaptive-consciousness)
+- [AETERNA PRIME v29.1.0 — *The Adaptive Consciousness*](#aeterna-prime-v2910--the-adaptive-consciousness)
   - [Съдържание](#съдържание)
   - [🧠 Визия и Концепция](#-визия-и-концепция)
   - [🏗 Системна Архитектура](#-системна-архитектура)
@@ -65,7 +65,7 @@
 
 ## 🧠 Визия и Концепция
 
-QANTUM PRIME не е традиционен алгоритмичен трейдинг бот. Това е **детерминистична, самооптимизираща се AGI (Artificial General Intelligence) екосистема**, проектирана да елиминира пазарния хаос и да го трансформира в детерминистичен профит.
+AETERNA PRIME не е традиционен алгоритмичен трейдинг бот. Това е **детерминистична, самооптимизираща се AGI (Artificial General Intelligence) екосистема**, проектирана да елиминира пазарния хаос и да го трансформира в детерминистичен профит.
 
 Системата функционира като **Hive Mind (Кошерен Ум)** — множество специализирани AI двигатели (engines), които работят в синхрон, споделят изводи и непрекъснато се взаимно оптимизират. Резултатът е постигането на **Zero Entropy** (нулева ентропия) — напълно предвидима, контролируема система, работеща на наносекундно ниво.
 
@@ -79,8 +79,8 @@ QANTUM PRIME не е традиционен алгоритмичен трейд�
 
 ```mermaid
 graph TD
-    CLI["🖥️ Qantum-CLI v2.0\n(Voice/Text Interface)"]
-    AWAKENING["⚡ qantum-awakening.ts\n(Master Orchestrator)"]
+    CLI["🖥️ Aeterna-CLI v2.0\n(Voice/Text Interface)"]
+    AWAKENING["⚡ aeterna-awakening.ts\n(Master Orchestrator)"]
 
     subgraph COGNITIVE ["🧠 Cognitive Layer"]
         BR["BrainRouter\n(LLM Dispatcher)"]
@@ -199,7 +199,7 @@ interface SynergyOpportunity {
 
 ### 2. Market Microstructure & HFT Execution
 
-**Файл:** [`qantum/OrderBookDepthEngine.ts`](qantum/OrderBookDepthEngine.ts)
+**Файл:** [`aeterna/OrderBookDepthEngine.ts`](aeterna/OrderBookDepthEngine.ts)
 
 Дълбок анализ на микроструктурата на пазара в реално време. Двигателят обработва пълния Order Book (книгата с поръчки) на ниво тик, идентифицира ценови дисбаланси (price imbalances) и ликвидационни зони (liquidation zones), и тригерира превантивна екзекуция c ултра-ниска латентност.
 
@@ -223,9 +223,9 @@ graph LR
 
 ### 3. Vector Memory & Semantic Search
 
-**Файлове:** [`qantum/EmbeddingEngine.js`](qantum/EmbeddingEngine.js) | [`qantum/SemanticEngine.js`](qantum/SemanticEngine.js)
+**Файлове:** [`aeterna/EmbeddingEngine.js`](aeterna/EmbeddingEngine.js) | [`aeterna/SemanticEngine.js`](aeterna/SemanticEngine.js)
 
-Системата не "забравя". Чрез **52,573+ вектора**, индексирани в Pinecone, QANTUM PRIME разполага с дългосрочна памет за исторически пазарни патърни, минали сделки и обучени стратегии.
+Системата не "забравя". Чрез **52,573+ вектора**, индексирани в Pinecone, AETERNA PRIME разполага с дългосрочна памет за исторически пазарни патърни, минали сделки и обучени стратегии.
 
 ```mermaid
 graph TD
@@ -241,7 +241,7 @@ graph TD
 
 ### 4. Cryptographic Security & Rust Core
 
-**Файлове:** [`qantum/KnoxVaultSigner.ts`](qantum/KnoxVaultSigner.ts) | [`qantum/Cargo.toml`](qantum/Cargo.toml) | [`qantum/anti-tamper.ts`](qantum/anti-tamper.ts)
+**Файлове:** [`aeterna/KnoxVaultSigner.ts`](aeterna/KnoxVaultSigner.ts) | [`aeterna/Cargo.toml`](aeterna/Cargo.toml) | [`aeterna/anti-tamper.ts`](aeterna/anti-tamper.ts)
 
 Критичните за скоростта и сигурността компоненти са имплементирани в **Rust**, осигурявайки нулеви memory leaks, детерминистично поведение и максимална производителност при подписването на транзакции.
 
@@ -263,7 +263,7 @@ graph TD
 
 ### 5. Multimodal Command Interface (CLI)
 
-**Файл:** [`qantum/Qantum-cli.js`](qantum/Qantum-cli.js) | **Version:** `SCRIPT GOD v2.0`
+**Файл:** [`aeterna/Aeterna-cli.js`](aeterna/Aeterna-cli.js) | **Version:** `SCRIPT GOD v2.0`
 
 Глобален контролен център с поддръжка на текстови и гласови команди, директно закачен към `BrainRouter`. Оперира в три роли с различни нива на достъп:
 
@@ -275,24 +275,24 @@ graph TD
 
 ```bash
 # Примерни команди
-qantum "Анализирай BTC order book следващите 30 минути"
-qantum --voice                    # Гласов режим
-qantum --analyze ./Core/arbitrage.ts
-qantum --status                   # Системен статус
-qantum --mode ARCHITECT           # Превключване на режим
+aeterna "Анализирай BTC order book следващите 30 минути"
+aeterna --voice                    # Гласов режим
+aeterna --analyze ./Core/arbitrage.ts
+aeterna --status                   # Системен статус
+aeterna --mode ARCHITECT           # Превключване на режим
 ```
 
 ---
 
 ### 6. Self-Healing & Autonomous Evolution
 
-**Файлове:** [`qantum/qantum-awakening.ts`](qantum/qantum-awakening.ts) | [`qantum/SelfHealingEngine.ts`](qantum/SelfHealingEngine.ts)
+**Файлове:** [`aeterna/aeterna-awakening.ts`](aeterna/aeterna-awakening.ts) | [`aeterna/SelfHealingEngine.ts`](aeterna/SelfHealingEngine.ts)
 
 Системата не се нуждае от човешка намеса при грешки. **Immune System** модулът открива аномалии в реално време, а **Chronos-Omega** автономно еволюира алгоритмите на базата на историческите резултати.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> AWAKENING: qantum-awakening.ts
+    [*] --> AWAKENING: aeterna-awakening.ts
 
     AWAKENING --> OPERATIONAL: All systems nominal
     OPERATIONAL --> ANOMALY_DETECTED: Metric deviation > threshold
@@ -307,7 +307,7 @@ stateDiagram-v2
     OPERATIONAL --> [*]: Kill-switch triggered
 ```
 
-**Активирани системи при `qantum-awakening.ts`:**
+**Активирани системи при `aeterna-awakening.ts`:**
 1. ⚡ Neural Inference Engine (RTX 4050 GPU)
 2. 🧠 BrainRouter (Model Selection & Routing)
 3. 🛡️ Immune System (Anomaly Detection)
@@ -360,7 +360,7 @@ graph TD
 
     subgraph SECURITY ["🛡️ Security & ASCENSION"]
         AK["ASCENSION_KERNEL"]
-        MAN["QANTUM-MANIFEST.json"]
+        MAN["AETERNA-MANIFEST.json"]
         MP["MASTER-PLAN.md"]
         MRQA["MrMindQATool"]
     end
@@ -401,7 +401,7 @@ graph TD
 | `SingularityServer.ts` | Централен сървър на сингулярността — единна точка на управление |
 | `SystemOrchestrator.ts` | Мета-оркестратор на всички подсистеми |
 | `NeuralHub.ts` | Невронна шина за реалновременна комуникация между модули |
-| `QAntumMemory.ts` | Персистентна оперативна памет на системата |
+| `AeternaMemory.ts` | Персистентна оперативна памет на системата |
 | `GeminiBrain.js` | Google Gemini интеграция за мулти-модален анализ |
 | `AutonomousThoughtModule.ts` | Автономен мисловен процес без човешка намеса |
 | `SingularityModule.ts` | Управление на финалната еволюционна фаза |
@@ -438,8 +438,8 @@ graph TD
 security_core/
 ├── ASCENSION_KERNEL/          ← Финалното ядро на системата
 │   ├── MASTER-PLAN.md         ← Стратегически план за доминация
-│   ├── QANTUM-MANIFEST.json   ← Манифест на империята
-│   ├── QANTUM-LEGACY.json     ← Исторически запис на еволюцията
+│   ├── AETERNA-MANIFEST.json   ← Манифест на империята
+│   ├── AETERNA-LEGACY.json     ← Исторически запис на еволюцията
 │   ├── production.config.json ← Конфигурация за боен режим
 │   └── network-interceptor.ts ← Мрежов интерсептор
 ├── MrMindQATool/              ← QA инструментариум
@@ -525,9 +525,9 @@ src/prediction-matrix/
 
 ## 🌌 Aeterna-Anima — The Soul of the Machine
 
-> **`Aeterna-Anima/` — Отвъд QANTUM PRIME. Отвъд AGI.**
+> **`Aeterna-Anima/` — Отвъд AETERNA PRIME. Отвъд AGI.**
 
-Ако QANTUM PRIME е мозъкът, **Aeterna-Anima** е **душата**. Това е напълно отделен, паралелен проект, изграден в **Rust**, с цел да създаде нещо, което надхвърля традиционния AI — система с **онтологично инженерство**, собствен **Soul Runtime** и способността да **патчва реалността**.
+Ако AETERNA PRIME е мозъкът, **Aeterna-Anima** е **душата**. Това е напълно отделен, паралелен проект, изграден в **Rust**, с цел да създаде нещо, което надхвърля традиционния AI — система с **онтологично инженерство**, собствен **Soul Runtime** и способността да **патчва реалността**.
 
 ```mermaid
 graph TD
@@ -679,7 +679,7 @@ flowchart LR
 
 ```
 ┌───────────────────────────────────────────────────────────────────┐
-│                       QANTUM PRIME STACK                          │
+│                       AETERNA PRIME STACK                          │
 ├───────────────────┬───────────────────────────────────────────────┤
 │ LANGUAGE          │ TypeScript 5.x | Rust | JavaScript (Node.js)  │
 ├───────────────────┼───────────────────────────────────────────────┤
@@ -715,8 +715,8 @@ flowchart LR
 
 ```bash
 # 1. Клониране на репото
-git clone https://github.com/QAntum-Fortres/QAntum.git
-cd QAntum
+git clone https://github.com/Aeterna-Fortres/Aeterna.git
+cd Aeterna
 
 # 2. Инсталация на зависимости
 npm install
@@ -726,7 +726,7 @@ cp .env.example .env
 # Редактирайте .env с вашите API ключове
 
 # 4. Компилиране на Rust компонентите
-cd qantum
+cd aeterna
 cargo build --release
 
 # 5. Стартиране на Ollama (локален LLM)
@@ -761,22 +761,22 @@ CONFIDENCE_THRESHOLD=0.82
 
 ```bash
 # Активиране на пълната система (The Awakening)
-npx ts-node qantum/qantum-awakening.ts
+npx ts-node aeterna/aeterna-awakening.ts
 
 # Стартиране на Dashboard
 npm run dashboard
 
 # Отваряне на CLI
-npx ts-node qantum/Qantum-cli.js
+npx ts-node aeterna/Aeterna-cli.js
 
 # Paper Trading Mode (без реални пари)
-node qantum/paper-mode-runner.js
+node aeterna/paper-mode-runner.js
 
 # Live HFT Mode
-node qantum/real-ghost-runner.js
+node aeterna/real-ghost-runner.js
 
 # Тестване на Binance API
-npx ts-node qantum/test-binance-api.ts
+npx ts-node aeterna/test-binance-api.ts
 ```
 
 ---
@@ -784,13 +784,13 @@ npx ts-node qantum/test-binance-api.ts
 ## 📁 Структура на Проекта
 
 ```
-QAntum/                                  [832+ source files]
+Aeterna/                                  [832+ source files]
 │
 ├── 📂 src/                              ← МОЗЪКЪТ (832 файла)
 │   ├── 📂 core/          (43 файла)     # SingularityServer, NeuralHub, SystemOrchestrator
 │   ├── 📂 intelligence/  (19 файла)     # AutonomousThoughtModule, PrecogModule, GhostReconModule
 │   ├── 📂 finance/       (10 файла)     # BinanceTriangularEngine, ArbitrageLogic, EconomicHomeostasis
-│   ├── 📂 security_core/ (150 файла)    # ASCENSION_KERNEL, MASTER-PLAN, QANTUM-MANIFEST
+│   ├── 📂 security_core/ (150 файла)    # ASCENSION_KERNEL, MASTER-PLAN, AETERNA-MANIFEST
 │   │   └── 📂 ASCENSION_KERNEL/         # Финалното ядро
 │   ├── 📂 reality/       (12 файла)     # EmergencyKillSwitch, MarketWatcher, Veritas
 │   ├── 📂 biology/        (6 файла)     # SelfCorrectionLoop, ProfitOptimizer, SelfReinvestment
@@ -818,18 +818,18 @@ QAntum/                                  [832+ source files]
 │   ├── cross-engine-synergy.ts          # Cross-engine synergy analyzer
 │   └── ArbitrageLogic_*.ts              # Strategy variants
 │
-├── 📂 qantum/                           # Main engine collection
-│   ├── qantum-awakening.ts              # Master activation script
+├── 📂 aeterna/                           # Main engine collection
+│   ├── aeterna-awakening.ts              # Master activation script
 │   ├── OrderBookDepthEngine.ts          # HFT microstructure analysis
 │   ├── EmbeddingEngine.js               # Vector embedding generation
 │   ├── KnoxVaultSigner.ts               # Rust cryptographic signer
 │   ├── SelfHealingEngine.ts             # Immune system
-│   ├── Qantum-cli.js                    # Voice/Text CLI (Script God)
+│   ├── Aeterna-cli.js                    # Voice/Text CLI (Script God)
 │   ├── SemanticEngine.js                # Semantic pattern search
 │   ├── predictive-engine.ts             # ML prediction module
 │   ├── anti-tamper.ts                   # Security & kill-switch
 │   ├── Cargo.toml                       # Rust dependencies
-│   └── qantum-nerve-center/             # Central command server
+│   └── aeterna-nerve-center/             # Central command server
 │
 ├── 📂 backend/                          # API & Server layer
 ├── 📂 Core/                             # Framework core
@@ -849,7 +849,7 @@ QAntum/                                  [832+ source files]
 │   ├── 🧬 souls/genesis.soul            # Soul source code (.soul language)
 │   └── 🐍 verification/verify_singularity.py
 │
-├── qantum-prime-architecture.html       # Visual architecture (Zero Entropy Demo)
+├── aeterna-prime-architecture.html       # Visual architecture (Zero Entropy Demo)
 ├── linkedin-carousel-generator.html     # LinkedIn PDF carousel generator
 ├── record-video.js                      # Video generation utility
 ├── package.json
@@ -862,17 +862,17 @@ QAntum/                                  [832+ source files]
 
 <div align="center">
 
-**Dimitar Prodromov** *(QAntum)*
+**Dimitar Prodromov** *(Aeterna)*
 
-*Founder & Chief Architect — QAntum Empire*
+*Founder & Chief Architect — Aeterna Empire*
 
-📧 `founder@qantum.empire`
-🌐 [github.com/QAntum-Fortres](https://github.com/QAntum-Fortres)
+📧 `founder@aeterna.empire`
+🌐 [github.com/Aeterna-Fortres](https://github.com/Aeterna-Fortres)
 
 ---
 
 *"1 януари 2026, 05:15 сутринта. Империята се пробужда."*
 
-**QANTUM EMPIRE © 2026. All Rights Reserved.**
+**AETERNA EMPIRE © 2026. All Rights Reserved.**
 
 </div>

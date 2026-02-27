@@ -4,7 +4,7 @@
  * Production-ready POM implementation for AI-generated tests
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import { WebDriver, WebElement, By, until, Key, Actions } from 'selenium-webdriver';

@@ -96,22 +96,22 @@
         },
         {
           "name": "LogicEvolutionDB.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\LogicEvolutionDB.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\LogicEvolutionDB.ts",
           "originalCategory": "brain/logic"
         },
         {
           "name": "MetaLogicEngine.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\MetaLogicEngine.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\MetaLogicEngine.ts",
           "originalCategory": "brain/logic"
         },
         {
           "name": "OntoGenerator.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\OntoGenerator.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\OntoGenerator.ts",
           "originalCategory": "brain/logic"
         },
         {
           "name": "TranscendenceCore.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\TranscendenceCore.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\TranscendenceCore.ts",
           "originalCategory": "brain/logic"
         },
         {
@@ -775,8 +775,8 @@
           "originalCategory": "core/mouth"
         },
         {
-          "name": "qantum.ts",
-          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\src\\core\\qantum.ts",
+          "name": "aeterna.ts",
+          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\src\\core\\aeterna.ts",
           "originalCategory": "core/mouth"
         },
         {
@@ -1126,7 +1126,7 @@
         },
         {
           "name": "PhenomenonWeaver.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\engines\\PhenomenonWeaver.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\engines\\PhenomenonWeaver.ts",
           "originalCategory": "core/mouth"
         },
         {
@@ -1280,8 +1280,8 @@
           "originalCategory": "security/auth"
         },
         {
-          "name": "qantum-ascension.js",
-          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\.ascension-backup\\2025-12-30T19-06-20-229Z\\tools\\qantum-ascension.js",
+          "name": "aeterna-ascension.js",
+          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\.ascension-backup\\2025-12-30T19-06-20-229Z\\tools\\aeterna-ascension.js",
           "originalCategory": "security/auth"
         },
         {
@@ -1465,8 +1465,8 @@
           "originalCategory": "security/auth"
         },
         {
-          "name": "qantum-ascension.js",
-          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\tools\\qantum-ascension.js",
+          "name": "aeterna-ascension.js",
+          "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\tools\\aeterna-ascension.js",
           "originalCategory": "security/auth"
         },
         {

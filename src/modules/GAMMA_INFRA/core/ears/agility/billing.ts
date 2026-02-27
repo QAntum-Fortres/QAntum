@@ -4,7 +4,7 @@
  * Handles subscriptions, usage-based billing, and webhooks
  *
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import { FastifyPluginAsync } from 'fastify';

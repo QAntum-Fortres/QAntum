@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > BRAIN > AGILITY
+ * 🔥 AETERNA CORE > BRAIN > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses

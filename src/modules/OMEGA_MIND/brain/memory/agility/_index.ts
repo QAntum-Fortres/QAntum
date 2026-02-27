@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > MEMORY > AGILITY
+ * 🔥 AETERNA BRAIN > MEMORY > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses

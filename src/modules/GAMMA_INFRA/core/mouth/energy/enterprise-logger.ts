@@ -1,5 +1,5 @@
 /**
- * 🏢 QANTUM ENTERPRISE LOGGER
+ * 🏢 AETERNA ENTERPRISE LOGGER
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * Centralized logging system with environment-based filtering.
@@ -13,8 +13,8 @@
  * - Automatic context injection
  * - Log rotation ready
  *
- * @version 1.0.0
- * @author QAntum AI Architect
+ * @version 1.0.0-AETERNA
+ * @author Aeterna AI Architect
  * @phase Quick Win #1
  */
 
@@ -128,7 +128,7 @@ export class EnterpriseLogger extends EventEmitter {
   private buffer: LogEntry[] = [];
   private flushInterval?: NodeJS.Timeout;
 
-  constructor(context: string = 'QAntum', config: Partial<LoggerConfig> = {}) {
+  constructor(context: string = 'Aeterna', config: Partial<LoggerConfig> = {}) {
     super();
     this.config = { ...DEFAULT_CONFIG, ...config };
     this.context = context;
@@ -395,7 +395,7 @@ let globalLogger: EnterpriseLogger | null = null;
  */
 export function getLogger(): EnterpriseLogger {
   if (!globalLogger) {
-    globalLogger = new EnterpriseLogger('QAntum');
+    globalLogger = new EnterpriseLogger('Aeterna');
   }
   return globalLogger;
 }
@@ -411,7 +411,7 @@ export function createLogger(context: string, config?: Partial<LoggerConfig>): E
  * Configure the global logger
  */
 export function configureLogger(config: Partial<LoggerConfig>): void {
-  globalLogger = new EnterpriseLogger('QAntum', config);
+  globalLogger = new EnterpriseLogger('Aeterna', config);
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════

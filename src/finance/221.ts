@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.2 - MONEY PIPELINE INDEX                                ║
+ * ║  Aeterna Prime v28.2 - MONEY PIPELINE INDEX                                ║
  * ║  "Изходът за парите" - All Revenue Modules                                ║
  * ╚═══════════════════════════════════════════════════════════════════════════╝
  */
@@ -52,7 +52,7 @@ export {
 export { 
   SecureConfigLoader, 
   secureConfig,
-  type QAntumConfig,
+  type AeternaConfig,
 } from './SecureConfigLoader';
 
 // ═══════════════════════════════════════════════════════════════════════════

@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - ARBITRAGE LOGIC                                     ║
+ * ║  Aeterna Prime v28.0 - ARBITRAGE LOGIC                                     ║
  * ║  "Математиката на Спреда" - Spread Analysis Engine                        ║
  * ║                                                                           ║
  * ║  Чист арбитраж = (Price_B - Price_A) - (Fees + Slippage + Latency_Cost)   ║

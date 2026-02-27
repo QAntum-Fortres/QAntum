@@ -140,7 +140,7 @@ export default function SettingsPage() {
                       <label className="text-sm text-muted-foreground mb-2 block">Organization</label>
                       <input 
                         type="text" 
-                        defaultValue="QAntum Empire"
+                        defaultValue="Aeterna Empire"
                         className="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500"
                       />
                     </div>
@@ -244,7 +244,7 @@ export default function SettingsPage() {
               <Card className="bg-slate-900/50 border-slate-800">
                 <CardHeader>
                   <CardTitle>Integrations</CardTitle>
-                  <CardDescription>Connect QAntum with your tools</CardDescription>
+                  <CardDescription>Connect Aeterna with your tools</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {integrations.map((integration) => (
@@ -313,7 +313,7 @@ export default function SettingsPage() {
                     <div className="p-4 bg-slate-800/50 rounded-lg mb-4">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="font-medium">https://api.example.com/webhooks/qantum</p>
+                          <p className="font-medium">https://api.example.com/webhooks/aeterna</p>
                           <p className="text-sm text-muted-foreground">Events: test.completed, test.failed</p>
                         </div>
                         <span className="flex items-center gap-1 text-sm text-green-400">
@@ -382,7 +382,7 @@ export default function SettingsPage() {
               <Card className="bg-slate-900/50 border-slate-800">
                 <CardHeader>
                   <CardTitle>Appearance</CardTitle>
-                  <CardDescription>Customize how QAntum looks</CardDescription>
+                  <CardDescription>Customize how Aeterna looks</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div>

@@ -5,7 +5,7 @@ import * as fs from 'fs';
 // import { SelectorGenerator } from '../../ai/self-healing'; 
 
 /**
- * 🏥 QANTUM HYBRID HEALER (SUPREME EDITION)
+ * 🏥 AETERNA HYBRID HEALER (SUPREME EDITION)
  * 
  * Merges:
  * 1. Logic Healing (Selectors, timeouts, stale elements)

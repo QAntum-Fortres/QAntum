@@ -1,6 +1,6 @@
 {
-  "name": "@qantum/dashboard",
-  "version": "1.0.0",
+  "name": "@aeterna/dashboard",
+  "version": "1.0.0-AETERNA",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.1 - EXCHANGE CONNECTORS                                 ║
+ * ║  Aeterna Prime v28.1 - EXCHANGE CONNECTORS                                 ║
  * ║  "Вратата към борсите" - Binance + Kraken + More                          ║
  * ║                                                                           ║
  * ║  🏦 Real exchange API integration with Fortress encryption                ║

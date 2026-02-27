@@ -9,7 +9,7 @@
  * - Hybrid execution: Combines Ghost Protocol with Genesis isolation
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 export { 

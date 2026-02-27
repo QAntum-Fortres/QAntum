@@ -6,8 +6,8 @@
  * The main automation orchestrator - connects all components together
  * Handles parallel execution, task queuing, and error recovery
  *
- * @author dp | QAntum Labs
- * @version 1.0.0-QANTUM-PRIME
+ * @author dp | Aeterna Labs
+ * @version 1.0.0-AETERNA
  * @license Commercial
  * ═══════════════════════════════════════════════════════════════════════════════
  */

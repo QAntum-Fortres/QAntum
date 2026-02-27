@@ -1,3 +1,3 @@
 # SovereignAudit
 
-Self-Optimizing Engine - Автоматичен одит и оптимизация на всички процеси в QAntum Empire.
+Self-Optimizing Engine - Автоматичен одит и оптимизация на всички процеси в Aeterna Empire.

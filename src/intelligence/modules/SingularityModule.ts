@@ -11,7 +11,7 @@ export class SingularityModule implements ICognitiveModule {
 
   constructor() {
     this.engine = new SelfOptimizingEngine({
-      outputDir: './.qantum_stats',
+      outputDir: './.aeterna_stats',
       autoRefactorEnabled: false, // Safety first until explicitly enabled
     });
     // Start passive monitoring

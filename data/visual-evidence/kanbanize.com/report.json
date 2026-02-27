@@ -1,0 +1,43 @@
+{
+  "scan": {
+    "domain": "kanbanize.com",
+    "score": 16,
+    "grade": "F",
+    "ttfb": 331,
+    "missingHeaders": [
+      "strict-transport-security",
+      "content-security-policy",
+      "x-frame-options",
+      "x-content-type-options",
+      "x-xss-protection",
+      "referrer-policy",
+      "permissions-policy"
+    ],
+    "issues": [
+      "Missing: strict-transport-security",
+      "Missing: content-security-policy",
+      "Missing: x-frame-options",
+      "Missing: x-content-type-options",
+      "Missing: x-xss-protection",
+      "Missing: referrer-policy",
+      "Missing: permissions-policy"
+    ],
+    "sslDaysLeft": 238,
+    "sslIssuer": "Amazon"
+  },
+  "target": {
+    "domain": "kanbanize.com",
+    "email": "hello@kanbanize.com",
+    "company": "Kanbanize",
+    "industry": "SaaS"
+  },
+  "evidence": {
+    "screenshotFull": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\kanbanize.com\\screenshots\\desktop.png",
+    "screenshotMobile": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\kanbanize.com\\screenshots\\mobile.png",
+    "screenshotHeaders": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\kanbanize.com\\screenshots\\missing-headers.png",
+    "videoPath": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\kanbanize.com\\be959baf6c9aa0c67a200e14bdffe66c.webm",
+    "videoSizeKb": 987,
+    "video": true
+  },
+  "ts": "2026-02-27T01:11:45.028Z"
+}

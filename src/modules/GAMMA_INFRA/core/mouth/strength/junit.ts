@@ -44,8 +44,8 @@ export async function generateJUnit(result: RunResult, outputPath: string): Prom
   const durationSeconds = (result.duration / 1000).toFixed(3);
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="QAntum Cloud" tests="${result.totalTests}" failures="${result.failedTests}" skipped="${result.skippedTests}" time="${durationSeconds}" timestamp="${timestamp}">
-  <testsuite name="QAntum Tests" tests="${result.totalTests}" failures="${result.failedTests}" skipped="${result.skippedTests}" time="${durationSeconds}">
+<testsuites name="Aeterna Cloud" tests="${result.totalTests}" failures="${result.failedTests}" skipped="${result.skippedTests}" time="${durationSeconds}" timestamp="${timestamp}">
+  <testsuite name="Aeterna Tests" tests="${result.totalTests}" failures="${result.failedTests}" skipped="${result.skippedTests}" time="${durationSeconds}">
 `;
 
   for (const test of result.results) {

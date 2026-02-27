@@ -4,7 +4,7 @@
  * ║   🤖 REINFORCEMENT LEARNING BRIDGE                                                               ║
  * ║   "Teaching the AI to Choose the Immortal Selector Through Experience"                           ║
  * ║                                                                                                   ║
- * ║   Part of THE PREDICTION MATRIX - QANTUM v15.1                                              ║
+ * ║   Part of THE PREDICTION MATRIX - AETERNA v15.1                                              ║
  * ║                                                                                                   ║
  * ║   Algorithm: Q-Learning + Thompson Sampling + Upper Confidence Bound                             ║
  * ║   Optimized for: AMD Ryzen 7000 Series (Zen 4 architecture)                                      ║

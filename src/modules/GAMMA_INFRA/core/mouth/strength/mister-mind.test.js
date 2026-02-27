@@ -1,5 +1,5 @@
 /**
- * 🧪 QANTUM - Unit Tests
+ * 🧪 AETERNA - Unit Tests
  * Jest test suite for core functionality
  */
 
@@ -37,7 +37,7 @@ jest.mock('selenium-webdriver', () => ({
     }
 }));
 
-describe('🧠 QANTUM Core Tests', () => {
+describe('🧠 AETERNA Core Tests', () => {
     
     describe('Configuration', () => {
         let configModule;

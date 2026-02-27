@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM GHOST PROTOCOL                                                       ║
+ * ║   AETERNA GHOST PROTOCOL                                                       ║
  * ║   "Stealth testing with zero footprint"                                       ║
  * ║                                                                               ║
  * ║   TODO B #21 - Ghost Protocol: Stealth Mode                                   ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -1,4 +1,4 @@
-# 🧠 QAntum Sovereign MCP Server - Setup Guide
+# 🧠 Aeterna Sovereign MCP Server - Setup Guide
 
 ## Автоматична интеграция с Cline
 
@@ -8,14 +8,14 @@
 2. Напиши "Cline: Open MCP Settings"
 3. Натисни Enter
 
-### Стъпка 2: Добави QAntum сървъра
+### Стъпка 2: Добави Aeterna сървъра
 
 Добави това в `mcpServers` обекта:
 
 ```json
 {
   "mcpServers": {
-    "qantum-sovereign-agent": {
+    "aeterna-sovereign-agent": {
       "command": "npx",
       "args": ["ts-node", "C:/MisteMind/tools/mcp-server.ts"],
       "env": {
@@ -67,7 +67,7 @@ Cline ще разпознае новия MCP сървър.
 
 ### Сканиране на империята:
 ```
-Използвай magnet_scan за да видиш всички модули в QAntum империята.
+Използвай magnet_scan за да видиш всички модули в Aeterna империята.
 ```
 
 ### Търсене на модул:
@@ -91,8 +91,8 @@ Cline ще разпознае новия MCP сървър.
 
 - **MCP Server**: `C:/MisteMind/tools/mcp-server.ts`
 - **Config**: `C:/MisteMind/tools/cline-mcp-config.json`
-- **Vault**: `C:/MisteMind/QANTUM-VAULT.md`
-- **Security Audit**: `C:/MisteMind/qantum-nerve-center/SECURITY-AUDIT.md`
+- **Vault**: `C:/MisteMind/AETERNA-VAULT.md`
+- **Security Audit**: `C:/MisteMind/aeterna-nerve-center/SECURITY-AUDIT.md`
 
 ---
 
@@ -106,4 +106,4 @@ npx ts-node mcp-server.ts
 
 ---
 
-*Created by QAntum Sovereign Agent v35.0*
+*Created by Aeterna Sovereign Agent v35.0*

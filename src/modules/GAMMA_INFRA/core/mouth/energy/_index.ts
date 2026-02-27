@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > MOUTH > ENERGY
+ * 🔥 AETERNA CORE > MOUTH > ENERGY
  *
  *
  *

@@ -1,6 +1,6 @@
 /**
  * MISTER MIND CHAT WIDGET
- * Natural Language interface from QAntumConsole.ts
+ * Natural Language interface from AeternaConsole.ts
  */
 
 'use client';
@@ -123,7 +123,7 @@ export function MisterMindChat() {
           </div>
           <div>
             <h3 className="text-sm font-semibold text-white">Mister Mind</h3>
-            <p className="text-xs text-gray-500">QANTUM Console Interface</p>
+            <p className="text-xs text-gray-500">AETERNA Console Interface</p>
           </div>
         </div>
         

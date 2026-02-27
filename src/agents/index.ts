@@ -1,5 +1,5 @@
 /**
- * 🤖 QAntum Cloud Agents
+ * 🤖 Aeterna Cloud Agents
  * Multi-provider AI agent integrations
  *
  * Supported providers:

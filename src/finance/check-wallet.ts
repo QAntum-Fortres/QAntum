@@ -15,7 +15,7 @@ export class Hybrid_check_wallet extends HybridGodModeWrapper {
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  💰 QANTUM PRIME - WALLET CHECKER                                            ║
+ * ║  💰 AETERNA PRIME - WALLET CHECKER                                            ║
  * ║  Check balances before going LIVE                                            ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -60,7 +60,7 @@ const TOKENS = {
 async function checkWallet() {
     console.log(`
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  💰 QANTUM PRIME - WALLET CHECKER                                            ║
+║  💰 AETERNA PRIME - WALLET CHECKER                                            ║
 ║  Checking your BSC wallet before LIVE trading...                             ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 `);

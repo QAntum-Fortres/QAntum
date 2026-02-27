@@ -213,7 +213,7 @@ function LiveTerminal({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
 
     const cmd = input.trim().toLowerCase();
     setInput('');
-    setLogs(prev => [...prev, `watchdog@qantum:~$ ${input}`]);
+    setLogs(prev => [...prev, `watchdog@aeterna:~$ ${input}`]);
 
     if (cmd === 'clear') {
       setLogs([]);
@@ -324,7 +324,7 @@ function LiveTerminal({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
           className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-slate-900/95 border-t border-purple-500/30 flex items-center gap-3"
         >
           <span className="text-purple-400 font-mono text-sm font-bold flex-shrink-0">
-            watchdog@qantum:~$
+            watchdog@aeterna:~$
           </span>
           <input
             ref={inputRef}

@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DISTRIBUTED MODULE                                                   ║
+ * ║   AETERNA DISTRIBUTED MODULE                                                   ║
  * ║   "Scale Testing Across Infrastructure"                                       ║
  * ║                                                                               ║
  * ║   TODO B #14-16 - Complete Distributed System                                 ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -59,7 +59,7 @@ export class QantumEmailSender {
     private config: EmailConfig;
     private sendLog: SendResult[] = [];
     private logFile: string;
-    
+
     // Лимити — Google Workspace = 2000/ден, delay само за естественост
     private readonly DELAY_BETWEEN_EMAILS_MS = 3000;   // 3 сек между имейлите (имитира ръчно изпращане)
     private readonly MAX_PER_HOUR = 500;               // макс 500/час
@@ -68,7 +68,7 @@ export class QantumEmailSender {
     constructor(config: EmailConfig) {
         this.config = config;
         this.logFile = path.join(process.cwd(), 'dashboard', 'b2b-pitches', 'email-send-log.json');
-        
+
         this.transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
             port: 587,
@@ -132,10 +132,10 @@ export class QantumEmailSender {
             }
 
             const info = await this.transporter.sendMail(mailOptions);
-            
+
             result.success = true;
             result.messageId = info.messageId;
-            
+
             console.log(`📧 ✅ Изпратено до ${payload.to} — ID: ${info.messageId}`);
         } catch (err: any) {
             result.error = err.message;
@@ -152,13 +152,13 @@ export class QantumEmailSender {
      */
     async sendBatch(payloads: EmailPayload[]): Promise<SendResult[]> {
         const results: SendResult[] = [];
-        
+
         console.log(`\n📬 Начало на batch изпращане: ${payloads.length} имейла`);
         console.log(`   ⏱️  Delay: ${this.DELAY_BETWEEN_EMAILS_MS / 1000}s между имейли\n`);
 
         for (let i = 0; i < payloads.length; i++) {
             console.log(`📧 [${i + 1}/${payloads.length}] Изпращане до ${payloads[i].to}...`);
-            
+
             const result = await this.send(payloads[i]);
             results.push(result);
 
@@ -171,9 +171,9 @@ export class QantumEmailSender {
 
         const sent = results.filter(r => r.success).length;
         const failed = results.filter(r => !r.success).length;
-        
+
         console.log(`\n📬 Batch резултат: ✅ ${sent} изпратени, ❌ ${failed} грешки\n`);
-        
+
         return results;
     }
 
@@ -297,4 +297,143 @@ export class QantumEmailSender {
     private sleep(ms: number): Promise<void> {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
+    // ═══════════════════════════════════════════════════════════════════════════
+    // PHONE NOTIFICATIONS
+    // ═══════════════════════════════════════════════════════════════════════════
+
+    /**
+     * Notifies the Sovereign Architect on their personal device (e.g. Samsung S24 Ultra).
+     * This is used for urgent alerts like responses from prospective clients or security events.
+     */
+    async notifyPhone(message: string, priority: 'URGENT' | 'LOW' = 'URGENT') {
+        console.log(`📱 [PHONE_ALERT] Dispatching to Samsung S24 Ultra: ${message}`);
+
+        // In a real scenario, this would use Pushover, IFTTT or a custom bridge app.
+        // For now, we use a simulation log which the AETERNA Android app will poll.
+        const logPath = path.join(process.cwd(), 'data', 'alerts', 'phone_notifications.json');
+        const dir = path.dirname(logPath);
+        if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+
+        const existing = fs.existsSync(logPath) ? JSON.parse(fs.readFileSync(logPath, 'utf8')) : [];
+
+        existing.push({
+            timestamp: new Date().toISOString(),
+            message,
+            priority,
+            status: 'PENDING_SYNC'
+        });
+
+        fs.writeFileSync(logPath, JSON.stringify(existing, null, 2));
+
+        // Also send an urgent internal email if needed
+        if (priority === 'URGENT') {
+            await this.sendDirect({
+                to: process.env.ARCHITECT_EMAIL || 'founder@qantum.empire',
+                subject: `🚨 [URGENT ALERT] QAntum Notification`,
+                text: message
+            });
+        }
+    }
+
+    /**
+     * Internal sender without rate limiting for critical alerts.
+     */
+    private async sendDirect(options: any) {
+        try {
+            const transporter = (this as any).createTransporter();
+            await transporter.sendMail(options);
+        } catch (e) {
+            console.error(`❌ [DIRECT_EMAIL_FAIL]: ${e}`);
+        }
+    }
 }
+
+/**
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * QANTUM EMAIL MONITOR - The Inbox Intelligence Layer
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * 
+ * Monitors specifically for REPLIES to our agentic messages.
+ */
+export class QantumEmailMonitor {
+    private static instance: QantumEmailMonitor;
+    private isRunning: boolean = false;
+    private readonly RECIPIENT_HISTORY = path.join(process.cwd(), 'data', 'outreach', 'recipients.json');
+
+    private constructor() { }
+
+    static getInstance(): QantumEmailMonitor {
+        if (!QantumEmailMonitor.instance) {
+            QantumEmailMonitor.instance = new QantumEmailMonitor();
+        }
+        return QantumEmailMonitor.instance;
+    }
+
+    /**
+     * Starts the monitoring loop. 
+     * Conceptually this would use IMAP polling or Webhooks.
+     */
+    async startMonitoring() {
+        if (this.isRunning) return;
+        this.isRunning = true;
+        console.log('👀 [MONITOR] Inbox monitoring active. Detecting replies from targeted leads...');
+
+        // Polling simulation every 5 minutes
+        setInterval(async () => {
+            await this.checkForReplies();
+        }, 5 * 60 * 1000);
+    }
+
+    private async checkForReplies() {
+        // 🔍 [MONITOR] Inbox Intelligence Layer
+        // This method scans the outreach history and cross-references it with new inbound messages.
+        console.log('🔍 [MONITOR] Scanning for new inbound messages from targeted leads...');
+
+        try {
+            if (!fs.existsSync(this.RECIPIENT_HISTORY)) {
+                console.log('⚠️ [MONITOR] No outreach history found at recipients.json. Skipping scan.');
+                return;
+            }
+
+            const history = JSON.parse(fs.readFileSync(this.RECIPIENT_HISTORY, 'utf8'));
+            const targetEmails = history.map((h: any) => h.email.toLowerCase());
+
+            // Simulation of IMAP fetch (In production, replace with imap-simple or similar)
+            // We check a designated 'replies' folder where automated agents drop identified responses.
+            const repliesDir = path.join(process.cwd(), 'data', 'outreach', 'replies');
+            if (fs.existsSync(repliesDir)) {
+                const newReplies = fs.readdirSync(repliesDir).filter(f => f.endsWith('.json'));
+
+                for (const replyFile of newReplies) {
+                    const replyPath = path.join(repliesDir, replyFile);
+                    const replyData = JSON.parse(fs.readFileSync(replyPath, 'utf8'));
+
+                    if (targetEmails.includes(replyData.from.toLowerCase())) {
+                        console.log(`🎯 [MONITOR] SUCCESS: Detected reply from lead: ${replyData.from}`);
+
+                        // Notify the Architect on their phone
+                        const sender = new QantumEmailSender({
+                            senderEmail: process.env.SMTP_USER || 'placeholder@qantum.dev',
+                            senderName: 'QAntum Pulse',
+                            appPassword: process.env.SMTP_PASS || ''
+                        });
+
+                        await sender.notifyPhone(
+                            `📧 Target Reply! ${replyData.from} responded to the QAntum Audit. Subject: ${replyData.subject}`,
+                            'URGENT'
+                        );
+
+                        // Move to 'processed'
+                        const processedDir = path.join(repliesDir, 'processed');
+                        if (!fs.existsSync(processedDir)) fs.mkdirSync(processedDir, { recursive: true });
+                        fs.renameSync(replyPath, path.join(processedDir, replyFile));
+                    }
+                }
+            }
+        } catch (error) {
+            console.error('❌ [MONITOR_ERROR]:', error);
+        }
+    }
+}
+
+export default QantumEmailSender;

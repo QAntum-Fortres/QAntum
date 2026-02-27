@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM LAZY LOADER                                                          ║
+ * ║   AETERNA LAZY LOADER                                                          ║
  * ║   "On-demand module loading for better startup"                               ║
  * ║                                                                               ║
  * ║   TODO B #12 - Lazy Loading                                                   ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -347,10 +347,10 @@ export function LazyProperty<T>(initializer: () => T): PropertyDecorator {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// PREDEFINED LAZY MODULES FOR QANTUM
+// PREDEFINED LAZY MODULES FOR AETERNA
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const QAntumModules = {
+export const AeternaModules = {
   // Cognition modules (heavy, load on demand)
   registerCognitionModules(loader: LazyLoader): void {
     loader.register('cognition/thought-chain', async () => {

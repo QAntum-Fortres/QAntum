@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - EMERGENCY KILL SWITCH                               ║
+ * ║  Aeterna Prime v28.0 - EMERGENCY KILL SWITCH                               ║
  * ║  "Nuclear Option" - ABORT ALL & WITHDRAW                                  ║
  * ║                                                                           ║
  * ║  ⚠️  КРИТИЧЕН МОДУЛ: Пълно изтегляне на ликвидност < 1 секунда           ║

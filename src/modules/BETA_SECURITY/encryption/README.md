@@ -1,3 +1,3 @@
 # encryption
 
-QANTUM ENCRYPTION LAYER — криптиране и защита на данни.
+AETERNA ENCRYPTION LAYER — криптиране и защита на данни.

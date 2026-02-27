@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SKILLS > BUSINESS
+ * 🔥 AETERNA SKILLS > BUSINESS
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

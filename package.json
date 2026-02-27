@@ -1,10 +1,10 @@
 {
-  "name": "qantum-framework",
-  "version": "1.0.0",
+  "name": "aeterna-framework",
+  "version": "1.0.0-AETERNA",
   "description": "AI-powered self-healing tests, autonomous B2B sales, and cognitive crypto arbitrage in one TypeScript framework",
   "main": "src/index.ts",
   "bin": {
-    "qantum": "./Qantum-cli.js"
+    "aeterna": "./Aeterna-cli.js"
   },
   "scripts": {
     "start": "npx ts-node src/index.ts",
@@ -15,7 +15,7 @@
     "singularity": "npx ts-node scripts/singularity-launcher.ts",
     "test": "npx vitest run",
     "lint": "npx eslint src --ext .ts",
-    "upgrade": "node Qantum-cli.js upgrade"
+    "upgrade": "node Aeterna-cli.js upgrade"
   },
   "keywords": [
     "ai",
@@ -28,16 +28,16 @@
     "framework",
     "saas"
   ],
-  "author": "Dimitar Prodromov <founder@qantum.empire>",
+  "author": "Dimitar Prodromov <founder@aeterna.empire>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qantum-empire/qantum-framework"
+    "url": "https://github.com/aeterna-empire/aeterna-framework"
   },
-  "homepage": "https://qantum.empire",
+  "homepage": "https://aeterna.empire",
   "bugs": {
-    "url": "https://github.com/qantum-empire/qantum-framework/issues",
-    "email": "founder@qantum.empire"
+    "url": "https://github.com/aeterna-empire/aeterna-framework/issues",
+    "email": "founder@aeterna.empire"
   },
   "engines": {
     "node": ">=18.0.0"

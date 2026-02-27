@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > BRAIN
+ * 🔥 AETERNA CORE > BRAIN
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

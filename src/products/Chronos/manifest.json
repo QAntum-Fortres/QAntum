@@ -1,6 +1,6 @@
 {
     "name": "ChronosEngine SDK",
-    "version": "1.0.0",
+    "version": "1.0.0-AETERNA",
     "type": "State Management",
     "description": "Time-Travel State Machine for reverting critical system errors.",
     "price_model": "License (starts at €10k/year)",

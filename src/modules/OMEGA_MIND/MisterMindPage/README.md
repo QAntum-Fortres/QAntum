@@ -1,12 +1,12 @@
-# ⚛️ QAntum Prime v27.1.0-IMMORTAL
+# ⚛️ Aeterna Prime v1.0.0-AETERNA-IMMORTAL
 
 > **"The AI That Tests Itself"** - 715,861 lines of self-evolving QA automation
 
-🌐 **Live Demo:** [https://papica777-eng.github.io/QAntumPage/](https://papica777-eng.github.io/QAntumPage/)
+🌐 **Live Demo:** [https://papica777-eng.github.io/AeternaPage/](https://papica777-eng.github.io/AeternaPage/)
 
 ---
 
-## 🚀 What is QAntum Prime?
+## 🚀 What is Aeterna Prime?
 
 The world's most advanced QA Automation Framework. Enterprise-grade from day 1.
 
@@ -54,16 +54,16 @@ Layer 1: MATH       → Algorithms, Graph Theory, Probability
 
 ```bash
 # Install
-npm install qantum-prime
+npm install aeterna-prime
 
 # Or scaffold new project
-npx qantum init my-project
+npx aeterna init my-project
 ```
 
 ```typescript
-import { QAntum } from 'qantum-prime';
+import { Aeterna } from 'aeterna-prime';
 
-const qa = await QAntum.create({
+const qa = await Aeterna.create({
   ghost: true,      // Bypass bot detection
   selfHeal: true,   // Auto-repair selectors
   swarm: { workers: 100 }
@@ -82,7 +82,7 @@ await qa.test('Login Flow', async ({ page }) => {
 ## 📁 Project Structure
 
 ```
-QAntumPage/
+AeternaPage/
 ├── index.html       # Main landing page
 ├── demo.html        # Interactive demo
 ├── pricing.html     # Pricing tiers ($0/$49/$199)
@@ -104,7 +104,7 @@ QAntumPage/
 |------------|-------------|--------|
 | [MrMindQATool](https://github.com/papica777-eng/MrMindQATool) | Core Framework (Private) | 🔒 Private |
 | [QA-Framework](https://github.com/papica777-eng/QA-Framework) | Legacy Version | 🔒 Private |
-| [QAntumPage](https://github.com/papica777-eng/QAntumPage) | Public Landing | 🌐 Public |
+| [AeternaPage](https://github.com/papica777-eng/AeternaPage) | Public Landing | 🌐 Public |
 
 ---
 
@@ -131,8 +131,8 @@ QAntumPage/
 
 ## 📜 License
 
-MIT © 2025 Dimitar Prodromov | QAntum Labs
+MIT © 2025 Dimitar Prodromov | Aeterna Labs
 
 ---
 
-> *"В QAntum не лъжем. Само истински стойности."*
+> *"В Aeterna не лъжем. Само истински стойности."*

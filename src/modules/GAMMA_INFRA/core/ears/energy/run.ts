@@ -1,5 +1,5 @@
 /**
- * Run Command - Execute tests on QAntum Cloud
+ * Run Command - Execute tests on Aeterna Cloud
  *
  * Supports CI/CD integration with proper exit codes
  */
@@ -61,7 +61,7 @@ export async function runTests(tests: string[], options: RunOptions) {
     let projectId = options.project || config.get('defaultProject');
 
     if (!projectId) {
-      spinner.fail('No project specified. Use --project or run `qantum init`');
+      spinner.fail('No project specified. Use --project or run `aeterna init`');
       process.exit(1);
     }
 
@@ -86,7 +86,7 @@ export async function runTests(tests: string[], options: RunOptions) {
     };
 
     // Submit test run
-    spinner.text = 'Submitting test run to QAntum Cloud...';
+    spinner.text = 'Submitting test run to Aeterna Cloud...';
     const { runId, wsUrl } = await api.post<{ runId: string; wsUrl: string }>(
       '/api/v1/tests/run',
       payload,

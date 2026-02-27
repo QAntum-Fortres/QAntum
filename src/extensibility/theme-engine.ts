@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM THEME ENGINE                                                         ║
+ * ║   AETERNA THEME ENGINE                                                         ║
  * ║   "Dynamic theming with CSS variables"                                        ║
  * ║                                                                               ║
  * ║   TODO B #47 - Extensibility: Theme Engine                                    ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -151,8 +151,8 @@ const commonTransitions: ThemeTransitions = {
 };
 
 export const lightTheme: Theme = {
-  id: 'qantum-light',
-  name: 'QAntum Light',
+  id: 'aeterna-light',
+  name: 'Aeterna Light',
   type: 'light',
   colors: {
     primary: '#6366f1',
@@ -197,8 +197,8 @@ export const lightTheme: Theme = {
 };
 
 export const darkTheme: Theme = {
-  id: 'qantum-dark',
-  name: 'QAntum Dark',
+  id: 'aeterna-dark',
+  name: 'Aeterna Dark',
   type: 'dark',
   colors: {
     primary: '#818cf8',
@@ -415,7 +415,7 @@ export class ThemeEngine {
     const variables = this.generateCSSVariables(theme);
 
     const baseStyles = `
-/* QAntum Theme: ${theme.name} */
+/* Aeterna Theme: ${theme.name} */
 ${variables}
 
 body {
@@ -518,7 +518,7 @@ code {
 
     if (!this.styleElement) {
       this.styleElement = document.createElement('style');
-      this.styleElement.id = 'qantum-theme';
+      this.styleElement.id = 'aeterna-theme';
       document.head.appendChild(this.styleElement);
     }
 

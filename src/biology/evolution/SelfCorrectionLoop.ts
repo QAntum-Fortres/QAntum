@@ -24,7 +24,7 @@
  * ║     • Repeat until 100% Pass Rate or max iterations                                           ║
  * ║     • Learn from successful corrections                                                       ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

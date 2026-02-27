@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CHRONOS ENGINE                                                       ║
+ * ║   AETERNA CHRONOS ENGINE                                                       ║
  * ║   "Time-based test scheduling and orchestration"                              ║
  * ║                                                                               ║
  * ║   TODO B #31 - Chronos: Time Management                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

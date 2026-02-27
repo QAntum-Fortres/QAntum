@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - ARBITRAGE LOGIC CORE                                ║
+ * ║  Aeterna Prime v28.0 - ARBITRAGE LOGIC CORE                                ║
  * ║  "Uncertainty Destroyer" - Mathematical Validation Layer                  ║
  * ║                                                                           ║
  * ║  IMPLEMEMENTS:                                                            ║

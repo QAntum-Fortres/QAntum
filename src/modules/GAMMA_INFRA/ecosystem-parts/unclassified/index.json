@@ -36,12 +36,12 @@
         },
         {
           "name": "demo.ts",
-          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\QAntum-Demo\\demo.ts",
+          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\Aeterna-Demo\\demo.ts",
           "originalCategory": "brain/logic"
         },
         {
           "name": "demo.js",
-          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\QAntum-Demo\\dist\\demo.js",
+          "path": "C:\\MisteMind\\PROJECT\\PUBLIC\\Aeterna-Demo\\dist\\demo.js",
           "originalCategory": "brain/logic"
         },
         {
@@ -266,52 +266,52 @@
         },
         {
           "name": "index.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\dist-server\\index.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\dist-server\\index.js",
           "originalCategory": "core/mouth"
         },
         {
           "name": "index.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\index.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\index.js",
           "originalCategory": "core/mouth"
         },
         {
           "name": "index.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\modules\\index.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\modules\\index.js",
           "originalCategory": "core/mouth"
         },
         {
           "name": "OllamaAgent.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\services\\OllamaAgent.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\services\\OllamaAgent.js",
           "originalCategory": "core/mouth"
         },
         {
           "name": "modules.test.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\tests\\modules.test.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\tests\\modules.test.js",
           "originalCategory": "core/mouth"
         },
         {
           "name": "index.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\modules\\index.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\modules\\index.ts",
           "originalCategory": "core/mouth"
         },
         {
           "name": "magnet.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\modules\\magnet.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\modules\\magnet.ts",
           "originalCategory": "core/mouth"
         },
         {
           "name": "AdaptiveOllamaAgent.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\services\\AdaptiveOllamaAgent.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\services\\AdaptiveOllamaAgent.ts",
           "originalCategory": "core/mouth"
         },
         {
           "name": "modules.test.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\tests\\modules.test.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\tests\\modules.test.ts",
           "originalCategory": "core/mouth"
         },
         {
           "name": "reportWebVitals.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\reportWebVitals.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\reportWebVitals.ts",
           "originalCategory": "core/mouth"
         },
         {
@@ -551,7 +551,7 @@
         },
         {
           "name": "magnet.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\dist-server\\magnet.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\dist-server\\magnet.js",
           "originalCategory": "security/auth"
         },
         {
@@ -606,7 +606,7 @@
         },
         {
           "name": "setupTests.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\setupTests.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\setupTests.ts",
           "originalCategory": "brain/learning"
         },
         {
@@ -676,17 +676,17 @@
         },
         {
           "name": "index.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\index.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\index.ts",
           "originalCategory": "core/eyes"
         },
         {
           "name": "OllamaAgent.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\services\\OllamaAgent.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\services\\OllamaAgent.ts",
           "originalCategory": "core/eyes"
         },
         {
           "name": "ollama.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\services\\ollama.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\services\\ollama.ts",
           "originalCategory": "core/eyes"
         },
         {
@@ -750,8 +750,8 @@
           "originalCategory": "core/eyes"
         },
         {
-          "name": "qantum-cli.js",
-          "path": "C:\\MisteMind\\tools\\qantum-cli.js",
+          "name": "aeterna-cli.js",
+          "path": "C:\\MisteMind\\tools\\aeterna-cli.js",
           "originalCategory": "core/eyes"
         },
         {
@@ -836,7 +836,7 @@
         },
         {
           "name": "index.ts",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\src\\components\\widgets\\index.ts",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\src\\components\\widgets\\index.ts",
           "originalCategory": "unclassified"
         },
         {
@@ -991,7 +991,7 @@
         },
         {
           "name": "AdaptiveOllamaAgent.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\server\\dist\\services\\AdaptiveOllamaAgent.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\server\\dist\\services\\AdaptiveOllamaAgent.js",
           "originalCategory": "security/guardians"
         },
         {
@@ -1001,7 +1001,7 @@
         },
         {
           "name": "postcss.config.js",
-          "path": "C:\\MisteMind\\qantum-nerve-center\\postcss.config.js",
+          "path": "C:\\MisteMind\\aeterna-nerve-center\\postcss.config.js",
           "originalCategory": "skills/automation"
         },
         {

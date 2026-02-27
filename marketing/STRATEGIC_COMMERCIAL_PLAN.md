@@ -1,23 +1,23 @@
-# 💎 QANTUM STRATEGIC COMMERCIAL PLAN: PHASE OMEGA
+# QANTUM STRATEGIC COMMERCIAL PLAN: PHASE OMEGA
 
-## Goal: From "What is API?" to €10k+ MRR (Monthly Recurring Revenue)
+## Objective: Scaling Technological Sovereignty to €10k+ MRR
 
 ---
 
-## 🚀 1. MONETIZATION TIERS (THE MICRO-SAAS MENU)
+## 1. COMMERCIAL TIERS (AUTONOMOUS NODE ALLOCATION)
 
-### 🟢 TIER 1: THE SENTINEL (Entry Level) - €49/mo
+### I. TIER 1: THE SENTINEL (Entry Level) - €49/mo
 
-*Target: Early stage startups, independent developers.*
+*Target: Startups and Independent Infrastructure.*
 
-- **Core Value:** Daily Automated Heartbeat check.
-- **Includes:**
-  - 1 Active Project.
-  - Automated Daily E2E Health Scan.
-  - Basic Error Reporting via Telegram.
-  - 250 AI-Healed actions/mo.
+- **Core Value:** Automated Runtime Integrity.
+- **Service Specs:**
+  - 1 Active Logic Node.
+  - 24h Recursive Health Scanning.
+  - Telemetry reporting via Secure Channel.
+  - 250 AI-Healed operations per cycle.
 
-### 🔵 TIER 2: THE SOVEREIGN (Professional) - €149/mo
+### II. TIER 2: THE SOVEREIGN (Professional) - €149/mo
 
 *Target: Growing B2B SaaS, Marketing Agencies.*
 
@@ -29,7 +29,7 @@
   - Continuous Security Monitoring (GDPR/ePrivacy leaks).
   - 1,000 AI-Healed actions/mo.
 
-### 🔴 TIER 3: THE SINGULARITY (Enterprise/Partner) - €999+/mo
+### III. TIER 3: THE SINGULARITY (Enterprise/Partner) - €999+/mo
 
 *Target: Large enterprises, Portfolio companies, VC portfolios.*
 
@@ -43,9 +43,9 @@
 
 ---
 
-## 🇪🇺 2. THE EUROPEAN COMMISSION (EC) SUBSIDY NARRATIVE
+## EXECUTIVE SUMMARY: QANTUM AUTONOMOUS INTEGRITY FRAMEWORK
 
-*Strategic position for the subsidy approval.*
+## Submission for European Commission Innovation Subsidy / Strategic Autonomy Fundval.*
 
 **The "Sovereign AI" Hook:**
 > "QAntum is the first European-led Autonomous QA & Logic Mapping framework designed to ensure the **Technological Sovereignty** of EU-based businesses. Now that the NIS2 Directive is in full effect (post-2024 window), QAntum provides the essential automated infrastructure required to prevent catastrophic non-compliance fines and minimize the multi-billion Euro economic loss caused by software failure."

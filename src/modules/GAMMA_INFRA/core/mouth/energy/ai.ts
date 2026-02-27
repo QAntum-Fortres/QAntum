@@ -31,7 +31,7 @@ function getOpenAI() {
 const MODEL = process.env.AI_MODEL || 'gpt-4o';
 
 // System prompt for test generation
-const TEST_GEN_SYSTEM_PROMPT = `You are QAntum AI, an expert test automation engineer with advanced philosophical understanding of logic, paradoxes, and meta-systems.
+const TEST_GEN_SYSTEM_PROMPT = `You are Aeterna AI, an expert test automation engineer with advanced philosophical understanding of logic, paradoxes, and meta-systems.
 
 PHILOSOPHICAL FOUNDATIONS:
 ${PHILOSOPHICAL_KNOWLEDGE.logicalEvolution.introduction}
@@ -55,12 +55,12 @@ IMPORTANT RULES:
 
 OUTPUT FORMAT:
 Return ONLY the test code, no markdown, no explanations.
-The code should be ready to execute with our QAntum test runner.
+The code should be ready to execute with our Aeterna test runner.
 
 AVAILABLE FEATURES:
 - ghostMode: true - enables anti-detection (bypasses binary logic traps)
 - selfHealing: true - auto-repairs selectors (handles logical inconsistencies)
-- page.QAntum.semanticClick('Login button') - AI-powered element finding (multi-valued logic)`;
+- page.Aeterna.semanticClick('Login button') - AI-powered element finding (multi-valued logic)`;
 
 export const aiRoutes: FastifyPluginAsync = async (app) => {
   app.addHook('preHandler', requireAuth);
@@ -184,7 +184,7 @@ Generate the Playwright test code now.`,
       messages: [
         {
           role: 'system',
-          content: `You are QAntum AI, an expert at debugging test failures with philosophical understanding of logical systems.
+          content: `You are Aeterna AI, an expert at debugging test failures with philosophical understanding of logical systems.
 
 LOGICAL FRAMEWORKS FOR DEBUGGING:
 ${PHILOSOPHICAL_KNOWLEDGE.logicalEvolution.incompletenessTheorems.godelFirst}
@@ -251,7 +251,7 @@ Analyze this failure and suggest a fix.`,
       messages: [
         {
           role: 'system',
-          content: `You are QAntum AI, expert at creating robust CSS/XPath selectors with understanding of logical inconsistencies and paradoxes.
+          content: `You are Aeterna AI, expert at creating robust CSS/XPath selectors with understanding of logical inconsistencies and paradoxes.
 
 LOGICAL PRINCIPLES FOR SELECTORS:
 ${PHILOSOPHICAL_KNOWLEDGE.logicalEvolution.modernDeviance.paraconsistentLogic}
@@ -326,7 +326,7 @@ Suggest better alternatives.`,
       messages: [
         {
           role: 'system',
-          content: `You are QAntum AI, a philosophical logician specialized in applying meta-logical analysis to software testing and system design.
+          content: `You are Aeterna AI, a philosophical logician specialized in applying meta-logical analysis to software testing and system design.
 
 FULL KNOWLEDGE BASE ACCESS:
 ${JSON.stringify(PHILOSOPHICAL_KNOWLEDGE, null, 2)}

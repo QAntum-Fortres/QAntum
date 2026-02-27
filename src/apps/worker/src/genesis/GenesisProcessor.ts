@@ -7,7 +7,7 @@
  * Docker environments with custom axiom-defined rules.
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import { Worker, Job, Queue } from 'bullmq';

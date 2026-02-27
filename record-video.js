@@ -36,7 +36,7 @@ async function recordVideo() {
     
     const recorder = new PuppeteerScreenRecorder(page, Config);
     
-    const filePath = path.join(__dirname, 'qantum-prime-architecture.html');
+    const filePath = path.join(__dirname, 'aeterna-prime-architecture.html');
     const fileUrl = `file://${filePath}`;
     
     console.log(`Navigating to ${fileUrl}...`);
@@ -45,7 +45,7 @@ async function recordVideo() {
     // Wait a moment for the canvas animation to start smoothly
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    const savePath = path.join(__dirname, 'Qantum-Prime-Showcase.mp4');
+    const savePath = path.join(__dirname, 'Aeterna-Prime-Showcase.mp4');
     console.log(`Recording video to ${savePath}...`);
     
     await recorder.start(savePath);

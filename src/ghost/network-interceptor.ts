@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM NETWORK INTERCEPTOR                                                  ║
+ * ║   AETERNA NETWORK INTERCEPTOR                                                  ║
  * ║   "Capture, mock, and replay network traffic"                                 ║
  * ║                                                                               ║
  * ║   TODO B #23 - Ghost: Network Interception                                    ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -316,7 +316,7 @@ export class NetworkInterceptor {
     return {
       log: {
         version: '1.2',
-        creator: { name: 'QAntum NetworkInterceptor', version: '1.0' },
+        creator: { name: 'Aeterna NetworkInterceptor', version: '1.0' },
         entries: this.recordings.map((call) => ({
           startedDateTime: new Date(call.request.timestamp).toISOString(),
           time: call.response?.duration || 0,

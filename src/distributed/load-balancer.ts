@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM LOAD BALANCER                                                        ║
+ * ║   AETERNA LOAD BALANCER                                                        ║
  * ║   "Smart test distribution across workers"                                    ║
  * ║                                                                               ║
  * ║   TODO B #15 - Performance: Load Balancing                                    ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

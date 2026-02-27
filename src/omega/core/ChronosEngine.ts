@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum v26.0 "Sovereign Nexus" - CHRONOS ENGINE V2.0 SUPREME
+ * Aeterna v26.0 "Sovereign Nexus" - CHRONOS ENGINE V2.0 SUPREME
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * NOTE: This is the consolidated, primary version of the Chronos Engine.

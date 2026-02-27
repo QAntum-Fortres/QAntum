@@ -118,7 +118,7 @@ export * as process_killer_log from './_root_migrated/process-killer-log';
 export * as PRODUCTS from './_root_migrated/PRODUCTS';
 export * as ProfitOptimizer from './_root_migrated/ProfitOptimizer';
 export * as protocol from './_root_migrated/protocol';
-export * as qantum_frontend from './_root_migrated/qantum-frontend';
+export * as aeterna_frontend from './_root_migrated/aeterna-frontend';
 export * as rate_limiter from './_root_migrated/rate-limiter';
 export * as ReaperDashboard from './_root_migrated/ReaperDashboard';
 export * as reporter_index from './_root_migrated/reporter-index';

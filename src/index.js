@@ -1,7 +1,7 @@
 /**
- * @fileoverview Main module exports for QANTUM v8.5
+ * @fileoverview Main module exports for AETERNA v8.5
  * @module src/index
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 // Config

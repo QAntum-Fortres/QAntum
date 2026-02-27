@@ -1,14 +1,14 @@
 /**
- * 💰 QAntum SaaS API Handlers
+ * 💰 Aeterna SaaS API Handlers
  * Copyright © 2025 Dimitar Prodromov. All rights reserved.
  *
  * Express/HTTP handlers for SaaS platform integration
  * Ready to plug into singularity-dashboard.js
  */
 
-import { QAntumSaaSPlatform, SUBSCRIPTION_TIERS, TierName } from './index';
+import { AeternaSaaSPlatform, SUBSCRIPTION_TIERS, TierName } from './index';
 
-const platform = new QAntumSaaSPlatform();
+const platform = new AeternaSaaSPlatform();
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // API HANDLERS FOR SINGULARITY DASHBOARD
@@ -52,7 +52,7 @@ export const saasApiHandlers = {
           customerId: customer.id,
           licenseKey: customer.licenseKey,
           tier: customer.tier,
-          message: `Welcome to QAntum ${SUBSCRIPTION_TIERS[tier].name}!`,
+          message: `Welcome to Aeterna ${SUBSCRIPTION_TIERS[tier].name}!`,
         },
       };
     } catch (error: any) {

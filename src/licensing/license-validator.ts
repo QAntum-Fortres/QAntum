@@ -1,5 +1,5 @@
 /**
- * 🔐 QANTUM License Validation System
+ * 🔐 AETERNA License Validation System
  * 
  * Интегрира се с LemonSqueezy за проверка на лицензи
  */
@@ -223,7 +223,7 @@ export const licenseValidator = new LicenseValidator();
 import { licenseValidator, LicenseInfo } from './license-validator';
 
 // At startup
-const license = await licenseValidator.validateLicense(process.env.qantum_LICENSE || '');
+const license = await licenseValidator.validateLicense(process.env.aeterna_LICENSE || '');
 
 console.log(`License tier: ${license.tier}`);
 console.log(`Features: ${license.features.join(', ')}`);
@@ -233,6 +233,6 @@ if (licenseValidator.hasPredictionMatrix(license)) {
   const prediction = await predictionMatrix.predictBestSelector(element, context);
 } else {
   console.log('⚠️ Prediction Matrix requires Pro license');
-  console.log('   Get it at: https://QAntum.lemonsqueezy.com');
+  console.log('   Get it at: https://Aeterna.lemonsqueezy.com');
 }
 */

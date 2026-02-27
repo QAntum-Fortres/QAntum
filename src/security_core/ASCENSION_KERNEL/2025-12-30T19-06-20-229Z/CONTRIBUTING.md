@@ -1,4 +1,4 @@
-# Contributing to QANTUM v27.1.0
+# Contributing to AETERNA v1.0.0-AETERNA
 
 ## 🎯 Code Quality Standards
 

@@ -1,4 +1,4 @@
-# 📢 QAntum v1.0 — Viral Launch Posts
+# 📢 Aeterna v1.0 — Viral Launch Posts
 
 Copy-paste ready posts for Reddit, HackerNews, and Dev.to.
 
@@ -13,7 +13,7 @@ Copy-paste ready posts for Reddit, HackerNews, and Dev.to.
 ```
 I've been building this in public for ~8 months and finally pushed v1.0 to GitHub.
 
-QAntum is a Node.js/TypeScript framework with zero mandatory external dependencies. Here's what one call does:
+Aeterna is a Node.js/TypeScript framework with zero mandatory external dependencies. Here's what one call does:
 
     await singularity.runGodLoop();
 
@@ -42,13 +42,13 @@ EDIT: Yes the trading engine is real. No I'm not responsible for your losses. Us
 ## 🟠 HackerNews — Ask HN / Show HN
 
 **Title:**
-`Show HN: QAntum – autonomous B2B sales + self-healing tests + crypto arbitrage in one TypeScript framework`
+`Show HN: Aeterna – autonomous B2B sales + self-healing tests + crypto arbitrage in one TypeScript framework`
 
 **Post body:**
 ```
 Hi HN,
 
-I'm releasing QAntum v1.0 — an open-source TypeScript framework that fuses:
+I'm releasing Aeterna v1.0 — an open-source TypeScript framework that fuses:
 
 1. AI Test Self-Healing: Tests that rewrite themselves when your HTML structure changes. No more flaky e2e tests from UI updates.
 
@@ -87,7 +87,7 @@ Happy to answer questions about the architecture, especially the cognitive arbit
 ```
 Eight months ago I asked: "What if a software framework could replace an entire B2B sales team AND a QA team AND a quant trader?" 
 
-The answer is QAntum v1.0 — and the architecture is genuinely weird.
+The answer is Aeterna v1.0 — and the architecture is genuinely weird.
 
 Let me walk you through how it works.
 ```
@@ -100,7 +100,7 @@ Let me walk you through how it works.
 
 ```
 Tweet 1:
-I just shipped QAntum v1.0 — a TypeScript framework where one function call runs:
+I just shipped Aeterna v1.0 — a TypeScript framework where one function call runs:
 
 → 🤖 AI Test Self-Healing
 → 📧 Autonomous B2B Sales  
@@ -116,7 +116,7 @@ Thread 🧵👇
 Tweet 2:
 The Self-Healing Tests part:
 
-When your UI changes and a test breaks, QAntum doesn't just report the failure.
+When your UI changes and a test breaks, Aeterna doesn't just report the failure.
 
 It rewrites the selector, re-runs the test, confirms it passes, and submits a PR — all without you touching anything.
 
@@ -167,7 +167,7 @@ The Singularity uses all of this autonomously.
 
 Tweet 7:
 GitHub: [link]
-npm: npm install qantum-framework
+npm: npm install aeterna-framework
 
 Core is MIT. Enterprise layer (live trading, Singularity, Cloudflare bypass) is paid.
 

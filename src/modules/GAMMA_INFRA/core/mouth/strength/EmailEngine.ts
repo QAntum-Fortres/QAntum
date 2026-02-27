@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.1 - SENDGRID EMAIL ENGINE                               ║
+ * ║  Aeterna Prime v28.1 - SENDGRID EMAIL ENGINE                               ║
  * ║  "Офертите заминават" - Automated Sales Email System                      ║
  * ║                                                                           ║
  * ║  📧 Automated outreach for Revenue Reaper protocol                        ║
@@ -354,7 +354,7 @@ export class EmailEngine extends EventEmitter {
 <body>
   <div class="container">
     <div class="header">
-      <h1>⚛️ QAntum Prime</h1>
+      <h1>⚛️ Aeterna Prime</h1>
       <p>Automated Quality Intelligence</p>
     </div>
     <div class="content">
@@ -372,16 +372,16 @@ export class EmailEngine extends EventEmitter {
 
       <p>Прикачам безплатен видео репорт, показващ проблема и неговото решение.</p>
 
-      <p>Ако искате да обсъдим как QAntum може да предотврати подобни проблеми в бъдеще, с удоволствие ще ви покажа демо.</p>
+      <p>Ако искате да обсъдим как Aeterna може да предотврати подобни проблеми в бъдеще, с удоволствие ще ви покажа демо.</p>
 
       <a href="{{calendar_link}}" class="cta-button">📅 Запазете 15-минутно демо</a>
 
       <p>Приятен ден,<br>
       <strong>Димитър Продромов</strong><br>
-      Founder, QAntum Prime</p>
+      Founder, Aeterna Prime</p>
     </div>
     <div class="footer">
-      <p>© 2025 QAntum Prime | <a href="{{unsubscribe_link}}">Отписване</a></p>
+      <p>© 2025 Aeterna Prime | <a href="{{unsubscribe_link}}">Отписване</a></p>
     </div>
   </div>
 </body>
@@ -397,11 +397,11 @@ export class EmailEngine extends EventEmitter {
 📍 Локация: {{bug_location}}
 ⚠️ Severity: {{bug_severity}}
 
-Прикачам безплатен видео репорт. Ако искате демо на QAntum, пишете ми.
+Прикачам безплатен видео репорт. Ако искате демо на Aeterna, пишете ми.
 
 Приятен ден,
 Димитър Продромов
-Founder, QAntum Prime`,
+Founder, Aeterna Prime`,
       variables: [
         'first_name',
         'company_name',
@@ -433,7 +433,7 @@ Founder, QAntum Prime`,
 
     <p>Пиша отново относно бъга, който открих на {{company_name}} миналата седмица.</p>
 
-    <p>Успяхте ли да прегледате видео репорта? Ако имате нужда от помощ с решението, мога да ви покажа как QAntum автоматизира целия процес.</p>
+    <p>Успяхте ли да прегледате видео репорта? Ако имате нужда от помощ с решението, мога да ви покажа как Aeterna автоматизира целия процес.</p>
 
     <p>Кога ви е удобно за 15-минутен разговор?</p>
 
@@ -476,7 +476,7 @@ Founder, QAntum Prime`,
   <div class="container">
     <p>Здравейте {{first_name}},</p>
 
-    <p>Благодаря за интереса към QAntum! Като благодарност за отделеното време, ви предлагам ексклузивна оферта:</p>
+    <p>Благодаря за интереса към Aeterna! Като благодарност за отделеното време, ви предлагам ексклузивна оферта:</p>
 
     <div class="pricing-box">
       <p class="original">$199/месец</p>
@@ -575,7 +575,7 @@ Enterprise Plan: $99/месец (вместо $199)
         replyTo: this.config.replyTo,
         trackOpens: this.config.trackOpens,
         trackClicks: this.config.trackClicks,
-        categories: ['qantum', templateId],
+        categories: ['aeterna', templateId],
       }
     );
 
@@ -674,8 +674,8 @@ Enterprise Plan: $99/месец (вместо $199)
         bug_description: bugDescription,
         bug_location: bugLocation,
         bug_severity: bugSeverity,
-        calendar_link: 'https://calendly.com/qantum-demo/15min',
-        unsubscribe_link: `https://qantum.pro/unsubscribe?email=${encodeURIComponent(email)}`,
+        calendar_link: 'https://calendly.com/aeterna-demo/15min',
+        unsubscribe_link: `https://aeterna.pro/unsubscribe?email=${encodeURIComponent(email)}`,
       }
     );
   }

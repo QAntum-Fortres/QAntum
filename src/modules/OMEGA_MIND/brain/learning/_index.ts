@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LEARNING
+ * 🔥 AETERNA BRAIN > LEARNING
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

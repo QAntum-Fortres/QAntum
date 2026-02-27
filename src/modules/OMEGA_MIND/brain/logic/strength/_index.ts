@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LOGIC > STRENGTH
+ * 🔥 AETERNA BRAIN > LOGIC > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

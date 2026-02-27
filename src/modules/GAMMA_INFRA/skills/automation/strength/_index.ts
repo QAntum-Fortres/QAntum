@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SKILLS > AUTOMATION > STRENGTH
+ * 🔥 AETERNA SKILLS > AUTOMATION > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

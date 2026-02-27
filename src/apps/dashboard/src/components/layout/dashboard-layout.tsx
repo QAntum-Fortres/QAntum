@@ -91,7 +91,7 @@ export default function DashboardLayout({
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-violet-500/20">
                 <span className="text-base font-bold text-white">Q</span>
               </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">QAntum</span>
+              <span className="text-lg font-bold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">Aeterna</span>
             </Link>
             <button
               className="lg:hidden p-1.5 rounded-md hover:bg-accent transition-colors"
@@ -108,7 +108,7 @@ export default function DashboardLayout({
               <div className="h-6 w-6 rounded bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center text-xs font-bold text-white shadow-sm">
                 QE
               </div>
-              <span className="text-sm font-medium text-foreground/90">QAntum Empire</span>
+              <span className="text-sm font-medium text-foreground/90">Aeterna Empire</span>
             </div>
           </div>
 

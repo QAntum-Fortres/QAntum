@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 /**
- * Test Runs API — QAntum Cloud
+ * Test Runs API — Aeterna Cloud
  * Returns recent test runs for the dashboard.
  * 
  * When a real database is connected, replace with Prisma queries.

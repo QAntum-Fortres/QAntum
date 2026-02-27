@@ -11,7 +11,7 @@
  * ║                         ANTI-HALLUCINATION SDK                                                ║
  * ║              "Stop AI Hallucinations. Ground Your AI in Reality."                             ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum Sentinel | Dimitar Prodromov | Licensed under VERITAS-SDK-PRO               ║
+ * ║   © 2025-2026 Aeterna Sentinel | Dimitar Prodromov | Licensed under VERITAS-SDK-PRO               ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

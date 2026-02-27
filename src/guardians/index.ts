@@ -3,7 +3,7 @@
  * All guards consolidated in one place
  *
  * @module guardians
- * @version 35.0.0
+ * @version 1.0.0-AETERNA
  */
 
 export * from './StrictCollar';

@@ -18,8 +18,8 @@
  * 5. Never sleeps until $10K MRR is achieved
  * 
  * @author Димитър Продромов / Mister Mind
- * @copyright 2026 QAntum Empire. All Rights Reserved.
- * @version 32.0.0 - THE ECONOMIC CANNIBAL
+ * @copyright 2026 Aeterna Empire. All Rights Reserved.
+ * @version 1.0.0-AETERNA
  */
 
 import { EventEmitter } from 'events';

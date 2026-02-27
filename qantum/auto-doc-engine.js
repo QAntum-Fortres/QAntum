@@ -22,7 +22,7 @@ const CONFIG = {
   publicDir: 'public',
   changelogFile: 'CHANGELOG.md',
   versionFile: 'package.json',
-  
+
   // Какво да документираме
   docTargets: {
     api: 'src/api/**/*.ts',
@@ -30,7 +30,7 @@ const CONFIG = {
     plugins: 'src/plugins/**/*.ts',
     types: 'src/types/**/*.ts'
   },
-  
+
   // Website pages
   websitePages: {
     home: 'index.html',
@@ -68,7 +68,7 @@ class AutoDocEngine {
     try {
       // 1. Събери промените от git
       this.changes = this.detectChanges();
-      
+
       if (this.changes.length === 0) {
         console.log('ℹ️  Няма промени за документиране');
         return;
@@ -95,7 +95,7 @@ class AutoDocEngine {
       await this.commitDocs();
 
       const duration = ((Date.now() - startTime) / 1000).toFixed(2);
-      
+
       console.log(`
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║  ✅ AUTO-DOC COMPLETE                                                        ║
@@ -118,18 +118,18 @@ class AutoDocEngine {
   detectChanges() {
     try {
       // Staged + unstaged changes
-      const staged = execSync('git diff --cached --name-only', { 
-        cwd: CONFIG.projectRoot, 
-        encoding: 'utf-8' 
+      const staged = execSync('git diff --cached --name-only', {
+        cwd: CONFIG.projectRoot,
+        encoding: 'utf-8'
       }).trim().split('\n').filter(Boolean);
-      
-      const unstaged = execSync('git diff --name-only', { 
-        cwd: CONFIG.projectRoot, 
-        encoding: 'utf-8' 
+
+      const unstaged = execSync('git diff --name-only', {
+        cwd: CONFIG.projectRoot,
+        encoding: 'utf-8'
       }).trim().split('\n').filter(Boolean);
 
       const allChanges = [...new Set([...staged, ...unstaged])];
-      
+
       // Категоризирай промените
       return allChanges.map(file => ({
         path: file,
@@ -159,7 +159,7 @@ class AutoDocEngine {
 
   async generateDocs() {
     console.log('📝 Generating documentation...');
-    
+
     const docsDir = path.join(CONFIG.projectRoot, CONFIG.docsDir);
     this.ensureDir(docsDir);
 
@@ -185,7 +185,7 @@ class AutoDocEngine {
     if (sourceChanges.length === 0) return;
 
     const docFile = path.join(CONFIG.projectRoot, CONFIG.docsDir, `${type}-reference.md`);
-    
+
     let content = `# ${type.toUpperCase()} Reference\n\n`;
     content += `> Auto-generated: ${this.timestamp}\n`;
     content += `> Version: ${this.version}\n\n`;
@@ -199,7 +199,7 @@ class AutoDocEngine {
         const jsdocs = this.extractJSDocs(fileContent);
 
         content += `### ${path.basename(change.path)}\n\n`;
-        
+
         if (exports.length > 0) {
           content += `**Exports:**\n`;
           exports.forEach(exp => {
@@ -246,14 +246,14 @@ class AutoDocEngine {
     const jsdocs = [];
     const pattern = /\/\*\*[\s\S]*?\*\//g;
     let match;
-    
+
     while ((match = pattern.exec(content)) !== null) {
       // Само първите 5 JSDoc блока
       if (jsdocs.length < 5) {
         jsdocs.push(match[0]);
       }
     }
-    
+
     return jsdocs;
   }
 
@@ -263,17 +263,17 @@ class AutoDocEngine {
 
   async updateChangelog(commitMessage) {
     console.log('📋 Updating CHANGELOG...');
-    
+
     const changelogPath = path.join(CONFIG.projectRoot, CONFIG.changelogFile);
     let changelog = '';
-    
+
     if (fs.existsSync(changelogPath)) {
       changelog = fs.readFileSync(changelogPath, 'utf-8');
     }
 
     const date = new Date().toISOString().split('T')[0];
     const sourceChanges = this.changes.filter(c => c.isSource);
-    
+
     if (sourceChanges.length === 0) {
       console.log('   ⏭️  No source changes to log');
       return;
@@ -289,7 +289,7 @@ class AutoDocEngine {
     };
 
     let newEntry = `\n## [${this.version}] - ${date}\n\n`;
-    
+
     if (commitMessage) {
       newEntry += `### Summary\n${commitMessage}\n\n`;
     }
@@ -335,10 +335,10 @@ class AutoDocEngine {
 
   async updateWebsite() {
     console.log('🌐 Updating website...');
-    
+
     const websiteDir = path.join(CONFIG.projectRoot, CONFIG.websiteDir);
     const publicDir = path.join(CONFIG.projectRoot, CONFIG.publicDir);
-    
+
     // Използвай който съществува
     const targetDir = fs.existsSync(websiteDir) ? websiteDir : publicDir;
     this.ensureDir(targetDir);
@@ -360,16 +360,16 @@ class AutoDocEngine {
 
   async updateVersionBadges(dir) {
     const htmlFiles = this.findFiles(dir, '.html');
-    
+
     for (const file of htmlFiles) {
       let content = fs.readFileSync(file, 'utf-8');
-      
+
       // Update version badges
       content = content.replace(
-        /v\d+\.\d+\.\d+(-[\w.]+)?/g, 
+        /v\d+\.\d+\.\d+(-[\w.]+)?/g,
         `v${this.version}`
       );
-      
+
       // Update version meta tags
       content = content.replace(
         /<meta name="version" content="[^"]*">/g,
@@ -469,9 +469,9 @@ class AutoDocEngine {
       <h3>Documentation</h3>
       <ul>
         ${docFiles.map(f => {
-          const name = path.basename(f, '.md');
-          return `<li><a href="#${name}">${name}</a></li>`;
-        }).join('\n        ')}
+      const name = path.basename(f, '.md');
+      return `<li><a href="#${name}">${name}</a></li>`;
+    }).join('\n        ')}
       </ul>
     </aside>
     
@@ -494,16 +494,16 @@ class AutoDocEngine {
 
   async updateTimestamps(dir) {
     const htmlFiles = this.findFiles(dir, '.html');
-    
+
     for (const file of htmlFiles) {
       let content = fs.readFileSync(file, 'utf-8');
-      
+
       // Update last-updated timestamps
       content = content.replace(
         /Last updated: [^<]*/g,
         `Last updated: ${this.timestamp}`
       );
-      
+
       content = content.replace(
         /data-updated="[^"]*"/g,
         `data-updated="${this.timestamp}"`
@@ -519,7 +519,7 @@ class AutoDocEngine {
 
   async generateApiDocs() {
     console.log('📚 Generating API documentation...');
-    
+
     const apiDir = path.join(CONFIG.projectRoot, 'src/api');
     if (!fs.existsSync(apiDir)) {
       console.log('   ⏭️  No API directory found');
@@ -528,10 +528,10 @@ class AutoDocEngine {
 
     const apiFiles = this.findFiles(apiDir, '.ts');
     const apiDoc = this.generateApiReference(apiFiles);
-    
+
     const docsDir = path.join(CONFIG.projectRoot, CONFIG.docsDir);
     this.ensureDir(docsDir);
-    
+
     fs.writeFileSync(path.join(docsDir, 'api-reference.md'), apiDoc);
     console.log('   ✅ API documentation generated');
   }
@@ -587,13 +587,13 @@ class AutoDocEngine {
     const interfaces = [];
     const pattern = /(?:export\s+)?interface\s+\w+\s*(?:extends\s+[^{]+)?\s*\{[^}]*\}/g;
     let match;
-    
+
     while ((match = pattern.exec(content)) !== null) {
       if (interfaces.length < 5) {
         interfaces.push(match[0]);
       }
     }
-    
+
     return interfaces;
   }
 
@@ -601,13 +601,13 @@ class AutoDocEngine {
     const methods = [];
     const pattern = /(?:public\s+|private\s+|protected\s+)?(?:async\s+)?(\w+)\s*\([^)]*\)\s*(?::\s*[^{]+)?(?=\s*\{)/g;
     let match;
-    
+
     while ((match = pattern.exec(content)) !== null) {
       if (match[1] && !['if', 'for', 'while', 'switch', 'catch'].includes(match[1])) {
         methods.push(match[0].trim());
       }
     }
-    
+
     return [...new Set(methods)];
   }
 
@@ -617,7 +617,7 @@ class AutoDocEngine {
 
   async syncVersionEverywhere() {
     console.log('🔄 Syncing version everywhere...');
-    
+
     const files = [
       ...this.findFiles(path.join(CONFIG.projectRoot, CONFIG.docsDir), '.md'),
       ...this.findFiles(path.join(CONFIG.projectRoot, CONFIG.docsDir), '.html'),
@@ -626,13 +626,13 @@ class AutoDocEngine {
 
     for (const file of files) {
       let content = fs.readFileSync(file, 'utf-8');
-      
+
       // Update version references
       content = content.replace(
         /version[:\s]+\d+\.\d+\.\d+(-[\w.]+)?/gi,
         `version: ${this.version}`
       );
-      
+
       content = content.replace(
         /v\d+\.\d+\.\d+(-[\w.]+)?/g,
         `v${this.version}`
@@ -650,7 +650,7 @@ class AutoDocEngine {
 
   async commitDocs() {
     console.log('📤 Committing documentation...');
-    
+
     try {
       // Stage docs
       execSync(`git add ${CONFIG.docsDir}/ ${CONFIG.changelogFile} ${CONFIG.websiteDir}/ ${CONFIG.publicDir}/ README.md 2>/dev/null || true`, {
@@ -700,10 +700,10 @@ class AutoDocEngine {
 
   findFiles(dir, ext) {
     if (!fs.existsSync(dir)) return [];
-    
+
     const files = [];
     const items = fs.readdirSync(dir, { withFileTypes: true });
-    
+
     for (const item of items) {
       const fullPath = path.join(dir, item.name);
       if (item.isDirectory()) {
@@ -712,7 +712,7 @@ class AutoDocEngine {
         files.push(fullPath);
       }
     }
-    
+
     return files;
   }
 
@@ -743,7 +743,7 @@ class AutoDocEngine {
 class GitHookInstaller {
   static install() {
     const hooksDir = path.join(CONFIG.projectRoot, '.git/hooks');
-    
+
     if (!fs.existsSync(hooksDir)) {
       console.log('⚠️  Not a git repository');
       return;
@@ -752,7 +752,7 @@ class GitHookInstaller {
     // Post-commit hook
     const postCommit = `#!/bin/sh
 # QAntum Auto-Doc Hook
-node tools/auto-doc-engine.js --auto
+node qantum/auto-doc-engine.js --auto
 `;
 
     fs.writeFileSync(path.join(hooksDir, 'post-commit'), postCommit);
@@ -761,7 +761,7 @@ node tools/auto-doc-engine.js --auto
     // Pre-push hook
     const prePush = `#!/bin/sh
 # QAntum Auto-Doc Sync
-node tools/auto-doc-engine.js --sync
+node qantum/auto-doc-engine.js --sync
 `;
 
     fs.writeFileSync(path.join(hooksDir, 'pre-push'), prePush);

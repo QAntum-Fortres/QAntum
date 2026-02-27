@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM SECURITY MODULE                                                      ║
+ * ║   AETERNA SECURITY MODULE                                                      ║
  * ║   "Encryption, Authentication, Validation, Scanning"                          ║
  * ║                                                                               ║
  * ║   TODO B #35-43 - Security Complete                                           ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

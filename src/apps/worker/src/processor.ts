@@ -8,7 +8,7 @@
  * - Progress tracking
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  */
 
 import { Worker, Job, Queue, QueueEvents } from 'bullmq';
@@ -320,7 +320,7 @@ async function uploadScreenshot(
   sessionId: string,
   testId: string
 ): Promise<string> {
-  const bucket = process.env.S3_BUCKET || 'qantum-screenshots';
+  const bucket = process.env.S3_BUCKET || 'aeterna-screenshots';
   const key = `screenshots/${sessionId}/${testId}-${Date.now()}.png`;
   
   try {
@@ -399,7 +399,7 @@ process.on('SIGINT', () => shutdown('SIGINT'));
 console.log(`
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║                                                                            ║
-║   🔧 QAntum Test Worker v1.0.0                                             ║
+║   🔧 Aeterna Test Worker v1.0.0                                             ║
 ║                                                                            ║
 ║   Configuration:                                                           ║
 ║   • Concurrency: ${process.env.WORKER_CONCURRENCY || '5'}                                                     ║

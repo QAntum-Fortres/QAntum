@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > ENCRYPTION > STRENGTH
+ * 🔥 AETERNA SECURITY > ENCRYPTION > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

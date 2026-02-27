@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CACHING SYSTEM                                                       ║
+ * ║   AETERNA CACHING SYSTEM                                                       ║
  * ║   "Multi-layer caching with TTL and LRU"                                      ║
  * ║                                                                               ║
  * ║   TODO B #13 - Caching                                                        ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SKILLS > NETWORK > ENERGY
+ * 🔥 AETERNA SKILLS > NETWORK > ENERGY
  *
  *
  *

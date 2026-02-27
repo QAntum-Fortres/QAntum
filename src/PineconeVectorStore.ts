@@ -55,7 +55,7 @@ export class PineconeVectorStore {
     ollamaUrl?: string;
     embeddingModel?: string;
   } = {}) {
-    this.indexName = options.indexName || process.env.PINECONE_INDEX || 'qantum-empire';
+    this.indexName = options.indexName || process.env.PINECONE_INDEX || 'aeterna-empire';
     this.dimension = options.dimension || 384; // all-minilm:33m dimension (matches your Pinecone index)
     this.ollamaUrl = options.ollamaUrl || 'http://localhost:11434';
     this.embeddingModel = options.embeddingModel || 'all-minilm:33m'; // 384-dim GPU embeddings
@@ -312,7 +312,7 @@ export class PineconeVectorStore {
         dimension: this.dimension,
         indexFullness: 0.95,
         namespaces: {
-          'qantum-core': { vectorCount: 1000000 }
+          'aeterna-core': { vectorCount: 1000000 }
         }
       };
     }
@@ -333,7 +333,7 @@ export class PineconeVectorStore {
 
   private getMockSearchResults(query: string, topK: number): SearchResult[] {
     const mockContent = [
-      'QAntum Framework е TypeScript-базиран QA инструмент с 900K+ LOC',
+      'Aeterna Framework е TypeScript-базиран QA инструмент с 900K+ LOC',
       'NeuralAccelerator използва GPU за паралелна обработка на тестове',
       'SovereignNucleus е ядрото на системата с AI валидация',
       'Ghost Protocol осигурява stealth режим за security тестване',
@@ -349,7 +349,7 @@ export class PineconeVectorStore {
       id: `mock-${i + 1}`,
       score: 0.95 - (i * 0.05),
       content,
-      metadata: { source: 'qantum-empire', indexed: new Date().toISOString() }
+      metadata: { source: 'aeterna-empire', indexed: new Date().toISOString() }
     }));
   }
 }
@@ -389,7 +389,7 @@ export async function testPinecone(): Promise<void> {
   // 4. Upsert test
   console.log('\n4️⃣ Testing upsert...');
   const count = await store.upsert([
-    { id: 'test-1', content: 'This is a test document for QAntum' },
+    { id: 'test-1', content: 'This is a test document for Aeterna' },
     { id: 'test-2', content: 'GPU accelerated vector embeddings' }
   ]);
   console.log(`   Upserted ${count} documents`);

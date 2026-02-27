@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM RATE LIMITER                                                         ║
+ * ║   AETERNA RATE LIMITER                                                         ║
  * ║   "Token bucket and sliding window rate limiting"                             ║
  * ║                                                                               ║
  * ║   TODO B #44 - API: Rate Limiting                                             ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

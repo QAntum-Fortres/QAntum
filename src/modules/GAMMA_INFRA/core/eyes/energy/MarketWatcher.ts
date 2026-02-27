@@ -1,7 +1,7 @@
 // @ts-nocheck
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - MARKET WATCHER                                      ║
+ * ║  Aeterna Prime v28.0 - MARKET WATCHER                                      ║
  * ║  "Очите на Хищника" - Multi-Market Interceptor                            ║
  * ║                                                                           ║
  * ║  Паралелно сканиране на цени от 3+ източници с Ghost Protocol stealth    ║
@@ -128,7 +128,7 @@ export class MarketWatcher extends EventEmitter {
 
     for (let i = 0; i < chainLength; i++) {
       const region = regions[Math.floor(Math.random() * regions.length)];
-      chain.push(`proxy-${region}-${Math.floor(Math.random() * 100)}.qantum.network`);
+      chain.push(`proxy-${region}-${Math.floor(Math.random() * 100)}.aeterna.network`);
     }
 
     return chain;

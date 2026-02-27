@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM PLUGIN SYSTEM                                                        ║
+ * ║   AETERNA PLUGIN SYSTEM                                                        ║
  * ║   "Extensible plugin architecture"                                            ║
  * ║                                                                               ║
  * ║   TODO B #44 - Plugin System                                                  ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM VISUAL TEST ENGINE                                                   ║
+ * ║   AETERNA VISUAL TEST ENGINE                                                   ║
  * ║   "Pixel-perfect visual regression testing"                                   ║
  * ║                                                                               ║
  * ║   TODO B #33 - Visual Testing: Screenshot comparison                          ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

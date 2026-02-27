@@ -1,5 +1,5 @@
 /**
- * QAntum SaaS API Server
+ * Aeterna SaaS API Server
  * 
  * Main entry point for the API server using Fastify
  */
@@ -130,7 +130,7 @@ try {
   app.log.info(`
 ╔════════════════════════════════════════════════════════════╗
 ║                                                            ║
-║   🧪 QAntum SaaS API v1.0.0                                ║
+║   🧪 Aeterna SaaS API v1.0.0                                ║
 ║                                                            ║
 ║   Server running at http://${config.host}:${config.port}              ║
 ║                                                            ║

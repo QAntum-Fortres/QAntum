@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CONFIGURATION SCHEMA VALIDATOR                                       ║
+ * ║   AETERNA CONFIGURATION SCHEMA VALIDATOR                                       ║
  * ║   "Type-safe configuration validation"                                        ║
  * ║                                                                               ║
  * ║   TODO B #43 - Configuration Management                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum v23.0.0 - PHASE 3 TEST SUITE
+ * Aeterna v23.0.0 - PHASE 3 TEST SUITE
  * "THE SOVEREIGN DASHBOARD & SHIELD"
  * ═══════════════════════════════════════════════════════════════════════════════
  *
@@ -104,7 +104,7 @@ describe('DashboardServer - Sovereign Control Center', () => {
       expect(response.headers.get('content-type')).toContain('text/html');
 
       const html = await response.text();
-      expect(html).toContain('QAntum');
+      expect(html).toContain('Aeterna');
       expect(html).toContain('Sovereign Control Center');
     });
 
@@ -404,7 +404,7 @@ describe('DashboardServer - Sovereign Control Center', () => {
 
 describe('LicenseManager - Intellectual Shield', () => {
   let manager: LicenseManager;
-  const testLicenseFile = path.join(os.tmpdir(), '.QAntum-test.license');
+  const testLicenseFile = path.join(os.tmpdir(), '.Aeterna-test.license');
 
   beforeEach(() => {
     manager = new LicenseManager();

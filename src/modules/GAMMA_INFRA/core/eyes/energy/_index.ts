@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EYES > ENERGY
+ * 🔥 AETERNA CORE > EYES > ENERGY
  *
  *
  *

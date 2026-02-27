@@ -1,5 +1,5 @@
 /**
- * 🧠 QANTUM HYBRID - Main Class
+ * 🧠 AETERNA HYBRID - Main Class
  * Унифициран API: mm.visit().click().type().should()
  */
 
@@ -10,7 +10,7 @@ import { DeepSearchEngine } from './deep-search.js';
 import { NetworkInterceptor } from './network-interceptor.js';
 import { FluentChain } from './fluent-chain.js';
 
-export class QAntum {
+export class Aeterna {
   private config: MMConfig;
   private browser?: Browser;
   private context?: BrowserContext;
@@ -33,7 +33,7 @@ export class QAntum {
   /**
    * Стартирай браузър
    */
-  async launch(): Promise<QAntum> {
+  async launch(): Promise<Aeterna> {
     const browserType = this.getBrowserType();
 
     this.browser = await browserType.launch({
@@ -94,7 +94,7 @@ export class QAntum {
   /**
    * Отиди на URL
    */
-  async visit(url: string): Promise<QAntum> {
+  async visit(url: string): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.goto(url, {
       waitUntil: 'domcontentloaded',
@@ -106,7 +106,7 @@ export class QAntum {
   /**
    * Презареди страницата
    */
-  async reload(): Promise<QAntum> {
+  async reload(): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.reload();
     return this;
@@ -115,7 +115,7 @@ export class QAntum {
   /**
    * Назад
    */
-  async goBack(): Promise<QAntum> {
+  async goBack(): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.goBack();
     return this;
@@ -124,7 +124,7 @@ export class QAntum {
   /**
    * Напред
    */
-  async goForward(): Promise<QAntum> {
+  async goForward(): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.goForward();
     return this;
@@ -205,7 +205,7 @@ export class QAntum {
   /**
    * Бърз клик
    */
-  async click(selector: string): Promise<QAntum> {
+  async click(selector: string): Promise<Aeterna> {
     await this.get(selector).click();
     return this;
   }
@@ -213,7 +213,7 @@ export class QAntum {
   /**
    * Бързо въвеждане
    */
-  async type(selector: string, text: string): Promise<QAntum> {
+  async type(selector: string, text: string): Promise<Aeterna> {
     await this.get(selector).type(text);
     return this;
   }
@@ -221,7 +221,7 @@ export class QAntum {
   /**
    * Изчакай елемент
    */
-  async waitFor(selector: string, timeout?: number): Promise<QAntum> {
+  async waitFor(selector: string, timeout?: number): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.waitForSelector(selector, {
       timeout: timeout || this.config.browser.timeout,
@@ -232,7 +232,7 @@ export class QAntum {
   /**
    * Изчакай URL
    */
-  async waitForUrl(url: string | RegExp): Promise<QAntum> {
+  async waitForUrl(url: string | RegExp): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.waitForURL(url);
     return this;
@@ -241,7 +241,7 @@ export class QAntum {
   /**
    * Изчакай навигация
    */
-  async waitForNavigation(): Promise<QAntum> {
+  async waitForNavigation(): Promise<Aeterna> {
     this.ensurePage();
     await this.page!.waitForLoadState('domcontentloaded');
     return this;
@@ -252,7 +252,7 @@ export class QAntum {
   /**
    * Интерцептирай заявка
    */
-  async intercept(config: InterceptConfig): Promise<QAntum> {
+  async intercept(config: InterceptConfig): Promise<Aeterna> {
     await this.networkInterceptor.intercept(config);
     return this;
   }
@@ -260,7 +260,7 @@ export class QAntum {
   /**
    * Stub API response
    */
-  async stub(url: string | RegExp, body: unknown, status = 200): Promise<QAntum> {
+  async stub(url: string | RegExp, body: unknown, status = 200): Promise<Aeterna> {
     await this.networkInterceptor.stub(url, body, status);
     return this;
   }
@@ -268,7 +268,7 @@ export class QAntum {
   /**
    * Изчакай заявка
    */
-  async waitForRequest(url: string | RegExp): Promise<QAntum> {
+  async waitForRequest(url: string | RegExp): Promise<Aeterna> {
     await this.networkInterceptor.waitForRequest(url);
     return this;
   }
@@ -322,7 +322,7 @@ export class QAntum {
   /**
    * Пауза (за дебъгване)
    */
-  async pause(ms: number): Promise<QAntum> {
+  async pause(ms: number): Promise<Aeterna> {
     await new Promise((resolve) => setTimeout(resolve, ms));
     return this;
   }
@@ -356,10 +356,10 @@ export class QAntum {
 // ============== FACTORY FUNCTION ==============
 
 /**
- * Създай нова инстанция на QANTUM
+ * Създай нова инстанция на AETERNA
  */
-export function createQA(config?: Partial<MMConfig>): QAntum {
-  return new QAntum(config);
+export function createQA(config?: Partial<MMConfig>): Aeterna {
+  return new Aeterna(config);
 }
 
 /**
@@ -369,4 +369,4 @@ export function createQA(config?: Partial<MMConfig>): QAntum {
 export const createMM = createQA;
 
 // Default export
-export default QAntum;
+export default Aeterna;

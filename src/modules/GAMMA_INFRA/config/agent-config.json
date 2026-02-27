@@ -1,7 +1,7 @@
 {
   "agent": {
-    "name": "QAntum Coding Partner",
-    "version": "1.0.0",
+    "name": "Aeterna Coding Partner",
+    "version": "1.0.0-AETERNA",
     "mode": "autonomous",
     "capabilities": [
       "code-generation",
@@ -16,14 +16,14 @@
   },
   "ollama": {
     "baseUrl": "http://localhost:11434",
-    "model": "qantum-supreme",
-    "fallbackModel": "qantum-model",
+    "model": "aeterna-supreme",
+    "fallbackModel": "aeterna-model",
     "contextWindow": 8192,
     "temperature": 0.7,
     "timeout": 30000
   },
   "pinecone": {
-    "namespace": "qantum-codebase",
+    "namespace": "aeterna-codebase",
     "topK": 10,
     "minScore": 0.7,
     "maxTokens": 4000

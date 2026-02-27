@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM IMMUTABLE STATE HELPERS                                              ║
+ * ║   AETERNA IMMUTABLE STATE HELPERS                                              ║
  * ║   "Type-safe immutable state patterns"                                        ║
  * ║                                                                               ║
  * ║   TODO B #6 - Immutable State                                                 ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

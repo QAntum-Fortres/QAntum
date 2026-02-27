@@ -1,5 +1,5 @@
 /**
- * QAntum Oracle - Generated Test Index
+ * Aeterna Oracle - Generated Test Index
  * Generated at: 2026-02-26T20:44:29.978Z
  * Total Suites: 4
  * Total Tests: 16

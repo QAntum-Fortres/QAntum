@@ -8,7 +8,7 @@ export interface Metric {
 }
 
 /**
- * 📈 QANTUM Telemetry System
+ * 📈 AETERNA Telemetry System
  * Collects, aggregates, and reports system metrics.
  */
 export class Telemetry {

@@ -1,3 +1,3 @@
 # scanner
 
-QANTUM SECURITY SCANNER — сканиране и откриване на уязвимости.
+AETERNA SECURITY SCANNER — сканиране и откриване на уязвимости.

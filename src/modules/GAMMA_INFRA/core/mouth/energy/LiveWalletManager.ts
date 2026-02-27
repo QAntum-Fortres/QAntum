@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - LIVE WALLET MANAGER                                 ║
+ * ║  Aeterna Prime v28.0 - LIVE WALLET MANAGER                                 ║
  * ║  "Fortress Protocol" - 256-bit AES Encrypted Key Management               ║
  * ║                                                                           ║
  * ║  ⚠️  WARNING: THIS MODULE HANDLES REAL MONEY                              ║

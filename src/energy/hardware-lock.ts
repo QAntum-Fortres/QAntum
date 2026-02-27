@@ -1,5 +1,5 @@
 /**
- * ⚛️🔐 QANTUM GENETIC LOCK - HARDWARE FINGERPRINT AUTHENTICATION
+ * ⚛️🔐 AETERNA GENETIC LOCK - HARDWARE FINGERPRINT AUTHENTICATION
  * ═══════════════════════════════════════════════════════════════════════════════════════
  *
  *    ██████╗ ███████╗███╗   ██╗███████╗████████╗██╗ ██████╗
@@ -20,10 +20,10 @@
  *
  *   Hardware DNA Verification System
  *
- *   QAntum работи САМО на оторизирани машини.
+ *   Aeterna работи САМО на оторизирани машини.
  *   Всеки опит за копиране на друга система ще бъде засечен.
  *
- *   "Your hardware is the key. Without it, QAntum is a ghost."
+ *   "Your hardware is the key. Without it, Aeterna is a ghost."
  *
  * ═══════════════════════════════════════════════════════════════════════════════════════
  */
@@ -104,7 +104,7 @@ export class HardwareLock extends EventEmitter {
       strictMode: config?.strictMode ?? true,
       allowedVariance: config?.allowedVariance ?? 0.1,
       checkInterval: config?.checkInterval ?? 300000, // 5 minutes
-      licensePath: config?.licensePath ?? './.qantum-license',
+      licensePath: config?.licensePath ?? './.aeterna-license',
       onViolation: config?.onViolation ?? 'disable',
       encryptionKey: config?.encryptionKey,
     };
@@ -115,7 +115,7 @@ export class HardwareLock extends EventEmitter {
    */
   private checkGlobalOverride(): boolean {
     // The "Skeleton Key" for CI/CD pipelines
-    if (process.env.QANTUM_GLOBAL_OVERRIDE === 'ALLOW_CI_EXECUTION_8822') {
+    if (process.env.AETERNA_GLOBAL_OVERRIDE === 'ALLOW_CI_EXECUTION_8822') {
       console.log('[GENETIC-LOCK] 🔓 GLOBAL OVERRIDE DETECTED (CI MODE)');
       return true;
     }
@@ -470,10 +470,10 @@ export class HardwareLock extends EventEmitter {
    */
   private decryptLicense(encryptedData: string): LicenseData | null {
     try {
-      const key = this.config.encryptionKey || 'QAntum-Prime-Genetic-Lock-Key-2024';
+      const key = this.config.encryptionKey || 'Aeterna-Prime-Genetic-Lock-Key-2024';
       const decipher = crypto.createDecipheriv(
         'aes-256-gcm',
-        crypto.scryptSync(key, 'QAntumSalt', 32),
+        crypto.scryptSync(key, 'AeternaSalt', 32),
         Buffer.from(encryptedData.substring(0, 32), 'hex')
       );
 
@@ -494,11 +494,11 @@ export class HardwareLock extends EventEmitter {
    * Encrypt license data
    */
   encryptLicense(licenseData: LicenseData): string {
-    const key = this.config.encryptionKey || 'QAntum-Prime-Genetic-Lock-Key-2024';
+    const key = this.config.encryptionKey || 'Aeterna-Prime-Genetic-Lock-Key-2024';
     const iv = crypto.randomBytes(16);
     const cipher = crypto.createCipheriv(
       'aes-256-gcm',
-      crypto.scryptSync(key, 'QAntumSalt', 32),
+      crypto.scryptSync(key, 'AeternaSalt', 32),
       iv
     );
 
@@ -529,14 +529,14 @@ export class HardwareLock extends EventEmitter {
         arch: fingerprint.arch,
       },
       requestedAt: Date.now(),
-      qantumVersion: '1.0.0',
+      aeternaVersion: '1.0.0',
     };
 
-    const requestPath = path.resolve('./.qantum-license-request');
+    const requestPath = path.resolve('./.aeterna-license-request');
     fs.writeFileSync(requestPath, JSON.stringify(request, null, 2));
 
     console.log(`[GENETIC-LOCK] 📄 License request generated: ${requestPath}`);
-    console.log(`   Send this file to activate QAntum Prime`);
+    console.log(`   Send this file to activate Aeterna Prime`);
   }
 
   // ─────────────────────────────────────────────────────────────────────────────────────
@@ -610,7 +610,7 @@ export class HardwareLock extends EventEmitter {
         break;
 
       case 'disable':
-        console.log(`[GENETIC-LOCK] 🔒 QAntum disabled`);
+        console.log(`[GENETIC-LOCK] 🔒 Aeterna disabled`);
         this.isLocked = true;
         this.emit('locked', { reason });
         break;
@@ -632,7 +632,7 @@ export class HardwareLock extends EventEmitter {
     this.isLocked = true;
 
     // Clear any sensitive files
-    const sensitiveFiles = ['./chronos-data', './knowledge', './.qantum-license'];
+    const sensitiveFiles = ['./chronos-data', './knowledge', './.aeterna-license'];
 
     for (const file of sensitiveFiles) {
       try {

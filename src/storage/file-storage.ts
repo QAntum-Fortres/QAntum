@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM FILE STORAGE                                                         ║
+ * ║   AETERNA FILE STORAGE                                                         ║
  * ║   "Unified file storage operations"                                           ║
  * ║                                                                               ║
  * ║   TODO B #31 - Storage: File Operations                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

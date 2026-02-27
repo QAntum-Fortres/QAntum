@@ -1,4 +1,4 @@
-# QAntum Prime v37.0 — Complete Ecosystem Documentation
+# Aeterna Prime v37.0 — Complete Ecosystem Documentation
 
 > *"260+ modules. 1.8M+ lines of code. 3,641 files. Full SaaS platform live."*
 > — Dimitar Prodromov, Creator
@@ -7,39 +7,39 @@
 
 ## System Overview
 
-**QAntum Prime** is a full-stack autonomous framework spanning **HFT trading**, **AI-powered B2B sales**, **self-healing test automation**, **cognitive arbitrage**, and a **production SaaS platform** — built on a **Rust NAPI** core with **AtomicU64 dynamic thresholds**, local LLM intelligence via Ollama, autonomous Gmail outreach, and a live **Stripe-powered subscription platform** at [aeterna.website](https://aeterna.website) with a **Next.js dashboard** at [qantum-dashboard.vercel.app](https://qantum-dashboard.vercel.app).
+**Aeterna Prime** is a full-stack autonomous framework spanning **HFT trading**, **AI-powered B2B sales**, **self-healing test automation**, **cognitive arbitrage**, and a **production SaaS platform** — built on a **Rust NAPI** core with **AtomicU64 dynamic thresholds**, local LLM intelligence via Ollama, autonomous Gmail outreach, and a live **Stripe-powered subscription platform** at [aeterna.website](https://aeterna.website) with a **Next.js dashboard** at [aeterna-dashboard.vercel.app](https://aeterna-dashboard.vercel.app).
 
 ### Master Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                         QAntum Prime v36.1 — THE EMPIRE                         │
+│                         Aeterna Prime v36.1 — THE EMPIRE                         │
 ├─────────────┬──────────────────┬──────────────────┬──────────────────┬──────────┤
 │  TRADING    │  AI BRAIN        │  B2B AGENCY      │  SECURITY        │  INFRA   │
 │             │                  │                  │                  │          │
-│  Rust NAPI  │  OllamaManager   │  ValueBombGen    │  CryptoVault     │  BullMQ  │
-│  AtomicU64  │  NeuralNetwork   │  SalesForce      │  KnoxVault       │  Redis   │
+│  Rust NAPI  │  OllamaManager   │  ValueBombGen    │  KnoxValidator   │  BullMQ  │
+│  AtomicU64  │  NeuralNetwork   │  SalesForce      │  ProfessionalAudit│  Redis   │
 │  Monte Carlo│  PatternRecog    │  EmailSender     │  Anti-Tamper     │  Prisma  │
-│  Ring Buffer│  SelfHealing     │  LeadHunter      │  FatalityEngine  │  S3      │
-│  128-bit    │  Inference       │  EthicalPredator │  BiometricEngine │  Stripe  │
+│  Ring Buffer│  SelfHealing     │  EmailMonitor    │  FatalityEngine  │  S3      │
+│  128-bit    │  Inference       │  LeadHunter      │  BiometricEngine │  Stripe  │
 ├─────────────┼──────────────────┼──────────────────┼──────────────────┼──────────┤
 │  Binance    │  HiveMind        │  Gmail SMTP      │  Fortress Proto  │  FastAPI │
-│  Kraken     │  CognitiveBridge │  SendGrid        │  SovereignLedger │  WS      │
+│  Kraken     │  CognitiveBridge │  Phone Alerts    │  SovereignLedger │  WS      │
 │  CCXT       │  GenesisEngine   │  Auto-Scraping   │  Hardware DNA    │  Docker  │
 └─────┬───────┴────────┬─────────┴──────┬───────────┴──────────┬───────┴──────────┘
       │                │                │                      │
       ▼                ▼                ▼                      ▼
   Live Markets    Autonomous AI    Revenue Pipeline      Sovereign Shield
   5 symbols       7 LLM models    12+ real targets       AES-256-GCM
-  2 exchanges     Neural nets     2000 emails/day        Anti-VM/Debug
-  sub-100ns       Self-learning   Glassmorphism HTML     Hash chains
+  2 exchanges     Neural nets     2000 emails/day        Knox TEE Signing
+  sub-100ns       Self-learning   Video Proof Audits     Anti-VM/Debug
 ```
 
 ---
 
 ## Core Components
 
-### 1. Rust NAPI Engine (`native/qantum-engine/`)
+### 1. Rust NAPI Engine (`native/aeterna-engine/`)
 
 The heart of the system — a compiled Rust native module loaded via N-API into Node.js.
 
@@ -101,6 +101,7 @@ Connect to `ws://localhost:9094/ws`
 ```
 
 **Metrics shape:**
+
 ```json
 {
   "ticksProcessed": 15000,
@@ -128,6 +129,7 @@ Connect to `ws://localhost:9094/ws`
 Professional-grade single-page application with 3 tabs:
 
 #### Overview Tab
+
 - **Telemetry Strip** — 7 metrics: Latency, Ticks, Signals, PnL, Thresholds, Exchanges, Entropy
 - **Price Chart** — Canvas-rendered line chart with gradient fill, switchable between 5 symbols
 - **Live Prices Table** — Real-time prices with change percentages
@@ -138,11 +140,13 @@ Professional-grade single-page application with 3 tabs:
 - **Latency Waveform** — Real-time canvas waveform of engine processing latency
 
 #### Analytics Tab
+
 - **Monte Carlo Prediction** — Run N=3000 simulations for any symbol, showing predicted price, confidence, trend, risk, VaR, Sharpe, best/worst case
 - **Risk Assessment** — VaR, Sharpe, Sortino, Max Drawdown, Volatility, Risk Grade
 - **Arbitrage Scanner** — Cross-exchange spread detection with profit calculations
 
 #### System Tab
+
 - **Architecture Diagram** — Visual flow: WebSocket → Ring Buffer → Rust Engine → Dashboard
 - **Engine Capabilities** — All 8 exported Rust functions with descriptions
 - **Engine Health** — Live health data from Rust engine
@@ -165,6 +169,7 @@ Professional-grade single-page application with 3 tabs:
 ## Running
 
 ### Prerequisites
+
 - Node.js 18+
 - Rust toolchain (for building the NAPI engine)
 - `napi-rs` CLI
@@ -173,7 +178,7 @@ Professional-grade single-page application with 3 tabs:
 
 ```bash
 # Build Rust engine
-cd native/qantum-engine
+cd native/aeterna-engine
 npm run build
 
 # Start dashboard server
@@ -216,6 +221,7 @@ From live testing with real Binance + Kraken feeds:
 ## Design System
 
 ### Typography
+
 - **UI Text**: Inter (300–800 weights)
 - **Data/Code**: JetBrains Mono (300–700 weights)
 
@@ -234,6 +240,7 @@ From live testing with real Binance + Kraken feeds:
 | `--purple` | `#8b5cf6` | Thresholds, info |
 
 ### Responsive Breakpoints
+
 - `> 1200px`: Full 7-column telemetry, 2-column grid
 - `768px–1200px`: 4-column telemetry, single-column grid
 - `< 768px`: 2-column telemetry, stacked layout
@@ -245,7 +252,7 @@ From live testing with real Binance + Kraken feeds:
 ```
 Blockchain/
 ├── ai/                      # AI Intelligence Layer (6 modules)
-│   ├── index.ts             # QAntumAI unified facade (Singleton)
+│   ├── index.ts             # AeternaAI unified facade (Singleton)
 │   ├── OllamaManager.ts     # Local LLM manager (Singleton)
 │   ├── neural.ts            # Neural network from scratch (578 lines)
 │   ├── pattern-recognizer.ts # Pattern recognition + K-Means (630 lines)
@@ -264,7 +271,7 @@ Blockchain/
 │   ├── helios_arbitrage_engine.py  # Energy market arb (Python)
 │   └── ReaperAdapter.ts     # Nexus integration + Gemini AI (626 lines)
 ├── backend/
-│   └── qantum_backend.py    # FastAPI + WebSocket server (568 lines)
+│   └── aeterna_backend.py    # FastAPI + WebSocket server (568 lines)
 ├── Core/                    # Security & Cryptography (7 modules)
 │   ├── CryptoVault.ts       # AES-256-GCM encryption (135 lines)
 │   ├── EncryptionService.ts # Mobile AES-256-CBC (132 lines)
@@ -276,7 +283,7 @@ Blockchain/
 ├── dashboard/
 │   ├── index.html           # Command Center UI (professional SPA)
 │   ├── server.js            # HTTP + WebSocket server (port 9094)
-│   ├── qantum-control-panel.html  # Sovereign Control Panel (1998 lines)
+│   ├── aeterna-control-panel.html  # Sovereign Control Panel (1998 lines)
 │   ├── arb-bot.js           # Cross-exchange arb bot (439 lines)
 │   └── b2b-pitches/         # Generated pitches, Value Bombs, email logs
 ├── data/                    # Data & Automation Layer (3 modules)
@@ -297,11 +304,11 @@ Blockchain/
 │   ├── Binance_bridge.rs      # Rust Binance client (158 lines)
 │   └── ExchangeRates.js       # Stripe exchange rates
 ├── native/
-│   └── qantum-engine/
+│   └── aeterna-engine/
 │       ├── src/lib.rs        # Core Rust NAPI engine
 │       ├── Cargo.toml        # Rust dependencies
-│       └── qantum-engine.node # Compiled native module
-├── qantum/                  # Framework modules (17+ modules)
+│       └── aeterna-engine.node # Compiled native module
+├── aeterna/                  # Framework modules (17+ modules)
 │   ├── b2b-agency-runner.ts     # B2B email campaign runner
 │   ├── email-sender.ts         # Gmail SMTP sender
 │   ├── EmailEngine.ts          # SendGrid email system
@@ -325,8 +332,8 @@ Blockchain/
 ├── scripts/                 # 40+ operational scripts
 │   ├── eagle-orchestrator.ts
 │   ├── hunter-mode.ts
-│   ├── qantum-benchmark.ts
-│   ├── qantum-ci-cd.ts
+│   ├── aeterna-benchmark.ts
+│   ├── aeterna-ci-cd.ts
 │   ├── singularity-launcher.ts
 │   └── ...
 ├── src/                     # Framework core (60+ sub-modules)
@@ -342,7 +349,7 @@ Blockchain/
 ├── RELEASE_NOTES_v1.md      # v1.0 release notes
 ├── SPONSORS.md              # Sponsorship tiers
 ├── VIRAL_POSTS.md           # Ready-to-post marketing content
-├── index.html               # GitHub Pages → qantum.site
+├── index.html               # GitHub Pages → aeterna.site
 ├── landing-page.html        # Marketing landing page
 └── package.json
 ```
@@ -353,13 +360,14 @@ Blockchain/
 
 The autonomous B2B pipeline that scans real companies, generates AI-powered audits, crafts personalized pitches, and sends emails — all without human intervention.
 
-### B2B Agency Runner (`qantum/b2b-agency-runner.ts`)
+### B2B Agency Runner (`aeterna/b2b-agency-runner.ts`)
 
-Entry point: `npx ts-node qantum/b2b-agency-runner.ts`
+Entry point: `npx ts-node aeterna/b2b-agency-runner.ts`
 
 **Pipeline flow:**
+
 ```
-Target List → PublicScanner → ValueBombGenerator → AutonomousSalesForce → QantumEmailSender
+Target List → PublicScanner → ValueBombGenerator → AutonomousSalesForce → AeternaEmailSender
      │              │                │                     │                      │
   12 companies   Scan domain     Score site,          Craft personalized      Auto-send via
   with emails    headers/SSL     find vulns,          AI pitch using          Gmail SMTP
@@ -371,20 +379,20 @@ Target List → PublicScanner → ValueBombGenerator → AutonomousSalesForce �
 
 | Company | Domain | Email | Pain Point |
 |---------|--------|-------|------------|
-| DevriX | devrix.com | contact@devrix.com | WordPress testing automation |
-| Xplora | xplora.bg | human@xplora.bg | Manual lead generation |
-| Netinfo | netinfo.bg | reklama@netinfo.bg | No automated security scanning |
-| SpeedFlow | speedflow.bg | info@speedflow.bg | B2B lead gen tools needed |
-| Stenik | stenik.bg | office@stenik.bg | E-commerce security/perf checks |
-| Payhawk | payhawk.com | sales@payhawk.com | Risk management & fraud detection |
-| Nexo | nexo.com | support@nexo.com | Real-time arbitrage & risk analysis |
-| ICan | icanpreneur.com | info@icanpreneur.com | Startup analytics AI insights |
-| SoftUni | softuni.bg | university@softuni.bg | AI-powered teaching automation |
-| SumUp | sumup.com | support@sumup.com | Low-latency payment optimization |
-| myPOS | mypos.com | sales@mypos.com | POS performance monitoring |
-| Hop Online | hop.bg | support@hop.bg | SEO audit automation |
+| DevriX | devrix.com | <contact@devrix.com> | WordPress testing automation |
+| Xplora | xplora.bg | <human@xplora.bg> | Manual lead generation |
+| Netinfo | netinfo.bg | <reklama@netinfo.bg> | No automated security scanning |
+| SpeedFlow | speedflow.bg | <info@speedflow.bg> | B2B lead gen tools needed |
+| Stenik | stenik.bg | <office@stenik.bg> | E-commerce security/perf checks |
+| Payhawk | payhawk.com | <sales@payhawk.com> | Risk management & fraud detection |
+| Nexo | nexo.com | <support@nexo.com> | Real-time arbitrage & risk analysis |
+| ICan | icanpreneur.com | <info@icanpreneur.com> | Startup analytics AI insights |
+| SoftUni | softuni.bg | <university@softuni.bg> | AI-powered teaching automation |
+| SumUp | sumup.com | <support@sumup.com> | Low-latency payment optimization |
+| myPOS | mypos.com | <sales@mypos.com> | POS performance monitoring |
+| Hop Online | hop.bg | <support@hop.bg> | SEO audit automation |
 
-### QantumEmailSender (`qantum/email-sender.ts`)
+### AeternaEmailSender (`aeterna/email-sender.ts`)
 
 Gmail SMTP integration via `nodemailer`. Authenticates with App Password (Google Workspace).
 
@@ -398,12 +406,29 @@ Gmail SMTP integration via `nodemailer`. Authenticates with App Password (Google
 | Logging | `email-send-log.json` in pitches folder |
 
 **Key methods:**
+
 - `verify()` — Test SMTP connection
 - `send(payload)` — Send one email (text + HTML)
 - `sendBatch(payloads)` — Send multiple with rate limiting
 - `pitchToHtml(text, sender)` — Convert pitch text to styled HTML
+- `notifyPhone(message)` — Send alert to Samsung S24 Ultra bridge
 
-### Lead Hunter (`qantum/lead-hunter.js`)
+### Email Monitor & Phone Alerts (`aeterna/email-sender.ts`)
+
+Autonomous inbox monitoring for replies from prospective clients. When a reply is detected, a priority alert is sent via the **Phone Integration Bridge** directly to the Sovereign Architect's S24 Ultra.
+
+### Professional Audit Engine (`aeterna/ProfessionalAudit.ts`)
+
+The **Professional Audit Engine** automates the discovery and documentation of vulnerabilities for potential clients.
+
+**Audit Workflow:**
+
+1. **Stealth Scan:** Launches MindEngine with Fingerprint Rotation.
+2. **Video Evidence:** Captures `.webm` video of bugs/vulnerabilities as "Proof of Concept".
+3. **Supreme Report:** Generates a full QA/Performance/Security audit.
+4. **Email Delivery:** Dispatches the report + video proof to the target company.
+
+### Lead Hunter (`aeterna/lead-hunter.js`)
 
 Automated B2B target discovery with seed database of 24 known companies across 3 niches:
 
@@ -425,11 +450,11 @@ Local LLM orchestrator. Auto-discovers models, adapts to best available.
 
 ```typescript
 const llm = OllamaManager.getInstance();
-await llm.adaptModel();  // Picks qantum-ai-supreme > gemma3 > llama3 > ...
+await llm.adaptModel();  // Picks aeterna-ai-supreme > gemma3 > llama3 > ...
 const answer = await llm.ask("Analyze this company...");
 ```
 
-**Model preference order:** `qantum-ai-supreme` → `qwen2.5-coder` → `gemma3` → `llama3` → `mistral` → `phi3`
+**Model preference order:** `aeterna-ai-supreme` → `qwen2.5-coder` → `gemma3` → `llama3` → `mistral` → `phi3`
 
 ### NeuralNetwork (`ai/neural.ts`, 578 lines)
 
@@ -455,11 +480,12 @@ Auto-repairs broken test selectors when DOM changes.
 - Confidence scoring per alternative
 - Healing history for learning across runs
 
-### QAntumAI Unified Hub (`ai/index.ts`, 447 lines)
+### AeternaAI Unified Hub (`ai/index.ts`, 447 lines)
 
 Singleton facade combining all AI modules:
+
 ```typescript
-const ai = QAntumAI.getInstance();
+const ai = AeternaAI.getInstance();
 await ai.predictFailure(testCase);
 await ai.analyzePattern(executionData);
 await ai.healSelector(failedSelector, domContext);
@@ -507,9 +533,9 @@ Real Binance + Kraken API integration with HMAC-SHA256 signing.
 
 AES-256-GCM encrypted API key vault. PBKDF2 key derivation (100k iterations). Auto-lock after N failures. Withdrawal whitelisting.
 
-### KnoxVaultSigner — Samsung S24 Ultra Secure Element
+### Knox Validator (`aeterna/KnoxVaultSigner.ts`) — [KNOX_VALIDATOR.md](file:///c:/Users/papic/Desktop/ALL-POSITIONS/Blockchain/Aeterna-1/KNOX_VALIDATOR.md)
 
-Hardware-backed transaction signing via Samsung Knox TEE. Private keys never leave the hardware. Supports HMAC-SHA256, SHA512, ED25519.
+Hardware-backed transaction signing via Samsung Knox TEE. Private keys never leave the hardware. Supports HMAC-SHA256, SHA512, ED25519. Required for all financial and license transactions.
 
 ### OrderBookDepthEngine — L2 Real-Time Analysis
 
@@ -535,7 +561,7 @@ Sub-microsecond Rust arbitrage calculations. `rust_decimal` 128-bit precision. O
 
 ---
 
-## Cognitive & Defense Modules (`qantum/`, 17+ modules, 14,000+ lines)
+## Cognitive & Defense Modules (`aeterna/`, 17+ modules, 14,000+ lines)
 
 | Module | Lines | Category |
 |--------|-------|----------|
@@ -574,9 +600,9 @@ Sub-microsecond Rust arbitrage calculations. `rust_decimal` 128-bit precision. O
 
 Professional 3-tab SPA: Overview, Analytics, System. Canvas charts, WebSocket real-time updates.
 
-### 2. Sovereign Control Panel (`dashboard/qantum-control-panel.html`, 1,998 lines)
+### 2. Sovereign Control Panel (`dashboard/aeterna-control-panel.html`, 1,998 lines)
 
-AETERNA_LOGOS branded. Cinematic boot sequence, 120-particle field, glassmorphism design, 7-page navigation, interactive terminal. Deployed to `qantum.site`.
+AETERNA_LOGOS branded. Cinematic boot sequence, 120-particle field, glassmorphism design, 7-page navigation, interactive terminal. Deployed to `aeterna.site`.
 
 ### 3. Arbitrage Bot (`dashboard/arb-bot.js`, 439 lines)
 
@@ -584,7 +610,7 @@ Cross-exchange spread bot with Z-score stat-arb (2σ mean-reversion). Real price
 
 ---
 
-## Python Backend (`backend/qantum_backend.py`, 568 lines)
+## Python Backend (`backend/aeterna_backend.py`, 568 lines)
 
 FastAPI + WebSocket server mirroring the Node.js dashboard.
 
@@ -611,7 +637,7 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 |-----------|--------|
 | Project | `AETERNA-WEB-CORE` (Vercel) |
 | Domain | `aeterna.website` |
-| Repository | `QAntum-Fortres/SaaS-Framework` |
+| Repository | `Aeterna-Fortres/SaaS-Framework` |
 | Stack | Static HTML + Vercel Serverless Functions |
 | Stripe Plans | NODE ACCESS €29/mo · SOVEREIGN EMPIRE €99/mo · GALACTIC CORE €499/mo |
 | HTTPS | Auto-provisioned by Vercel |
@@ -634,12 +660,12 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 | Success | `aeterna.website/success.html` | Post-payment confirmation with dashboard link |
 | Portal | `aeterna.website/portal.html` | API key auth → scanner dashboard |
 
-#### 2. SaaS Dashboard — qantum-dashboard.vercel.app (Vercel)
+#### 2. SaaS Dashboard — aeterna-dashboard.vercel.app (Vercel)
 
 | Component | Detail |
 |-----------|--------|
-| Project | `qantum-dashboard` (Vercel) |
-| Domain | `qantum-dashboard.vercel.app` (pending: `app.aeterna.website`) |
+| Project | `aeterna-dashboard` (Vercel) |
+| Domain | `aeterna-dashboard.vercel.app` (pending: `app.aeterna.website`) |
 | Stack | Next.js 14 + Radix UI + TanStack Query + Zustand + Tailwind CSS |
 | Pages | Dashboard, Tests, Runs, Projects, Nexus, Settings (9 routes) |
 | API Routes | `/api/v1/dashboard/stats`, `/api/v1/runs` (self-contained) |
@@ -657,17 +683,17 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 | `Nexus AI Core` | Autonomous thought visualizer, meditation dashboard, daemon console |
 | `CommandPalette` | Cmd+K command palette |
 
-#### 3. GitHub Pages — qantum.site
+#### 3. GitHub Pages — aeterna.site
 
 | Setting | Value |
 |---------|-------|
-| Repository | `QAntum-Fortres/QAntum` |
+| Repository | `Aeterna-Fortres/Aeterna` |
 | Branch | `main` |
 | Root file | `index.html` (copy of Sovereign Control Panel) |
-| Custom domain | `qantum.site` |
+| Custom domain | `aeterna.site` |
 | DNS A Record | `185.199.108.153` (GitHub Pages) |
 | HTTPS | Auto-provisioned by GitHub |
-| CNAME | `qantum.site` |
+| CNAME | `aeterna.site` |
 
 ---
 
@@ -695,7 +721,7 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 │  4. CLIENT ACCESS                                                                    │
 │     ├─ API Portal: aeterna.website/portal.html                                       │
 │     │   └─ Enter API key → Scanner UI → Run security/performance/SEO scans          │
-│     ├─ Dashboard: qantum-dashboard.vercel.app                                        │
+│     ├─ Dashboard: aeterna-dashboard.vercel.app                                        │
 │     │   └─ Live stats, test runs, AI insights, autonomous controls                  │
 │     └─ Billing: billing.stripe.com/p/login/6oU7sR39I5eMbDOcMM                      │
 │         └─ Manage subscription, update payment, cancel                               │
@@ -721,18 +747,19 @@ Uses Xorshift64 PRNG matching the Rust implementation for deterministic simulati
 **API Key Format:** `qntm_live_{tier}_{32-char-hex}` (e.g., `qntm_live_empire_a1b2c3d4...`)
 
 **Webhook Events Handled:**
+
 - `checkout.session.completed` → API key generation + welcome email
 - `customer.subscription.updated` → plan change in metadata
 - `customer.subscription.deleted` → mark cancelled
 - `invoice.payment_failed` → warning email to client
 
-**Customer Portal:** https://billing.stripe.com/p/login/6oU7sR39I5eMbDOcMM
+**Customer Portal:** <https://billing.stripe.com/p/login/6oU7sR39I5eMbDOcMM>
 
 ### Google Workspace (Email)
 
 | Setting | Value |
 |---------|-------|
-| Domain | `qantum.site` |
+| Domain | `aeterna.site` |
 | Gmail | Active |
 | MX Record | `ASPMX.L.GOOGLE.COM` (priority 1) |
 | SMTP | `smtp.gmail.com:587` (STARTTLS) |
@@ -801,13 +828,13 @@ Full-stack E2E test verifying the complete customer pipeline across all live end
 | 4 | Scan API (no key) | `POST /api/scan` | 401 Unauthorized | ✅ PASS |
 | 5 | Portal API (no key) | `POST /api/portal` | 400 Bad Request | ✅ PASS |
 | 6 | Scan API (fake key) | `POST /api/scan` + invalid key | 401 Unauthorized | ✅ PASS |
-| 7 | Dashboard | `qantum-dashboard.vercel.app` | 200 + Next.js app | ✅ PASS |
+| 7 | Dashboard | `aeterna-dashboard.vercel.app` | 200 + Next.js app | ✅ PASS |
 | 8 | Stats API | `GET /api/v1/dashboard/stats` | JSON with totalRuns, passRate, healed | ✅ PASS |
 | 9 | Runs API | `GET /api/v1/runs` | Array of test runs with shape | ✅ PASS |
 | 10 | Webhook (GET) | `GET /api/webhook` | 405 Method Not Allowed | ✅ PASS |
 | 11 | Ping API | `GET /api/ping` | 200 OK | ✅ PASS |
 | 12 | Checkout Endpoint | `POST /api/checkout` | Responds (400 — endpoint active) | ✅ PASS |
-| 13 | B2B Email CTA | `qantum/email-sender.ts` | Contains `aeterna.website` link | ✅ PASS |
+| 13 | B2B Email CTA | `aeterna/email-sender.ts` | Contains `aeterna.website` link | ✅ PASS |
 | 14 | Welcome Email | `api/webhook.js` | Dashboard + Portal + API key links | ✅ PASS |
 
 ### What This Proves
@@ -855,5 +882,126 @@ Full-stack E2E test verifying the complete customer pipeline across all live end
 
 ---
 
-*QAntum Prime v37.0 — 260+ modules, 1,848,570 lines of code, 3,641 files, full SaaS platform live.*
+*Aeterna Prime v37.0 — 260+ modules, 1,848,570 lines of code, 3,641 files, full SaaS platform live.*
 *Built by Dimitar Prodromov. Powered by Rust NAPI, AtomicU64, local LLM, Vercel, Stripe, and zero fear.*
+
+---
+
+## Commercial Engine Layer (`tests/tests/` — 19 modules)
+
+The commercial and advanced-operations layer. These are battle-tested production modules.
+
+### Core Commercial Modules
+
+| Module | Size | Category | Description |
+|--------|------|----------|-------------|
+| `commercialization-engine.ts` | 19KB | 💰 Revenue | Stripe payment processing, license key generation/validation, customer lifecycle management (trial → active → cancelled), Docker provisioning per customer. 3 tiers: Starter ($49), Professional ($199), Enterprise ($999). |
+| `ProposalEngine.ts` | 19KB | 📊 B2B Sales | AI-powered B2B proposal generation with Knox Vault and Spectator Mode pricing modules. Batch lead processing with Ollama LLM. Includes pricing for dedicated support, global dashboard, swarm execution. |
+| `AtomicTrader.ts` | 62KB | ⚡ Trading | Atomic trading engine — SharedArrayBuffer, 0.08ms failover, live market execution with kill switch and daily loss limits. |
+| `SpectatorMode.ts` | 34KB | 👁 Human-in-Loop | Real-time screen streaming, manual input injection, AI learning from human actions. Integrates with HardwareBridge via WebSocket. Critical for supervised AI training. |
+| `BrowserOrchestrator.ts` | 17KB | 🌐 Browser | Playwright browser orchestration across multiple contexts, page pooling, stealth configuration. |
+| `swarm-stress-test-v2.ts` | 57KB | 🔥 Stress | 500+ workers, SharedArrayBuffer coordination, >50k msg/sec throughput validation. |
+
+### Operational Modules
+
+| Module | Size | Category | Description |
+|--------|------|----------|-------------|
+| `SupremeDaemon.js` | 26KB | 🔄 Orchestration | Central daemon orchestrator — continuous, interval, and one-shot script execution. Process management with restart logic. |
+| `supreme-daemon.ts` | 24KB | 🔄 Orchestration | TypeScript version of SupremeDaemon with full type safety. |
+| `master-orchestrator.ts` | 9KB | 🎯 Control | Master-level orchestrator for coordinating all test suites. |
+| `universal-test-orchestrator.ts` | 12KB | 🧪 Testing | Universal test runner spanning all test categories. |
+| `biometric-jitter.ts` | 31KB | 🖱 Biometric | Bézier mouse paths, Gaussian click timing, human-like typo simulation for anti-detection. |
+| `persona-engine.js` | 18KB | 🎭 Identity | Persona simulation engine — rotates identities, browsers, behavioral fingerprints. |
+| `chronos-paradox.ts` | 19KB | ⏳ Time | Time-based paradox resolution engine. |
+| `theme-engine.ts` | 18KB | 🎨 UI | Dynamic theme switching and visual adaptation engine. |
+| `test-healing.ts` | 17KB | 🩹 Healing | Self-healing test suite with 15+ Playwright repair strategies. |
+| `test_chernobyl.ts` | 13KB | ☢️ Chaos | Chaos engineering — stress tests, fault injection, system resilience validation. |
+| `test_data.ts` | 33KB | 📦 Data | Comprehensive test data definitions — fixtures, mock responses, industry-specific datasets. |
+| `verify-vortex-healing.ts` | 2KB | ✅ Verify | Post-healing verification for VortexAI module integrity. |
+| `test-vortex.js` | 2KB | ✅ Verify | VortexAI connection and response validation. |
+
+> **Note:** The following files were removed (2026-02-27) as they were accidental file system copies with full paths in their names:
+>
+> - `_Users__papic__Downloads__AETEERNA-SOUL__typescript.ts` (9.1MB — TypeScript lib dump)
+> - `_MAGICSTICK__Mind-Engine-Core__src__swarm__swarm-orchestrator.ts`
+> - `_Users__papic__Downloads__AeternaBVortex__scripts__swarm__swarm-orchestrator.ts`
+> - `_Users__papic__Downloads__AeternaBVortex__scripts__swarm__swarm-stress-test-v2-GOLD-STANDARD.ts`
+
+---
+
+## Aeterna Android App (`aeterna-android/`)
+
+> **Status:** 🚧 In Development — v0.1.0-ALPHA  
+> **Device Target:** Samsung S24 Ultra (Knox 3.9, Snapdragon 8 Gen 3)  
+> **Goal:** Real-time monitoring of Aeterna test results, self-healing status, and Knox-signed operations — directly on the Architect's device.
+
+### Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                   AETERNA ANDROID APP                                │
+├──────────────────────┬──────────────────────┬───────────────────────┤
+│  MONITORING LAYER    │  CONTROL LAYER       │  SECURITY LAYER       │
+│                      │                      │                       │
+│  Live Test Results   │  SpectatorMode View  │  Knox Validator       │
+│  Self-Heal Events   │  Manual Intervention  │  Biometric Auth       │
+│  Trading Signals    │  Daemon Control       │  TEE Key Storage      │
+│  Email Reply Alerts │  Emergency Stop       │  Hardware Signing     │
+├──────────────────────┴──────────────────────┴───────────────────────┤
+│                    TRANSPORT LAYER                                   │
+│  WebSocket → HardwareBridge (port 3003)                             │
+│  HTTP polling → Aeterna API (port 3001)                              │
+│  Phone Bridge → notifyPhone() (port 3004)                           │
+│  Knox Bridge → KnoxVaultSigner (port 3002)                         │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Phone Alert System (Active NOW)
+
+The `notifyPhone()` method in `aeterna/email-sender.ts` writes alerts to:
+
+```
+data/phone-alerts/alerts.json       ← Polled by Android app
+data/phone-alerts/processed/        ← Archived after read
+```
+
+**Alert Types:**
+
+- 🔴 `URGENT` — Email reply from prospective client (triggers email + alert)
+- 🟡 `WARNING` — Test failure or self-healing trigger
+- 🟢 `INFO` — Successful signing operation, daemon status
+
+### Knox Validator Integration (Documented)
+
+**File:** `aeterna/KnoxVaultSigner.ts`
+
+The Knox Validator operates in 3 modes detected automatically:
+
+| Mode | Detection | Behavior |
+|------|-----------|----------|
+| `KNOX_TEE` | `process.env.PREFIX` contains `com.termux` | Private keys stored in Samsung Secure Element. Never exported. |
+| `ANDROID_KEYSTORE` | Android device, Knox unavailable | Android OS-level key storage. |
+| `SOFTWARE_FALLBACK` | Non-Android (dev machine) | In-memory HMAC. For development only. |
+
+**Bridge port:** `termuxBridgePort: 3002`  
+**Commands sent via:** `am broadcast -a com.aeterna.knox.IMPORT_KEY`
+
+### Google Play Developer Account
+
+To publish the Aeterna Android app:
+
+1. **Register** at [play.google.com/console](https://play.google.com/console) — one-time $25 fee
+2. **Package name:** `com.aeterna.aeterna` (suggested)
+3. **Signing:** Use Knox-backed keystore from Samsung S24 Ultra
+4. **Internal testing track:** Start with internal testing, no review required
+
+### Build Strategy
+
+```
+Recommended Stack: Capacitor.js (wraps existing Vite/React from noetic-interface)
+
+Alternative: Native Kotlin (maximum Knox integration)
+→ src: Aeterna-Anima/noetic-interface/ (React + Three.js + Framer Motion)
+→ wrap with @capacitor/android
+→ add @capacitor/push-notifications for phone alerts
+```

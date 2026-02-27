@@ -1,16 +1,16 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  *
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  *
- * For licensing inquiries: dimitar.papazov@QAntum.dev
+ * For licensing inquiries: dimitar.papazov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -31,10 +31,10 @@ import {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * Base error class for QANTUM errors
+ * Base error class for AETERNA errors
  * All custom errors extend this for type-safe handling
  */
-export abstract class QAntumError extends Error {
+export abstract class AeternaError extends Error {
   /** Error code for categorization */
   abstract readonly code: string;
   /** Component where error originated */
@@ -59,7 +59,7 @@ export abstract class QAntumError extends Error {
 /**
  * Network-related errors (API calls, WebSocket, etc.)
  */
-export class NetworkError extends QAntumError {
+export class NetworkError extends AeternaError {
   readonly code = 'NETWORK_ERROR';
   readonly component = 'Network';
   readonly recoverable = true;
@@ -80,7 +80,7 @@ export class NetworkError extends QAntumError {
 /**
  * Timeout errors for operations that exceeded their time limit
  */
-export class TimeoutError extends QAntumError {
+export class TimeoutError extends AeternaError {
   readonly code = 'TIMEOUT_ERROR';
   readonly component = 'Timeout';
   readonly recoverable = true;
@@ -104,7 +104,7 @@ export class TimeoutError extends QAntumError {
 /**
  * Validation errors for invalid input or data
  */
-export class ValidationError extends QAntumError {
+export class ValidationError extends AeternaError {
   readonly code = 'VALIDATION_ERROR';
   readonly component = 'Validation';
   readonly recoverable = false;
@@ -125,7 +125,7 @@ export class ValidationError extends QAntumError {
 /**
  * Configuration errors for missing or invalid configuration
  */
-export class ConfigurationError extends QAntumError {
+export class ConfigurationError extends AeternaError {
   readonly code = 'CONFIGURATION_ERROR';
   readonly component = 'Configuration';
   readonly recoverable = false;
@@ -149,7 +149,7 @@ export class ConfigurationError extends QAntumError {
 /**
  * AI service errors (API failures, rate limits, etc.)
  */
-export class AIServiceError extends QAntumError {
+export class AIServiceError extends AeternaError {
   readonly code = 'AI_SERVICE_ERROR';
   readonly component = 'AIService';
   readonly recoverable = true;
@@ -181,7 +181,7 @@ export class AIServiceError extends QAntumError {
 /**
  * Browser automation errors
  */
-export class BrowserError extends QAntumError {
+export class BrowserError extends AeternaError {
   readonly code = 'BROWSER_ERROR';
   readonly component = 'Browser';
   readonly recoverable = true;
@@ -209,7 +209,7 @@ export class BrowserError extends QAntumError {
 /**
  * Security violation errors from sandbox
  */
-export class SecurityError extends QAntumError {
+export class SecurityError extends AeternaError {
   readonly code = 'SECURITY_ERROR';
   readonly component = 'Security';
   readonly recoverable = false;
@@ -230,7 +230,7 @@ export class SecurityError extends QAntumError {
 /**
  * Mutation errors from SEGC
  */
-export class MutationError extends QAntumError {
+export class MutationError extends AeternaError {
   readonly code = 'MUTATION_ERROR';
   readonly component = 'SEGC';
   readonly recoverable = true;
@@ -257,7 +257,7 @@ export class MutationError extends QAntumError {
 /**
  * Worker thread errors
  */
-export class WorkerError extends QAntumError {
+export class WorkerError extends AeternaError {
   readonly code = 'WORKER_ERROR';
   readonly component = 'Worker';
   readonly recoverable = true;
@@ -285,7 +285,7 @@ export class WorkerError extends QAntumError {
 /**
  * Circuit breaker errors
  */
-export class CircuitOpenError extends QAntumError {
+export class CircuitOpenError extends AeternaError {
   readonly code = 'CIRCUIT_OPEN';
   readonly component = 'CircuitBreaker';
   readonly recoverable = true;
@@ -546,15 +546,15 @@ export class CentralizedErrorHandler extends EventEmitter implements IErrorHandl
   async handle(error: Error, context?: ErrorContext): Promise<ErrorHandleResult> {
     // Capture neural snapshot
     const snapshot = createNeuralSnapshot(error);
-    if (error instanceof QAntumError) {
+    if (error instanceof AeternaError) {
       error.neuralSnapshot = snapshot;
     }
 
     // Log the error
     this.logger?.error(`Error in ${context?.component ?? 'unknown'}`, error, {
       operation: context?.operation,
-      code: (error as QAntumError).code,
-      recoverable: (error as QAntumError).recoverable,
+      code: (error as AeternaError).code,
+      recoverable: (error as AeternaError).recoverable,
       memoryUsage: snapshot.memoryUsage.heapUsed
     });
 
@@ -595,8 +595,8 @@ export class CentralizedErrorHandler extends EventEmitter implements IErrorHandl
       return strategy;
     }
 
-    // Try by error code for QAntumErrors
-    if (error instanceof QAntumError) {
+    // Try by error code for AeternaErrors
+    if (error instanceof AeternaError) {
       strategy = this.strategies.get(error.code);
       if (strategy?.canHandle(error)) {
         return strategy;

@@ -1,7 +1,7 @@
 /**
- * QANTUM Cognitive Capabilities Data
+ * AETERNA Cognitive Capabilities Data
  * Complete database of all 82 AI cognitive abilities
- * @version 23.3.0 "Type-Safe Sovereign"
+ * @version 1.0.0-AETERNA
  */
 
 import { CognitiveCategory, CategoryInfo, CognitiveCapability, LicenseTier } from './types';

@@ -1,5 +1,5 @@
 /**
- * QAntum Framework v1.8.0 - "The Sovereign Market Engine"
+ * Aeterna Framework v1.8.0 - "The Sovereign Market Engine"
  *
  * Unified export for all v1.8.0 modules - Economic Autonomy
  *
@@ -14,7 +14,7 @@
  * "Ние създаваме система, която не само работи и се пази, но и ПЕЧЕЛИ сама."
  *
  * @module sovereign-market
- * @version 1.8.0
+ * @version 1.0.0-AETERNA
  */
 
 // ═══════════════════════════════════════════════════════════════════════════

@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > AUTH > AGILITY
+ * 🔥 AETERNA SECURITY > AUTH > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses

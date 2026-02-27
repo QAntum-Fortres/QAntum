@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DEADLINE MANAGER                                                     ║
+ * ║   AETERNA DEADLINE MANAGER                                                     ║
  * ║   "Smart timeout handling and deadline enforcement"                           ║
  * ║                                                                               ║
  * ║   TODO B #33 - Chronos: Deadline Management                                   ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

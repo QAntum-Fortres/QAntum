@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > MEMORY
+ * 🔥 AETERNA BRAIN > MEMORY
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

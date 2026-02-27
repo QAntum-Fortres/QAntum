@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM SUBSCRIPTION ENGINE                                                  ║
+ * ║   AETERNA SUBSCRIPTION ENGINE                                                  ║
  * ║   "Free → Starter → Pro → Enterprise. Automatic. Ruthless."                  ║
  * ║                                                                               ║
  * ║   TODO B #48 - SaaS: Subscription Engine                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                     ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                     ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -142,7 +142,7 @@ export const PLANS: Plan[] = [
       { key: 'community_support', name: 'Community Support', included: true },
       { key: 'sales_automation', name: 'Sales Automation', included: false },
       { key: 'market_reaper', name: 'Market Reaper', included: false },
-      { key: 'singularity', name: 'QAntum Singularity', included: false },
+      { key: 'singularity', name: 'Aeterna Singularity', included: false },
       { key: 'cloudflare_bypass', name: 'Cloudflare Bypass Engine', included: false },
       { key: 'ab_testing', name: 'A/B Testing', included: false },
       { key: 'white_label', name: 'White-Label Reports', included: false },
@@ -175,7 +175,7 @@ export const PLANS: Plan[] = [
       { key: 'self_healing_reports', name: 'Self-Healing Sales Reports', included: true },
       { key: 'basic_analytics', name: 'Basic Analytics', included: true },
       { key: 'market_reaper', name: 'Market Reaper', included: false },
-      { key: 'singularity', name: 'QAntum Singularity', included: false },
+      { key: 'singularity', name: 'Aeterna Singularity', included: false },
       { key: 'cloudflare_bypass', name: 'Cloudflare Bypass Engine', included: false },
       { key: 'ab_testing', name: 'A/B Testing', included: false },
       { key: 'white_label', name: 'White-Label Reports', included: false },
@@ -183,7 +183,7 @@ export const PLANS: Plan[] = [
     ],
     stripePriceIdMonthly: 'price_starter_monthly',
     stripePriceIdAnnual: 'price_starter_annual',
-    checkoutUrl: 'https://qantum.empire/checkout?plan=starter',
+    checkoutUrl: 'https://aeterna.empire/checkout?plan=starter',
   },
   {
     id: 'plan_pro',
@@ -218,7 +218,7 @@ export const PLANS: Plan[] = [
     ],
     stripePriceIdMonthly: 'price_pro_monthly',
     stripePriceIdAnnual: 'price_pro_annual',
-    checkoutUrl: 'https://qantum.empire/checkout?plan=pro',
+    checkoutUrl: 'https://aeterna.empire/checkout?plan=pro',
   },
   {
     id: 'plan_enterprise',
@@ -239,7 +239,7 @@ export const PLANS: Plan[] = [
     },
     features: [
       { key: 'self_healing_tests', name: 'EVERYTHING UNLIMITED', included: true },
-      { key: 'singularity', name: 'QAntum Singularity — Full God Mode', included: true },
+      { key: 'singularity', name: 'Aeterna Singularity — Full God Mode', included: true },
       { key: 'market_reaper', name: 'Market Reaper (LIVE trading)', included: true },
       { key: 'cloudflare_bypass', name: 'Cloudflare Bypass Engine', included: true },
       { key: 'sso', name: 'SSO + Advanced Security', included: true },
@@ -251,7 +251,7 @@ export const PLANS: Plan[] = [
     ],
     stripePriceIdMonthly: 'price_enterprise_monthly',
     stripePriceIdAnnual: 'price_enterprise_annual',
-    checkoutUrl: 'https://qantum.empire/checkout?plan=enterprise',
+    checkoutUrl: 'https://aeterna.empire/checkout?plan=enterprise',
   },
 ];
 
@@ -529,7 +529,7 @@ export class SubscriptionService {
       period: this.currentPeriod(),
       items: [
         {
-          description: `QAntum ${plan.name} — ${sub.billingCycle === 'monthly' ? 'Monthly' : 'Annual'} Subscription`,
+          description: `Aeterna ${plan.name} — ${sub.billingCycle === 'monthly' ? 'Monthly' : 'Annual'} Subscription`,
           amount,
           quantity: 1,
         },

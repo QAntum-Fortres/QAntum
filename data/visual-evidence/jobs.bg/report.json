@@ -1,0 +1,35 @@
+{
+  "scan": {
+    "domain": "jobs.bg",
+    "score": 64,
+    "grade": "C",
+    "ttfb": 131,
+    "missingHeaders": [
+      "strict-transport-security",
+      "content-security-policy",
+      "x-xss-protection"
+    ],
+    "issues": [
+      "Missing: strict-transport-security",
+      "Missing: content-security-policy",
+      "Missing: x-xss-protection"
+    ],
+    "sslDaysLeft": 161,
+    "sslIssuer": "DigiCert Inc"
+  },
+  "target": {
+    "domain": "jobs.bg",
+    "email": "office@jobs.bg",
+    "company": "Jobs.bg",
+    "industry": "HR"
+  },
+  "evidence": {
+    "screenshotFull": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\jobs.bg\\screenshots\\desktop.png",
+    "screenshotMobile": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\jobs.bg\\screenshots\\mobile.png",
+    "screenshotHeaders": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\jobs.bg\\screenshots\\missing-headers.png",
+    "videoPath": "C:\\Users\\papic\\Desktop\\ALL-POSITIONS\\Blockchain\\QAntum-1\\data\\visual-evidence\\jobs.bg\\3c450caa6ad9ac89e2df65f86264d287.webm",
+    "videoSizeKb": 352,
+    "video": true
+  },
+  "ts": "2026-02-27T01:14:58.925Z"
+}

@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SKILLS > SCRAPING
+ * 🔥 AETERNA SKILLS > SCRAPING
  * Auto-generated index file
  */
 

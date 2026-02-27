@@ -1,5 +1,5 @@
 /**
- * Init Command - Initialize QAntum in a project
+ * Init Command - Initialize Aeterna in a project
  */
 
 import chalk from 'chalk';
@@ -20,17 +20,17 @@ export async function init(options: InitOptions) {
   requireAuth(config);
 
   console.log();
-  console.log(chalk.magenta.bold('  ⚛️  QAntum Cloud Setup'));
+  console.log(chalk.magenta.bold('  ⚛️  Aeterna Cloud Setup'));
   console.log();
 
   // Check for existing config
-  const configPath = join(process.cwd(), 'qantum.yml');
+  const configPath = join(process.cwd(), 'aeterna.yml');
   if (existsSync(configPath)) {
     const { overwrite } = await inquirer.prompt([
       {
         type: 'confirm',
         name: 'overwrite',
-        message: 'qantum.yml already exists. Overwrite?',
+        message: 'aeterna.yml already exists. Overwrite?',
         default: false,
       },
     ]);
@@ -141,12 +141,12 @@ export async function init(options: InitOptions) {
   config.set('defaultProject', projectId);
 
   console.log();
-  console.log(chalk.green('✓') + ' Created qantum.yml');
+  console.log(chalk.green('✓') + ' Created aeterna.yml');
   console.log();
   console.log(chalk.bold('  Next Steps:'));
   console.log(chalk.gray('  ────────────────────'));
   console.log(`  1. Add tests to ${chalk.cyan('tests/')} directory`);
-  console.log(`  2. Run ${chalk.cyan('qantum run')} to execute tests`);
+  console.log(`  2. Run ${chalk.cyan('aeterna run')} to execute tests`);
   console.log();
 
   // Create GitHub Actions workflow if .github exists
@@ -162,7 +162,7 @@ export async function init(options: InitOptions) {
     ]);
 
     if (createWorkflow) {
-      const workflowContent = `name: QAntum E2E Tests
+      const workflowContent = `name: Aeterna E2E Tests
 
 on:
   push:
@@ -186,11 +186,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run QAntum Tests
+      - name: Run Aeterna Tests
         env:
-          QANTUM_API_TOKEN: \${{ secrets.QANTUM_API_TOKEN }}
+          AETERNA_API_TOKEN: \${{ secrets.AETERNA_API_TOKEN }}
         run: |
-          npx @qantum/cli run --ci --ghost --junit test-results/junit.xml
+          npx @aeterna/cli run --ci --ghost --junit test-results/junit.xml
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
@@ -200,11 +200,11 @@ jobs:
           path: test-results/
 `;
 
-      const workflowPath = join(githubDir, 'qantum.yml');
+      const workflowPath = join(githubDir, 'aeterna.yml');
       writeFileSync(workflowPath, workflowContent, 'utf-8');
-      console.log(chalk.green('✓') + ' Created .github/workflows/qantum.yml');
+      console.log(chalk.green('✓') + ' Created .github/workflows/aeterna.yml');
       console.log(
-        chalk.yellow('⚠') + ` Add ${chalk.cyan('QANTUM_API_TOKEN')} to repository secrets`
+        chalk.yellow('⚠') + ` Add ${chalk.cyan('AETERNA_API_TOKEN')} to repository secrets`
       );
     }
   }

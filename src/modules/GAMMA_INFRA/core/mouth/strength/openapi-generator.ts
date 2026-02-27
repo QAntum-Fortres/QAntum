@@ -8,7 +8,7 @@
  * - JSDoc коментари
  *
  * @author DIMITAR PRODROMOV
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -165,7 +165,7 @@ export class OpenAPIGenerator {
       version: this.config.version,
       contact: {
         name: this.config.author,
-        url: 'https://qantum.dev'
+        url: 'https://aeterna.dev'
       },
       license: {
         name: 'MIT',
@@ -189,7 +189,7 @@ export class OpenAPIGenerator {
         description: 'Local network server'
       },
       {
-        url: 'https://api.qantum.dev',
+        url: 'https://api.aeterna.dev',
         description: 'Production server'
       }
     ];

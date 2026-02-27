@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > ENCRYPTION
+ * 🔥 AETERNA SECURITY > ENCRYPTION
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

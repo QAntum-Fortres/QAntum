@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM STORAGE MODULE                                                       ║
+ * ║   AETERNA STORAGE MODULE                                                       ║
  * ║   "Unified storage facade - KV, File, Cache"                                  ║
  * ║                                                                               ║
  * ║   TODO B #30-32 - Storage: Complete Module                                    ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -61,10 +61,10 @@ export interface StorageConfig {
 }
 
 /**
- * Unified QAntum Storage
+ * Unified Aeterna Storage
  */
-export class QAntumStorage {
-  private static instance: QAntumStorage;
+export class AeternaStorage {
+  private static instance: AeternaStorage;
 
   private _kv: KeyValueStore;
   private _file: FileStorage;
@@ -82,16 +82,16 @@ export class QAntumStorage {
     this._cache = createCache(config.cacheOptions);
   }
 
-  static getInstance(config?: StorageConfig): QAntumStorage {
-    if (!QAntumStorage.instance) {
-      QAntumStorage.instance = new QAntumStorage(config);
+  static getInstance(config?: StorageConfig): AeternaStorage {
+    if (!AeternaStorage.instance) {
+      AeternaStorage.instance = new AeternaStorage(config);
     }
-    return QAntumStorage.instance;
+    return AeternaStorage.instance;
   }
 
-  static configure(config: StorageConfig): QAntumStorage {
-    QAntumStorage.instance = new QAntumStorage(config);
-    return QAntumStorage.instance;
+  static configure(config: StorageConfig): AeternaStorage {
+    AeternaStorage.instance = new AeternaStorage(config);
+    return AeternaStorage.instance;
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -257,21 +257,21 @@ export class QAntumStorage {
 // EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getStorage = (): QAntumStorage => QAntumStorage.getInstance();
-export const configureStorage = (config: StorageConfig): QAntumStorage =>
-  QAntumStorage.configure(config);
+export const getStorage = (): AeternaStorage => AeternaStorage.getInstance();
+export const configureStorage = (config: StorageConfig): AeternaStorage =>
+  AeternaStorage.configure(config);
 
 // Quick storage operations
 export const storage = {
   store: (key: string, value: any, options?: { persist?: boolean; ttl?: number }) =>
-    QAntumStorage.getInstance().store(key, value, options),
-  retrieve: <T>(key: string) => QAntumStorage.getInstance().retrieve<T>(key),
-  remove: (key: string) => QAntumStorage.getInstance().remove(key),
-  kv: () => QAntumStorage.getInstance().kv,
-  file: () => QAntumStorage.getInstance().file,
-  cache: () => QAntumStorage.getInstance().cache,
+    AeternaStorage.getInstance().store(key, value, options),
+  retrieve: <T>(key: string) => AeternaStorage.getInstance().retrieve<T>(key),
+  remove: (key: string) => AeternaStorage.getInstance().remove(key),
+  kv: () => AeternaStorage.getInstance().kv,
+  file: () => AeternaStorage.getInstance().file,
+  cache: () => AeternaStorage.getInstance().cache,
   namedCache: (name: string, options?: { ttl?: number; maxSize?: number }) =>
-    QAntumStorage.getInstance().getCache(name, options),
+    AeternaStorage.getInstance().getCache(name, options),
 };
 
-export default QAntumStorage;
+export default AeternaStorage;

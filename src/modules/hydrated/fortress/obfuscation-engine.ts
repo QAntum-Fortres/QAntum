@@ -11,7 +11,7 @@
  * - Dead code injection
  * - Self-defending code
  *
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @phase 71-72
  */
 
@@ -371,7 +371,7 @@ ${code}`;
         const hash = crypto.createHash('md5').update(code).digest('hex');
 
         return `/**
- * 🏰 PROTECTED BY QANTUM FORTRESS
+ * 🏰 PROTECTED BY AETERNA FORTRESS
  * Generated: ${new Date(timestamp).toISOString()}
  * Hash: ${hash}
  *
@@ -388,7 +388,7 @@ ${code}`;
 
     private generateMachineKey(): Buffer {
         // In production, this would use actual hardware identifiers
-        const machineId = process.env.qantum_MACHINE_ID || 'default-key';
+        const machineId = process.env.aeterna_MACHINE_ID || 'default-key';
         return crypto.createHash('sha256').update(machineId).digest();
     }
 
@@ -440,7 +440,7 @@ var ${varName}=(function(){
     }
 
     private isAlreadyObfuscated(code: string): boolean {
-        return code.includes('PROTECTED BY QANTUM FORTRESS');
+        return code.includes('PROTECTED BY AETERNA FORTRESS');
     }
 
     private getProtectionLevel(): ObfuscationResult['protectionLevel'] {

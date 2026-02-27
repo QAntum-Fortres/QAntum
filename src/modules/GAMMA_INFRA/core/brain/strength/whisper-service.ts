@@ -1,16 +1,16 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  *
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  *
- * For licensing inquiries: dimitar.prodromov@QAntum.dev
+ * For licensing inquiries: dimitar.prodromov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -402,7 +402,7 @@ export class WhisperService extends EventEmitter {
 # -*- coding: utf-8 -*-
 """
 ═══════════════════════════════════════════════════════════════════════════════
-QAntum Whisper Bridge
+Aeterna Whisper Bridge
 ═══════════════════════════════════════════════════════════════════════════════
 © 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
 ═══════════════════════════════════════════════════════════════════════════════
@@ -414,7 +414,7 @@ import argparse
 from typing import Optional
 
 def main():
-    parser = argparse.ArgumentParser(description='QAntum Whisper Bridge')
+    parser = argparse.ArgumentParser(description='Aeterna Whisper Bridge')
     parser.add_argument('--model', default='base', help='Whisper model size')
     parser.add_argument('--device', default='auto', help='Device (cpu/cuda/auto)')
     parser.add_argument('--compute-type', default='auto', help='Compute type')

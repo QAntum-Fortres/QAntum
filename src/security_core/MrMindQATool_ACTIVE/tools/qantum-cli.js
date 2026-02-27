@@ -2,20 +2,20 @@
 
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
- * ║                          QANTUM CLI - SCRIPT GOD v2.0                         ║
+ * ║                          AETERNA CLI - SCRIPT GOD v2.0                         ║
  * ║                                                                               ║
  * ║       "Your voice is my command. Your thought is my execution."               ║
  * ║                                                                               ║
- * ║  Global CLI for QAntum Prime - Text/Voice commands to BrainRouter             ║
- * ║  Created: 2026-01-01 | QAntum Prime v28.1.0 SUPREME                          ║
+ * ║  Global CLI for Aeterna Prime - Text/Voice commands to BrainRouter             ║
+ * ║  Created: 2026-01-01 | Aeterna Prime v28.1.0 SUPREME                          ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  * 
  * USAGE:
- *   qantum "Refactor this module"
- *   qantum --watch
- *   qantum --analyze <file>
- *   qantum --voice
- *   qantum --status
+ *   aeterna "Refactor this module"
+ *   aeterna --watch
+ *   aeterna --analyze <file>
+ *   aeterna --voice
+ *   aeterna --status
  */
 
 const fs = require('fs');
@@ -58,12 +58,12 @@ const c = {
 
 const CONFIG = {
   version: '29.1.0',
-  name: 'QAntum Prime CLI',
+  name: 'Aeterna Prime CLI',
   defaultModel: 'deepseek-v3',
   fallbackModel: 'llama-3.1-70b',
   workspaceRoot: process.cwd(),
-  historyFile: path.join(process.env.HOME || process.env.USERPROFILE, '.qantum_history'),
-  configFile: path.join(process.env.HOME || process.env.USERPROFILE, '.qantumrc'),
+  historyFile: path.join(process.env.HOME || process.env.USERPROFILE, '.aeterna_history'),
+  configFile: path.join(process.env.HOME || process.env.USERPROFILE, '.aeternarc'),
   // v29.1: Adaptive Interface modes
   validModes: ['ARCHITECT', 'ENGINEER', 'QA'],
   currentMode: 'ARCHITECT',
@@ -321,7 +321,7 @@ class CommandParser {
       gitStatus = changes === 0 ? 'Clean' : `${changes} changes`;
     } catch {}
 
-    console.log(`   ${c.highlight('QAntum Prime')} v28.1.0 SUPREME`);
+    console.log(`   ${c.highlight('Aeterna Prime')} v28.1.0 SUPREME`);
     console.log(`   ${c.dim('Mode:')} Sovereign`);
     console.log(`   ${c.dim('Workspace:')} ${path.basename(CONFIG.workspaceRoot)}`);
     console.log(`   ${c.dim('Files:')} ${files.length} (${tsFiles} TS, ${jsFiles} JS)`);
@@ -644,7 +644,7 @@ ${colors.cyan}╔═════════════════════
 
   async askCommand(args) {
     if (!args) {
-      console.log(c.warning('   Usage: qantum ask "Your question here"'));
+      console.log(c.warning('   Usage: aeterna ask "Your question here"'));
       return;
     }
 
@@ -674,8 +674,8 @@ ${colors.cyan}╔═════════════════════
   // ─────────────────────────────────────────────────────────────────────────────
 
   /**
-   * qantum mode set [architect|engineer|qa]
-   * qantum mode
+   * aeterna mode set [architect|engineer|qa]
+   * aeterna mode
    */
   async modeCommand(args) {
     const parts = args.trim().toLowerCase().split(' ');
@@ -727,9 +727,9 @@ ${c.header('AVAILABLE MODES:')}
   ${c.warning('QA')}        - Critical verification, risks, test coverage
 
 ${c.header('USAGE:')}
-  qantum mode set architect   Switch to ARCHITECT mode
-  qantum mode set engineer    Switch to ENGINEER mode
-  qantum mode set qa          Switch to QA mode
+  aeterna mode set architect   Switch to ARCHITECT mode
+  aeterna mode set engineer    Switch to ENGINEER mode
+  aeterna mode set qa          Switch to QA mode
 ${colors.cyan}╚═══════════════════════════════════════════════════════════════╝${colors.reset}
 `);
   }
@@ -771,7 +771,7 @@ ${colors.cyan}╚═════════════════════
   }
 
   /**
-   * qantum genesis <EntityName> --type class --layer biology
+   * aeterna genesis <EntityName> --type class --layer biology
    */
   async genesisCommand(args) {
     if (!args) {
@@ -855,7 +855,7 @@ ${colors.cyan}╔═════════════════════
       console.log(`   📁 Path: ${outputPath}`);
       
       if (type !== 'test') {
-        console.log(c.dim(`   💡 Run 'qantum genesis ${entityName}Test --type test --layer ${layer}' to create tests`));
+        console.log(c.dim(`   💡 Run 'aeterna genesis ${entityName}Test --type test --layer ${layer}' to create tests`));
       }
     } else {
       console.log(c.warning('   ⚠️ GenesisEngine module not built yet'));
@@ -891,9 +891,9 @@ ${colors.cyan}╔═════════════════════
       return `/**
  * ${name} - ${description}
  * 
- * Part of QAntum's ${layer.charAt(0).toUpperCase() + layer.slice(1)} Layer (${layerComment[layer]})
+ * Part of Aeterna's ${layer.charAt(0).toUpperCase() + layer.slice(1)} Layer (${layerComment[layer]})
  * @layer ${layer}
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @generated Genesis Engine v29.1
  */
 
@@ -941,7 +941,7 @@ export default ${name};
  * ${name} - ${description}
  * 
  * @layer ${layer}
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @generated Genesis Engine v29.1
  */
 
@@ -987,7 +987,7 @@ describe('${name}', () => {
  * ${name} - ${description}
  * 
  * @layer ${layer}
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @generated Genesis Engine v29.1
  */
 
@@ -1018,10 +1018,10 @@ export default ${name.charAt(0).toLowerCase() + name.slice(1)};
     console.log(`
 ${c.header('🌱 GENESIS ENGINE - Code Entity Generator')}
 
-Creates new code entities following QAntum's 5-layer architecture.
+Creates new code entities following Aeterna's 5-layer architecture.
 
 ${c.header('USAGE:')}
-  qantum genesis <EntityName> [options]
+  aeterna genesis <EntityName> [options]
 
 ${c.header('OPTIONS:')}
   --type <type>      Entity type: class, interface, function, module, test
@@ -1030,10 +1030,10 @@ ${c.header('OPTIONS:')}
   --props "<props>"  Properties for interface (e.g. "id:string,name:string")
 
 ${c.header('EXAMPLES:')}
-  qantum genesis NeuralEvolver --type class --layer biology
-  qantum genesis DataProcessor --type class --layer chemistry
-  qantum genesis VectorConfig --type interface --layer physics --props "id:string,count:number"
-  qantum genesis NeuralEvolverTest --type test --layer biology
+  aeterna genesis NeuralEvolver --type class --layer biology
+  aeterna genesis DataProcessor --type class --layer chemistry
+  aeterna genesis VectorConfig --type interface --layer physics --props "id:string,count:number"
+  aeterna genesis NeuralEvolverTest --type test --layer biology
 
 ${c.header('LAYERS:')}
   biology    - Neural evolution, learning, adaptation
@@ -1093,7 +1093,7 @@ ${c.header('LAYERS:')}
     console.log(`      Total Projects: 3`);
     console.log(`      Total Files: ${totalFiles}`);
     console.log(`      Indexed Symbols: ${totalSymbols}+`);
-    console.log(`\n   For deep analysis, run: ${c.highlight('qantum empire audit')}`);
+    console.log(`\n   For deep analysis, run: ${c.highlight('aeterna empire audit')}`);
   }
 
   showEmpireHelp() {
@@ -1106,10 +1106,10 @@ ${c.header('EMPIRE COMMANDS:')}
   empire analyze [query]     Analyze codebase statistics
 
 ${c.header('EXAMPLES:')}
-  qantum empire status
-  qantum empire sync
-  qantum empire audit --quick
-  qantum empire ask "Find bottlenecks in the codebase"
+  aeterna empire status
+  aeterna empire sync
+  aeterna empire audit --quick
+  aeterna empire ask "Find bottlenecks in the codebase"
 `);
   }
 
@@ -1251,7 +1251,7 @@ ${c.header('EXAMPLES:')}
 // INTERACTIVE REPL
 // ═══════════════════════════════════════════════════════════════════════════════
 
-class QAntumREPL {
+class AeternaREPL {
   constructor() {
     this.parser = new CommandParser();
     this.history = [];
@@ -1278,7 +1278,7 @@ class QAntumREPL {
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout,
-      prompt: `${colors.cyan}qantum${colors.reset} ${colors.dim}❯${colors.reset} `,
+      prompt: `${colors.cyan}aeterna${colors.reset} ${colors.dim}❯${colors.reset} `,
       historySize: 100,
     });
 
@@ -1293,7 +1293,7 @@ class QAntumREPL {
       }
 
       if (input.toLowerCase() === 'exit' || input.toLowerCase() === 'quit') {
-        console.log(c.dim('\n👋 QAntum Prime signing off. Sovereign mode deactivated.\n'));
+        console.log(c.dim('\n👋 Aeterna Prime signing off. Sovereign mode deactivated.\n'));
         this.saveHistory();
         process.exit(0);
       }
@@ -1336,21 +1336,21 @@ async function main() {
 
   if (args.length === 0) {
     // Interactive mode
-    const repl = new QAntumREPL();
+    const repl = new AeternaREPL();
     await repl.start();
   } else if (args[0] === '--help' || args[0] === '-h') {
     showBanner();
     console.log(`
 ${c.header('USAGE:')}
-  qantum                      Interactive REPL mode
-  qantum "<command>"          Execute a single command
-  qantum --watch              Start live file watcher
-  qantum --status             Show system status
-  qantum --analyze [file]     Analyze workspace or file
-  qantum --verify [file]      Verify workspace or file
-  qantum --assimilate         Build symbol registry
-  qantum empire <cmd>         Empire commands (Cloud-Hybrid RAG)
-  qantum --help               Show this help
+  aeterna                      Interactive REPL mode
+  aeterna "<command>"          Execute a single command
+  aeterna --watch              Start live file watcher
+  aeterna --status             Show system status
+  aeterna --analyze [file]     Analyze workspace or file
+  aeterna --verify [file]      Verify workspace or file
+  aeterna --assimilate         Build symbol registry
+  aeterna empire <cmd>         Empire commands (Cloud-Hybrid RAG)
+  aeterna --help               Show this help
 
 ${c.header('EMPIRE COMMANDS:')}
   empire status               Show empire status across 3 projects
@@ -1377,12 +1377,12 @@ ${c.header('COMMANDS:')}
   forget <pattern>            Remove a pattern
 
 ${c.header('EXAMPLES:')}
-  qantum "refactor the auth module"
-  qantum --watch
-  qantum --analyze src/core
-  qantum "намери всички TODO коментари"
+  aeterna "refactor the auth module"
+  aeterna --watch
+  aeterna --analyze src/core
+  aeterna "намери всички TODO коментари"
 
-${c.dim('QAntum Prime v28.1.0 SUPREME - Sovereign Mode')}
+${c.dim('Aeterna Prime v28.1.0 SUPREME - Sovereign Mode')}
 `);
   } else if (args[0] === '--watch' || args[0] === '-w') {
     showBanner();
@@ -1413,7 +1413,7 @@ ${c.dim('QAntum Prime v28.1.0 SUPREME - Sovereign Mode')}
     const parser = new CommandParser();
     await parser.askCommand(args.slice(1).join(' '));
   } else if (args[0] === '--version' || args[0] === '-v') {
-    console.log(`QAntum Prime CLI v${CONFIG.version}`);
+    console.log(`Aeterna Prime CLI v${CONFIG.version}`);
   } else {
     // Single command mode
     const parser = new CommandParser();
@@ -1436,4 +1436,4 @@ ${c.dim('QAntum Prime v28.1.0 SUPREME - Sovereign Mode')}
 main().catch(console.error);
 
 // Export for programmatic use
-module.exports = { CommandParser, QAntumREPL, CONFIG };
+module.exports = { CommandParser, AeternaREPL, CONFIG };

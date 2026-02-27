@@ -1,7 +1,7 @@
 {
-  "name": "@qantum/saas-api",
-  "version": "1.0.0",
-  "description": "QAntum QA SaaS API Server",
+  "name": "@aeterna/saas-api",
+  "version": "1.0.0-AETERNA",
+  "description": "Aeterna QA SaaS API Server",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {

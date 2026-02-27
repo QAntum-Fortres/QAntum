@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-QANTUM-PRIME",
+  "version": "1.0.0-AETERNA",
   "generatedAt": "2025-12-30T17:15:09.490Z",
   "snapshotHash": "6989691e23387397",
   "stats": {
@@ -479,7 +479,7 @@
             {
               "name": "if",
               "params": [
-                "typeof window !== 'undefined' && window.__QANTUM_DEBUG__ === 0xDEAD"
+                "typeof window !== 'undefined' && window.__AETERNA_DEBUG__ === 0xDEAD"
               ],
               "isAsync": false,
               "isStatic": false,
@@ -1014,7 +1014,7 @@
           "source": "../index.js",
           "specifiers": [
             "createMM",
-            "QAntum",
+            "Aeterna",
             "MMConfig"
           ],
           "isRelative": true,
@@ -15699,7 +15699,7 @@
       ],
       "classes": [
         {
-          "name": "QAntumCLI",
+          "name": "AeternaCLI",
           "implements": [],
           "methods": [
             {
@@ -22810,7 +22810,7 @@
       "imports": [],
       "exports": [
         {
-          "name": "QAntum",
+          "name": "Aeterna",
           "type": "named",
           "line": 5
         },
@@ -22861,9 +22861,9 @@
       "complexity": 0,
       "healthScore": 100
     },
-    "src/core/qantum.ts": {
-      "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\src\\core\\qantum.ts",
-      "relativePath": "src/core/qantum.ts",
+    "src/core/aeterna.ts": {
+      "path": "C:\\MisteMind\\PROJECT\\PRIVATE\\Mind-Engine-Core\\src\\core\\aeterna.ts",
+      "relativePath": "src/core/aeterna.ts",
       "hash": "606d74b4",
       "size": 9100,
       "lastModified": "2025-12-29T22:54:49.318Z",
@@ -22932,7 +22932,7 @@
       ],
       "exports": [
         {
-          "name": "QAntum",
+          "name": "Aeterna",
           "type": "named",
           "line": 13
         },
@@ -22942,7 +22942,7 @@
           "line": 361
         },
         {
-          "name": "QAntum",
+          "name": "Aeterna",
           "type": "default",
           "line": 366
         }
@@ -22953,13 +22953,13 @@
           "params": [
             "config?: Partial<MMConfig>"
           ],
-          "returnType": "QAntum",
+          "returnType": "Aeterna",
           "isAsync": false,
           "isExported": true,
           "complexity": 1,
           "calls": [
             "createMM",
-            "QAntum"
+            "Aeterna"
           ],
           "line": 361,
           "endLine": 363
@@ -22967,13 +22967,13 @@
       ],
       "classes": [
         {
-          "name": "QAntum",
+          "name": "Aeterna",
           "implements": [],
           "methods": [
             {
               "name": "launch",
               "params": [],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23026,7 +23026,7 @@
               "params": [
                 "url: string"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23036,7 +23036,7 @@
             {
               "name": "reload",
               "params": [],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23046,7 +23046,7 @@
             {
               "name": "goBack",
               "params": [],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23056,7 +23056,7 @@
             {
               "name": "goForward",
               "params": [],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23153,7 +23153,7 @@
               "params": [
                 "selector: string"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23166,7 +23166,7 @@
                 "selector: string",
                 "text: string"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23179,7 +23179,7 @@
                 "selector: string",
                 "timeout?: number"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23191,7 +23191,7 @@
               "params": [
                 "url: string | RegExp"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23201,7 +23201,7 @@
             {
               "name": "waitForNavigation",
               "params": [],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23213,7 +23213,7 @@
               "params": [
                 "config: InterceptConfig"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23227,7 +23227,7 @@
                 "body: unknown",
                 "status = 200"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23239,7 +23239,7 @@
               "params": [
                 "url: string | RegExp"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -23293,7 +23293,7 @@
               "params": [
                 "ms: number"
               ],
-              "returnType": "Promise<QAntum>",
+              "returnType": "Promise<Aeterna>",
               "isAsync": true,
               "isStatic": false,
               "visibility": "public",
@@ -47811,18 +47811,18 @@
       "lastModified": "2025-12-30T03:11:47.719Z",
       "imports": [
         {
-          "source": "./core/qantum.js",
+          "source": "./core/aeterna.js",
           "specifiers": [
             "createMM"
           ],
           "isRelative": true,
           "line": 125,
-          "resolvedPath": "src/core/qantum.js"
+          "resolvedPath": "src/core/aeterna.js"
         }
       ],
       "exports": [
         {
-          "name": "QAntum",
+          "name": "Aeterna",
           "type": "named",
           "line": 45
         },
@@ -85507,9 +85507,9 @@
       "dependents": [],
       "signature": "displayReportSummary(report)"
     },
-    "src/cli/hacker-cli.js::QAntumCLI": {
+    "src/cli/hacker-cli.js::AeternaCLI": {
       "type": "class",
-      "name": "QAntumCLI",
+      "name": "AeternaCLI",
       "filePath": "src/cli/hacker-cli.js",
       "line": 218,
       "column": 0,
@@ -85815,24 +85815,24 @@
       "dependencies": [],
       "dependents": []
     },
-    "src/core/qantum.ts::createMM": {
+    "src/core/aeterna.ts::createMM": {
       "type": "function",
       "name": "createMM",
-      "filePath": "src/core/qantum.ts",
+      "filePath": "src/core/aeterna.ts",
       "line": 361,
       "column": 0,
       "complexity": 1,
       "dependencies": [
         "createMM",
-        "QAntum"
+        "Aeterna"
       ],
       "dependents": [],
       "signature": "createQA(config?: Partial<MMConfig>)"
     },
-    "src/core/qantum.ts::QAntum": {
+    "src/core/aeterna.ts::Aeterna": {
       "type": "class",
-      "name": "QAntum",
-      "filePath": "src/core/qantum.ts",
+      "name": "Aeterna",
+      "filePath": "src/core/aeterna.ts",
       "line": 13,
       "column": 0,
       "complexity": 44,
@@ -89537,31 +89537,31 @@
       "weight": 1
     },
     {
-      "from": "src/core/qantum.ts",
+      "from": "src/core/aeterna.ts",
       "to": "src/types/index.js",
       "type": "import",
       "weight": 4
     },
     {
-      "from": "src/core/qantum.ts",
+      "from": "src/core/aeterna.ts",
       "to": "src/core/self-healing.js",
       "type": "import",
       "weight": 1
     },
     {
-      "from": "src/core/qantum.ts",
+      "from": "src/core/aeterna.ts",
       "to": "src/core/deep-search.js",
       "type": "import",
       "weight": 1
     },
     {
-      "from": "src/core/qantum.ts",
+      "from": "src/core/aeterna.ts",
       "to": "src/core/network-interceptor.js",
       "type": "import",
       "weight": 1
     },
     {
-      "from": "src/core/qantum.ts",
+      "from": "src/core/aeterna.ts",
       "to": "src/core/fluent-chain.js",
       "type": "import",
       "weight": 1
@@ -89838,7 +89838,7 @@
     },
     {
       "from": "src/index.ts",
-      "to": "src/core/qantum.js",
+      "to": "src/core/aeterna.js",
       "type": "import",
       "weight": 1
     },
@@ -90410,13 +90410,13 @@
     "src/ci/CIIntegration.ts::JenkinsfileGenerator",
     "src/ci/CIIntegration.ts::AzurePipelinesGenerator",
     "src/cli/CLI.ts::CLIEngine",
-    "src/cli/hacker-cli.js::QAntumCLI",
+    "src/cli/hacker-cli.js::AeternaCLI",
     "src/cognitive/auto-test-factory.ts::AutoTestFactory",
     "src/cognitive/auto-test-factory.ts::TestDataFactory",
     "src/cognitive/neural-map-engine.ts::NeuralMapEngine",
     "src/core/deep-search.ts::DeepSearchEngine",
     "src/core/fluent-chain.ts::FluentChain",
-    "src/core/qantum.ts::QAntum",
+    "src/core/aeterna.ts::Aeterna",
     "src/core/network-interceptor.ts::NetworkInterceptor",
     "src/core/neural-mapper.ts::NeuralMapper",
     "src/core/self-healing.ts::SelfHealingEngine",

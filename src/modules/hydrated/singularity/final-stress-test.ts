@@ -1,7 +1,7 @@
 /**
  * 🔥 FINAL STRESS TEST - Maximum Load Validation
  *
- * Ultimate stress test for QANTUM:
+ * Ultimate stress test for AETERNA:
  * - Run all 100 phases simultaneously
  * - Maximum parallel workers
  * - Memory and CPU stress testing
@@ -10,7 +10,7 @@
  *
  * Goal: 100% stability under maximum load
  *
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @phase 96-100 - The Singularity
  */
 

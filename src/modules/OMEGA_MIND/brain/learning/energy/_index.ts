@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LEARNING > ENERGY
+ * 🔥 AETERNA BRAIN > LEARNING > ENERGY
  *
  *
  *

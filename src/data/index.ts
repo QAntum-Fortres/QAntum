@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM DATA MODULE                                                          ║
+ * ║   AETERNA DATA MODULE                                                          ║
  * ║   "Unified test data management facade"                                       ║
  * ║                                                                               ║
  * ║   TODO B #38-40 - Data Module Complete                                        ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -50,10 +50,10 @@ import { Faker, faker, fake } from './faker';
 import { FixtureManager, fixture } from './fixtures';
 
 /**
- * Unified QAntum Data
+ * Unified Aeterna Data
  */
-export class QAntumData {
-  private static instance: QAntumData;
+export class AeternaData {
+  private static instance: AeternaData;
 
   readonly faker: Faker;
   readonly factories: FactoryManager;
@@ -65,11 +65,11 @@ export class QAntumData {
     this.fixtures = FixtureManager.getInstance();
   }
 
-  static getInstance(): QAntumData {
-    if (!QAntumData.instance) {
-      QAntumData.instance = new QAntumData();
+  static getInstance(): AeternaData {
+    if (!AeternaData.instance) {
+      AeternaData.instance = new AeternaData();
     }
-    return QAntumData.instance;
+    return AeternaData.instance;
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -259,7 +259,7 @@ export interface Company {
 // EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getQAntumData = (): QAntumData => QAntumData.getInstance();
+export const getAeternaData = (): AeternaData => AeternaData.getInstance();
 
 // Combined data utilities
 export const data = {
@@ -274,17 +274,17 @@ export const data = {
   fixture,
 
   // Quick generators
-  user: (o?: Partial<User>) => QAntumData.getInstance().user(o),
-  users: (n: number, o?: Partial<User>) => QAntumData.getInstance().users(n, o),
-  product: (o?: Partial<Product>) => QAntumData.getInstance().product(o),
-  products: (n: number, o?: Partial<Product>) => QAntumData.getInstance().products(n, o),
-  order: (o?: Partial<Order>) => QAntumData.getInstance().order(o),
-  company: (o?: Partial<Company>) => QAntumData.getInstance().company(o),
-  address: () => QAntumData.getInstance().address(),
+  user: (o?: Partial<User>) => AeternaData.getInstance().user(o),
+  users: (n: number, o?: Partial<User>) => AeternaData.getInstance().users(n, o),
+  product: (o?: Partial<Product>) => AeternaData.getInstance().product(o),
+  products: (n: number, o?: Partial<Product>) => AeternaData.getInstance().products(n, o),
+  order: (o?: Partial<Order>) => AeternaData.getInstance().order(o),
+  company: (o?: Partial<Company>) => AeternaData.getInstance().company(o),
+  address: () => AeternaData.getInstance().address(),
 
   // Seeding
-  seed: (s: number) => QAntumData.getInstance().seed(s),
-  seededSet: (s: number) => QAntumData.getInstance().seededDataSet(s),
+  seed: (s: number) => AeternaData.getInstance().seed(s),
+  seededSet: (s: number) => AeternaData.getInstance().seededDataSet(s),
 };
 
-export default QAntumData;
+export default AeternaData;

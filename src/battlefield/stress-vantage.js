@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM - GPU STRESS TEST
+ * 🔥 AETERNA - GPU STRESS TEST
  * Натоварва RTX 4050 с масивно генериране на токени
  * Гледай Lenovo Vantage графиките!
  */
@@ -11,7 +11,7 @@ async function stressSystem() {
     console.log("");
     console.log("╔══════════════════════════════════════════════════════════════════════╗");
     console.log("║                                                                      ║");
-    console.log("║   🔥 QANTUM: GPU STRESS TEST - RTX 4050 MAX OUT!               ║");
+    console.log("║   🔥 AETERNA: GPU STRESS TEST - RTX 4050 MAX OUT!               ║");
     console.log("║                                                                      ║");
     console.log("╚══════════════════════════════════════════════════════════════════════╝");
     console.log("");

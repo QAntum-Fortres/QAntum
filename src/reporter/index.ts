@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM REPORTER MODULE                                                      ║
+ * ║   AETERNA REPORTER MODULE                                                      ║
  * ║   "Comprehensive test reporting and monitoring"                               ║
  * ║                                                                               ║
  * ║   TODO B #17-19 - Reporter: Generation, Metrics, Dashboard                    ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -27,8 +27,8 @@ import {DashboardServer, DashboardConfig} from './dashboard.js';
 // UNIFIED REPORTER FACADE
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export class QAntumReporter {
-    private static instance: QAntumReporter;
+export class AeternaReporter {
+    private static instance: AeternaReporter;
 
     private generator: ReportGenerator;
     private metrics: MetricsCollector;
@@ -45,11 +45,11 @@ export class QAntumReporter {
         this.dashboard = DashboardServer.getInstance();
     }
 
-    static getInstance(): QAntumReporter {
-        if (!QAntumReporter.instance) {
-            QAntumReporter.instance = new QAntumReporter();
+    static getInstance(): AeternaReporter {
+        if (!AeternaReporter.instance) {
+            AeternaReporter.instance = new AeternaReporter();
         }
-        return QAntumReporter.instance;
+        return AeternaReporter.instance;
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -93,7 +93,7 @@ export class QAntumReporter {
         this.dashboard.endRun(failed === 0);
 
         return {
-            title: `QAntum Test Run - ${this.runId}`,
+            title: `Aeterna Test Run - ${this.runId}`,
             timestamp: this.startTime,
             duration,
             environment: this.getEnvironment(),
@@ -339,7 +339,7 @@ export class QAntumReporter {
 // CONVENIENCE EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getReporter = (): QAntumReporter => QAntumReporter.getInstance();
+export const getReporter = (): AeternaReporter => AeternaReporter.getInstance();
 
 // Quick report generation
 export const report = {
@@ -363,4 +363,4 @@ export const metrics = {
         MetricsCollector.getInstance().time(name, fn, labels)
 };
 
-export default QAntumReporter;
+export default AeternaReporter;

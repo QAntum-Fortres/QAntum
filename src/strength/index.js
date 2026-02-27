@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- * 🧠 QANTUM v18.0 - CORE MODULE
+ * 🧠 AETERNA v18.0 - CORE MODULE
  * ═══════════════════════════════════════════════════════════════════════════
  *
  * РАЗДЕЛЕНА АРХИТЕКТУРА:
@@ -32,7 +32,7 @@
  * - Възможност за отделни npm пакети в бъдеще
  *
  * @author Dimitar Prodromov
- * @version 18.0.0
+ * @version 1.0.0-AETERNA
  * @codename SOVEREIGN SINGULARITY
  */
 
@@ -50,7 +50,7 @@ const UtilsModule = require('./utils');
 
 const EventEmitter = require('events');
 
-class QAntumCore extends EventEmitter {
+class AeternaCore extends EventEmitter {
   constructor(config = {}) {
     super();
     this.config = config;
@@ -199,8 +199,8 @@ class QAntumCore extends EventEmitter {
 // FACTORY FUNCTION
 // ═══════════════════════════════════════════════════════════════════════════
 
-async function createQAntum(config = {}) {
-  const core = new QAntumCore(config);
+async function createAeterna(config = {}) {
+  const core = new AeternaCore(config);
   await core.initialize();
   return core;
 }
@@ -211,8 +211,8 @@ async function createQAntum(config = {}) {
 
 module.exports = {
   // Main
-  QAntumCore,
-  createQAntum,
+  AeternaCore,
+  createAeterna,
 
   // QA Engine (standalone)
   QAEngine: QAEngineModule.QAEngine,

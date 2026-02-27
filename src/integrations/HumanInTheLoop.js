@@ -1,7 +1,7 @@
 /**
  * @fileoverview Human-in-the-Loop integration for CAPTCHA/2FA handling
  * @module integrations/HumanInTheLoop
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 const https = require('https');
@@ -43,8 +43,8 @@ class HumanInTheLoop {
             const url = new URL(this.webhookUrl);
             
             const payload = {
-                content: `🚨 **QANTUM needs help!**\n\n${message}\n\n_Reply with instructions or "skip" to continue_`,
-                username: 'QANTUM v8.5'
+                content: `🚨 **AETERNA needs help!**\n\n${message}\n\n_Reply with instructions or "skip" to continue_`,
+                username: 'AETERNA v8.5'
             };
             
             // Add screenshot mention if available
@@ -152,7 +152,7 @@ class HumanInTheLoop {
             
             const payload = {
                 content: `${emoji} **Status Update**\n${status}`,
-                username: 'QANTUM v8.5'
+                username: 'AETERNA v8.5'
             };
             
             const data = JSON.stringify(payload);

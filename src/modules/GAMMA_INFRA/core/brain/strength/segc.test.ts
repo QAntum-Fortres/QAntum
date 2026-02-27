@@ -1,23 +1,23 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  *
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  *
- * For licensing inquiries: dimitar.papazov@QAntum.dev
+ * For licensing inquiries: dimitar.papazov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
 /**
  * 🧬 SEGC Tests - Self-Evolving Genetic Core
  *
- * @version 18.0.0
+ * @version 1.0.0-AETERNA
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';

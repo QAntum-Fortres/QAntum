@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum - Evidence Collector Module
+ * Aeterna - Evidence Collector Module
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * 🛡️ CyberCody "Safe Hunter" Mode - Automated Evidence Collection
@@ -20,6 +20,7 @@ import { Page, Browser } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';
+import * as nodemailer from 'nodemailer';
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // TYPES & INTERFACES
@@ -144,6 +145,7 @@ export interface CaptureResult {
   readonly filePath: string;
   readonly metadata: EvidenceMetadata;
   readonly annotatedPath?: string;
+  readonly videoPath?: string;
   readonly error?: string;
   readonly duration: number;
 }
@@ -334,11 +336,29 @@ export class EvidenceCollector {
         }
       }
 
-      // 8. Update stats
+      // 8. Capture Video if available in Playwright Context
+      let videoPath: string | undefined;
+      try {
+        const video = await this.page.video();
+        if (video) {
+          const tempVidPath = await video.path();
+          const sessionDir = path.join(this.getEvidencePath(), this.sessionId);
+          videoPath = path.join(sessionDir, `${evidenceId}.webm`);
+          await video.saveAs(videoPath);
+          this.log('info', `🎥 Video evidence saved: ${videoPath}`);
+        }
+      } catch (err) {
+        this.log('warn', `Video capture failed or not enabled in BrowserContext: ${err}`);
+      }
+
+      // 9. Update stats
       this.updateStats(eventType, maskedFields.length, aiAnnotations?.length ?? 0);
 
       const duration = Date.now() - startTime;
       this.log('info', `✅ Evidence captured: ${filePath} (${duration}ms)`);
+
+      // 10. Send Professional Audit / Sales Pitch Email
+      await this.sendAuditEmail(metadata, filePath, videoPath);
 
       return {
         success: true,
@@ -356,8 +376,9 @@ export class EvidenceCollector {
       return {
         success: false,
         evidenceId,
-        filePath: ',
+        filePath: '',
         metadata: {} as EvidenceMetadata,
+        videoPath: undefined,
         error: errorMessage,
         duration: Date.now() - startTime,
       };
@@ -501,9 +522,9 @@ export class EvidenceCollector {
     // Response monitoring for sensitive data
     this.page.on('response', async (response) => {
       try {
-        const contentType = response.headers()['content-type'] ?? ';
+        const contentType = response.headers()['content-type'] ?? '';
         if (contentType.includes('application/json')) {
-          const body = await response.text().catch(() => ');
+          const body = await response.text().catch(() => '');
 
           // Check for PII in response
           if (this.detectSensitiveData(body)) {
@@ -594,8 +615,8 @@ export class EvidenceCollector {
             for (const element of elements) {
               await element.evaluate((el) => {
                 const htmlEl = el as HTMLElement;
-                htmlEl.style.filter = ';
-                htmlEl.style.backgroundColor = ';
+                htmlEl.style.filter = '';
+                htmlEl.style.backgroundColor = '';
               });
             }
           }
@@ -774,7 +795,7 @@ Respond in JSON format:
       }
 
       const result = await response.json();
-      const text = result.candidates?.[0]?.content?.parts?.[0]?.text ?? ';
+      const text = result.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
 
       // Parse JSON from response
       const jsonMatch = text.match(/\{[\s\S]*\}/);
@@ -930,6 +951,90 @@ Respond in JSON format:
         error: '❌',
       }[level];
       console.log(`[EvidenceCollector] ${prefix} ${message}`);
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════════════════════
+  // EMAIL AUDIT & SALES PITCH INTEGRATION
+  // ═══════════════════════════════════════════════════════════════════════════════
+
+  private async sendAuditEmail(metadata: EvidenceMetadata, screenshotPath: string, videoPath?: string): Promise<void> {
+    const targetEmail = process.env.TARGET_CLIENT_EMAIL || 'client@example.com';
+    const smtpUser = process.env.SMTP_USER || 'audit@aeterna-prime.com';
+    const smtpPass = process.env.SMTP_PASS || 'dummy-pass';
+
+    this.log('info', `📧 Preparing Professional QA Audit Email for ${targetEmail}...`);
+
+    const summary = metadata.description || 'Unexpected behavior detected in business logic / UI flow.';
+
+    const htmlPitch = `
+    <div style="font-family: Arial, sans-serif; color: #1a1a2e; max-width: 650px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+        <div style="background: linear-gradient(135deg, #FF3E4D 0%, #B30000 100%); color: white; padding: 20px; border-radius: 12px 12px 0 0; text-align: center;">
+            <h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: 1px;">🚨 AETERNA AEGIS: CRITICAL VULNERABILITY AUDIT 🚨</h1>
+        </div>
+        
+        <div style="padding: 30px;">
+            <h2 style="color: #FF3E4D; font-size: 20px; font-weight: 700; margin-top: 0;">Automated QA Analysis Complete</h2>
+            <p style="font-size: 16px; line-height: 1.6; color: #333;">Нашите автономни QA агенти засякоха критичен проблем (<strong>${metadata.eventType}</strong>) във вашата система. Прилагаме 100% доказателство във вид на видеозапис и снимка, симулиращи реално потребителско поведение до момента на срива.</p>
+            
+            <div style="background: #f8f9fa; border-left: 4px solid #FF3E4D; padding: 15px; margin: 25px 0;">
+                <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #1a1a2e;">Техническо резюме (Diagnostics)</h3>
+                <ul style="color: #FF3E4D; font-size: 14px; padding-left: 20px; margin-bottom: 0;">
+                    <li><strong>Severity:</strong> ${metadata.severity.toUpperCase()}</li>
+                    <li><strong>Type:</strong> ${metadata.eventType}</li>
+                    <li><strong>Details:</strong> ${summary}</li>
+                </ul>
+            </div>
+
+            <h3 style="color: #1a1a2e; font-size: 18px; margin-top: 30px;">🛡️ The Aeterna Solution (Zero Entropy)</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #333;">В съвременния дигитален свят, ръчният QA е мъртъв. Вашите потребители страдат, докато вие губите конверсии. С абонамент към <strong>Aeterna Prime</strong>, вие получавате:</p>
+            
+            <ul style="font-size: 16px; line-height: 1.6; color: #333; padding-left: 20px;">
+                <li style="margin-bottom: 10px;"><strong>Превантивна еволюция:</strong> Нашата система предвижда бъгове преди да са се случили и се самообучава от всяка грешка.</li>
+                <li style="margin-bottom: 10px;"><strong>Self-Healing Tests:</strong> Автоматично коригиране на счупени UI селектори в реално време.</li>
+                <li style="margin-bottom: 10px;"><strong>100% Автономност:</strong> Агентите ни имитират човешки действия с математическа прецизност.</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+                <a href="https://aeterna.website/prime" style="display: inline-block; background: linear-gradient(135deg, #1a1a2e 0%, #303050 100%); color: #ffffff; text-decoration: none; padding: 18px 40px; border-radius: 8px; font-size: 18px; font-weight: bold; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(26,26,46,0.2);">ИНТЕГРИРАЙ AETERNA PRIME</a>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: #666; margin-top: 20px;">Защитете бизнеса си. Неутрализирайте ентропията.</p>
+        </div>
+    </div>`;
+
+    try {
+      const emailSenderScript = require('path').resolve(__dirname, '../../../../../aeterna/email-sender');
+      const { AeternaEmailSender } = require(emailSenderScript);
+
+      const sender = new AeternaEmailSender({
+        senderEmail: smtpUser,
+        senderName: 'Aeterna Aegis Auditor',
+        appPassword: smtpPass
+      });
+
+      const attachments = [{
+        filename: `Audit_Proof_Screenshot_${metadata.id}.png`,
+        path: screenshotPath
+      }];
+
+      if (videoPath) {
+        attachments.push({
+          filename: `Audit_Proof_Video_${metadata.id}.webm`,
+          path: videoPath
+        });
+      }
+
+      await sender.send({
+        to: targetEmail,
+        subject: `[QA PRO-AUDIT] Vulnerability Detected on ${metadata.url}`,
+        textBody: `Critical ${metadata.eventType} detected. See attachments for proof.`,
+        htmlBody: htmlPitch,
+        attachments: attachments
+      });
+
+      this.log('info', `[+] SUCCESS! Proof transmitted to ${targetEmail}`);
+    } catch (err) {
+      this.log('error', `[-] Mail Protocol failed: ${err}`);
     }
   }
 }

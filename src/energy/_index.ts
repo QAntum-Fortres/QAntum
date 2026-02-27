@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > AUTH > ENERGY
+ * 🔥 AETERNA SECURITY > AUTH > ENERGY
  *
  *
  *

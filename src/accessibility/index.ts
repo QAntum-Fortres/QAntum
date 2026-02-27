@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM ACCESSIBILITY MODULE                                                 ║
+ * ║   AETERNA ACCESSIBILITY MODULE                                                 ║
  * ║   "Unified accessibility testing facade"                                      ║
  * ║                                                                               ║
  * ║   TODO B #37 - Accessibility Testing Module                                   ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -42,10 +42,10 @@ export interface A11yReportConfig {
 }
 
 /**
- * Unified QAntum Accessibility
+ * Unified Aeterna Accessibility
  */
-export class QAntumAccessibility {
-    private static instance: QAntumAccessibility;
+export class AeternaAccessibility {
+    private static instance: AeternaAccessibility;
     private tester: AccessibilityTester;
 
     private constructor(config?: A11yConfig) {
@@ -54,16 +54,16 @@ export class QAntumAccessibility {
             : AccessibilityTester.getInstance();
     }
 
-    static getInstance(config?: A11yConfig): QAntumAccessibility {
-        if (!QAntumAccessibility.instance) {
-            QAntumAccessibility.instance = new QAntumAccessibility(config);
+    static getInstance(config?: A11yConfig): AeternaAccessibility {
+        if (!AeternaAccessibility.instance) {
+            AeternaAccessibility.instance = new AeternaAccessibility(config);
         }
-        return QAntumAccessibility.instance;
+        return AeternaAccessibility.instance;
     }
 
-    static configure(config: A11yConfig): QAntumAccessibility {
-        QAntumAccessibility.instance = new QAntumAccessibility(config);
-        return QAntumAccessibility.instance;
+    static configure(config: A11yConfig): AeternaAccessibility {
+        AeternaAccessibility.instance = new AeternaAccessibility(config);
+        return AeternaAccessibility.instance;
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -316,8 +316,8 @@ export class QAntumAccessibility {
 // EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getQAntumA11y = (): QAntumAccessibility => QAntumAccessibility.getInstance();
-export const configureQAntumA11y = (config: A11yConfig): QAntumAccessibility =>
-    QAntumAccessibility.configure(config);
+export const getAeternaA11y = (): AeternaAccessibility => AeternaAccessibility.getInstance();
+export const configureAeternaA11y = (config: A11yConfig): AeternaAccessibility =>
+    AeternaAccessibility.configure(config);
 
-export default QAntumAccessibility;
+export default AeternaAccessibility;

@@ -1,16 +1,16 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  * 
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  * 
- * For licensing inquiries: dimitar.papazov@QAntum.dev
+ * For licensing inquiries: dimitar.papazov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -25,7 +25,7 @@ import { SEGCConfig, SEGCStats, GhostPath, GeneticMutation, StateVersion } from 
 /**
  * Self-Evolving Genetic Core
  * 
- * The "Metabolism" of QANTUM
+ * The "Metabolism" of AETERNA
  * - Learns from every test execution
  * - Self-optimizes selector strategies
  * - Predicts and preloads future states

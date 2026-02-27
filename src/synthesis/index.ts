@@ -11,7 +11,7 @@
  * ║                              UNIFIED SYNTHESIS MODULE                                         ║
  * ║                         "THE FINAL SYNTHESIS - UNIVERSAL SYNC"                                ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

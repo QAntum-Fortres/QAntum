@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LOGIC
+ * 🔥 AETERNA BRAIN > LOGIC
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

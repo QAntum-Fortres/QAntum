@@ -145,7 +145,7 @@ This assessment was conducted using automated tools in **safe-hunter mode** only
 - Exploit any discovered vulnerabilities
 - Perform denial of service attacks
 
-**Assessment performed by:** CyberCody v25.2 (QAntum Security Suite)  
+**Assessment performed by:** CyberCody v25.2 (Aeterna Security Suite)  
 **Report generated:** December 29, 2025  
 **Classification:** Not for submission - No actionable findings
 

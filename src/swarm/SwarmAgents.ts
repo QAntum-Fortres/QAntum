@@ -3,8 +3,8 @@
  * Децентрализирана micro-agent архитектура
  *
  * @department INTELLIGENCE 🧠
- * @version 35.0.0
- * @author QAntum Empire
+ * @version 1.0.0-AETERNA
+ * @author Aeterna Empire
  *
  * ARCHITECTURE:
  * - Queen: Central coordinator (NexusOrchestrator)
@@ -547,7 +547,7 @@ async function main() {
         console.log('\n📋 Submitting demo tasks...\n');
 
         const tasks = await Promise.all([
-            queen.submitTask('context-analysis', { content: 'QAntum Empire v35.0 Singularity' }, { department: 'INTELLIGENCE' }),
+            queen.submitTask('context-analysis', { content: 'Aeterna Empire v35.0 Singularity' }, { department: 'INTELLIGENCE' }),
             queen.submitTask('security-scan', { target: 'src/' }, { department: 'FORTRESS' }),
             queen.submitTask('health-check', {}, { department: 'GUARDIANS' }),
             queen.submitTask('lead-score', { lead: { name: 'Test', budget: 5000 } }, { department: 'REALITY' }),

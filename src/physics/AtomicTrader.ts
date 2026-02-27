@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.0 - ATOMIC TRADER                                       ║
+ * ║  Aeterna Prime v28.0 - ATOMIC TRADER                                       ║
  * ║  "Екзекуция" - Atomic Transaction Swarm                                   ║
  * ║                                                                           ║
  * ║  SharedArrayBuffer синхронизация за Buy/Sell в микросекунди               ║

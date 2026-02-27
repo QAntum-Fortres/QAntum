@@ -37,4 +37,4 @@ The environment is now isolated. The **Assimilator** can now safely:
 2.  Map the internal structure of `SECURITY_MODULES`
 3.  Identify potential decryption vectors.
 
-*Signed: QAntum Sovereign Architect*
+*Signed: Aeterna Sovereign Architect*

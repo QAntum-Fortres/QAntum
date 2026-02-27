@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM BRAIN > LOGIC > ENERGY
+ * 🔥 AETERNA BRAIN > LOGIC > ENERGY
  *
  *
  *

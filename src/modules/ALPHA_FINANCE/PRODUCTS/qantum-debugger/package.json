@@ -1,11 +1,11 @@
 {
-  "name": "qantum-debugger",
-  "version": "1.0.0",
+  "name": "aeterna-debugger",
+  "version": "1.0.0-AETERNA",
   "description": "Self-Healing TypeScript/JavaScript Debugger with Auto-Fix & Learning",
-  "main": "dist/qantum-debugger.js",
-  "types": "dist/qantum-debugger.d.ts",
+  "main": "dist/aeterna-debugger.js",
+  "types": "dist/aeterna-debugger.d.ts",
   "bin": {
-    "qantum-debug": "./dist/cli.js",
+    "aeterna-debug": "./dist/cli.js",
     "qd": "./dist/cli.js"
   },
   "scripts": {
@@ -17,18 +17,18 @@
     "license": "ts-node src/license.ts",
     "test": "vitest"
   },
-  "keywords": ["debugger", "self-healing", "auto-fix", "typescript", "javascript", "eslint", "code-quality", "developer-tools", "automation", "qantum"],
+  "keywords": ["debugger", "self-healing", "auto-fix", "typescript", "javascript", "eslint", "code-quality", "developer-tools", "automation", "aeterna"],
   "author": {
     "name": "Dimitar Prodromov",
-    "email": "dimitar@qantum.dev",
-    "url": "https://qantum.dev"
+    "email": "dimitar@aeterna.dev",
+    "url": "https://aeterna.dev"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qantum-dev/qantum-debugger"
+    "url": "https://github.com/aeterna-dev/aeterna-debugger"
   },
-  "homepage": "https://qantum.dev/debugger",
+  "homepage": "https://aeterna.dev/debugger",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -44,6 +44,6 @@
   },
   "funding": {
     "type": "individual",
-    "url": "https://qantum.dev/sponsor"
+    "url": "https://aeterna.dev/sponsor"
   }
 }

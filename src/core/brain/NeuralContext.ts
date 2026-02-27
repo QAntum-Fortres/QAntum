@@ -8,7 +8,7 @@ export class NeuralContext {
     private context: Array<{ role: string, content: string }> = [];
     private maxTokens: number = 8192;
 
-    constructor(modelName: string = "qantum-ai-supreme") {
+    constructor(modelName: string = "aeterna-ai-supreme") {
         console.log(`[NeuralContext] Initialized for ${modelName}`);
     }
 

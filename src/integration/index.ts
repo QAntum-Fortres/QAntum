@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM INTEGRATION MODULE                                                   ║
+ * ║   AETERNA INTEGRATION MODULE                                                   ║
  * ║   "Seamless integration with CI/CD and notification systems"                  ║
  * ║                                                                               ║
  * ║   TODO B #28-29 - Integration: CI/CD & Notifications                          ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -30,8 +30,8 @@ import {
 // UNIFIED INTEGRATION FACADE
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export class QAntumIntegration {
-  private static instance: QAntumIntegration;
+export class AeternaIntegration {
+  private static instance: AeternaIntegration;
 
   private ci: CIIntegration;
   private notifications: NotificationManager;
@@ -41,11 +41,11 @@ export class QAntumIntegration {
     this.notifications = NotificationManager.getInstance();
   }
 
-  static getInstance(): QAntumIntegration {
-    if (!QAntumIntegration.instance) {
-      QAntumIntegration.instance = new QAntumIntegration();
+  static getInstance(): AeternaIntegration {
+    if (!AeternaIntegration.instance) {
+      AeternaIntegration.instance = new AeternaIntegration();
     }
-    return QAntumIntegration.instance;
+    return AeternaIntegration.instance;
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -228,9 +228,9 @@ export class QAntumIntegration {
 // CONVENIENCE EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getIntegration = (): QAntumIntegration => QAntumIntegration.getInstance();
+export const getIntegration = (): AeternaIntegration => AeternaIntegration.getInstance();
 
 // Re-export notify helpers
 export { notify };
 
-export default QAntumIntegration;
+export default AeternaIntegration;

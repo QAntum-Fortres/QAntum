@@ -1,6 +1,6 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
- * QANTUM - Validation Module
+ * AETERNA - Validation Module
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * @copyright 2025 Dimitar Prodromov (papica777-eng). All Rights Reserved.

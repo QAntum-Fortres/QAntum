@@ -1,7 +1,7 @@
 /**
- * @fileoverview Configuration constants for QANTUM v8.5
+ * @fileoverview Configuration constants for AETERNA v8.5
  * @module config/constants
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 const path = require('path');

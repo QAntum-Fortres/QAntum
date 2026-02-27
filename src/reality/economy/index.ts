@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════╗
- * ║  QAntum Prime v28.2 - MONEY PIPELINE INDEX                                ║
+ * ║  Aeterna Prime v28.2 - MONEY PIPELINE INDEX                                ║
  * ║  "Изходът за парите" - All Revenue Modules                                ║
  * ╚═══════════════════════════════════════════════════════════════════════════╝
  */
@@ -49,7 +49,7 @@ export {
 // SECURE CONFIG
 // ═══════════════════════════════════════════════════════════════════════════
 
-export { SecureConfigLoader, secureConfig, type QAntumConfig } from './SecureConfigLoader';
+export { SecureConfigLoader, secureConfig, type AeternaConfig } from './SecureConfigLoader';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // ARMED REAPER (Live Trading)

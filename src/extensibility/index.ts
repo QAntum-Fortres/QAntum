@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM EXTENSIBILITY MODULE                                                 ║
+ * ║   AETERNA EXTENSIBILITY MODULE                                                 ║
  * ║   "Plugin System & Theme Engine"                                              ║
  * ║                                                                               ║
  * ║   TODO B #46-47 - Extensibility Complete                                      ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

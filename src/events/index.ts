@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM EVENTS MODULE                                                        ║
+ * ║   AETERNA EVENTS MODULE                                                        ║
  * ║   "Unified event system facade"                                               ║
  * ║                                                                               ║
  * ║   TODO B #41-42 - Events Module Complete                                      ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -17,7 +17,7 @@
 
 export {
   EventBus,
-  QAntumEvent,
+  AeternaEvent,
   EventHandler,
   EventFilter,
   Subscription as BusSubscription,
@@ -48,9 +48,9 @@ import { EventBus, events } from './bus';
 import { TypedEmitter, ObservableEmitter, createEmitter, createObservable } from './emitter';
 
 /**
- * Standard QAntum events
+ * Standard Aeterna events
  */
-export interface QAntumStandardEvents {
+export interface AeternaStandardEvents {
   // Test lifecycle
   'test:start': { name: string; suite?: string };
   'test:end': { name: string; passed: boolean; duration: number };
@@ -81,24 +81,24 @@ export interface QAntumStandardEvents {
 }
 
 /**
- * Unified QAntum Events
+ * Unified Aeterna Events
  */
-export class QAntumEvents {
-  private static instance: QAntumEvents;
+export class AeternaEvents {
+  private static instance: AeternaEvents;
 
   readonly bus: EventBus;
-  readonly emitter: TypedEmitter<QAntumStandardEvents>;
+  readonly emitter: TypedEmitter<AeternaStandardEvents>;
 
   private constructor() {
     this.bus = EventBus.getInstance();
-    this.emitter = createEmitter<QAntumStandardEvents>();
+    this.emitter = createEmitter<AeternaStandardEvents>();
   }
 
-  static getInstance(): QAntumEvents {
-    if (!QAntumEvents.instance) {
-      QAntumEvents.instance = new QAntumEvents();
+  static getInstance(): AeternaEvents {
+    if (!AeternaEvents.instance) {
+      AeternaEvents.instance = new AeternaEvents();
     }
-    return QAntumEvents.instance;
+    return AeternaEvents.instance;
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -108,9 +108,9 @@ export class QAntumEvents {
   /**
    * Listen to typed event
    */
-  on<K extends keyof QAntumStandardEvents>(
+  on<K extends keyof AeternaStandardEvents>(
     event: K,
-    handler: (payload: QAntumStandardEvents[K]) => void
+    handler: (payload: AeternaStandardEvents[K]) => void
   ): this {
     this.emitter.on(event, handler);
     return this;
@@ -119,9 +119,9 @@ export class QAntumEvents {
   /**
    * Listen once
    */
-  once<K extends keyof QAntumStandardEvents>(
+  once<K extends keyof AeternaStandardEvents>(
     event: K,
-    handler: (payload: QAntumStandardEvents[K]) => void
+    handler: (payload: AeternaStandardEvents[K]) => void
   ): this {
     this.emitter.once(event, handler);
     return this;
@@ -130,9 +130,9 @@ export class QAntumEvents {
   /**
    * Remove listener
    */
-  off<K extends keyof QAntumStandardEvents>(
+  off<K extends keyof AeternaStandardEvents>(
     event: K,
-    handler: (payload: QAntumStandardEvents[K]) => void
+    handler: (payload: AeternaStandardEvents[K]) => void
   ): this {
     this.emitter.off(event, handler);
     return this;
@@ -141,7 +141,7 @@ export class QAntumEvents {
   /**
    * Emit typed event
    */
-  emit<K extends keyof QAntumStandardEvents>(event: K, payload: QAntumStandardEvents[K]): void {
+  emit<K extends keyof AeternaStandardEvents>(event: K, payload: AeternaStandardEvents[K]): void {
     this.emitter.emit(event, payload);
     // Also emit to bus for middleware/history
     this.bus.emitSync(event as string, payload);
@@ -150,10 +150,10 @@ export class QAntumEvents {
   /**
    * Wait for event
    */
-  waitFor<K extends keyof QAntumStandardEvents>(
+  waitFor<K extends keyof AeternaStandardEvents>(
     event: K,
     timeout?: number
-  ): Promise<QAntumStandardEvents[K]> {
+  ): Promise<AeternaStandardEvents[K]> {
     return this.emitter.waitFor(event, timeout);
   }
 
@@ -164,10 +164,10 @@ export class QAntumEvents {
   /**
    * Create observable for event
    */
-  observe<K extends keyof QAntumStandardEvents>(
+  observe<K extends keyof AeternaStandardEvents>(
     event: K
-  ): ObservableEmitter<QAntumStandardEvents[K]> {
-    const observable = createObservable<QAntumStandardEvents[K]>();
+  ): ObservableEmitter<AeternaStandardEvents[K]> {
+    const observable = createObservable<AeternaStandardEvents[K]>();
 
     this.emitter.on(event, (payload) => {
       observable.next(payload);
@@ -267,6 +267,6 @@ export class QAntumEvents {
 // EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getQAntumEvents = (): QAntumEvents => QAntumEvents.getInstance();
+export const getAeternaEvents = (): AeternaEvents => AeternaEvents.getInstance();
 
-export default QAntumEvents;
+export default AeternaEvents;

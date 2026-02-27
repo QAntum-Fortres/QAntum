@@ -32,9 +32,9 @@
  *
  * ═══════════════════════════════════════════════════════════════════════════════════════════
  * @module oracle/enterprise
- * @version 1.6.0
+ * @version 1.0.0-AETERNA
  * @license Commercial - All Rights Reserved
- * @author QANTUM AI Architect
+ * @author AETERNA AI Architect
  * @commercial true
  * @marketValue $220,000
  */

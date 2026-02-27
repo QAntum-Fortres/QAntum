@@ -1,6 +1,6 @@
 /**
  * LIVE FEED PANEL
- * Real-time activity stream from all QANTUM systems
+ * Real-time activity stream from all AETERNA systems
  */
 
 'use client';

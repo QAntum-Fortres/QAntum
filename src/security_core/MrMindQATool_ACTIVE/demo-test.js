@@ -1,9 +1,9 @@
 /**
- * 🧪 QAntum v23.0.0 - REAL DEMO TEST
+ * 🧪 Aeterna v23.0.0 - REAL DEMO TEST
  * Proves this is a REAL working application!
  */
 
-const { QAntum, printBanner, VERSION_FULL, getSystemStats } = require('./src/index');
+const { Aeterna, printBanner, VERSION_FULL, getSystemStats } = require('./src/index');
 
 async function runRealDemo() {
   // Show banner
@@ -15,7 +15,7 @@ async function runRealDemo() {
   console.log('═══════════════════════════════════════════════════════════════\n');
 
   // Create instance
-  const mm = new QAntum({ verbose: true, timeout: 30000 });
+  const mm = new Aeterna({ verbose: true, timeout: 30000 });
 
   // Test 1: System Stats
   console.log('\n📊 TEST 1: System Statistics');

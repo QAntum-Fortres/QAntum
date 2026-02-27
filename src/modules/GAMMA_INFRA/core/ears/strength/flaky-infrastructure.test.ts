@@ -1,16 +1,16 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * QAntum
+ * Aeterna
  * ═══════════════════════════════════════════════════════════════════════════════
  *
  * @copyright 2025 Димитър Продромов (Dimitar Prodromov). All Rights Reserved.
  * @license PROPRIETARY AND CONFIDENTIAL
  *
- * This file is part of QAntum.
+ * This file is part of Aeterna.
  * Unauthorized copying, modification, distribution, or use of this file,
  * via any medium, is strictly prohibited without express written permission.
  *
- * For licensing inquiries: dimitar.papazov@QAntum.dev
+ * For licensing inquiries: dimitar.papazov@Aeterna.dev
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -258,16 +258,16 @@ class FlakyHTTPClient {
 
 describe('🔴 CHAOS: Flaky Infrastructure Test', () => {
   let flakyClient: FlakyHTTPClient;
-  let QAntum: any;
+  let Aeterna: any;
   let mm: any;
 
   beforeAll(async () => {
-    // Import QAntum
+    // Import Aeterna
     const module = await import('../../src/index');
-    QAntum = module.QAntum;
+    Aeterna = module.Aeterna;
 
     // Create instance
-    mm = new QAntum();
+    mm = new Aeterna();
   });
 
   beforeEach(() => {
@@ -412,7 +412,7 @@ describe('🔴 CHAOS: Flaky Infrastructure Test', () => {
 
   describe('🔌 Circuit Breaker Activation', () => {
     it('should trip circuit breaker after consecutive failures', async () => {
-      // Use QAntum's circuit breaker
+      // Use Aeterna's circuit breaker
       console.log('\n   🔌 Testing circuit breaker activation...');
 
       // Simulate consecutive 500 errors

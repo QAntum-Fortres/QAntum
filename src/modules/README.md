@@ -6,7 +6,7 @@
 The heart of the application logic, containing migrated and new features.
 
 ## 🏗️ Architecture
-This module operates as an autonomous unit within the **QAntum Ecosystem**, communicating via the central event bus. It is designed for high cohesion and loose coupling.
+This module operates as an autonomous unit within the **Aeterna Ecosystem**, communicating via the central event bus. It is designed for high cohesion and loose coupling.
 
 ### Key Components
 - **User Management**
@@ -24,4 +24,4 @@ This module is managed by the **Ecosystem Orchestrator**. Manual intervention is
 - Global Config
 
 ---
-*© 2026 QAntum Architecture. Proprietary & Confidential.*
+*© 2026 Aeterna Architecture. Proprietary & Confidential.*

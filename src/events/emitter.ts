@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM EVENT EMITTER                                                        ║
+ * ║   AETERNA EVENT EMITTER                                                        ║
  * ║   "TypeScript-first event emitter with type safety"                           ║
  * ║                                                                               ║
  * ║   TODO B #42 - Events: Typed emitter                                          ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

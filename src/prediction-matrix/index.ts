@@ -4,7 +4,7 @@
  * ║   🔮 THE PREDICTION MATRIX - BARREL EXPORT                                                       ║
  * ║   "Unified Interface for Time-Aware Selector Intelligence"                                       ║
  * ║                                                                                                   ║
- * ║   QANTUM v15.1: THE CHRONOS ENGINE                                                          ║
+ * ║   AETERNA v15.1: THE CHRONOS ENGINE                                                          ║
  * ║   Optimized for: AMD Ryzen 7000 Series (Zen 4 architecture)                                      ║
  * ║                                                                                                   ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -87,8 +87,8 @@ const LICENSE_ERROR = `
 ║  ⛔ PREDICTION MATRIX REQUIRES A PRO LICENSE                                      ║
 ║                                                                                    ║
 ║  This feature is protected. To unlock:                                            ║
-║  1. Get your license at: https://QAntum.lemonsqueezy.com                      ║
-║  2. Set environment variable: qantum_LICENSE=your-key                        ║
+║  1. Get your license at: https://Aeterna.lemonsqueezy.com                      ║
+║  2. Set environment variable: aeterna_LICENSE=your-key                        ║
 ║                                                                                    ║
 ║  Pricing: $29/month - Includes all AI features + priority support                 ║
 ╚═══════════════════════════════════════════════════════════════════════════════════╝
@@ -101,7 +101,7 @@ const LICENSE_ERROR = `
  * This is the main entry point for the Chronos Engine to interact
  * with the prediction system.
  * 
- * ⚠️ REQUIRES PRO LICENSE - Get yours at https://QAntum.lemonsqueezy.com
+ * ⚠️ REQUIRES PRO LICENSE - Get yours at https://Aeterna.lemonsqueezy.com
  * 
  * @example
  * ```typescript
@@ -138,7 +138,7 @@ export class PredictionMatrix {
     
     // Store license key for later validation
     if (config.licenseKey) {
-      process.env.qantum_LICENSE = config.licenseKey;
+      process.env.aeterna_LICENSE = config.licenseKey;
     }
   }
 
@@ -149,20 +149,20 @@ export class PredictionMatrix {
     if (this.licenseChecked) return;
     
     // Development mode bypass (for testing only)
-    if (process.env.qantum_DEV === 'true' || process.env.NODE_ENV === 'development') {
+    if (process.env.aeterna_DEV === 'true' || process.env.NODE_ENV === 'development') {
       console.log('⚠️ DEV MODE: License check bypassed');
       this.license = { valid: true, tier: 'pro', features: ['prediction-matrix', 'reinforcement-learning'] };
       this.licenseChecked = true;
       return;
     }
     
-    const licenseKey = process.env.qantum_LICENSE || '';
+    const licenseKey = process.env.aeterna_LICENSE || '';
     this.license = await licenseValidator.validateLicense(licenseKey);
     this.licenseChecked = true;
     
     if (!licenseValidator.hasPredictionMatrix(this.license)) {
       console.error(LICENSE_ERROR);
-      throw new Error('⛔ Prediction Matrix requires a Pro license. Get one at https://QAntum.lemonsqueezy.com');
+      throw new Error('⛔ Prediction Matrix requires a Pro license. Get one at https://Aeterna.lemonsqueezy.com');
     }
     
     console.log(`✅ License validated: ${this.license.tier.toUpperCase()} tier`);

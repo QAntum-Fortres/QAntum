@@ -12,7 +12,7 @@
  * на познание, която никога не достига "край", а само нови хоризонти.
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -225,7 +225,7 @@ export const GENESIS_PATH: GenesisPath[] = [
   // ═══════════════════════════════════════════════════════════════════════════
   {
     phase: 0,
-    name: 'QANTUM Logic Analyzer',
+    name: 'AETERNA Logic Analyzer',
     level: GenesisEvolutionLevel.AXIOMATIC_CRYSTALLIZATION,
     description: 'Началото - анализ на логически структури без генеративна способност',
     capabilities: [
@@ -287,7 +287,7 @@ export const GENESIS_PATH: GenesisPath[] = [
       'GenesisRealityProvider - превод на аксиоми в Docker Compose',
       'GenesisProcessor - изпълнение на тестове в манифестирани реалности',
       'Hybrid Execution - Ghost Protocol + Genesis изолация',
-      'CLI команди (qantum genesis create/manifest/observe)',
+      'CLI команди (aeterna genesis create/manifest/observe)',
       'API endpoints за управление на реалности',
     ],
     timeline: 'Q1 2026',

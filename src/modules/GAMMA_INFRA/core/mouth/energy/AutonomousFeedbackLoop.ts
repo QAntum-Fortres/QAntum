@@ -4,7 +4,7 @@
  * ║                                                                               ║
  * ║     "Change → Verify → Report → Learn. The eternal cycle of improvement."     ║
  * ║                                                                               ║
- * ║  Created: 2026-01-01 | QAntum Prime v28.1.0 SUPREME                          ║
+ * ║  Created: 2026-01-01 | Aeterna Prime v28.1.0 SUPREME                          ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
 
@@ -492,7 +492,7 @@ if (require.main === module) {
 ╔═══════════════════════════════════════════════════════════════════════════════╗
 ║                    🔄 AUTONOMOUS FEEDBACK LOOP - STANDALONE                   ║
 ║                                                                               ║
-║                    QAntum Prime v28.1.0 - Self-Correcting Mode                ║
+║                    Aeterna Prime v28.1.0 - Self-Correcting Mode                ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 `);
 

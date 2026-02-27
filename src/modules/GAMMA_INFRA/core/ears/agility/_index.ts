@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EARS > AGILITY
+ * 🔥 AETERNA CORE > EARS > AGILITY
  *
  *
  * 🏃 AGILITY: Speed, handlers, adapters, quick responses

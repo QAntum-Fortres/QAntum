@@ -1,11 +1,11 @@
 {
-  "name": "qantum",
-  "version": "1.0.0",
-  "description": "⚛️ QAntum - The Autonomous QA Agent | AI-Powered Self-Healing Tests • Ghost Mode Stealth • Swarm Distributed Execution • 335K Lines of Pure Intelligence",
+  "name": "aeterna",
+  "version": "1.0.0-AETERNA",
+  "description": "⚛️ Aeterna - The Autonomous QA Agent | AI-Powered Self-Healing Tests • Ghost Mode Stealth • Swarm Distributed Execution • 335K Lines of Pure Intelligence",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "qantum": "./dist/cli.js",
+    "aeterna": "./dist/cli.js",
     "qa": "./dist/cli.js"
   },
   "scripts": {
@@ -40,7 +40,7 @@
     "system:autopatch": "npx ts-node --transpile-only src/maintenance/auto-patcher.ts"
   },
   "keywords": [
-    "qantum",
+    "aeterna",
     "qa-automation",
     "ai-testing",
     "autonomous-agent",
@@ -51,7 +51,7 @@
     "e2e",
     "quantum-qa"
   ],
-  "author": "QAntum Labs",
+  "author": "Aeterna Labs",
   "license": "MIT",
   "dependencies": {
     "@playwright/test": "^1.40.0",

@@ -1,74 +1,20 @@
 [
   {
     "success": true,
-    "timestamp": "2026-02-26T20:45:07.154Z",
+    "timestamp": "2026-02-26T21:24:12.108Z",
     "to": "contact@devrix.com",
-    "messageId": "<6535052e-45e8-931d-b37a-700baa074afc@gmail.com>"
+    "messageId": "<33f60c12-b1d3-b95c-9820-950f787c761b@gmail.com>"
   },
   {
     "success": true,
-    "timestamp": "2026-02-26T20:45:17.635Z",
+    "timestamp": "2026-02-26T21:24:20.360Z",
     "to": "human@xplora.bg",
-    "messageId": "<45c5dfab-b510-3b4c-16fa-ca74e853492c@gmail.com>"
+    "messageId": "<9913118e-ca44-6e8b-21fb-384edc7168d6@gmail.com>"
   },
   {
     "success": true,
-    "timestamp": "2026-02-26T20:45:24.004Z",
+    "timestamp": "2026-02-26T21:24:26.975Z",
     "to": "reklama@netinfo.bg",
-    "messageId": "<63cd9495-f9f4-3b5c-6816-15e7b4535441@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:45:31.816Z",
-    "to": "info@speedflow.bg",
-    "messageId": "<1ba4e269-5173-39db-7ca3-64d9aea1bd08@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:45:38.834Z",
-    "to": "office@stenik.bg",
-    "messageId": "<a5246330-029a-9cac-9cca-b9353cf88427@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:45:45.850Z",
-    "to": "sales@payhawk.com",
-    "messageId": "<98216fa8-9194-12c3-c94d-55ca7b5817c2@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:45:53.590Z",
-    "to": "support@nexo.com",
-    "messageId": "<10f88c87-d243-4c63-8b4a-ca62cf8469c9@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:46:01.061Z",
-    "to": "info@icanpreneur.com",
-    "messageId": "<0525899d-6c01-4dbb-d3b0-71209b25616e@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:46:05.629Z",
-    "to": "university@softuni.bg",
-    "messageId": "<7cba2c28-3cc6-3c40-88b8-5400fcfcc715@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:46:11.466Z",
-    "to": "support@sumup.com",
-    "messageId": "<23eb48a8-e838-f83a-2e4c-88ca355ba116@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:46:18.148Z",
-    "to": "sales@mypos.com",
-    "messageId": "<3d0216d0-91b5-4388-c0d2-3d286333ef02@gmail.com>"
-  },
-  {
-    "success": true,
-    "timestamp": "2026-02-26T20:46:24.981Z",
-    "to": "support@hop.bg",
-    "messageId": "<01061ffe-92ea-e3be-29b4-8557067143dd@gmail.com>"
+    "messageId": "<52f940a1-49a1-f9e2-28c1-a07cb30f0f7b@gmail.com>"
   }
 ]

@@ -1,7 +1,7 @@
 /**
  * GlobalThreatIntel.ts - "The Immunity Network"
  *
- * QAntum Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
+ * Aeterna Framework v1.7.0 - "The Global Nexus & Autonomous Onboarding"
  *
  * Connects Fatality Engine with Nexus Mesh for global threat intelligence.
  * If one worker in Tokyo is detected by Akamai, all 1000 workers worldwide
@@ -14,7 +14,7 @@
  * - Global coordination protocol
  *
  * @module security/GlobalThreatIntel
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @enterprise true
  */
 

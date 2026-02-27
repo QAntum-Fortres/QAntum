@@ -1,15 +1,15 @@
 {
-  "$schema": "https://qantum.dev/manifest.schema.json",
+  "$schema": "https://aeterna.dev/manifest.schema.json",
   "manifestVersion": "1.0.0",
   
   "identity": {
-    "name": "QAntum",
-    "displayName": "⚛️ QAntum",
+    "name": "Aeterna",
+    "displayName": "⚛️ Aeterna",
     "tagline": "The Autonomous QA Agent - Beyond Classical Testing",
-    "version": "1.0.0",
+    "version": "1.0.0-AETERNA",
     "author": {
       "name": "dp",
-      "organization": "QAntum Labs",
+      "organization": "Aeterna Labs",
       "logo": "dp"
     },
     "branding": {
@@ -36,7 +36,7 @@
         "│            │    dp    │              │",
         "│            ╰──────────╯              │",
         "│                                      │",
-        "│         qantum labs © 2025           │",
+        "│         aeterna labs © 2025           │",
         "└──────────────────────────────────────┘"
       ]
     }
@@ -49,7 +49,7 @@
       "core": {
         "path": "src/core",
         "description": "Quantum Core Engine - Main API",
-        "exports": ["QAntum", "createQA", "SelfHealingEngine", "DeepSearchEngine"],
+        "exports": ["Aeterna", "createQA", "SelfHealingEngine", "DeepSearchEngine"],
         "dependsOn": []
       },
       "healing": {
@@ -147,12 +147,12 @@
 
   "commands": {
     "cli": {
-      "primary": "qantum",
+      "primary": "aeterna",
       "alias": "qa"
     },
     "scripts": {
       "build": "npm run build",
-      "test": "npx qantum run",
+      "test": "npx aeterna run",
       "ghost": "npm run ghost:init",
       "swarm": "npm run swarm:run",
       "health": "npm run system:meditate"
@@ -178,13 +178,13 @@
 
   "globalReplacements": {
     "deprecated": {
-      "QAntum": "QAntum",
-      "qantum": "qantum",
-      "QANTUM": "QAntum",
-      "QANTUM": "QANTUM",
+      "Aeterna": "Aeterna",
+      "aeterna": "aeterna",
+      "AETERNA": "Aeterna",
+      "AETERNA": "AETERNA",
       "createMM": "createQA",
       "mm.": "qa.",
-      "QANTUM Team": "QAntum Labs"
+      "AETERNA Team": "Aeterna Labs"
     }
   },
 
@@ -232,6 +232,6 @@
   "metadata": {
     "created": "2025-12-30",
     "lastModified": "2025-12-30",
-    "generator": "QAntum Labs Manifest Generator v1.0"
+    "generator": "Aeterna Labs Manifest Generator v1.0"
   }
 }

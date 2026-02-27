@@ -1,11 +1,11 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
- * ║   QANTUM v15.1 - Type-Safe Module Loader                                                     ║
+ * ║   AETERNA v15.1 - Type-Safe Module Loader                                                     ║
  * ║   Safely loads modules with full TypeScript support                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
  */
 
-const SILENT = process.env.qantum_SILENT === 'true';
+const SILENT = process.env.aeterna_SILENT === 'true';
 
 // Cache for loaded modules
 const moduleCache = new Map<string, unknown>();

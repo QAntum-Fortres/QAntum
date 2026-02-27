@@ -1,7 +1,7 @@
 /**
  * AutonomousSalesForce.ts - "The Market Colonizer"
  *
- * QAntum Framework v2.0.0 - "THE SINGULARITY"
+ * Aeterna Framework v2.0.0 - "THE SINGULARITY"
  *
  * This module merges the Oracle (QA Intelligence) with the GrowthHacker
  * (Marketing Intelligence) to create a self-sustaining revenue engine.
@@ -65,7 +65,7 @@
  * - Multi-channel outreach automation
  *
  * @module reality/gateway/AutonomousSalesForce
- * @version 2.0.0
+ * @version 1.0.0-AETERNA
  * @singularity true
  */
 
@@ -741,7 +741,7 @@ I've attached a video walkthrough showing exactly what we found and how it affec
 Would you be open to a 15-minute call to discuss how we've helped similar ${company.industry} companies eliminate these issues?
 
 Best regards,
-QAntum Prime - Autonomous QA Platform
+Aeterna Prime - Autonomous QA Platform
 
 P.S. Our AI found these issues in under 5 minutes. Imagine what it could do for your entire platform.`;
 
@@ -933,7 +933,7 @@ P.S. Our AI found these issues in under 5 minutes. Imagine what it could do for 
 
       videoPath: `./videos/${company.domain}-assessment.mp4`,
       thumbnailPath: `./videos/${company.domain}-thumbnail.jpg`,
-      publicUrl: `https://reports.qantum.ai/${this.generateId('public')}`,
+      publicUrl: `https://reports.aeterna.ai/${this.generateId('public')}`,
 
       featuredBugs: bugIds,
 
@@ -984,7 +984,7 @@ P.S. Our AI found these issues in under 5 minutes. Imagine what it could do for 
     }
 
     script += `These issues could be costing ${company.name} significant revenue and user trust.\n`;
-    script += `QAntum Prime can help eliminate these problems with continuous autonomous testing.\n`;
+    script += `Aeterna Prime can help eliminate these problems with continuous autonomous testing.\n`;
     script += `Schedule a demo to see how we can help.\n`;
 
     return script;

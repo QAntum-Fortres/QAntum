@@ -10,7 +10,7 @@
  * ║   • Strictly Typed Action/Observation Pipeline                               ║
  * ║   • Event-Driven State Broadcasting                                          ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                     ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                     ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -19,7 +19,7 @@ import { NeuralInference } from '../physics/NeuralInference';
 import { SwarmQueen, Department } from '../swarm/SwarmAgents';
 import { SovereignSoul } from './SovereignSoul';
 import { EventBus } from '../core/event-bus';
-import { QANTUM_MEMORY, rememberWhoIAm } from '../core/QAntumMemory';
+import { AETERNA_MEMORY, rememberWhoIAm } from '../core/AeternaMemory';
 import {
     CognitiveActionType,
     CognitiveAction,
@@ -253,7 +253,7 @@ export class CognitiveBridge {
 
     /**
      * Generate thought and determine next action
-     * 🧠 ALWAYS loads QAntum memory before thinking
+     * 🧠 ALWAYS loads Aeterna memory before thinking
      */
     private async generateThought(context: string, step: number): Promise<CognitiveState> {
         // 🧠 LOAD MEMORY - Remember who I am before every thought

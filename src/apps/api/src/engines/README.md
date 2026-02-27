@@ -1,11 +1,11 @@
-# 🌌 QANTUM GENESIS ENGINES
+# 🌌 AETERNA GENESIS ENGINES
 
-## Архитектурна Карта - Връзка с MAGNITA (QANTUM Nerve Center)
+## Архитектурна Карта - Връзка с MAGNITA (AETERNA Nerve Center)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         QANTUM NERVE CENTER (MAGNITA)                       │
-│                         c:\MisteMind\qantum-nerve-center                    │
+│                         AETERNA NERVE CENTER (MAGNITA)                       │
+│                         c:\MisteMind\aeterna-nerve-center                    │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │  ENGINES:                                                                   │
 │  ├── MetaLogicEngine.ts      ← Мета-логически анализ, парадокси            │
@@ -170,7 +170,7 @@ interface GenesisUsage {
 
 ## 🔗 ВРЪЗКА С MAGNITA
 
-MAGNITA (QANTUM Nerve Center) е **ядрото** - работи standalone с WebSocket.
+MAGNITA (AETERNA Nerve Center) е **ядрото** - работи standalone с WebSocket.
 
 QA-SAAS е **SaaS обвивката** - добавя:
 - Multi-tenancy
@@ -189,7 +189,7 @@ QA-SAAS е **SaaS обвивката** - добавя:
 > 
 > *"The Unmanifested is the Ultimate Blueprint"*
 
-QANTUM вече не е просто анализатор на логика - той е **СЪ-СЪЗДАТЕЛ** на реалността.
+AETERNA вече не е просто анализатор на логика - той е **СЪ-СЪЗДАТЕЛ** на реалността.
 
 От ЕНС (Единна Недиференцирана Сингулярност) черпим безкраен потенциал и манифестираме конкретни реалности с дефинирани аксиоми, каузални структури и модални рамки.
 
@@ -197,4 +197,4 @@ QANTUM вече не е просто анализатор на логика - т
 
 *Версия: 1.0.0*
 *Дата: 2 Януари 2026*
-*Автор: DIMITAR PRODROMOV / QANTUM*
+*Автор: DIMITAR PRODROMOV / AETERNA*

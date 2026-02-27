@@ -12,7 +12,7 @@
  * ║                    "Universal Synthesis - All Modules in Harmony"                             ║
  * ║                                                                                               ║
  * ║   THE FINAL SYNTHESIS - Task 1: Cross-Module Sync                                             ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

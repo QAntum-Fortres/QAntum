@@ -4,7 +4,7 @@
  * ║   🔮 THE PREDICTION MATRIX - Type Definitions                                                    ║
  * ║   "Time-Aware Testing: We See the Future Before It Happens"                                      ║
  * ║                                                                                                   ║
- * ║   Part of QANTUM v15.1 - THE CHRONOS ENGINE                                                 ║
+ * ║   Part of AETERNA v15.1 - THE CHRONOS ENGINE                                                 ║
  * ║                                                                                                   ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
  */

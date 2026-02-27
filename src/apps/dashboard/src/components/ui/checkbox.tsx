@@ -1,6 +1,6 @@
 /**
  * @fileoverview Checkbox Component
- * @description Custom checkbox with QAntum styling (no Radix dependency)
+ * @description Custom checkbox with Aeterna styling (no Radix dependency)
  */
 
 'use client';

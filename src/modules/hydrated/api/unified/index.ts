@@ -6,7 +6,7 @@
  * Main entry point for the unified API module
  *
  * @author Dimitar Prodromov
- * @version 1.0.0
+ * @version 1.0.0-AETERNA
  * @license Commercial
  * ═══════════════════════════════════════════════════════════════════════════════
  */

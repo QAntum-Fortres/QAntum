@@ -15,7 +15,7 @@
  * ║  ██║██║ ╚████║   ██║   ███████╗╚██████╔╝██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║       ║
  * ║  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝       ║
  * ║                                                                                               ║
- * ║                           THE NERVOUS SYSTEM OF QANTUM                                        ║
+ * ║                           THE NERVOUS SYSTEM OF AETERNA                                        ║
  * ║                     "Правим софтуера СЪЗНАТЕЛЕН"                                              ║
  * ║                                                                                               ║
  * ║   Components:                                                                                 ║
@@ -24,7 +24,7 @@
  * ║     • ContextInjector - Automatic Knowledge Injection                                         ║
  * ║     • SelfCorrectionLoop - 100% Pass Rate Target                                              ║
  * ║                                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                                        ║
  * ║                                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
  */

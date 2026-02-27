@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
- * ║   QANTUM v15.1 - Core Type Definitions                                                       ║
+ * ║   AETERNA v15.1 - Core Type Definitions                                                       ║
  * ║   TypeScript Migration - Base Types for All Modules                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
  */
@@ -230,7 +230,7 @@ export interface NaturalLanguageCommand {
 // 🏭 FACTORY FUNCTION TYPES
 // ═══════════════════════════════════════════════════════════════════════════════════════
 
-export interface QAntumFactory {
+export interface AeternaFactory {
   createChronos: (config?: ChronosConfig) => unknown;
   createAPISensei: (config?: APIConfig) => unknown;
   createSentinel: (config?: SentinelConfig) => unknown;
@@ -286,11 +286,11 @@ export type EventType =
   | 'healing:complete'
   | 'prediction:made';
 
-export interface QAntumEvent<T = unknown> {
+export interface AeternaEvent<T = unknown> {
   type: EventType;
   timestamp: Date;
   source: string;
   data: T;
 }
 
-export type EventHandler<T = unknown> = (event: QAntumEvent<T>) => void | Promise<void>;
+export type EventHandler<T = unknown> = (event: AeternaEvent<T>) => void | Promise<void>;

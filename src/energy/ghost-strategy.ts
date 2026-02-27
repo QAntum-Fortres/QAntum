@@ -7,8 +7,8 @@
  *
  * Part of Gold Standard Integration - SOLID Principles
  *
- * @version 1.0.0
- * @author QAntum AI Architect
+ * @version 1.0.0-AETERNA
+ * @author Aeterna AI Architect
  */
 
 import { EventEmitter } from 'events';

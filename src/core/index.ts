@@ -1,10 +1,10 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CORE MODULE BARREL FILE                                              ║
+ * ║   AETERNA CORE MODULE BARREL FILE                                              ║
  * ║   "Unified exports for core infrastructure"                                   ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -16,7 +16,7 @@
 export {
   EventBus,
   getEventBus,
-  QAntumEvents,
+  AeternaEvents,
   EmitsEvent,
   OnEvent,
   type EventHandler,
@@ -25,7 +25,7 @@ export {
   type EventSubscription,
   type EventBusConfig,
   type EventStats,
-  type QAntumEventType,
+  type AeternaEventType,
 } from './event-bus';
 
 // ═══════════════════════════════════════════════════════════════════════════════

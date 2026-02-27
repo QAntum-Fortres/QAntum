@@ -102,7 +102,7 @@ export default function NexusPage() {
               </motion.div>
               <div>
                 <h1 className="text-2xl font-black tracking-tight bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
-                  QANTUM NEXUS
+                  AETERNA NEXUS
                 </h1>
                 <p className="text-sm text-gray-500 font-medium">Neural Operations Center  v34.1</p>
               </div>

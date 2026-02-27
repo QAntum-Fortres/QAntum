@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM FEATURE FLAGS                                                        ║
+ * ║   AETERNA FEATURE FLAGS                                                        ║
  * ║   "Dynamic feature gating with A/B testing"                                   ║
  * ║                                                                               ║
  * ║   TODO B #49 - SaaS: Feature Flags                                            ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

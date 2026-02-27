@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM CORE > EARS
+ * 🔥 AETERNA CORE > EARS
  *
  * Structure:
  * ├── 💪 strength/ - Core engines, main processors

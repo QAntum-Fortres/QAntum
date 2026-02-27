@@ -1,16 +1,16 @@
 {
     "$schema": "./refactor-schema.json",
-    "name": "QAntum Rebrand Rules",
+    "name": "Aeterna Rebrand Rules",
     "description": "Mass refactoring rules for complete project rebrand",
-    "version": "1.0.0",
-    "author": "dp | QAntum Labs",
+    "version": "1.0.0-AETERNA",
+    "author": "dp | Aeterna Labs",
     
     "rules": [
         {
-            "description": "Rename QAntum class to QAntum",
+            "description": "Rename Aeterna class to Aeterna",
             "type": "class",
-            "pattern": "QAntum",
-            "replacement": "QAntum"
+            "pattern": "Aeterna",
+            "replacement": "Aeterna"
         },
         {
             "description": "Rename createMM factory to createQA",
@@ -32,13 +32,13 @@
         },
         {
             "description": "Replace old brand name",
-            "pattern": "QANTUM",
-            "replacement": "QAntum"
+            "pattern": "AETERNA",
+            "replacement": "Aeterna"
         },
         {
             "description": "Replace abbreviated brand",
-            "pattern": "QAntum",
-            "replacement": "QAntum"
+            "pattern": "Aeterna",
+            "replacement": "Aeterna"
         }
     ],
     
@@ -48,16 +48,16 @@
             "rules": [
                 {
                     "pattern": "SystemLogo:\\s*['\"].*?['\"]",
-                    "replacement": "SystemLogo: 'assets/brand/qantum-logo.svg'",
+                    "replacement": "SystemLogo: 'assets/brand/aeterna-logo.svg'",
                     "isRegex": true
                 },
                 {
                     "pattern": "logo-old\\.svg",
-                    "replacement": "qantum-logo.svg"
+                    "replacement": "aeterna-logo.svg"
                 },
                 {
                     "pattern": "class=\"old-logo\"",
-                    "replacement": "class=\"qantum-logo\""
+                    "replacement": "class=\"aeterna-logo\""
                 }
             ]
         },
@@ -68,12 +68,12 @@
                 {
                     "type": "class",
                     "pattern": "IConfig",
-                    "replacement": "IQAntumConfig"
+                    "replacement": "IAeternaConfig"
                 },
                 {
                     "type": "class", 
                     "pattern": "IOptions",
-                    "replacement": "IQAntumOptions"
+                    "replacement": "IAeternaOptions"
                 }
             ]
         },

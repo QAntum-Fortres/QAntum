@@ -1,7 +1,7 @@
 /**
  * @fileoverview Performance Profiler - Core Web Vitals collection
  * @module reporters/PerformanceProfiler
- * @version 8.5.0
+ * @version 1.0.0-AETERNA
  */
 
 /**

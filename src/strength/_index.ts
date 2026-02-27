@@ -1,5 +1,5 @@
 /**
- * 🔥 QANTUM SECURITY > AUTH > STRENGTH
+ * 🔥 AETERNA SECURITY > AUTH > STRENGTH
  *
  * 💪 STRENGTH: Core power, heavy processing, main engines
  *

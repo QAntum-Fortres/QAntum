@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM CONFIGURATION LOADER                                                 ║
+ * ║   AETERNA CONFIGURATION LOADER                                                 ║
  * ║   "Multi-format config loading with environment support"                      ║
  * ║                                                                               ║
  * ║   TODO B #43 - Configuration Management                                       ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

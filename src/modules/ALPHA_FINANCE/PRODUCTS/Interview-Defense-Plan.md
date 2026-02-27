@@ -5,13 +5,13 @@
 
 ## 🎯 Opening Statement (30 seconds)
 
-> "I'm a QA engineer who learns by building. Over the past year, I've built QAntum Empire - a complete QA SaaS platform from scratch. This includes the API, dashboard, CLI tools, and two SDKs. I believe the best way to understand testing is to build the tools that do the testing."
+> "I'm a QA engineer who learns by building. Over the past year, I've built Aeterna Empire - a complete QA SaaS platform from scratch. This includes the API, dashboard, CLI tools, and two SDKs. I believe the best way to understand testing is to build the tools that do the testing."
 
 ---
 
 ## 📁 Project Defense
 
-### 1. QAntum Empire
+### 1. Aeterna Empire
 
 **What it is:**
 - Full-stack QA platform with test management, execution, and reporting
@@ -117,7 +117,7 @@ const store = createStore({ count: 0 });
 ## 🚨 Tough Questions & Honest Answers
 
 **Q: Do you have commercial/professional experience?**
-> "Not yet in a traditional employment setting, but I've built production-quality systems. QAntum Empire has the same architecture patterns you'd see in commercial products - authentication, billing integration, CI/CD, monitoring."
+> "Not yet in a traditional employment setting, but I've built production-quality systems. Aeterna Empire has the same architecture patterns you'd see in commercial products - authentication, billing integration, CI/CD, monitoring."
 
 **Q: This seems like a lot for one person. Did you use AI?**
 > "Yes, I use AI as a coding assistant - like having a senior developer to discuss ideas with. But I understand every line of code. I architect the solutions, make the decisions, and can explain and modify anything. AI accelerates, but doesn't replace understanding."
@@ -161,7 +161,7 @@ const store = createStore({ count: 0 });
 - [ ] Review the company's product - find 2-3 potential test scenarios
 - [ ] Check their tech stack on job posting/LinkedIn
 - [ ] Prepare 1-2 questions specific to their product
-- [ ] Have QAntum dashboard ready to demo if asked
+- [ ] Have Aeterna dashboard ready to demo if asked
 - [ ] Test your camera/microphone
 - [ ] Have water nearby
 - [ ] Dress professionally (at least top half!)

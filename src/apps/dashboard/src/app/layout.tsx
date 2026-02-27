@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'QAntum Cloud | AI-Powered Test Automation',
+  title: 'Aeterna Cloud | AI-Powered Test Automation',
   description: 'Ghost Mode execution, Self-Healing selectors, AI test generation',
   icons: {
     icon: '/favicon.ico',

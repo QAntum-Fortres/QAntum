@@ -4,7 +4,7 @@
  * ║   COGNITIVE TYPE DEFINITIONS                                                  ║
  * ║   Strict contracts for autonomous reasoning modules                          ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                     ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                     ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

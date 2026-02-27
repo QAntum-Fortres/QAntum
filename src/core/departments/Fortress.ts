@@ -78,7 +78,7 @@ export class FortressDepartment extends Department {
   public async authenticate(user: string, token: string): Promise<string> {
     const startTime = Date.now();
     // Mock authentication
-    if (token === 'qantum-secret') {
+    if (token === 'aeterna-secret') {
       const sessionId = crypto.randomBytes(16).toString('hex');
       this.activeSessions.set(sessionId, {
         user,

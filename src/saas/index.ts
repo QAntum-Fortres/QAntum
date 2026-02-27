@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM SAAS MODULE                                                          ║
+ * ║   AETERNA SAAS MODULE                                                          ║
  * ║   "Telemetry, Feature Flags & Subscriptions"                                  ║
  * ║                                                                               ║
  * ║   TODO B #48-50 - SaaS Complete                                               ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

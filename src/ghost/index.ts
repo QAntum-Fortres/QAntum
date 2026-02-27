@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM GHOST MODULE                                                         ║
+ * ║   AETERNA GHOST MODULE                                                         ║
  * ║   "Stealth Testing & Anti-Detection"                                          ║
  * ║                                                                               ║
  * ║   TODO B #21-24 - Ghost Protocol Complete                                     ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

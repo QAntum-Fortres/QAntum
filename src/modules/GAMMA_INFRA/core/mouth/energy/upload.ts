@@ -1,5 +1,5 @@
 /**
- * Upload Command - Upload test files to QAntum Cloud
+ * Upload Command - Upload test files to Aeterna Cloud
  */
 
 import chalk from 'chalk';
@@ -21,7 +21,7 @@ export async function upload(files: string[], options: UploadOptions) {
   const projectId = options.project || config.get('defaultProject');
 
   if (!projectId) {
-    console.log(chalk.red('✗') + ' No project specified. Use --project or run `qantum init`');
+    console.log(chalk.red('✗') + ' No project specified. Use --project or run `aeterna init`');
     process.exit(1);
   }
 
@@ -83,7 +83,7 @@ export async function upload(files: string[], options: UploadOptions) {
     console.log(chalk.gray(`  Suite ID: ${result.suiteId}`));
     console.log(chalk.gray(`  Tests: ${result.tests.length}`));
     console.log();
-    console.log(`Run tests: ${chalk.cyan(`qantum run --suite ${result.suiteId}`)}`);
+    console.log(`Run tests: ${chalk.cyan(`aeterna run --suite ${result.suiteId}`)}`);
   } catch (error: any) {
     spinner.fail(error.message);
   }

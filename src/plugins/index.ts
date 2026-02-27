@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM PLUGINS MODULE                                                       ║
+ * ║   AETERNA PLUGINS MODULE                                                       ║
  * ║   "Unified plugin system"                                                     ║
  * ║                                                                               ║
  * ║   TODO B #44 - Plugin System                                                  ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */
@@ -48,14 +48,14 @@ import {
 } from './plugin';
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// QANTUM PLUGINS
+// AETERNA PLUGINS
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * Unified QAntum Plugins
+ * Unified Aeterna Plugins
  */
-export class QAntumPlugins {
-  private static instance: QAntumPlugins;
+export class AeternaPlugins {
+  private static instance: AeternaPlugins;
 
   readonly manager: PluginManager;
 
@@ -63,11 +63,11 @@ export class QAntumPlugins {
     this.manager = new PluginManager();
   }
 
-  static getInstance(): QAntumPlugins {
-    if (!QAntumPlugins.instance) {
-      QAntumPlugins.instance = new QAntumPlugins();
+  static getInstance(): AeternaPlugins {
+    if (!AeternaPlugins.instance) {
+      AeternaPlugins.instance = new AeternaPlugins();
     }
-    return QAntumPlugins.instance;
+    return AeternaPlugins.instance;
   }
 
   /**
@@ -145,8 +145,8 @@ export class QAntumPlugins {
 // SINGLETON & EXPORTS
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const getQAntumPlugins = (): QAntumPlugins => QAntumPlugins.getInstance();
+export const getAeternaPlugins = (): AeternaPlugins => AeternaPlugins.getInstance();
 
-export const plugins = QAntumPlugins.getInstance();
+export const plugins = AeternaPlugins.getInstance();
 
-export default QAntumPlugins;
+export default AeternaPlugins;

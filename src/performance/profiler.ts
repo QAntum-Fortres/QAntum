@@ -1,12 +1,12 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════════════════════╗
  * ║                                                                               ║
- * ║   QANTUM PERFORMANCE PROFILER                                                 ║
+ * ║   AETERNA PERFORMANCE PROFILER                                                 ║
  * ║   "Detailed performance metrics and bottleneck detection"                     ║
  * ║                                                                               ║
  * ║   TODO B #11 - Performance Profiling                                          ║
  * ║                                                                               ║
- * ║   © 2025-2026 QAntum | Dimitar Prodromov                                        ║
+ * ║   © 2025-2026 Aeterna | Dimitar Prodromov                                        ║
  * ║                                                                               ║
  * ╚═══════════════════════════════════════════════════════════════════════════════╝
  */

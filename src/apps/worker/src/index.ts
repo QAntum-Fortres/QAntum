@@ -10,9 +10,9 @@ import IORedis from 'ioredis';
 import { chromium, firefox, webkit, Browser, Page } from 'playwright';
 import { PrismaClient } from '@prisma/client';
 
-// Import QAntum core (MrMindQATool)
+// Import Aeterna core (MrMindQATool)
 // In production, this would be a proper package import
-// import { QAntum, GhostExecutionLayer, SEGCController } from '@qantum/core';
+// import { Aeterna, GhostExecutionLayer, SEGCController } from '@aeterna/core';
 
 const prisma = new PrismaClient();
 
@@ -318,7 +318,7 @@ worker.on('failed', (job, error) => {
 console.log(`
 ╔════════════════════════════════════════════════════════════╗
 ║                                                            ║
-║   🔧 QAntum Test Worker Started                            ║
+║   🔧 Aeterna Test Worker Started                            ║
 ║                                                            ║
 ║   Concurrency: ${process.env.WORKER_CONCURRENCY || '5'}                                       ║
 ║   Redis: ${process.env.REDIS_HOST || 'localhost'}:${process.env.REDIS_PORT || '6379'}                            ║

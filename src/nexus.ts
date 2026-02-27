@@ -4,8 +4,8 @@ import { MegaSupremeDaemon } from '../PROJECT/QA-SAAS/packages/pinecone-bridge/s
 import { immuneSystem } from '../MrMindQATool/src/intelligence/ImmuneSystem';
 import { getHardwareLock } from './modules/_root_migrated/security/auth/energy/hardware-lock';
 
-export class QantumNexus {
-  private static instance: QantumNexus;
+export class AeternaNexus {
+  private static instance: AeternaNexus;
 
   public readonly registry: ModuleRegistry;
   public readonly monitor: HealthMonitor;
@@ -17,15 +17,15 @@ export class QantumNexus {
     this.daemon = MegaSupremeDaemon.getInstance();
   }
 
-  public static getInstance(): QantumNexus {
-    if (!QantumNexus.instance) {
-      QantumNexus.instance = new QantumNexus();
+  public static getInstance(): AeternaNexus {
+    if (!AeternaNexus.instance) {
+      AeternaNexus.instance = new AeternaNexus();
     }
-    return QantumNexus.instance;
+    return AeternaNexus.instance;
   }
 
   async AWAKEN() {
-    console.log('🌌 [NEXUS] Awakening the QAntum Empire...');
+    console.log('🌌 [NEXUS] Awakening the Aeterna Empire...');
 
     // 0. 🧬 GENETIC LOCK VERIFICATION
     console.log('🔐 [NEXUS] Verifying Hardware DNA...');
@@ -53,11 +53,11 @@ export class QantumNexus {
     // 3. Start the Orchestrator
     await this.daemon.awaken();
 
-    console.log('🌟 [NEXUS] QAntum Empire is SYNCHRONIZED.');
+    console.log('🌟 [NEXUS] Aeterna Empire is SYNCHRONIZED.');
   }
 }
 
 // Global invocation if run directly
 if (require.main === module) {
-  QantumNexus.getInstance().AWAKEN().catch(console.error);
+  AeternaNexus.getInstance().AWAKEN().catch(console.error);
 }

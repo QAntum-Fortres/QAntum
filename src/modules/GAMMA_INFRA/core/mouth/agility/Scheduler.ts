@@ -5,8 +5,8 @@
  *
  * Task scheduling with cron expressions, intervals, and queue management
  *
- * @author dp | QAntum Labs
- * @version 1.0.0-QANTUM-PRIME
+ * @author dp | Aeterna Labs
+ * @version 1.0.0-AETERNA
  * @license Commercial
  * ═══════════════════════════════════════════════════════════════════════════════
  */

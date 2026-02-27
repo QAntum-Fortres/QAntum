@@ -24,7 +24,7 @@ require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 // ═══════════════════════════════════════════════════════════════════════════════════════
 // � LAZY LOADING - Modules load only when needed (10x faster startup)
 // ═══════════════════════════════════════════════════════════════════════════════════════
-const SILENT = process.env.qantum_SILENT === 'true';
+const SILENT = process.env.aeterna_SILENT === 'true';
 
 // Cache for loaded modules
 const _cache = {};
@@ -65,7 +65,7 @@ const _getCollective = lazyRequire(
 );
 const _getChronos = lazyRequire('./chronos-engine', 'chronos-engine');
 const _getAPISensei = lazyRequire('./api-sensei', 'api-sensei');
-const _getQAntumV8 = lazyRequire('./qantum-v8', 'qantum-v8');
+const _getAeternaV8 = lazyRequire('./aeterna-v8', 'aeterna-v8');
 const _getPlaywright = lazyRequire('./playwright-professor', 'playwright-professor');
 const _getOrchestrator = lazyRequire('./engine-orchestrator', 'engine-orchestrator');
 const _getSupervisor = lazyRequire('./supervisor-agent', 'supervisor-agent');
@@ -130,14 +130,14 @@ const {
   VideoToTestAI,
   ScreenshotToTestAI,
   PredictiveBugDetector,
-  QAntumNexus,
+  AeternaNexus,
   VoiceTestingEngine,
   SelfEvolvingTestEngine,
 } = safeGet(_nexus, [
   'VideoToTestAI',
   'ScreenshotToTestAI',
   'PredictiveBugDetector',
-  'QAntumNexus',
+  'AeternaNexus',
   'VoiceTestingEngine',
   'SelfEvolvingTestEngine',
 ]);
@@ -147,13 +147,13 @@ const {
 // ═══════════════════════════════════════════════════════════════════════════════════════
 const _quantum = safeRequire('./quantum-core', 'quantum-core');
 const {
-  QAntumQuantum,
+  AeternaQuantum,
   NaturalLanguageEngine,
   AITestGenerator,
   VisualAIEngine,
   AutoDiscoveryEngine,
 } = safeGet(_quantum, [
-  'QAntumQuantum',
+  'AeternaQuantum',
   'NaturalLanguageEngine',
   'AITestGenerator',
   'VisualAIEngine',
@@ -163,7 +163,7 @@ const {
 // ═══════════════════════════════════════════════════════════════════════════════════════
 // 🎭 LEGACY ENGINES (v8-v11)
 // ═══════════════════════════════════════════════════════════════════════════════════════
-const QAntumV8 = safeRequire('./qantum-v8', 'qantum-v8');
+const AeternaV8 = safeRequire('./aeterna-v8', 'aeterna-v8');
 const PlaywrightProfessor = safeRequire('./playwright-professor', 'playwright-professor');
 const EngineOrchestrator = safeRequire('./engine-orchestrator', 'engine-orchestrator');
 const SupervisorAgent = safeRequire('./supervisor-agent', 'supervisor-agent');
@@ -222,14 +222,14 @@ const { CollectiveIntelligence, CollectiveMemory, OversightMesh, SelfRepairEngin
 // ═══════════════════════════════════════════════════════════════════════════════════════
 const _chronos = safeRequire('./chronos-engine', 'chronos-engine');
 const {
-  QAntumChronos,
+  AeternaChronos,
   ChronosEngine,
   FutureSimulator,
   GlobalHeuristicMatrix,
   StrategicSingularity,
   SelfHealingEngine: ChronosSelfHealingEngine,
 } = safeGet(_chronos, [
-  'QAntumChronos',
+  'AeternaChronos',
   'ChronosEngine',
   'FutureSimulator',
   'GlobalHeuristicMatrix',
@@ -396,7 +396,7 @@ module.exports = {
   // ═══════════════════════════════════════════════════════════════════════════════════
   // ⏰ CHRONOS ENGINE (v15.0) - Time-Aware Testing
   // ═══════════════════════════════════════════════════════════════════════════════════
-  QAntumChronos,
+  AeternaChronos,
   ChronosEngine,
   FutureSimulator,
   GlobalHeuristicMatrix,
@@ -451,14 +451,14 @@ module.exports = {
   VideoToTestAI,
   ScreenshotToTestAI,
   PredictiveBugDetector,
-  QAntumNexus,
+  AeternaNexus,
   VoiceTestingEngine,
   SelfEvolvingTestEngine,
 
   // ═══════════════════════════════════════════════════════════════════════════════════
   // ⚛️ QUANTUM CORE (v2.0)
   // ═══════════════════════════════════════════════════════════════════════════════════
-  QAntumQuantum,
+  AeternaQuantum,
   NaturalLanguageEngine,
   AITestGenerator,
   VisualAIEngine,
@@ -467,7 +467,7 @@ module.exports = {
   // ═══════════════════════════════════════════════════════════════════════════════════
   // 🎭 LEGACY (v8-v11)
   // ═══════════════════════════════════════════════════════════════════════════════════
-  QAntumV8,
+  AeternaV8,
   PlaywrightProfessor,
   EngineOrchestrator,
   SupervisorAgent,
@@ -480,8 +480,8 @@ module.exports = {
    * ⏰ Create Chronos Engine (v15.0 - Time-Aware Testing)
    */
   createChronos: (config = {}) => {
-    if (!QAntumChronos) throw new Error('Chronos Engine not available');
-    return new QAntumChronos(config);
+    if (!AeternaChronos) throw new Error('Chronos Engine not available');
+    return new AeternaChronos(config);
   },
 
   /**
@@ -536,16 +536,16 @@ module.exports = {
    * ⚛️ Create Quantum Framework (All-in-One)
    */
   createQuantum: (options = {}) => {
-    if (!QAntumQuantum) throw new Error('QAntumQuantum not available');
-    return new QAntumQuantum(options);
+    if (!AeternaQuantum) throw new Error('AeternaQuantum not available');
+    return new AeternaQuantum(options);
   },
 
   /**
    * 🚀 Create NEXUS Framework (All-in-One)
    */
   createNexus: (config = {}) => {
-    if (!QAntumNexus) throw new Error('QAntumNexus not available');
-    return new QAntumNexus(config);
+    if (!AeternaNexus) throw new Error('AeternaNexus not available');
+    return new AeternaNexus(config);
   },
 
   /**
@@ -640,13 +640,13 @@ module.exports = {
    * 📊 Get Module Status (Check which modules are loaded)
    */
   getModuleStatus: () => ({
-    chronos: !!QAntumChronos,
+    chronos: !!AeternaChronos,
     apiSensei: !!APISensei,
     omniscient: !!OmniscientCore,
     sovereign: !!SovereignAgent,
     neuroSentinel: !!NeuroSentinel,
-    nexus: !!QAntumNexus,
-    quantum: !!QAntumQuantum,
+    nexus: !!AeternaNexus,
+    quantum: !!AeternaQuantum,
     playwright: !!PlaywrightProfessor,
   }),
 };
@@ -720,7 +720,7 @@ if (require.main === module) {
     { name: 'GlobalConsciousness', obj: GlobalConsciousness },
     { name: 'OmniWatcher', obj: OmniWatcher },
     // v15.0 CHRONOS
-    { name: 'QAntumChronos', obj: QAntumChronos },
+    { name: 'AeternaChronos', obj: AeternaChronos },
     { name: 'ChronosEngine', obj: ChronosEngine },
     // v15.1 API SENSEI
     { name: 'APISensei', obj: APISensei },
@@ -759,7 +759,7 @@ if (require.main === module) {
   console.log(`   ═══════════════════════════════════════════════════\n`);
 
   const exportCount = Object.keys(module.exports).length;
-  console.log(`   ⚛️ QANTUM v17.0 QUANTUM MIND is OPERATIONAL!`);
+  console.log(`   ⚛️ AETERNA v17.0 QUANTUM MIND is OPERATIONAL!`);
   console.log(`   📦 Total Exports: ${exportCount} modules`);
   console.log(`   🧬 Neural Evolution: NEAT + Evolution Strategies ready!`);
   console.log(`   🐝 Swarm Intelligence: Multi-agent coordination active!`);

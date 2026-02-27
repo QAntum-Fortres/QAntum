@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 /**
- * Dashboard Stats API — QAntum Cloud
+ * Dashboard Stats API — Aeterna Cloud
  * Returns test execution stats for the dashboard cards.
  * 
  * When a real database is connected, replace the demo data

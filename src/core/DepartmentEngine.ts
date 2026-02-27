@@ -12,7 +12,7 @@ import { Logger } from './telemetry/Logger';
 import { Telemetry } from './telemetry/Telemetry';
 
 /**
- * 🌌 QANTUM Department Engine
+ * 🌌 AETERNA Department Engine
  * The central nervous system that orchestrates all specialized departments.
  */
 export class DepartmentEngine {

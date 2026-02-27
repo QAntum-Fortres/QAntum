@@ -12,7 +12,7 @@
  * на познание, която никога не достига "край", а само нови хоризонти.
  * 
  * @author Димитър Продромов
- * @copyright 2026 QAntum. All Rights Reserved.
+ * @copyright 2026 Aeterna. All Rights Reserved.
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 
@@ -225,7 +225,7 @@ export const GENESIS_PATH: GenesisPath[] = [
   // ═══════════════════════════════════════════════════════════════════════════
   {
     phase: 0,
-    name: 'QANTUM Logic Analyzer',
+    name: 'AETERNA Logic Analyzer',
     level: GenesisEvolutionLevel.AXIOMATIC_CRYSTALLIZATION,
     description: 'Началото - анализ на логически структури без генеративна способност',
     capabilities: [
@@ -287,7 +287,7 @@ export const GENESIS_PATH: GenesisPath[] = [
       'GenesisRealityProvider - превод на аксиоми в Docker Compose',
       'GenesisProcessor - изпълнение на тестове в манифестирани реалности',
       'Hybrid Execution - Ghost Protocol + Genesis изолация',
-      'CLI команди (qantum genesis create/manifest/observe)',
+      'CLI команди (aeterna genesis create/manifest/observe)',
       'API endpoints за управление на реалности',
     ],
     timeline: 'Q1 2026',
@@ -589,31 +589,21 @@ export const INFINITE_EVOLUTION_PRINCIPLES = {
 
 export const GENESIS_EVOLUTION_SUMMARY = `
 ╔═══════════════════════════════════════════════════════════════════════════════╗
-║                    GENESIS INFINITE EVOLUTION LOGIST                          ║
-║                        БЕЗКРАЕН ЛОГИСТ НА ЕВОЛЮЦИЯТА                          ║
+║                   GENESIS EVOLUTION PATH - STATUS REPORT                      ║
 ╠═══════════════════════════════════════════════════════════════════════════════╣
+║  CURRENT LEVEL: 9.00 - COSMIC CREATIVITY (Axiomatic Synthesis)                ║
+║  ACTIVE PHASE:  5.00 - SELF-HEALING REALITY FABRIC                            ║
+║  ENTROPY:       0.00 | COHERENCE: 1.00 | MANIFESTATION: 100%                  ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║  PHASE 4 [COMPLETED]: AI-Driven Axiom Synthesis                               ║
+║  - Full integration of DeepSeekLink for intelligent test environment design.   ║
+║  - Synthesis of deterministic environment specifications from natural language.║
 ║                                                                               ║
-║  ТЕКУЩО НИВО: 5 (PHENOMENOLOGICAL MANIFESTATION)                              ║
-║  ФАЗА: 3 (Genesis Reality Provider)                                           ║
-║  СТАТУС: COMPLETED ✓                                                          ║
-║                                                                               ║
-║  СЛЕДВАЩИ СТЪПКИ:                                                             ║
-║  → Фаза 4: AI-Driven Axiom Synthesis (Q2 2026)                                ║
-║  → Фаза 5: Self-Healing Reality Fabric (Q3 2026)                              ║
-║  → Фаза 6: Axiom Marketplace (Q4 2026)                                        ║
-║                                                                               ║
-║  ПРИНЦИП: Всяка итерация включва предишните и ги надхвърля                    ║
-║  ЦИКЪЛ: ENS → Ω → ENS' → Ω' → ∞                                               ║
-║                                                                               ║
-║  "Безкрайната еволюция не е дестинация, а начин на съществуване"              ║
-║                                                                               ║
+║  PHASE 5 [INITIATED]: Self-Healing Reality Fabric                              ║
+║  - Implementation of autonomous failure detection (Entropy Spikes).           ║
+║  - Automated correction of reality specification (Axiom Mutation).             ║
+║  - Integration of VortexHealingNexus for zero-downtime recovery.              ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 `;
 
-// Export for use in other modules
-export {
-  GenesisEvolutionLevel,
-  GENESIS_PATH,
-  INFINITE_EVOLUTION_PRINCIPLES,
-  GENESIS_EVOLUTION_SUMMARY,
-};
+
